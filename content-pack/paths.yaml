@@ -1,0 +1,1839 @@
+# paths.yaml — 67 curated plant perception pathways, stimulus → response. Copied field for field from
+# source/curation/paths.yaml (Cowork drafts from verified abstracts; curated by Daniel 2026-11-18/19, decisions.yaml)
+# by tools/assemble_pack.py. null = no harvested source supports that stage yet (gap). Edit source/, then re-run.
+paths:
+- path_id: PL01
+  perception_branch: Light
+  sense_leaf: red / far-red
+  stimulus: red / far-red light
+  stimulus_origin: external
+  receptor: phytochromes (phyB)
+  transducer_tier: B1
+  hypothesis_group: null
+  cascade: translocation to subnuclear photobodies; light-activated phytochromes promote PIF degradation
+  signal_route: null
+  integration: null
+  response: photomorphogenesis; expression of ~10% of the genome altered
+  response_role: seedling development in light
+  row_status: curated
+  provenance: A
+  notes: null
+  evidence_species: Arabidopsis thaliana
+  key_citation: chen2011_phy_review; jeong2013_pifs
+  citation_verified: all
+  also_in: []
+  provenance_words:
+  - quoted or closely tracked from a verified abstract
+  contested_fields: []
+  refs:
+  - 1
+  - 2
+- path_id: PL02
+  perception_branch: Temperature
+  sense_leaf: warm ambient temperature
+  stimulus: warmer temperature, notably at night
+  stimulus_origin: external
+  receptor: 'phyB: temperature-dependent Pfr→Pr reversion'
+  transducer_tier: B1
+  hypothesis_group: 'dual membership: Light × Temperature ⚑'
+  cascade: phyB associates with promoters of target genes in a temperature-dependent manner; fewer, smaller nuclear bodies
+  signal_route: null
+  integration: phyB responsive to both light and temperature
+  response: 'thermomorphogenesis: accelerated flowering, elongation growth'
+  response_role: growth and timing under warmth
+  row_status: curated
+  provenance: A
+  notes: null
+  evidence_species: Arabidopsis thaliana
+  key_citation: jung2016_phy_thermo; legris2016_phyb_temp
+  citation_verified: all
+  also_in:
+  - Light
+  provenance_words:
+  - quoted or closely tracked from a verified abstract
+  contested_fields:
+  - hypothesis_group
+  refs:
+  - 3
+  - 4
+- path_id: PL03
+  perception_branch: Light
+  sense_leaf: blue (phototropism)
+  stimulus: unilateral blue light
+  stimulus_origin: external
+  receptor: phot1 (NPH1), FMN-binding LOV flavoprotein kinase
+  transducer_tier: B1
+  hypothesis_group: null
+  cascade: blue-light autophosphorylation; LOV2 activation unfolds helices that signal to the kinase domain
+  signal_route: null
+  integration: null
+  response: phototropism
+  response_role: orienting growth toward light
+  row_status: curated
+  provenance: A
+  notes: null
+  evidence_species: Arabidopsis thaliana
+  key_citation: christie1998_nph1; huala1997_nph1; hart2021_phot_review
+  citation_verified: all
+  also_in: []
+  provenance_words:
+  - quoted or closely tracked from a verified abstract
+  contested_fields: []
+  refs:
+  - 5
+  - 6
+  - 7
+- path_id: PL04
+  perception_branch: Light
+  sense_leaf: blue (chloroplast avoidance)
+  stimulus: strong blue light
+  stimulus_origin: external
+  receptor: phot2 (NPL1)
+  transducer_tier: B1
+  hypothesis_group: null
+  cascade: null
+  signal_route: null
+  integration: null
+  response: chloroplasts move to the side walls of the cell
+  response_role: avoiding strong light
+  row_status: curated
+  provenance: A
+  notes: null
+  evidence_species: Arabidopsis thaliana
+  key_citation: kagawa2001_npl1
+  citation_verified: all
+  also_in: []
+  provenance_words:
+  - quoted or closely tracked from a verified abstract
+  contested_fields: []
+  refs:
+  - 8
+- path_id: PL05
+  perception_branch: Light
+  sense_leaf: blue (stomatal opening)
+  stimulus: blue light
+  stimulus_origin: external
+  receptor: phot1 and phot2, redundantly
+  transducer_tier: B1
+  hypothesis_group: null
+  cascade: phosphorylation and activation of the plasma membrane H+-ATPase → inside-negative potential → K+ accumulation through
+    a K+ channel
+  signal_route: null
+  integration: null
+  response: stomatal opening
+  response_role: gas exchange
+  row_status: curated
+  provenance: A
+  notes: local to guard cells
+  evidence_species: Arabidopsis thaliana
+  key_citation: kinoshita2001_phot_stomata
+  citation_verified: all
+  also_in: []
+  provenance_words:
+  - quoted or closely tracked from a verified abstract
+  contested_fields: []
+  refs:
+  - 9
+- path_id: PL06
+  perception_branch: Light
+  sense_leaf: blue (de-etiolation)
+  stimulus: blue light
+  stimulus_origin: external
+  receptor: cryptochrome 1 (HY4), photolyase-like flavoprotein
+  transducer_tier: B1
+  hypothesis_group: null
+  cascade: null
+  signal_route: null
+  integration: null
+  response: inhibition of hypocotyl elongation
+  response_role: seedling development in light
+  row_status: curated
+  provenance: A
+  notes: null
+  evidence_species: Arabidopsis thaliana
+  key_citation: ahmad1993_hy4; chaves2011_cry_review
+  citation_verified: all
+  also_in: []
+  provenance_words:
+  - quoted or closely tracked from a verified abstract
+  contested_fields: []
+  refs:
+  - 10
+  - 11
+- path_id: PL07
+  perception_branch: Light
+  sense_leaf: UV-B
+  stimulus: UV-B
+  stimulus_origin: external
+  receptor: UVR8 dimers (probably tryptophan-based)
+  transducer_tier: B1
+  hypothesis_group: null
+  cascade: instant monomerisation and interaction with COP1 (E3 ubiquitin ligase repressing light signalling)
+  signal_route: null
+  integration: null
+  response: UV-B photomorphogenic responses
+  response_role: acclimation to sunlight
+  row_status: curated
+  provenance: A
+  notes: null
+  evidence_species: Arabidopsis thaliana
+  key_citation: rizzini2011_uvr8; yi2005_cop1
+  citation_verified: all
+  also_in: []
+  provenance_words:
+  - quoted or closely tracked from a verified abstract
+  contested_fields: []
+  refs:
+  - 12
+  - 13
+- path_id: PL08
+  perception_branch: Light
+  sense_leaf: UV-B (phototropism)
+  stimulus: directional UV-B
+  stimulus_origin: external
+  receptor: UVR8 (phototropin-independent)
+  transducer_tier: B1
+  hypothesis_group: null
+  cascade: repression of auxin-responsive genes
+  signal_route: null
+  integration: phototropins drive early differential growth; the UVR8 response follows later
+  response: phototropic bending towards UV-B
+  response_role: orienting photosynthetic tissue
+  row_status: curated
+  provenance: A
+  notes: null
+  evidence_species: Arabidopsis thaliana
+  key_citation: vandenbussche2014_uvb_bending
+  citation_verified: all
+  also_in: []
+  provenance_words:
+  - quoted or closely tracked from a verified abstract
+  contested_fields: []
+  refs:
+  - 14
+- path_id: PX01
+  perception_branch: Redox (ROS)
+  sense_leaf: reactive oxygen (H2O2)
+  stimulus: extracellular H2O2
+  stimulus_origin: external or internal
+  receptor: HPCA1, LRR receptor kinase; covalent modification of extracellular cysteines
+  transducer_tier: B1
+  hypothesis_group: null
+  cascade: autophosphorylation → activation of Ca2+ channels in guard cells
+  signal_route: null
+  integration: null
+  response: stomatal closure
+  response_role: stress response
+  row_status: curated
+  provenance: A
+  notes: new branch Redox (ROS), Daniel 2026-11-18
+  evidence_species: Arabidopsis thaliana
+  key_citation: wu2020_hpca1
+  citation_verified: all
+  also_in: []
+  provenance_words:
+  - quoted or closely tracked from a verified abstract
+  contested_fields: []
+  refs:
+  - 15
+- path_id: PX02
+  perception_branch: Osmotic and salt
+  sense_leaf: hyperosmolality
+  stimulus: hyperosmolality (water deficit)
+  stimulus_origin: external
+  receptor: OSCA1, hyperosmolality-gated Ca2+-permeable channel ('may be an osmosensor')
+  transducer_tier: B2
+  hypothesis_group: null
+  cascade: '[Ca2+]i increase in guard cells and root cells'
+  signal_route: null
+  integration: null
+  response: regulation of transpiration; root growth under osmotic stress
+  response_role: water conservation
+  row_status: curated
+  provenance: A
+  notes: null
+  evidence_species: Arabidopsis thaliana
+  key_citation: yuan2014_osca1
+  citation_verified: all
+  also_in: []
+  provenance_words:
+  - quoted or closely tracked from a verified abstract
+  contested_fields: []
+  refs:
+  - 16
+- path_id: PX03
+  perception_branch: Wounding and herbivores
+  sense_leaf: extracellular ATP
+  stimulus: extracellular ATP
+  stimulus_origin: internal (released on damage)
+  receptor: DORN1 (LecRK-I.9, At5g60300); binds ATP, Kd 45.7 nM
+  transducer_tier: B1
+  hypothesis_group: null
+  cascade: Ca2+ response, MAPK activation, gene expression
+  signal_route: null
+  integration: null
+  response: response to physical wounding (enhanced by ectopic DORN1)
+  response_role: damage response
+  row_status: curated
+  provenance: A
+  notes: null
+  evidence_species: Arabidopsis thaliana
+  key_citation: choi2014_dorn1
+  citation_verified: all
+  also_in: []
+  provenance_words:
+  - quoted or closely tracked from a verified abstract
+  contested_fields: []
+  refs:
+  - 17
+- path_id: PT01
+  perception_branch: Mechanical
+  sense_leaf: substrate hardness (root)
+  stimulus: plasma-membrane distortion; harder substrate
+  stimulus_origin: external
+  receptor: MCA1, part of a Ca2+-permeable stretch-activated channel system (MCA2 overlaps in growth only)
+  transducer_tier: B2
+  hypothesis_group: null
+  cascade: '[Ca2+]cyt increase'
+  signal_route: null
+  integration: null
+  response: root penetrates a harder agar layer
+  response_role: root growth through soil
+  row_status: curated
+  provenance: A
+  notes: null
+  evidence_species: Arabidopsis thaliana
+  key_citation: nakagawa2007_mca1; yamanaka2010_mca12
+  citation_verified: all
+  also_in: []
+  provenance_words:
+  - quoted or closely tracked from a verified abstract
+  contested_fields: []
+  refs:
+  - 18
+  - 19
+- path_id: PT02
+  perception_branch: Mechanical
+  sense_leaf: touch (root)
+  stimulus: touch or bending of the root
+  stimulus_origin: external
+  receptor: null
+  transducer_tier: B3
+  hypothesis_group: null
+  cascade: stimulus-specific Ca2+ transient → Ca2+-dependent activation of RBOH C
+  signal_route: null
+  integration: Ca2+ coordinates ROS production and pH changes
+  response: apoplastic ROS; apoplastic alkalinisation and cytoplasmic acidification
+  response_role: cell-wall response to touch
+  row_status: curated
+  provenance: A
+  notes: null
+  evidence_species: Arabidopsis thaliana
+  key_citation: monshausen2009_ca_ros
+  citation_verified: all
+  also_in: []
+  provenance_words:
+  - quoted or closely tracked from a verified abstract
+  contested_fields: []
+  refs:
+  - 20
+- path_id: PT03
+  perception_branch: Mechanical
+  sense_leaf: touch and bending
+  stimulus: local touch or bending
+  stimulus_origin: external
+  receptor: FERONIA, receptor-like kinase (regulator of mechanical Ca2+ signalling)
+  transducer_tier: B2
+  hypothesis_group: null
+  cascade: Ca2+ signals; touch-responsive gene upregulation
+  signal_route: null
+  integration: null
+  response: root skewing, hard-agar penetration, obstacle responses
+  response_role: growth under mechanical forces
+  row_status: curated
+  provenance: A
+  notes: null
+  evidence_species: Arabidopsis thaliana
+  key_citation: shih2014_feronia
+  citation_verified: all
+  also_in: []
+  provenance_words:
+  - quoted or closely tracked from a verified abstract
+  contested_fields: []
+  refs:
+  - 21
+- path_id: PT04
+  perception_branch: Mechanical
+  sense_leaf: repeated touch, wind, rain
+  stimulus: repeated touch; also wind, water spray, wounding, darkness
+  stimulus_origin: external
+  receptor: null
+  transducer_tier: B3
+  hypothesis_group: null
+  cascade: TCH genes (calmodulin and calmodulin-related) up to 100-fold in 10–30 min
+  signal_route: null
+  integration: jasmonate required and promoting; ethylene nonessential
+  response: 'thigmomorphogenesis: shorter petioles and bolts, delayed flowering, smaller rosette; JA-dependent pest resistance'
+  response_role: acclimation to mechanical load; cross-protection
+  row_status: curated
+  provenance: A
+  notes: null
+  evidence_species: Arabidopsis thaliana
+  key_citation: braam1990_tch; chehab2012_touch_ja
+  citation_verified: all
+  also_in: []
+  provenance_words:
+  - quoted or closely tracked from a verified abstract
+  contested_fields: []
+  refs:
+  - 22
+  - 23
+- path_id: PT05
+  perception_branch: Osmotic and salt
+  sense_leaf: cell swelling
+  stimulus: cell swelling (hypo-osmotic shock with wall softening)
+  stimulus_origin: external
+  receptor: MSL10, phospho-regulated membrane-based sensor
+  transducer_tier: B1
+  hypothesis_group: 'dual membership: Mechanical × Osmotic ⚑'
+  cascade: cytoplasmic Ca2+ transient (seconds) → ROS (30 min) → mechano-inducible genes (60 min)
+  signal_route: null
+  integration: null
+  response: programmed cell death within 3 h
+  response_role: response to swelling
+  row_status: curated
+  provenance: A
+  notes: null
+  evidence_species: Arabidopsis thaliana
+  key_citation: basu2020_msl10; haswell2008_msl910
+  citation_verified: all
+  also_in:
+  - Mechanical
+  provenance_words:
+  - quoted or closely tracked from a verified abstract
+  contested_fields:
+  - hypothesis_group
+  refs:
+  - 24
+  - 25
+- path_id: PT06
+  perception_branch: Mechanical
+  sense_leaf: membrane tension (pollen)
+  stimulus: hypo-osmotic shock of pollen rehydration
+  stimulus_origin: external
+  receptor: MSL8, pollen-specific membrane-tension-gated channel
+  transducer_tier: B1
+  hypothesis_group: null
+  cascade: null
+  signal_route: null
+  integration: null
+  response: pollen survival and integrity; negatively regulates germination
+  response_role: male fertility
+  row_status: curated
+  provenance: A
+  notes: null
+  evidence_species: Arabidopsis thaliana
+  key_citation: hamilton2015_msl8
+  citation_verified: all
+  also_in: []
+  provenance_words:
+  - quoted or closely tracked from a verified abstract
+  contested_fields: []
+  refs:
+  - 26
+- path_id: PT08
+  perception_branch: Mechanical
+  sense_leaf: tissue stress (shoot apex)
+  stimulus: mechanical stress in shoot-apex tissue
+  stimulus_origin: internal
+  receptor: null
+  transducer_tier: B3
+  hypothesis_group: null
+  cascade: microtubule array patterning, regulated by mechanical stress
+  signal_route: null
+  integration: 'feedback loop: tissue morphology ↔ stress pattern ↔ microtubules'
+  response: apical morphogenesis
+  response_role: shaping organs
+  row_status: curated
+  provenance: A
+  notes: null
+  evidence_species: Arabidopsis thaliana
+  key_citation: hamant2008_mech_patterning
+  citation_verified: all
+  also_in: []
+  provenance_words:
+  - quoted or closely tracked from a verified abstract
+  contested_fields: []
+  refs:
+  - 27
+- path_id: PW01
+  perception_branch: Wounding and herbivores
+  sense_leaf: wounding (systemic)
+  stimulus: wounding; glutamate as a wound signal
+  stimulus_origin: external
+  receptor: GLR3.3 and GLR3.6 (GLR3.2 also); MSL10, stretch-activated anion channel, in the same pathway
+  transducer_tier: B1
+  hypothesis_group: 'GLR as coincidence detector gated by MSL10 depolarisation: proposed ⚑'
+  cascade: membrane depolarisations, preceding cytosolic Ca2+ maxima
+  signal_route: phloem sieve elements and xylem contact cells together; Ca2+ signal propagates to distant organs
+  integration: 'distal jasmonate: JA-Ile promotes COI1–JAZ1 binding; JAZ degraded via SCF(COI1); MYC2 released'
+  response: jasmonate-response genes in distal leaves; herbivore defence
+  response_role: systemic defence
+  row_status: curated
+  provenance: A
+  notes: null
+  evidence_species: Arabidopsis thaliana
+  key_citation: toyota2018_glr; mousavi2013_glr; nguyen2018_cells_electric; moelange2021_msl10_glr; thines2007_jaz_coi1; chini2007_jaz
+  citation_verified: all
+  also_in: []
+  provenance_words:
+  - quoted or closely tracked from a verified abstract
+  contested_fields:
+  - hypothesis_group
+  refs:
+  - 28
+  - 29
+  - 30
+  - 31
+  - 32
+  - 33
+- path_id: PP01
+  perception_branch: 'Pathogens: pattern recognition'
+  sense_leaf: bacterial flagellin (flg22)
+  stimulus: flagellin; its conserved N-terminal epitope flg22
+  stimulus_origin: external (biotic)
+  receptor: FLS2, LRR receptor kinase (flg22 bound on the inner surface of its solenoid); BAK1 co-receptor, recognising the
+    C terminus of FLS2-bound flg22
+  transducer_tier: B1
+  hypothesis_group: null
+  cascade: ligand-dependent FLS2–BAK1 complex within minutes → BIK1 phosphorylates RBOHD (Ca2+-independent) → ROS burst; Ca2+
+    influx; MAP kinase cascade MEKK1 → MKK4/MKK5 → MPK3/MPK6 → WRKY22/WRKY29
+  signal_route: null
+  integration: BAK1 integrates diverse perception events into downstream PAMP responses; BAK1 also regulates the brassinosteroid
+    receptor BRI1 ⚑ shared hardware
+  response: early defence-gene transcription; resistance to bacterial and fungal pathogens
+  response_role: pattern-triggered immunity
+  row_status: curated
+  provenance: A
+  notes: null
+  evidence_species: Arabidopsis thaliana
+  key_citation: gomezgomez2000_fls2; chinchilla2007_fls2_bak1; heese2007_bak1; sun2013_fls2_structure; li2014_bik1_rbohd;
+    kadota2014_bik1_rbohd; asai2002_mapk
+  citation_verified: all
+  also_in: []
+  provenance_words:
+  - quoted or closely tracked from a verified abstract
+  contested_fields:
+  - integration
+  refs:
+  - 34
+  - 35
+  - 36
+  - 37
+  - 38
+  - 39
+  - 40
+- path_id: PP02
+  perception_branch: 'Pathogens: pattern recognition'
+  sense_leaf: bacterial surface molecules (guard cells)
+  stimulus: bacterial surface molecules (flg22)
+  stimulus_origin: external (biotic)
+  receptor: FLS2 in guard cells
+  transducer_tier: B1
+  hypothesis_group: null
+  cascade: BIK1 and RbohD pathway; nitric oxide production; guard-cell-specific OST1 kinase
+  signal_route: null
+  integration: null
+  response: stomatal closure, restricting bacterial entry into leaf tissue
+  response_role: barrier immunity
+  row_status: curated
+  provenance: A
+  notes: pathogens have evolved virulence factors that reopen stomata (melotto2006)
+  evidence_species: Arabidopsis thaliana
+  key_citation: melotto2006_stomata; li2014_bik1_rbohd
+  citation_verified: all
+  also_in: []
+  provenance_words:
+  - quoted or closely tracked from a verified abstract
+  contested_fields: []
+  refs:
+  - 41
+  - 38
+- path_id: PP03
+  perception_branch: 'Pathogens: pattern recognition'
+  sense_leaf: bacterial EF-Tu
+  stimulus: bacterial elongation factor Tu (EF-Tu)
+  stimulus_origin: external (biotic)
+  receptor: EFR, receptor kinase (EF-Tu receptor); BAK1 needed for early responses
+  transducer_tier: B1
+  hypothesis_group: null
+  cascade: RBOHD in complex with EFR; BIK1 phosphorylates RBOHD → ROS burst
+  signal_route: null
+  integration: flagellin and EF-Tu activate a common set of signalling events, without clear synergy
+  response: defence responses; reduced Agrobacterium transformation
+  response_role: pattern-triggered immunity
+  row_status: curated
+  provenance: A
+  notes: null
+  evidence_species: Arabidopsis thaliana
+  key_citation: zipfel2006_efr; chinchilla2007_fls2_bak1; kadota2014_bik1_rbohd
+  citation_verified: all
+  also_in: []
+  provenance_words:
+  - quoted or closely tracked from a verified abstract
+  contested_fields: []
+  refs:
+  - 42
+  - 35
+  - 39
+- path_id: PP04
+  perception_branch: 'Pathogens: pattern recognition'
+  sense_leaf: fungal chitin
+  stimulus: chitin (fungal cell wall)
+  stimulus_origin: external (biotic)
+  receptor: CERK1, LysM receptor kinase; a chitin octamer induces ectodomain dimerisation
+  transducer_tier: B1
+  hypothesis_group: null
+  cascade: MAPK activation, ROS generation, gene expression
+  signal_route: null
+  integration: null
+  response: resistance to the fungus Alternaria brassicicola (partly impaired in cerk1)
+  response_role: pattern-triggered immunity
+  row_status: curated
+  provenance: A
+  notes: null
+  evidence_species: Arabidopsis thaliana
+  key_citation: miya2007_cerk1; liu2012_cerk1_dimer
+  citation_verified: all
+  also_in: []
+  provenance_words:
+  - quoted or closely tracked from a verified abstract
+  contested_fields: []
+  refs:
+  - 43
+  - 44
+- path_id: PW02
+  perception_branch: Wounding and herbivores
+  sense_leaf: damage peptide (AtPep1)
+  stimulus: AtPep1, 23-aa peptide from the PROPEP1 precursor (induced by wounding, methyl jasmonate and ethylene)
+  stimulus_origin: internal (endogenous danger signal)
+  receptor: PEPR1 (At1g73080, LRR receptor kinase; Kd 0.25 nM) and PEPR2, redundantly
+  transducer_tier: B1
+  hypothesis_group: null
+  cascade: receptor-dependent transient depolarisation through plasma-membrane anion channels; oxidative burst; ethylene biosynthesis;
+    PDF1.2 transcription
+  signal_route: null
+  integration: precursor induced by wounding, jasmonate and ethylene; amplifies innate immunity ⚑ proposed
+  response: defence-gene expression; enhanced resistance to Pythium irregulare (PROPEP1 overexpression); seedling growth inhibition
+  response_role: damage-amplified immunity
+  row_status: curated
+  provenance: A
+  notes: null
+  evidence_species: Arabidopsis thaliana
+  key_citation: huffaker2006_pep1; yamaguchi2006_pepr1; krol2010_pepr12
+  citation_verified: all
+  also_in: []
+  provenance_words:
+  - quoted or closely tracked from a verified abstract
+  contested_fields:
+  - integration
+  refs:
+  - 45
+  - 46
+  - 47
+- path_id: PG01
+  perception_branch: Gravity
+  sense_leaf: organ reorientation (gravitropism)
+  stimulus: change in organ orientation relative to gravity
+  stimulus_origin: external
+  receptor: 'statocytes (root cap columella, hypocotyl starch sheath): amyloplast sedimentation; LZY proteins act downstream
+    of amyloplast displacement'
+  transducer_tier: B2
+  hypothesis_group: 'starch–statolith model ⚑ partial: ''widely accepted''; starch is ''important but not essential'' (morita2010);
+    a starchless (pgm) mutant keeps ~70% of wild-type curvature (caspar1989)'
+  cascade: polarised LZY3 → RLD1 recruited to the plasma membrane → PIN3 relocalises to the lower cell side (actin-dependent;
+    clathrin endocytosis, GNOM-dependent)
+  signal_route: lateral auxin flux to the lower side of the root within minutes
+  integration: '''tipping point'': auxin asymmetry is lost as the tip reaches ~40° from horizontal'
+  response: gravitropic bending; gravitropic set-point angles of lateral roots and branches
+  response_role: orienting growth
+  row_status: curated
+  provenance: A
+  notes: null
+  evidence_species: Arabidopsis thaliana
+  key_citation: morita2010_gravity_review; caspar1989_starchless; taniguchi2017_lazy; furutani2020_lazy_rld; friml2002_pin3;
+    kleinevehn2010_pin3; band2012_tipping
+  citation_verified: all
+  also_in: []
+  provenance_words:
+  - quoted or closely tracked from a verified abstract
+  contested_fields:
+  - hypothesis_group
+  refs:
+  - 48
+  - 49
+  - 50
+  - 51
+  - 52
+  - 53
+  - 54
+- path_id: PC01
+  perception_branch: Temperature
+  sense_leaf: cold (chilling and freezing)
+  stimulus: cold temperature
+  stimulus_origin: external
+  receptor: null
+  transducer_tier: B3
+  hypothesis_group: null
+  cascade: ICE1 (MYC-like bHLH, constitutively expressed) binds MYC sites in the CBF3 promoter → CBF transcription factors
+    → CBF1 binds the C-repeat/DRE and activates transcription
+  signal_route: null
+  integration: C-repeat/DRE responds to both low temperature and water deficit
+  response: chilling and freezing tolerance
+  response_role: cold acclimation
+  row_status: curated
+  provenance: A
+  notes: null
+  evidence_species: Arabidopsis thaliana
+  key_citation: chinnusamy2003_ice1; stockinger1997_cbf1
+  citation_verified: all
+  also_in: []
+  provenance_words:
+  - quoted or closely tracked from a verified abstract
+  contested_fields: []
+  refs:
+  - 55
+  - 56
+- path_id: PC02
+  perception_branch: Temperature
+  sense_leaf: prolonged cold (vernalisation)
+  stimulus: prolonged cold of winter
+  stimulus_origin: external
+  receptor: VIN3, PHD finger protein; functions in measuring the duration of cold
+  transducer_tier: B2
+  hypothesis_group: null
+  cascade: histone modification of FLC chromatin → mitotically stable FLC repression
+  signal_route: null
+  integration: FLC acts as a rheostat on flowering time; FRI promotes and LUMINIDEPENDENS represses FLC
+  response: flowering permitted after winter
+  response_role: seasonal timing
+  row_status: curated
+  provenance: A
+  notes: null
+  evidence_species: Arabidopsis thaliana
+  key_citation: sung2004_vin3; michaels1999_flc
+  citation_verified: all
+  also_in: []
+  provenance_words:
+  - quoted or closely tracked from a verified abstract
+  contested_fields: []
+  refs:
+  - 57
+  - 58
+- path_id: PH01
+  perception_branch: Temperature
+  sense_leaf: warm ambient temperature (ELF3)
+  stimulus: higher temperature
+  stimulus_origin: external
+  receptor: 'ELF3 prion-like domain: reversible phase transition (speckles within minutes); polyQ length correlates with thermal
+    responsiveness'
+  transducer_tier: B1
+  hypothesis_group: null
+  cascade: the evening complex (ELF3, ELF4, LUX), a temperature-responsive transcriptional repressor, shifts between active
+    and inactive states
+  signal_route: null
+  integration: circadian clock hub; ELF4 stabilises ELF3 function; the evening complex (ELF3–ELF4–LUX) peaks at dusk and LUX
+    targets the PIF4/PIF5 promoters, gating hypocotyl growth (nusinow2011)
+  response: temperature-responsive growth with rhythmicity
+  response_role: thermomorphogenesis
+  row_status: curated
+  provenance: A
+  notes: null
+  evidence_species: Arabidopsis thaliana
+  key_citation: jung2020_elf3; nusinow2011_ec
+  citation_verified: all
+  also_in: []
+  provenance_words:
+  - quoted or closely tracked from a verified abstract
+  contested_fields: []
+  refs:
+  - 59
+  - 60
+- path_id: PH02
+  perception_branch: Temperature
+  sense_leaf: warm daytime temperature (PIF7 RNA)
+  stimulus: warmer daytime temperature
+  stimulus_origin: external
+  receptor: RNA hairpin in the PIF7 mRNA 5′ UTR, which adopts an alternative conformation at higher temperature
+  transducer_tier: B2
+  hypothesis_group: null
+  cascade: increased PIF7 translation → PIF7 induces YUCCA8 (auxin biosynthesis)
+  signal_route: null
+  integration: diurnal PIF7 transcription gates the response
+  response: thermomorphogenesis under warm daytime cycles
+  response_role: growth under warmth
+  row_status: curated
+  provenance: A
+  notes: 'B2: single study (Daniel, 2026-11-18). Transducer is an RNA, not a protein; similar hairpins in WRKY22 and HSFA2'
+  evidence_species: Arabidopsis thaliana
+  key_citation: chung2020_pif7_rna
+  citation_verified: all
+  also_in: []
+  provenance_words:
+  - quoted or closely tracked from a verified abstract
+  contested_fields: []
+  refs:
+  - 61
+- path_id: PH03
+  perception_branch: Temperature
+  sense_leaf: ambient temperature (H2A.Z)
+  stimulus: ambient temperature
+  stimulus_origin: external
+  receptor: 'H2A.Z-containing nucleosomes: distinct DNA-unwrapping properties'
+  transducer_tier: B2
+  hypothesis_group: null
+  cascade: coordination of the ambient-temperature transcriptome
+  signal_route: null
+  integration: null
+  response: warm-temperature transcriptome (H2A.Z-deficient plants phenocopy warm-grown plants)
+  response_role: thermal acclimation
+  row_status: curated
+  provenance: A
+  notes: check later literature on whether H2A.Z is the sensor or downstream (todo)
+  evidence_species: Arabidopsis thaliana
+  key_citation: kumar2010_h2az
+  citation_verified: all
+  also_in: []
+  provenance_words:
+  - quoted or closely tracked from a verified abstract
+  contested_fields: []
+  refs:
+  - 62
+- path_id: PH04
+  perception_branch: Temperature
+  sense_leaf: high temperature (architecture)
+  stimulus: high temperature (28 °C)
+  stimulus_origin: external
+  receptor: null
+  transducer_tier: B3
+  hypothesis_group: null
+  cascade: PIF4 (bHLH) → auxin; IAA29 induction
+  signal_route: null
+  integration: PIF4 integrates multiple environmental cues; the flowering response runs through a separate pathway
+  response: rapid elongation of plant axes; leaf hyponasty
+  response_role: architectural adaptation
+  row_status: curated
+  provenance: A
+  notes: 'sensors upstream of PIF4 in this sweep: PL02 (phyB), PH01 (ELF3), PH02 (PIF7 RNA)'
+  evidence_species: Arabidopsis thaliana
+  key_citation: koini2009_pif4
+  citation_verified: all
+  also_in: []
+  provenance_words:
+  - quoted or closely tracked from a verified abstract
+  contested_fields: []
+  refs:
+  - 63
+- path_id: PH05
+  perception_branch: Temperature
+  sense_leaf: heat (thermotolerance)
+  stimulus: increments in ambient temperature (e.g. a hot morning)
+  stimulus_origin: external
+  receptor: CNGC2 (ortholog of moss CNGCb), a component of plasma-membrane cyclic-nucleotide-gated Ca2+ channels
+  transducer_tier: B2
+  hypothesis_group: null
+  cascade: thermoresponsive Ca2+ influx → heat shock response; heat shock proteins accumulate
+  signal_route: null
+  integration: null
+  response: acquired thermotolerance
+  response_role: heat protection
+  row_status: curated
+  provenance: A
+  notes: patch-clamp evidence in moss (Physcomitrella); Arabidopsis cngc2 is hyper-thermosensitive
+  evidence_species: Arabidopsis thaliana
+  key_citation: finka2012_cngc
+  citation_verified: all
+  also_in: []
+  provenance_words:
+  - quoted or closely tracked from a verified abstract
+  contested_fields: []
+  refs:
+  - 64
+- path_id: PD01
+  perception_branch: Water
+  sense_leaf: drought (ABA in guard cells)
+  stimulus: water deficit, signalled by abscisic acid (ABA)
+  stimulus_origin: external (relayed by an internal hormone)
+  receptor: 'PYR/PYL/RCAR ABA receptors (14-member family): bind ABA and inactivate PP2Cs ABI1/ABI2'
+  transducer_tier: B1
+  hypothesis_group: null
+  cascade: PP2C inhibition releases OST1 kinase → OST1 phosphorylates and activates the anion channel SLAC1 (ABI1 in the complex
+    prevents activation)
+  signal_route: null
+  integration: ABA integrates environmental cues such as drought and cold; receptor complexes assemble combinatorially
+  response: stomatal closure
+  response_role: limiting water loss
+  row_status: curated
+  provenance: A
+  notes: the transducer perceives ABA, not water itself; the primary water-deficit sensor is a gap (todo)
+  evidence_species: Arabidopsis thaliana
+  key_citation: ma2009_pyl; park2009_pyr; geiger2009_slac1
+  citation_verified: all
+  also_in: []
+  provenance_words:
+  - quoted or closely tracked from a verified abstract
+  contested_fields: []
+  refs:
+  - 65
+  - 66
+  - 67
+- path_id: PD02
+  perception_branch: Water
+  sense_leaf: root dehydration (long-distance)
+  stimulus: dehydration of roots
+  stimulus_origin: external
+  receptor: null
+  transducer_tier: B3
+  hypothesis_group: null
+  cascade: CLE25 expression enhanced in root vascular tissue
+  signal_route: CLE25 peptide moves from roots to leaves through vascular tissues
+  integration: BAM receptors in leaves; ABA accumulation modulated
+  response: stomatal closure; enhanced resistance to dehydration
+  response_role: root-to-shoot water signalling
+  row_status: curated
+  provenance: A
+  notes: 'authors: the CLE25–BAM module ''probably functions'' as one long-distance signal'
+  evidence_species: Arabidopsis thaliana
+  key_citation: takahashi2018_cle25
+  citation_verified: all
+  also_in: []
+  provenance_words:
+  - quoted or closely tracked from a verified abstract
+  contested_fields: []
+  refs:
+  - 68
+- path_id: PD03
+  perception_branch: Water
+  sense_leaf: local water contact (hydropatterning)
+  stimulus: difference in water availability around the root's circumference
+  stimulus_origin: external
+  receptor: null
+  transducer_tier: B3
+  hypothesis_group: null
+  cascade: local regulation of TAA1 (auxin biosynthesis) and PIN3 (auxin transport) on the wet side
+  signal_route: null
+  integration: independent of endogenous ABA signalling; distinct from a touch response
+  response: lateral-root founder cells specified on the wet side; patterning of root hairs, anthocyanins and aerenchyma
+  response_role: foraging for water
+  row_status: curated
+  provenance: A
+  notes: null
+  evidence_species: Arabidopsis thaliana
+  key_citation: bao2014_hydropatterning
+  citation_verified: all
+  also_in: []
+  provenance_words:
+  - quoted or closely tracked from a verified abstract
+  contested_fields: []
+  refs:
+  - 69
+- path_id: PD04
+  perception_branch: Water
+  sense_leaf: moisture gradient (hydrotropism)
+  stimulus: water-potential gradient
+  stimulus_origin: external
+  receptor: elongation-zone cortex senses the gradient (no molecular sensor named)
+  transducer_tier: B3
+  hypothesis_group: 'sensing site ⚑: MIZ1 is expressed in root-cap columella (kobayashi2007), yet hydrotropism persists after
+    root-cap ablation (dietrich2017)'
+  cascade: MIZ1 and the ABA kinase SnRK2.2, acting in elongation-zone cortical cells
+  signal_route: null
+  integration: independent of gravitropism and other tropisms
+  response: hydrotropic bending through differential cortical cell elongation
+  response_role: growing towards water
+  row_status: curated
+  provenance: A
+  notes: null
+  evidence_species: Arabidopsis thaliana
+  key_citation: kobayashi2007_miz1; dietrich2017_hydrotropism
+  citation_verified: all
+  also_in: []
+  provenance_words:
+  - quoted or closely tracked from a verified abstract
+  contested_fields:
+  - hypothesis_group
+  refs:
+  - 70
+  - 71
+- path_id: PO01
+  perception_branch: Water
+  sense_leaf: low oxygen (flooding, hypoxia)
+  stimulus: low oxygen, as during waterlogging or submergence
+  stimulus_origin: external
+  receptor: plant cysteine oxidases (PCOs) oxidise the N-terminal cysteine of ERF-VII transcription factors, using O2 as co-substrate
+  transducer_tier: B1
+  hypothesis_group: null
+  cascade: in air, oxidised ERF-VII proteins are degraded by the N-end rule pathway; in hypoxia RAP2.12 is released from the
+    plasma membrane and accumulates in the nucleus; HRE2 is stabilised
+  signal_route: null
+  integration: submergence traps ethylene, which raises PHYTOGLOBIN1 and depletes NO, stabilising ERF-VII before hypoxia;
+    PCOs are themselves ERF-VII targets (feedback)
+  response: hypoxia-response gene expression; anaerobic metabolism; hypoxia survival
+  response_role: flooding tolerance
+  row_status: curated
+  provenance: A
+  notes: null
+  evidence_species: Arabidopsis thaliana
+  key_citation: gibbs2011_nend; licausi2011_nend; weits2014_pco; hartman2019_ethylene_no
+  citation_verified: all
+  also_in: []
+  provenance_words:
+  - quoted or closely tracked from a verified abstract
+  contested_fields: []
+  refs:
+  - 72
+  - 73
+  - 74
+  - 75
+- path_id: PN01
+  perception_branch: Nutrients
+  sense_leaf: nitrate (primary response)
+  stimulus: nitrate in the soil (wide concentration range)
+  stimulus_origin: external
+  receptor: 'NRT1.1/CHL1 (NPF6.3) transceptor: dual-affinity binding with a T101 phosphorylation switch (CIPK23 phosphorylates
+    at low nitrate)'
+  transducer_tier: B1
+  hypothesis_group: null
+  cascade: nitrate-specific Ca2+ signal → subgroup III Ca2+-sensor kinases CPK10/30/32 → phosphorylation of NLP transcription
+    factors (NLP7)
+  signal_route: null
+  integration: integrates transcriptome and metabolism with shoot–root coordination
+  response: 'primary nitrate response: reprogrammed N assimilation, C/N metabolism, hormones; shoot growth and root establishment'
+  response_role: nitrogen nutrition
+  row_status: curated
+  provenance: A
+  notes: null
+  evidence_species: Arabidopsis thaliana
+  key_citation: ho2009_chl1; liu2017_cpk_nlp
+  citation_verified: all
+  also_in: []
+  provenance_words:
+  - quoted or closely tracked from a verified abstract
+  contested_fields: []
+  refs:
+  - 76
+  - 77
+- path_id: PN02
+  perception_branch: Nutrients
+  sense_leaf: low nitrate (lateral roots)
+  stimulus: low nitrate availability
+  stimulus_origin: external
+  receptor: NRT1.1, which also facilitates auxin uptake (inhibited by nitrate)
+  transducer_tier: B1
+  hypothesis_group: null
+  cascade: at low nitrate, NRT1.1 promotes basipetal auxin transport out of lateral roots
+  signal_route: null
+  integration: nutrient–hormone link
+  response: lateral root growth repressed at low nitrate
+  response_role: root foraging
+  row_status: curated
+  provenance: A
+  notes: null
+  evidence_species: Arabidopsis thaliana
+  key_citation: krouk2010_nrt11_auxin
+  citation_verified: all
+  also_in: []
+  provenance_words:
+  - quoted or closely tracked from a verified abstract
+  contested_fields: []
+  refs:
+  - 78
+- path_id: PN03
+  perception_branch: Nutrients
+  sense_leaf: nitrogen demand (systemic)
+  stimulus: nitrogen starvation on one side of the root system
+  stimulus_origin: external
+  receptor: null
+  transducer_tier: B3
+  hypothesis_group: null
+  cascade: N-starved rootlets secrete small CEP peptides
+  signal_route: peptides translocated from root to shoot
+  integration: two LRR receptor kinases (CEPRs) in the shoot receive them
+  response: compensatory increase of nitrate uptake on the N-rich side
+  response_role: systemic nitrogen foraging
+  row_status: curated
+  provenance: A
+  notes: the shoot-to-root return signal is not in the abstract (todo)
+  evidence_species: Arabidopsis thaliana
+  key_citation: tabata2014_cep
+  citation_verified: all
+  also_in: []
+  provenance_words:
+  - quoted or closely tracked from a verified abstract
+  contested_fields: []
+  refs:
+  - 79
+- path_id: PN04
+  perception_branch: Nutrients
+  sense_leaf: cellular phosphate
+  stimulus: cellular inorganic phosphate (Pi) level
+  stimulus_origin: internal
+  receptor: SPX domains binding inositol polyphosphates (InsPs), whose levels track Pi
+  transducer_tier: B1
+  hypothesis_group: null
+  cascade: InsP-bound SPX1 binds PHR1 (Pi-dependent) and competitively inhibits PHR1 binding to DNA
+  signal_route: null
+  integration: null
+  response: 'when Pi is low, PHR1 is released: phosphate-starvation responses'
+  response_role: phosphate homeostasis
+  row_status: curated
+  provenance: A
+  notes: null
+  evidence_species: Arabidopsis thaliana
+  key_citation: wild2016_spx; puga2014_spx1
+  citation_verified: all
+  also_in: []
+  provenance_words:
+  - quoted or closely tracked from a verified abstract
+  contested_fields: []
+  refs:
+  - 80
+  - 81
+- path_id: PN05
+  perception_branch: Nutrients
+  sense_leaf: low phosphate at the root tip
+  stimulus: contact of the primary root tip with low-Pi medium
+  stimulus_origin: external
+  receptor: root cap; LPR1 and LPR2 multicopper oxidases (sensing, responding, or both)
+  transducer_tier: B2
+  hypothesis_group: null
+  cascade: null
+  signal_route: null
+  integration: null
+  response: primary root growth arrest; more and longer lateral roots
+  response_role: root architecture under P deficiency
+  row_status: curated
+  provenance: A
+  notes: null
+  evidence_species: Arabidopsis thaliana
+  key_citation: svistoonoff2007_lpr1
+  citation_verified: all
+  also_in: []
+  provenance_words:
+  - quoted or closely tracked from a verified abstract
+  contested_fields: []
+  refs:
+  - 82
+- path_id: PN06
+  perception_branch: Nutrients
+  sense_leaf: iron
+  stimulus: iron availability
+  stimulus_origin: external
+  receptor: 'BRUTUS (BTS): hemerythrin domains bind iron, and iron binding destabilises BTS'
+  transducer_tier: B2
+  hypothesis_group: null
+  cascade: without iron, BTS targets PYE-like bHLH factors for proteasomal degradation
+  signal_route: null
+  integration: FIT1 regulates FRO2 (at mRNA level) and IRT1 (at protein level) in outer root cells
+  response: 'iron-deficiency response: root Fe(III) reduction and Fe(II) uptake'
+  response_role: iron homeostasis
+  row_status: curated
+  provenance: A
+  notes: these abstracts do not link BTS/PYEL to FIT directly; shown as separate stages (todo)
+  evidence_species: Arabidopsis thaliana
+  key_citation: selote2015_bts; colangelo2004_fit
+  citation_verified: all
+  also_in: []
+  provenance_words:
+  - quoted or closely tracked from a verified abstract
+  contested_fields: []
+  refs:
+  - 83
+  - 84
+- path_id: PE01
+  perception_branch: Chemical cues
+  sense_leaf: ethylene (gas)
+  stimulus: ethylene gas (C2H4)
+  stimulus_origin: external or internal (gaseous hormone)
+  receptor: 'ETR1 receptor at the ER membrane: ethylene binds its N-terminal hydrophobic domain; C-terminal half resembles
+    two-component signal transducers'
+  transducer_tier: B1
+  hypothesis_group: null
+  cascade: without ethylene, CTR1 phosphorylates the EIN2 C-terminus, blocking it; ethylene inhibits CTR1 → EIN2 dephosphorylated
+    and cleaved → EIN2-C′ moves to the nucleus → EIN3 / EIL1 transcription factors
+  signal_route: null
+  integration: 'ER-to-nucleus relay; cross-links: submergence ethylene (PO01), Pep1-induced ethylene (PW02) ⚑ shared hardware'
+  response: triple response, ethylene gene expression, growth inhibition, senescence; fruit ripening and abscission
+  response_role: growth and stress regulation
+  row_status: curated
+  provenance: A
+  notes: null
+  evidence_species: Arabidopsis thaliana
+  key_citation: chang1993_etr1; schaller1995_etr1_binding; ju2012_ctr1_ein2; qiao2012_ein2; chao1997_ein3
+  citation_verified: all
+  also_in: []
+  provenance_words:
+  - quoted or closely tracked from a verified abstract
+  contested_fields:
+  - integration
+  refs:
+  - 85
+  - 86
+  - 87
+  - 88
+  - 89
+- path_id: PK01
+  perception_branch: Chemical cues
+  sense_leaf: smoke (karrikins)
+  stimulus: 'karrikins: butenolides in smoke from burnt vegetation (KAR1)'
+  stimulus_origin: external
+  receptor: 'KAI2 α/β-hydrolase: KAR1 binds at the active-site opening and induces a conformational change (no detectable
+    hydrolysis)'
+  transducer_tier: B1
+  hypothesis_group: null
+  cascade: F-box protein MAX2
+  signal_route: null
+  integration: MAX2 is shared with strigolactone signalling, where the paralogue D14 is the receptor; plants still distinguish
+    the two (karrikins do not inhibit shoot branching) ⚑ shared hardware
+  response: seed germination; enhanced seedling responses to light
+  response_role: post-fire regeneration
+  row_status: curated
+  provenance: A
+  notes: null
+  evidence_species: Arabidopsis thaliana
+  key_citation: flematti2004_karrikin; nelson2011_max2; waters2012_kai2_d14; guo2013_kai2
+  citation_verified: all
+  also_in: []
+  provenance_words:
+  - quoted or closely tracked from a verified abstract
+  contested_fields:
+  - integration
+  refs:
+  - 90
+  - 91
+  - 92
+  - 93
+- path_id: PCD01
+  perception_branch: CO2
+  sense_leaf: elevated CO2 (stomatal closure)
+  stimulus: elevated CO2
+  stimulus_origin: external
+  receptor: 'β-carbonic anhydrases βCA1 and βCA4: catalysis is needed; CO2/HCO3- carries the signal to anion-channel regulation'
+  transducer_tier: B2
+  hypothesis_group: null
+  cascade: MPK12 (and MPK4) inhibit the kinase HT1 → HT1 no longer blocks OST1 and GHR1 → SLAC1 anion channel activated
+  signal_route: null
+  integration: works in guard cells, not first-order linked to leaf photosynthesis; an ABA-independent route to SLAC1, parallel
+    to PD01 ⚑ shared hardware (OST1, SLAC1)
+  response: stomatal closure; water-use efficiency
+  response_role: gas exchange
+  row_status: curated
+  provenance: A
+  notes: 'hu2010: ''the CO2-binding proteins that control this response remain unknown'' — carbonic anhydrases act early,
+    but are not shown to be the sensor'
+  evidence_species: Arabidopsis thaliana
+  key_citation: hu2010_ca_co2; hashimoto2006_ht1; horak2016_ht1_mpk
+  citation_verified: all
+  also_in: []
+  provenance_words:
+  - quoted or closely tracked from a verified abstract
+  contested_fields:
+  - integration
+  refs:
+  - 94
+  - 95
+  - 96
+- path_id: PCD02
+  perception_branch: CO2
+  sense_leaf: elevated CO2 (stomatal density)
+  stimulus: elevated atmospheric CO2
+  stimulus_origin: external
+  receptor: β-carbonic anhydrases CA1 and CA4 (inverted response in ca1 ca4)
+  transducer_tier: B2
+  hypothesis_group: null
+  cascade: EPF2 pro-peptide induced; the CO2-induced secreted protease CRSP cleaves pro-EPF2
+  signal_route: extracellular (apoplastic) signalling
+  integration: HIC (3-ketoacyl-CoA synthase; cell-wall wax) is a negative regulator of stomatal development responsive to
+    CO2
+  response: fewer stomata at elevated CO2
+  response_role: long-term gas-exchange adjustment
+  row_status: curated
+  provenance: A
+  notes: null
+  evidence_species: Arabidopsis thaliana
+  key_citation: engineer2014_epf2; gray2000_hic
+  citation_verified: all
+  also_in: []
+  provenance_words:
+  - quoted or closely tracked from a verified abstract
+  contested_fields: []
+  refs:
+  - 97
+  - 98
+- path_id: PS01
+  perception_branch: Symbionts
+  sense_leaf: rhizobial Nod factor (legumes)
+  stimulus: 'Nod factor: rhizobial lipochitin-oligosaccharide, made after root flavones induce the bacteria'
+  stimulus_origin: external (biotic, symbiont)
+  receptor: NFR1 and NFR5, LysM receptor kinases, 'essential for Nod-factor perception' (direct binding suggested, not shown
+    in these abstracts)
+  transducer_tier: B2
+  hypothesis_group: null
+  cascade: 'SYMRK (LRR receptor kinase, common symbiosis pathway) → nuclear Ca2+ oscillations: CNGC15 channels at the nuclear
+    envelope with the K+ channel DMI1; Ca2+ spiking in root hairs → DMI3 (CCaMK) acts immediately downstream'
+  signal_route: null
+  integration: SYMRK, DMI1/CNGC15 and CCaMK are shared with arbuscular mycorrhiza (PS02) ⚑ shared hardware
+  response: root hair infection; host gene expression, cell growth and mitoses leading to nitrogen-fixing root nodules
+  response_role: nitrogen-fixing symbiosis
+  row_status: curated
+  provenance: A
+  notes: 'other species (Daniel, 2026-11-18). stracke2002: nodule symbioses are restricted to the rosid I clade; Arabidopsis
+    does not nodulate (K, unverified here). Structures: Medicago SYMRK/DMI1/CNGC15a/DMI3; Lotus NFR5 (unreviewed UniProt record)'
+  evidence_species: Lotus japonicus; Medicago truncatula; Medicago sativa (alfalfa); pea — NOT Arabidopsis
+  key_citation: madsen2003_nfr5; radutoiu2003_nfr; stracke2002_symrk; ehrhardt1996_ca_spiking; charpentier2016_cngc15; levy2004_ccamk
+  citation_verified: all
+  also_in: []
+  provenance_words:
+  - quoted or closely tracked from a verified abstract
+  contested_fields:
+  - integration
+  refs:
+  - 99
+  - 100
+  - 101
+  - 102
+  - 103
+  - 104
+- path_id: PS02
+  perception_branch: Symbionts
+  sense_leaf: arbuscular mycorrhizal fungi
+  stimulus: fungal lipochitooligosaccharides (Myc-LCOs; sulphated and non-sulphated)
+  stimulus_origin: external (biotic, symbiont)
+  receptor: null
+  transducer_tier: B3
+  hypothesis_group: null
+  cascade: the symbiotic DMI signalling pathway (shared with PS01)
+  signal_route: null
+  integration: 'dialogue: host roots exude strigolactones (5-deoxy-strigol) that trigger fungal hyphal branching ⚑ shared
+    hardware with PS01'
+  response: root growth and branching; formation of arbuscular mycorrhiza
+  response_role: nutrient-trading symbiosis
+  row_status: curated
+  provenance: A
+  notes: other species. The Arabidopsis lineage (Brassicales) has lost AM symbiosis and many symbiotic genes (delaux2014,
+    A). The Myc-LCO receptor is a gap
+  evidence_species: Medicago truncatula; Lotus japonicus (strigolactone); fungi Glomus intraradices, Gigaspora margarita —
+    NOT Arabidopsis
+  key_citation: maillet2011_myc_lco; akiyama2005_strigolactone; stracke2002_symrk; levy2004_ccamk; delaux2014_phylogenomics
+  citation_verified: all
+  also_in: []
+  provenance_words:
+  - quoted or closely tracked from a verified abstract
+  contested_fields:
+  - integration
+  refs:
+  - 105
+  - 106
+  - 101
+  - 104
+  - 107
+- path_id: PSI01
+  perception_branch: Self/non-self
+  sense_leaf: self pollen (self-incompatibility)
+  stimulus: 'self pollen: the pollen-coat cysteine-rich peptide SCR (SP11) of the same S haplotype'
+  stimulus_origin: external (biotic, own species)
+  receptor: SRK, S-locus receptor kinase in stigma papillar cells; SCR binds the SRK ectodomain allele-specifically (SLG enhances
+    the response)
+  transducer_tier: B1
+  hypothesis_group: null
+  cascade: a signalling cascade that is conserved even in self-fertile A. thaliana
+  signal_route: null
+  integration: S-haplotype specificity comes from allele-specific SRK–SCR complexes at the pollen–stigma interface
+  response: 'rejection of self pollen: pollen tube development inhibited'
+  response_role: outcrossing
+  row_status: curated
+  provenance: A
+  notes: A. thaliana is self-fertile and lacks functional SRK/SCR orthologues; two A. lyrata genes restore self-incompatibility
+    (nasrallah2002, A)
+  evidence_species: Brassica rapa; Brassica; Arabidopsis lyrata genes in A. thaliana
+  key_citation: takasaki2000_srk; schopfer1999_scr; kachroo2001_srk_scr; nasrallah2002_si_arabidopsis
+  citation_verified: all
+  also_in: []
+  provenance_words:
+  - quoted or closely tracked from a verified abstract
+  contested_fields: []
+  refs:
+  - 108
+  - 109
+  - 110
+  - 111
+- path_id: PSI02
+  perception_branch: Self/non-self
+  sense_leaf: female attractant (pollen tube guidance)
+  stimulus: LURE1, a female-secreted species-specific attractant peptide
+  stimulus_origin: internal (female gametophyte)
+  receptor: PRK6, tip-localised pollen receptor-like kinase (with PRK1, PRK3, PRK8); MDIS1–MIK1/MIK2 receptor heteromer (LURE1
+    binds their ectodomains)
+  transducer_tier: B1
+  hypothesis_group: null
+  cascade: LURE1 triggers receptor dimerisation and MIK1 kinase activation; PRK6 → ROPGEFs → ROP1 Rho GTPase (tip-growth machinery)
+  signal_route: null
+  integration: 'species specificity: AtPRK6 or AtMDIS1 in Capsella rubella confers (partial) response to AtLURE1'
+  response: PRK6 accumulates towards the LURE1 source, then the pollen tube tip reorients; ovule targeting
+  response_role: fertilisation
+  row_status: curated
+  provenance: A
+  notes: null
+  evidence_species: Arabidopsis thaliana
+  key_citation: takeuchi2016_prk6; wang2016_mdis1
+  citation_verified: all
+  also_in: []
+  provenance_words:
+  - quoted or closely tracked from a verified abstract
+  contested_fields: []
+  refs:
+  - 112
+  - 113
+- path_id: PCL01
+  perception_branch: Time (clock)
+  sense_leaf: light entrainment
+  stimulus: light (red and blue, by fluence rate)
+  stimulus_origin: external
+  receptor: phyB (high-intensity red), phyA (low-intensity red and low-fluence blue), CRY1 (blue); ZTL, a LOV blue-light photoreceptor
+  transducer_tier: B1
+  hypothesis_group: null
+  cascade: blue light enhances ZTL–GI binding (via the ZTL LOV domain) → GI stabilises ZTL → ZTL targets TOC1 for proteasomal
+    degradation
+  signal_route: null
+  integration: 'core loop: LHY and CCA1 repress TOC1 (binding its promoter); TOC1 promotes LHY/CCA1 expression'
+  response: circadian period and phase set to the light environment; high-amplitude TOC1 rhythms
+  response_role: daily timing
+  row_status: curated
+  provenance: A
+  notes: null
+  evidence_species: Arabidopsis thaliana
+  key_citation: somers1998_clock_photoreceptors; kim2007_ztl_gi; alabadi2001_toc1
+  citation_verified: all
+  also_in: []
+  provenance_words:
+  - quoted or closely tracked from a verified abstract
+  contested_fields: []
+  refs:
+  - 114
+  - 115
+  - 116
+- path_id: PCL02
+  perception_branch: Time (clock)
+  sense_leaf: sugar entrainment ('metabolic dawn')
+  stimulus: rhythmic photosynthetic sugars
+  stimulus_origin: internal
+  receptor: null
+  transducer_tier: B3
+  hypothesis_group: null
+  cascade: sugars regulate the morning clock gene PRR7
+  signal_route: null
+  integration: metabolic feedback to the oscillator
+  response: entrainment of circadian rhythms early in the photoperiod (prr7 mutants insensitive to sucrose)
+  response_role: matching the clock to metabolism
+  row_status: curated
+  provenance: A
+  notes: null
+  evidence_species: Arabidopsis thaliana
+  key_citation: haydon2013_sugar_clock
+  citation_verified: all
+  also_in: []
+  provenance_words:
+  - quoted or closely tracked from a verified abstract
+  contested_fields: []
+  refs:
+  - 117
+- path_id: PCL03
+  perception_branch: Time (clock)
+  sense_leaf: day length (photoperiod)
+  stimulus: blue light in the late afternoon, coinciding with circadian timing
+  stimulus_origin: external
+  receptor: 'FKF1 (LOV, F-box): forms a complex with GI in a blue-light-dependent manner'
+  transducer_tier: B1
+  hypothesis_group: null
+  cascade: GI controls stability of the CO repressor CDF1; the FKF1–GI complex forms on the CO promoter in late afternoon
+  signal_route: null
+  integration: coincidence of light with circadian timing
+  response: timed CONSTANS expression → photoperiodic flowering
+  response_role: seasonal timing
+  row_status: curated
+  provenance: A
+  notes: null
+  evidence_species: Arabidopsis thaliana
+  key_citation: sawa2007_fkf1_gi
+  citation_verified: all
+  also_in: []
+  provenance_words:
+  - quoted or closely tracked from a verified abstract
+  contested_fields: []
+  refs:
+  - 118
+- path_id: PZ01
+  perception_branch: Candidate senses (contested)
+  sense_leaf: herbivore chewing vibrations
+  stimulus: leaf vibrations from caterpillar chewing
+  stimulus_origin: external (biotic)
+  receptor: null
+  transducer_tier: B3
+  hypothesis_group: 'contested ⚑: one study; mechanism unknown; replication not yet sourced'
+  cascade: null
+  signal_route: authors suggest vibration as a long-distance signal (proposed)
+  integration: discriminates chewing from wind and insect song
+  response: higher glucosinolate and anthocyanin defences on later feeding (Pieris rapae)
+  response_role: anticipatory defence
+  row_status: curated
+  provenance: A
+  notes: null
+  evidence_species: Arabidopsis thaliana
+  key_citation: appel2014_vibration
+  citation_verified: all
+  also_in: []
+  provenance_words:
+  - quoted or closely tracked from a verified abstract
+  contested_fields:
+  - hypothesis_group
+  refs:
+  - 119
+- path_id: PZ02
+  perception_branch: Candidate senses (contested)
+  sense_leaf: pollinator sound
+  stimulus: airborne sound of a flying bee (or synthetic sound at similar frequencies)
+  stimulus_origin: external (biotic)
+  receptor: the flower, which vibrates mechanically at pollinator frequencies (proposed auditory organ)
+  transducer_tier: B3
+  hypothesis_group: 'contested ⚑: one study; mechanism proposed'
+  cascade: null
+  signal_route: null
+  integration: 'frequency-specific: no response to higher-frequency sound'
+  response: sweeter nectar within 3 min
+  response_role: pollinator attraction (proposed)
+  row_status: curated
+  provenance: A
+  notes: null
+  evidence_species: Oenothera drummondii — NOT Arabidopsis
+  key_citation: veits2019_pollinator_sound
+  citation_verified: all
+  also_in: []
+  provenance_words:
+  - quoted or closely tracked from a verified abstract
+  contested_fields:
+  - hypothesis_group
+  refs:
+  - 120
+- path_id: PZ03
+  perception_branch: Candidate senses (contested)
+  sense_leaf: sound of water
+  stimulus: vibrations of water moving inside pipes
+  stimulus_origin: external
+  receptor: null
+  transducer_tier: B3
+  hypothesis_group: 'contested ⚑: one study; mechanism unknown'
+  cascade: null
+  signal_route: null
+  integration: roots prefer soil moisture when both cues are present; noise impairs the response
+  response: roots grow towards the water source
+  response_role: foraging for water
+  row_status: curated
+  provenance: A
+  notes: null
+  evidence_species: Pisum sativum (pea) — NOT Arabidopsis
+  key_citation: gagliano2017_roots_sound
+  citation_verified: all
+  also_in: []
+  provenance_words:
+  - quoted or closely tracked from a verified abstract
+  contested_fields:
+  - hypothesis_group
+  refs:
+  - 121
+- path_id: PZ04
+  perception_branch: Candidate senses (contested)
+  sense_leaf: kin recognition (root exudates)
+  stimulus: root exudates of siblings vs strangers
+  stimulus_origin: external (biotic, own species)
+  receptor: null
+  transducer_tier: B3
+  hypothesis_group: 'contested ⚑: kin recognition in plants ''remains controversial'' (crepy2015)'
+  cascade: requires active root secretion (abolished by a secretion inhibitor)
+  signal_route: null
+  integration: kin recognition and self/non-self recognition are separate systems
+  response: more lateral roots with strangers' exudates (Arabidopsis); more root allocation among strangers (Cakile edentula)
+  response_role: competition
+  row_status: curated
+  provenance: A
+  notes: null
+  evidence_species: Arabidopsis thaliana; Cakile edentula
+  key_citation: biedrzycki2010_kin_exudates; dudley2007_kin
+  citation_verified: all
+  also_in: []
+  provenance_words:
+  - quoted or closely tracked from a verified abstract
+  contested_fields:
+  - hypothesis_group
+  refs:
+  - 122
+  - 123
+- path_id: PZ05
+  perception_branch: Candidate senses (contested)
+  sense_leaf: kin recognition (light)
+  stimulus: vertical red/far-red and blue light profiles from neighbours
+  stimulus_origin: external (biotic, own species)
+  receptor: phyB, CRY1/CRY2, PHOT1/PHOT2 (all required)
+  transducer_tier: B2
+  hypothesis_group: 'contested ⚑: the receptors are established; that this is kin recognition is debated'
+  cascade: TAA1-dependent auxin synthesis
+  signal_route: null
+  integration: cooperative rather than competitive response among kin
+  response: horizontal reorientation of leaves; less mutual shading; higher fitness
+  response_role: cooperation among kin
+  row_status: curated
+  provenance: A
+  notes: null
+  evidence_species: Arabidopsis thaliana
+  key_citation: crepy2015_kin_photoreceptors
+  citation_verified: all
+  also_in: []
+  provenance_words:
+  - quoted or closely tracked from a verified abstract
+  contested_fields:
+  - hypothesis_group
+  refs:
+  - 124
+- path_id: PZ06
+  perception_branch: Candidate senses (contested)
+  sense_leaf: magnetic field
+  stimulus: magnetic field (500 µT vs 33–44 µT)
+  stimulus_origin: external
+  receptor: cryptochromes, via a proposed radical-pair mechanism
+  transducer_tier: B3
+  hypothesis_group: 'contested ⚑: CLAIM ahmad2007 — enhanced cryptochrome-dependent responses at 500 µT. COUNTER harris2009
+    — independent replication: ''In no case were consistent, statistically significant magnetic field responses detected'''
+  cascade: null
+  signal_route: null
+  integration: null
+  response: 'claimed: stronger blue-light hypocotyl inhibition, anthocyanin, CRY2 degradation'
+  response_role: none established
+  row_status: curated
+  provenance: A
+  notes: null
+  evidence_species: Arabidopsis thaliana
+  key_citation: ahmad2007_magnetic_cry; harris2009_magnetic_cry
+  citation_verified: all
+  also_in: []
+  provenance_words:
+  - quoted or closely tracked from a verified abstract
+  contested_fields:
+  - hypothesis_group
+  refs:
+  - 125
+  - 126
+- path_id: PZ07
+  perception_branch: Candidate senses (contested)
+  sense_leaf: associative learning
+  stimulus: a neutral cue (fan airflow) paired with light in a Y-maze
+  stimulus_origin: external
+  receptor: null
+  transducer_tier: B3
+  hypothesis_group: 'contested ⚑: CLAIM gagliano2016 — learned association guides growth. COUNTER markel2020 — larger, fully
+    blinded replication failed'
+  cascade: null
+  signal_route: null
+  integration: null
+  response: 'claimed: growth towards the arm predicted by the cue'
+  response_role: none established
+  row_status: curated
+  provenance: A
+  notes: null
+  evidence_species: Pisum sativum (pea) — NOT Arabidopsis
+  key_citation: gagliano2016_learning; markel2020_learning_replication
+  citation_verified: all
+  also_in: []
+  provenance_words:
+  - quoted or closely tracked from a verified abstract
+  contested_fields:
+  - hypothesis_group
+  refs:
+  - 127
+  - 128
+- path_id: PL09
+  perception_branch: Light
+  sense_leaf: shade (low red:far-red)
+  stimulus: low red:far-red ratio in dense vegetation (canopy leaves absorb red; neighbours reflect far-red)
+  stimulus_origin: external (incl. neighbouring plants)
+  receptor: phyB, whose activity falls under low R:FR
+  transducer_tier: B1
+  hypothesis_group: null
+  cascade: PIF4 and PIF5 escape phyB-triggered phosphorylation and proteasomal degradation → PIFs directly activate auxin-synthesis
+    genes → TAA1 makes indole-3-pyruvic acid (rapid auxin synthesis)
+  signal_route: null
+  integration: PIF–DELLA interaction links gibberellin and brassinosteroid signalling; COP1 required; circadian clock input
+  response: 'shade-avoidance syndrome: stem elongation at the expense of leaf and storage-organ expansion, branching inhibited,
+    flowering accelerated'
+  response_role: competition with neighbours
+  row_status: curated
+  provenance: A
+  notes: null
+  evidence_species: Arabidopsis thaliana
+  key_citation: lorrain2008_shade_pif; tao2008_taa1_shade; casal2013_shade_review
+  citation_verified: all
+  also_in: []
+  provenance_words:
+  - quoted or closely tracked from a verified abstract
+  contested_fields: []
+  refs:
+  - 129
+  - 130
+  - 131
+- path_id: PP05
+  perception_branch: 'Pathogens: pattern recognition'
+  sense_leaf: pathogen effectors (NLR immunity)
+  stimulus: bacterial type III effectors (AvrRpm1, AvrB, AvrRpt2) acting on the host protein RIN4
+  stimulus_origin: external (biotic)
+  receptor: 'intracellular NLR receptors: RPM1 and RPS2 ''guard'' RIN4 (RPS2 perceives RIN4 elimination rather than AvrRpt2
+    itself); ZAR1 with the pseudokinase RKS1 and uridylated PBL2'
+  transducer_tier: B1
+  hypothesis_group: 'guard model ⚑ proposed: ''RPM1 may guard'', ''we suggest that RPS2 … perception of RIN4 disappearance'''
+  cascade: ZAR1 forms a pentameric 'resistosome' (with dATP); its N-terminal helix forms a funnel in the plasma membrane →
+    Ca2+-permeable cation channel → Ca2+ influx, ROS
+  signal_route: null
+  integration: 'the second branch of a two-branched immune system: responds to virulence factors directly or through their
+    effects on host targets'
+  response: hypersensitive response (cell death); restriction of pathogen growth
+  response_role: effector-triggered immunity
+  row_status: curated
+  provenance: A
+  notes: null
+  evidence_species: Arabidopsis thaliana
+  key_citation: mackey2002_rin4; axtell2003_rps2; wang2019_resistosome; bi2021_zar1_channel; jones2006_immune
+  citation_verified: all
+  also_in: []
+  provenance_words:
+  - quoted or closely tracked from a verified abstract
+  contested_fields:
+  - hypothesis_group
+  refs:
+  - 132
+  - 133
+  - 134
+  - 135
+  - 136
+- path_id: PP06
+  perception_branch: 'Pathogens: pattern recognition'
+  sense_leaf: systemic acquired resistance (salicylic acid)
+  stimulus: a previous local microbial infection, signalled by salicylic acid (SA)
+  stimulus_origin: internal (relayed by hormones)
+  receptor: 'SA receptors: NPR1 (co-activator; binds SA through Cys521/529 via copper) and NPR3/NPR4 (co-repressors whose
+    activity SA inhibits)'
+  transducer_tier: B1
+  hypothesis_group: 'receptor identity was disputed (NPR1 vs NPR3/NPR4); ding2018: both are ''bona fide SA receptors'' with
+    opposite roles'
+  cascade: SA made from chorismate by isochorismate synthase (ICS1/SID2); pipecolic acid → FMO1 → N-hydroxypipecolic acid
+    (NHP)
+  signal_route: NHP accumulates systemically after attack; SA accumulates in infected and distal leaves
+  integration: NPR1 and NPR3/NPR4 act independently and oppositely on SA-induced transcription
+  response: broad-spectrum systemic immunity to bacteria and oomycetes; pathogenesis-related gene expression
+  response_role: systemic immunity
+  row_status: curated
+  provenance: A
+  notes: null
+  evidence_species: Arabidopsis thaliana
+  key_citation: wildermuth2001_ics1; wu2012_npr1; fu2012_npr34; ding2018_npr; hartmann2018_nhp
+  citation_verified: all
+  also_in: []
+  provenance_words:
+  - quoted or closely tracked from a verified abstract
+  contested_fields: []
+  refs:
+  - 137
+  - 138
+  - 139
+  - 140
+  - 141
+- path_id: PW03
+  perception_branch: Wounding and herbivores
+  sense_leaf: insect eggs (oviposition)
+  stimulus: 'phosphatidylcholines released from butterfly eggs (Pieris brassicae): egg-associated molecular patterns'
+  stimulus_origin: external (biotic)
+  receptor: LecRK-I.8, L-type lectin receptor kinase, 'an early component of egg perception' (ligand binding not shown)
+  transducer_tier: B2
+  hypothesis_group: null
+  cascade: early PAMP-responsive genes; oxidative burst (independent of RBOHD/RBOHF); salicylic acid accumulation (EDS1, SID2;
+    partly NPR1)
+  signal_route: null
+  integration: egg perception shares components with pattern-triggered immunity (PP01)
+  response: localised HR-like cell death, callose, PR1 expression at the egg site; systemic resistance to Pseudomonas syringae
+  response_role: defence before larvae hatch
+  row_status: curated
+  provenance: A
+  notes: little2007 found the transcript response 'mostly independent' of JA and SA signalling; gouhier2013 found PR-1 needs
+    the SA pathway — different read-outs, shown as reported
+  evidence_species: Arabidopsis thaliana
+  key_citation: little2007_eggs; gouhier2013_eggs_pti; stahl2020_egg_pc; gouhier2019_lecrk18
+  citation_verified: all
+  also_in: []
+  provenance_words:
+  - quoted or closely tracked from a verified abstract
+  contested_fields: []
+  refs:
+  - 142
+  - 143
+  - 144
+  - 145
+- path_id: PX04
+  perception_branch: Osmotic and salt
+  sense_leaf: salt (Na+)
+  stimulus: excess Na+ (salinity)
+  stimulus_origin: external
+  receptor: 'GIPC sphingolipids in the plasma membrane: Na+ binds GIPCs to gate Ca2+ influx channels (MOCA1, a GIPC glucuronosyltransferase,
+    is required)'
+  transducer_tier: B2
+  hypothesis_group: null
+  cascade: depolarisation of the cell-surface potential, Ca2+ spikes and waves → SOS3 and the kinase SOS2 activate SOS1
+  signal_route: Ca2+ waves
+  integration: null
+  response: Na+ export by the SOS1 Na+/H+ antiporter; growth regulation under salt
+  response_role: salt tolerance
+  row_status: curated
+  provenance: A
+  notes: 'B2: single study for the GIPC sensor (as PH02)'
+  evidence_species: Arabidopsis thaliana
+  key_citation: jiang2019_gipc_salt; qiu2002_sos
+  citation_verified: all
+  also_in: []
+  provenance_words:
+  - quoted or closely tracked from a verified abstract
+  contested_fields: []
+  refs:
+  - 146
+  - 147
+- path_id: PX05
+  perception_branch: Osmotic and salt
+  sense_leaf: salt-softened cell wall
+  stimulus: cell-wall softening caused by salinity
+  stimulus_origin: external
+  receptor: FERONIA, receptor kinase with malectin-like domains; sensing 'might be' direct interaction with pectin
+  transducer_tier: B2
+  hypothesis_group: '⚑ shared hardware: FERONIA also in touch signalling (PT03)'
+  cascade: FER-dependent, cell-specific Ca2+ transients
+  signal_route: null
+  integration: pectin cross-linking (Ca2+, borate) rescues fer defects
+  response: cell-wall integrity maintained; root growth recovers after high salinity (fer root cells burst)
+  response_role: salt tolerance
+  row_status: curated
+  provenance: A
+  notes: null
+  evidence_species: Arabidopsis thaliana
+  key_citation: feng2018_fer_salt
+  citation_verified: all
+  also_in:
+  - Mechanical
+  provenance_words:
+  - quoted or closely tracked from a verified abstract
+  contested_fields:
+  - hypothesis_group
+  refs:
+  - 148

@@ -1,0 +1,88 @@
+{
+ "personas": [
+  {
+   "id": "p-researcher",
+   "label": "Plant-biology researcher checking what is established",
+   "acts_for": "self",
+   "situation": "Works on one perception pathway (for example wound signalling or light) and uses the app to see what is established, what is proposed or contested, and what is still a gap, before writing or planning experiments.",
+   "deciding": "Which steps are safe to cite, which are proposed or single-study, and where the gaps are.",
+   "constraints": {
+    "reading_level": "professional",
+    "device": [
+     "laptop",
+     "tablet"
+    ],
+    "stress": "low",
+    "languages": [
+     "en"
+    ],
+    "accessibility": [
+     "keyboard-only"
+    ],
+    "time": "10–60 min sessions"
+   },
+   "jobs": [
+    "See every gap and every flag on a path before I cite it",
+    "Tell an established receptor from a proposed mechanism or a single-study claim",
+    "Check which senses really share a receptor, without being misled by study volume",
+    "Sketch a hypothesis linking two pathways and see which links have curated support"
+   ]
+  },
+  {
+   "id": "p-student",
+   "label": "Graduate student learning a plant pathway end to end",
+   "acts_for": "self",
+   "situation": "New to one branch (for example photoreceptors or immunity); follows a sense from stimulus to response and looks at the molecules in 3D.",
+   "deciding": "What to read first, and which structure to look at for a journal club or a figure.",
+   "constraints": {
+    "reading_level": "professional",
+    "device": [
+     "laptop"
+    ],
+    "stress": "low",
+    "languages": [
+     "en"
+    ],
+    "accessibility": [
+     "screen-reader"
+    ],
+    "time": "20–40 min"
+   },
+   "jobs": [
+    "Follow one sense from stimulus to response and know what is not yet supported",
+    "Open a receptor, see its structure, and tell experimental from predicted and whole protein from domain",
+    "See the chromophore or hormone a receptor binds"
+   ]
+  },
+  {
+   "id": "p-educator",
+   "label": "Educator preparing teaching material on how plants sense",
+   "acts_for": "self",
+   "situation": "Builds a lecture or lab on plant perception for undergraduates; needs a trustworthy overview, clear labels for contested claims and for evidence from other species, and figures to export.",
+   "deciding": "Which pathways to teach as established, how to present contested claims, and which visuals to use.",
+   "constraints": {
+    "reading_level": "professional",
+    "device": [
+     "laptop",
+     "projector"
+    ],
+    "stress": "low",
+    "languages": [
+     "en"
+    ],
+    "accessibility": [
+     "high-contrast"
+    ],
+    "time": "30–90 min"
+   },
+   "jobs": [
+    "Show the range of plant senses on one tree, including the contested ones, clearly labelled",
+    "Find which rows come from species other than Arabidopsis",
+    "Export a filtered evidence table and a navigator figure"
+   ]
+  }
+ ],
+ "constraints_global": {
+  "min_target": "1024px"
+ }
+}

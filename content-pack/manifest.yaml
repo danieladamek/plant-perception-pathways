@@ -1,0 +1,69 @@
+slug: plant-perception-pathways
+title: "Plant Perception Pathways — how plants sense, from stimulus to receptor to response, with structures and evidence"
+short_title: "Plant Perception Pathways"
+kind: workbench
+modules: [planner]
+safety_profile: general
+question: >
+  For every kind of plant perception, what is the pathway from stimulus to receptor, cascade, signal route,
+  integration and response; which molecules do the senses share and what do they look like; and how strong is the
+  evidence at each step? (Daniel, 2026-11-18: a plant counterpart of the Perception Pathways Explorer, with identical
+  functionality through the shared perception core, in Greenhouse Explorer's design scheme.)
+purpose: tool
+as_of: 2026-11-19
+pack_version: "0.1"
+authors: ["Actualizer (commissioned research: pathways drafted from verified abstracts, molecules, structures)", "Curated by Daniel Adamek"]
+venue: "Curated dataset from commissioned research — verified at abstract level, not full text; not peer reviewed"
+evidence:
+  body: records
+extensions:      # app-specific record files; normative shape in app-methods.md; checked by tools/validate_extension.py
+  - paths.yaml
+  - hierarchy.yaml
+  - hubs.yaml
+  - legend.yaml
+  - molecules.yaml
+  - structures.yaml
+  - anatomy.yaml
+  - structure-curation.yaml
+  - small-molecules.yaml
+  - context-note.md
+delivery: local
+storage: device
+github_account: danieladamek
+port: 4201        # provisional (next free in app-ports.tsv); RTE to register with make_shortcut.py
+builder: { name: "Actualizer", version: "0.1.2", date: "2026-11-19" }
+sources:
+  curation: { file: "source/curation/paths.yaml", decisions: "source/curation/decisions.yaml", curated: 2026-11-19 }
+permissions:
+  text: "builder-authored copy; third-party text only as verbatim database fields (UniProt CC BY 4.0, RCSB PDB, AlphaFold DB CC BY 4.0, PubChem, Plant Ontology via EBI OLS4) or verbatim abstracts, each with source"
+  figures: "none reproduced; 3D views are rendered from bundled coordinate files (PDB entries are public domain under wwPDB policy; AlphaFold DB models CC BY 4.0)"
+concept_self_checks: false
+design:
+  scheme: "Greenhouse Explorer (danieladamek/greenhouse-explorer @ c53d062), AA-corrected values in the app hub"
+  logo: "Greenhouse Explorer mark and illustration, reused as-is (public/brand/)"
+  wordmark: "Plant *Perception Pathways*"
+
+# ── perception-core pack contract (core_schema 0.2; packages/perception-core README) ──────────────────────────────
+core_schema: "0.2"
+stage_kinds:
+  - { id: stimulus, label: Stimulus, short_label: Stimulus, colour: --stage-stimulus, shape: ellipse, repeatable: false }
+  - { id: receptor, label: Receptor / transducer, short_label: Receptor, colour: --stage-receptor, shape: round-rectangle, repeatable: true, roles: [molecules] }
+  - { id: cascade, label: Cascade, short_label: Cascade, colour: --stage-cascade, shape: diamond, repeatable: false, roles: [anatomy] }
+  - { id: signal_route, label: Signal route, short_label: Signal route, colour: --stage-signal_route, shape: barrel, repeatable: false, roles: [anatomy, compare_string] }
+  - { id: integration, label: Integration, short_label: Integration, colour: --stage-integration, shape: hexagon, repeatable: false, roles: [compare_string] }
+  - id: response
+    label: Response
+    short_label: Response
+    colour: --stage-response
+    shape: star
+    repeatable: false
+    roles: [anatomy]
+    with: [{ id: response_role, label: Response role }]
+# Arabidopsis is the reference organism; rows whose evidence is from other species are drawn distinct (Daniel, 2026-11-18)
+evidence_species:
+  reference: { label: Arabidopsis, match: '\bArabidopsis thaliana\b|\bA\. thaliana\b' }
+  model: { label: other species, match: 'NOT Arabidopsis|\bLotus\b|\bMedicago\b|\bOenothera\b|\bPisum\b|\bBrassica\b|\bCakile\b', icon: "🌱" }
+reference_organism: { name: Arabidopsis thaliana, label: Arabidopsis }
+anatomy_ontologies:
+  source: EBI OLS4
+  ontologies: [{ prefix: "PO:", short: PO, name: Plant Ontology }]

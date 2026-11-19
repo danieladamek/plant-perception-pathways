@@ -1,0 +1,14 @@
+classes:
+  - { id: curation,   what: "Curated rows, tree, decisions (source/curation)", recheck_days: 180, how: "edit source/curation/paths.yaml; tools/export_handoff.py; tools/assemble_pack.py; diff" }
+  - { id: reference,  what: "DOI metadata and abstracts",                       recheck_days: 365, how: "harvest_openalex.py (OPENALEX_API_KEY) then tools/verify_refs.py" }
+  - { id: molecule,   what: "UniProt identity and function text (taxon 3702)",  recheck_days: 180, how: "harvest_structures.py inventory --taxon 3702; tools/build_molecules.py" }
+  - { id: structure,  what: "PDB entries, AlphaFold DB models, bundled files",  recheck_days: 180, how: "harvest_structures.py inventory + download; review new featured picks for peptides and namesakes (app-methods §4.4)" }
+  - { id: small-molecule, what: "PubChem identity and 3D conformers",           recheck_days: 180, how: "harvest_structures.py smallmolecules with a fresh output file; tools/build_small_molecules.py" }
+  - { id: anatomy,    what: "Plant Ontology terms",                             recheck_days: 365, how: "harvest_uberon.py fetch; tools/build_anatomy.py" }
+harvests:
+  - { id: openalex,   script: ../../tools/harvest_openalex.py,    writes: source/literature.json }
+  - { id: structures, script: ../../tools/harvest_structures.py,  writes: source/structures-inventory.json }
+  - { id: anatomy,    script: ../../tools/harvest_uberon.py,      writes: notes/research/anatomy-harvest.json }
+sweeps:
+  - { id: biannual, every_days: 182, scope: "new PDB entries and AlphaFold versions; literature for gap stages (signal routes, integration) and for candidate senses (replications)" }
+  - { id: annual,   every_days: 365, scope: "re-verify references; Plant Ontology term changes; staleness report" }

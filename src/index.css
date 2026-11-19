@@ -1,0 +1,244 @@
+/* ═══ Plant Perception Pathways theme: Greenhouse Explorer's (app-requirements §3) ═══
+   Lines up to the perception-core contract block are greenhouse-explorer src/index.css at 32a18ad, verbatim (the
+   A5.2 harness copy, checked identical). The contract block is the harness's (packages/perception-core/harness/
+   greenhouse.css), with this app's dark stage tokens and the brand mark added below. */
+/* Metric-matched fallbacks (K5.1 perf): the bundled fonts load as a non-blocking stylesheet, so first paint uses these.
+   size-adjust and the ascent/descent overrides were computed per weight and style from the actual woff2 files (Fraunces
+   instanced at opsz 36) against the local fallback with fontTools — the next/font / fontaine method — then size-adjust was
+   calibrated in Chromium on the site's own text (canvas width ratio), so the swap does not move the layout (CLS). */
+@font-face { font-family: 'Fraunces Fallback'; src: local('Georgia'), local('Times New Roman'); font-weight: 100 500; font-style: normal; size-adjust: 102.92%; ascent-override: 95.03%; descent-override: 24.78%; line-gap-override: 0%; }
+@font-face { font-family: 'Fraunces Fallback'; src: local('Georgia Italic'), local('Georgia-Italic'), local('Times New Roman Italic'); font-weight: 100 500; font-style: italic; size-adjust: 101.11%; ascent-override: 96.73%; descent-override: 25.22%; line-gap-override: 0%; }
+@font-face { font-family: 'Fraunces Fallback'; src: local('Georgia Bold'), local('Georgia-Bold'), local('Times New Roman Bold'); font-weight: 600 900; font-style: normal; size-adjust: 91.81%; ascent-override: 106.52%; descent-override: 27.77%; line-gap-override: 0%; }
+@font-face { font-family: 'Fraunces Fallback'; src: local('Georgia Bold Italic'), local('Georgia-BoldItalic'), local('Times New Roman Bold Italic'); font-weight: 600 900; font-style: italic; size-adjust: 91.81%; ascent-override: 106.52%; descent-override: 27.77%; line-gap-override: 0%; }
+@font-face { font-family: 'Source Sans 3 Fallback'; src: local('Arial'), local('ArialMT'), local('Liberation Sans'); font-weight: 100 500; font-style: normal; size-adjust: 92.66%; ascent-override: 110.51%; descent-override: 43.17%; line-gap-override: 0%; }
+@font-face { font-family: 'Source Sans 3 Fallback'; src: local('Arial Italic'), local('Arial-ItalicMT'), local('Liberation Sans Italic'); font-weight: 100 500; font-style: italic; size-adjust: 90.27%; ascent-override: 113.43%; descent-override: 44.31%; line-gap-override: 0%; }
+@font-face { font-family: 'Source Sans 3 Fallback'; src: local('Arial Bold'), local('Arial-BoldMT'), local('Liberation Sans Bold'); font-weight: 600 900; font-style: normal; size-adjust: 91.61%; ascent-override: 111.78%; descent-override: 43.66%; line-gap-override: 0%; }
+@font-face { font-family: 'Source Sans 3 Fallback'; src: local('Arial Bold Italic'), local('Arial-BoldItalicMT'), local('Liberation Sans Bold Italic'); font-weight: 600 900; font-style: italic; size-adjust: 91.61%; ascent-override: 111.78%; descent-override: 43.66%; line-gap-override: 0%; }
+@font-face { font-family: 'JetBrains Mono Fallback'; src: local('Courier New'), local('CourierNewPSMT'), local('Liberation Mono'); font-weight: 100 900; font-style: normal; size-adjust: 99.98%; ascent-override: 102.02%; descent-override: 30.01%; line-gap-override: 0%; }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* K5.1 §3 — manila light, warm night dark. Three light values are a shade darker than the item's table so every
+     text pair clears WCAG AA: muted #5f5442 (the item's own fallback, 5.2:1 on paper-2), accent #2d6848 (4.6:1 on
+     paper-2) and amber #924817 (5.2:1 on paper). */
+  :root {
+    color-scheme: light;
+    --bx-bg: #efe3c6;
+    --bx-bg-2: #e6d7b3;
+    --bx-card: rgb(247 239 220 / 0.85);
+    --bx-ink: #2a231a;
+    --bx-muted: #5f5442;
+    --bx-line: #d1bf99;
+    --bx-accent: #2d6848;
+    --gx-leaf: #2f7d4f;
+    --bx-amber: #924817;
+    --bx-highlight: inset 0 2px 0 rgb(255 255 255 / 0.35);
+  }
+  .dark {
+    color-scheme: dark;
+    --bx-bg: #1a1712;
+    --bx-bg-2: #252019;
+    --bx-card: rgb(42 36 28 / 0.85);
+    --bx-ink: #efe6d3;
+    --bx-muted: #b8ab94;
+    --bx-line: #3f3628;
+    --bx-accent: #8fd0a0;
+    --gx-leaf: #7fbf8a;
+    --bx-amber: #f0b35a;
+    --bx-highlight: none;
+  }
+  body { background: var(--bx-bg); color: var(--bx-ink); @apply font-body; }
+  /* a very faint, static paper grain so manila reads as paper, not as yellowed white (K5.1 §4) */
+  body::before {
+    content: ''; position: fixed; inset: 0; z-index: -1; pointer-events: none; opacity: 0.03;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+  .dark body::before { opacity: 0.05; }
+  h1, h2, h3, h4 { @apply font-display tracking-tight; }
+  h1 { font-variation-settings: "opsz" 144; }  /* SOFT 30 needs Fraunces "full" (+54 kB); dropped for perf */
+  h3, h4 { font-variation-settings: "opsz" 48; }
+  code, kbd, samp { @apply font-mono; }
+  :focus-visible { outline: 3px solid var(--bx-accent); outline-offset: 2px; border-radius: 2px; }
+  a { text-underline-offset: 2px; }
+  html { scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after { animation-duration: 0.001ms !important; transition-duration: 0.001ms !important; }
+  }
+  sub, sup { line-height: 0; }
+}
+
+@layer components {
+  .bx-card        { @apply rounded-xl border border-[color:var(--bx-line)] bg-paper-card dark:bg-night-card; box-shadow: var(--bx-highlight); }
+  .bx-btn         { @apply inline-flex items-center gap-1.5 rounded-md border border-[color:var(--bx-line)] bg-paper-card dark:bg-night-card px-2.5 py-1.5 text-sm font-medium hover:bg-paper-2 dark:hover:bg-night-2 disabled:opacity-40 disabled:cursor-not-allowed; }
+  .bx-btn-primary { @apply inline-flex items-center gap-1.5 rounded-md bg-ink text-paper dark:bg-night-ink dark:text-night px-3 py-1.5 text-sm font-semibold hover:opacity-90; letter-spacing: .01em; }
+  .bx-btn-on      { @apply !bg-ink !text-paper dark:!bg-night-ink dark:!text-night; }
+  .bx-input       { @apply w-full rounded-md border border-[color:var(--bx-line)] bg-paper-card dark:bg-night-card px-2.5 py-1.5 text-sm; }
+  .bx-chip        { @apply inline-flex items-center gap-1 rounded-full px-2 py-0.5 text-xs font-semibold leading-5 bg-paper-card dark:bg-night-card; }
+  .bx-prose       { @apply text-[15px] leading-7 text-ink-muted dark:text-night-muted; }
+  .bx-kbd         { @apply rounded border border-[color:var(--bx-line)] px-1 font-mono text-[11px]; }
+  .bx-muted       { @apply text-ink-muted dark:text-night-muted; }
+  .bx-term        { @apply underline decoration-dotted decoration-[color:var(--bx-accent)] underline-offset-[3px] cursor-help rounded-sm hover:bg-paper-2 dark:hover:bg-night-2; }
+  .bx-cite        { @apply align-super text-[11px] font-semibold text-[color:var(--bx-accent)] hover:underline cursor-pointer; }
+  .bx-foldout     { @apply bx-card mt-2 mb-4 p-3 text-sm border-l-4 border-l-[color:var(--bx-accent)]; }
+  .bx-todo        { @apply bx-chip !bg-amber-100 text-amber-900 dark:!bg-amber-900/40 dark:text-amber-200; }
+  .bx-reader      { @apply max-w-[68ch] font-body; font-size: 17.5px; line-height: 1.75; }
+  .gx-wordmark    { @apply font-display; font-variation-settings: "opsz" 144; }
+  /* topic mode (APP-SPEC §6.1) — provenance you can see without being shouted at */
+  .bx-synthesis   { @apply border-l-2 border-[color:var(--bx-line)] pl-4 my-4; }
+  .bx-synthesis-label { @apply block mb-1 text-[11px] uppercase tracking-wider bx-muted font-semibold; }
+  .bx-asof        { @apply bx-chip !bg-paper-2 dark:!bg-night-2 bx-muted; }
+  .bx-tier        { @apply bx-chip border border-[color:var(--bx-line)] bx-muted; }
+  .bx-banner      { @apply bx-card p-3 mb-6 text-sm border-l-4 border-l-[color:var(--bx-accent)]; }
+  .sr-only-focusable:not(:focus) { @apply sr-only; }
+  /* catalogue extension (KICKOFF §4b–§4e). Grade, basis and identity are information, not alarm: text + outline.
+     Amber stays reserved for missing / unverified content; safety is the one block that is always prominent. */
+  .bx-grade       { @apply inline-flex items-center justify-center rounded border border-current font-mono text-[11px] font-bold leading-5 w-6 shrink-0; }
+  .bx-basis       { @apply bx-chip border border-[color:var(--bx-line)] font-normal bx-muted whitespace-nowrap; }
+  .bx-status      { @apply bx-chip border border-[color:var(--bx-line)] bx-muted; }
+  .bx-safety      { @apply rounded-xl border-2 border-rose-800/60 dark:border-rose-300/50 bg-rose-50/60 dark:bg-rose-950/30 p-4; }
+  .bx-proto       { @apply border-b border-[color:var(--bx-line)] bg-paper-2 dark:bg-night-2 text-[13px]; }
+  .gx-mono-id     { @apply font-mono text-[12.5px] break-all; }
+  .bx-table       { @apply w-full text-sm border-collapse; }
+  .bx-table th    { @apply text-left font-semibold p-2 border-b border-[color:var(--bx-line)] align-bottom; }
+  .bx-table td    { @apply p-2 border-b border-[color:var(--bx-line)] align-top; }
+}
+
+/* Reader typography (the commissioned review, rendered as written) */
+.bx-reader p { @apply my-4; }
+.bx-reader blockquote { @apply border-l-4 border-[color:var(--bx-line)] pl-4 my-4 bx-muted; }
+.bx-reader strong { @apply font-semibold; }
+.bx-reader table { @apply text-sm my-4 w-full; }
+.bx-reader th, .bx-reader td { @apply border border-[color:var(--bx-line)] px-2 py-1 align-top; }
+.bx-reader button.bx-term { font: inherit; color: inherit; text-align: inherit; }
+.bx-reader sup { font-size: 0.7em; }
+
+/* 101 pages */
+.bx-101 h2 { @apply text-2xl mt-8; }
+.bx-101 h3 { @apply text-xl mt-6; }
+.bx-101 p { @apply my-3; }
+.bx-101 ul { @apply list-disc pl-5 my-3; }
+.bx-101 ol { @apply list-decimal pl-5 my-3; }
+.bx-101 li { @apply my-1; }
+.bx-101 .katex-display { @apply overflow-x-auto py-2; }
+.bx-101 table { @apply text-sm my-4; }
+.bx-101 th, .bx-101 td { @apply border border-[color:var(--bx-line)] px-2 py-1 align-top; }
+.bx-101 code { @apply font-mono text-[0.9em] rounded bg-paper-2 dark:bg-night-2 px-1; }
+
+/* Compound-record prose: same term links, tighter measure */
+.bx-record p { @apply my-3 leading-7; }
+.bx-record button.bx-term { font: inherit; color: inherit; text-align: inherit; }
+.bx-inline p { display: inline; margin: 0; }
+.bx-inline button.bx-term { font: inherit; color: inherit; text-align: inherit; }
+
+/* Structures drawn from SMILES at runtime (smiles-drawer); never fetched from an image service */
+.bx-structure svg { width: 100%; height: 100%; }
+
+/* Notepad preview */
+.bx-notes-preview h1, .bx-notes-preview h2, .bx-notes-preview h3 { @apply text-base font-semibold mt-3; }
+.bx-notes-preview p { @apply my-2; }
+.bx-notes-preview blockquote { @apply border-l-2 border-[color:var(--bx-accent)] pl-2 my-2 bx-muted; }
+.bx-notes-preview ul { @apply list-disc pl-4; }
+.bx-notes-preview a { @apply underline; }
+
+/* Print: the reader only, notes optionally appended */
+@media print {
+  header, footer, .no-print, .bx-rail, .bx-notepad-dock, .bx-progress { display: none !important; }
+  main { display: block !important; }
+  .bx-reader { max-width: none; font-size: 11pt; line-height: 1.5; }
+  .bx-term { text-decoration: none; }
+  .bx-foldout { display: none; }
+  .bx-print-notes { display: block !important; page-break-before: always; }
+  a[href]::after { content: none; }
+}
+.bx-print-notes { display: none; }
+
+/* ═══ perception-core's class and token contract (THEME.md), set in Greenhouse's scheme ═══
+   The classes are PPE's definitions (structure only: every colour is a Greenhouse variable); the tokens below are
+   chosen from Greenhouse's palette (tailwind.config.js cat.*, --gx-leaf) and checked by the harness's axe run. */
+:root {
+  --bx-claim: #e6d7b3;
+  --br-A1: #2a5aa6; --br-A2: #7b2c5e; --br-A3: #1f7a63; --br-A4: #4a4a8a; --br-B: #1f7a63; --br-C: #5f5442;
+  --st-fill: rgb(247 239 220); --species-model: #7b2c5e; --species-reference: #2d6848;
+  --stage-stimulus: #eadcb6; --stage-receptor: #d6e4d2; --stage-cascade: #e4d9e6; --stage-signal_route: #d3e2e3;
+  --stage-integration: #ead8c3; --stage-response: #dfe6c4;
+  --node-text-fill: #f7efdc; --node-base-fill: #d1bf99; --lens-mark: var(--gx-leaf); --claim-link: var(--gx-leaf); --map-node-fill: rgb(247 239 220);
+  --export-ink: #2a231a; --export-accent: #924817; --export-paper: #fff;
+}
+.dark {
+  --bx-claim: #252019;
+  --br-A1: #9dbbe8; --br-A2: #e7a6c9; --br-A3: #8fd0b8; --br-A4: #b9b9e8; --br-B: #8fd0b8; --br-C: #b8ab94;
+  --st-fill: #252019; --species-model: #e7a6c9; --species-reference: #8fd0a0;
+  /* six distinct dark stage fills, Greenhouse hues (cat.*, --gx-leaf) taken down to night tone; each ≥ 4.5:1 against
+     the node label (--bx-ink #efe6d3), asserted in tests/unit/theme.test.ts */
+  --stage-stimulus: #4a3f22; --stage-receptor: #24402e; --stage-cascade: #3d2f42; --stage-signal_route: #233b40;
+  --stage-integration: #45331f; --stage-response: #353f20;
+  --node-text-fill: #252019; --node-base-fill: #3f3628; --map-node-fill: #3f3628;
+}
+
+@layer components {
+  .bx-sev-blocking{ @apply bx-chip bg-rose-100 text-rose-900 dark:bg-rose-900/40 dark:text-rose-200; }
+  .bx-sev-major   { @apply bx-chip border border-[color:var(--bx-line)] font-semibold; }
+  .bx-sev-minor   { @apply bx-chip bx-muted; }
+  .bx-margin      { @apply text-[13px] leading-6 bx-muted border-l-2 border-[color:var(--bx-line)] pl-3; }
+  .bx-internal    { @apply bx-chip border border-dashed border-[color:var(--bx-line)] bx-muted font-mono text-[11px]; }
+  .bx-track       { @apply bx-chip border border-[color:var(--bx-line)] bx-muted; }
+  .bx-claim       { @apply cursor-pointer rounded-sm bg-[color:var(--bx-claim)] hover:bg-paper-2 dark:hover:bg-night-2; }
+  .bx-claim-mark  { @apply absolute -left-6 select-none text-[11px] font-mono bx-muted hover:text-[color:var(--bx-ink)]; }
+  .ax-canvas      { background-color: var(--bx-bg); background-image: radial-gradient(color-mix(in srgb, var(--bx-ink) 6%, transparent) 1px, transparent 1px); background-size: 24px 24px; @apply rounded-xl border border-[color:var(--bx-line)]; }
+  .ax-heuristic   { @apply bx-chip border border-[color:var(--bx-line)] bx-muted; }
+  .ax-pin         { @apply text-[10px]; }
+  .pp-tier        { @apply bx-chip border border-[color:var(--bx-line)] font-mono; }
+  .pp-species-model     { @apply bx-chip border-2 border-dashed; border-color: var(--species-model); color: var(--species-model); }
+  .pp-species-reference { @apply bx-chip border; border-color: var(--species-reference); color: var(--species-reference); }
+  .pp-species-mixed   { @apply bx-chip border border-[color:var(--bx-line)]; }
+  .pp-species-missing { @apply bx-chip border border-dotted border-[color:var(--bx-line)] bx-muted italic; }
+  .pp-verified    { @apply bx-chip border border-[color:var(--bx-line)]; }
+  .pp-unverified  { @apply bx-chip border border-dashed border-[color:var(--bx-amber)] text-[color:var(--bx-amber)] italic; }
+  .pp-contested   { @apply bx-chip border border-[color:var(--bx-ink)] font-semibold; }
+  .pp-proposed    { @apply bx-chip border border-dashed border-[color:var(--bx-accent)] text-[color:var(--bx-accent)]; }
+  .pp-predicted   { @apply bx-chip bg-[color:var(--bx-bg-2)] border-2 border-dashed border-[color:var(--bx-ink)] font-semibold; }
+  .pp-experimental{ @apply bx-chip border border-[color:var(--bx-ink)]; }
+  .pp-stage       { @apply bx-card p-2.5 text-sm min-w-[9.5rem] max-w-[13rem] flex-shrink-0; }
+  .pp-gap         { @apply rounded-xl border-2 border-dashed border-[color:var(--bx-line)] p-2.5 text-sm min-w-[9.5rem] max-w-[13rem] flex-shrink-0 bx-muted italic; }
+  .pp-branch      { @apply inline-block h-2.5 w-2.5 rounded-sm; }
+  .pp-th          { @apply text-left text-xs font-semibold uppercase tracking-wide bx-muted px-2 py-1.5 border-b border-[color:var(--bx-line)]; }
+  .pp-td          { @apply px-2 py-1.5 align-top border-b border-[color:var(--bx-line)] text-sm; }
+  .pp-h1          { @apply text-3xl sm:text-4xl font-semibold; }
+  .pp-h2          { @apply text-2xl mt-8 mb-3 font-semibold; }
+  .pp-h3          { @apply text-lg mt-5 mb-2 font-semibold; }
+  .pp-link        { @apply text-[color:var(--bx-accent)] underline; }
+  .pp-dl          { @apply grid grid-cols-[minmax(8rem,auto)_1fr] gap-x-3 gap-y-1 text-sm; }
+  .pp-dl dt       { @apply bx-muted; }
+  .pp-dl dd       { @apply min-w-0 break-words; }
+}
+.bx-markdown h1 { @apply text-3xl font-semibold mt-6 mb-3; }
+.bx-markdown h2 { @apply text-2xl font-semibold mt-8 mb-3; }
+.bx-markdown h3 { @apply text-xl font-semibold mt-6 mb-2; }
+.bx-markdown p, .bx-markdown li { @apply text-[15px] leading-7; }
+.bx-markdown ul { @apply list-disc pl-6 my-3; }
+.bx-markdown ol { @apply list-decimal pl-6 my-3; }
+.bx-markdown table { @apply my-4 text-sm border-collapse block overflow-x-auto; }
+.bx-markdown th, .bx-markdown td { @apply border border-[color:var(--bx-line)] px-2 py-1 align-top; }
+.bx-markdown blockquote { @apply border-l-4 border-[color:var(--bx-line)] pl-4 my-4 bx-muted; }
+.bx-markdown code { @apply font-mono text-[13px] break-all; }
+:where(.overflow-x-auto, .overflow-auto, .overflow-y-auto) { position: relative; }
+@keyframes pp-slide-right { from { transform: translateX(100%); } to { transform: none; } }
+.pp-slide-right { animation: pp-slide-right 160ms ease-out; }
+.pp-note-target { outline: 3px solid var(--bx-accent); outline-offset: 3px; border-radius: 6px; }
+
+/* ═══ Brand (app-requirements §3.3–3.4): the Greenhouse Explorer mark beside the wordmark "Plant *Perception Pathways*",
+   set as Greenhouse *Explorer* is (gx-wordmark: Fraunces at opsz 144, second word muted and regular). perception-core
+   0.1.0's header has no logo slot, so the mark is drawn by the theme on the home link (no fork of the core). The files
+   are greenhouse-explorer public/brand/web/mark-64.png and mark-dark-64.png at 32a18ad, byte for byte. */
+header a[href="#/"] { @apply gx-wordmark inline-flex items-center gap-2 tracking-tight; }
+header a[href="#/"]::before { content: ''; flex: none; width: 30px; height: 30px; background: url('/brand/web/mark-64.png') center / contain no-repeat; }
+.dark header a[href="#/"]::before { background-image: url('/brand/web/mark-dark-64.png'); }
+/* phone width (< 640 px): the three-word wordmark may wrap and the mark shrinks, so the header fits 375 px */
+@media (max-width: 639px) {
+  header a[href="#/"] { white-space: normal; min-width: 0; flex-shrink: 1; font-size: 0.95rem; line-height: 1.1; gap: 0.375rem; }
+  header a[href="#/"]::before { width: 24px; height: 24px; }
+}

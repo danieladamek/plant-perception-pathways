@@ -1,0 +1,197 @@
+{
+ "slug": "plant-perception-pathways",
+ "as_of": "2026-11-19",
+ "built_for": "2026-11-19",
+ "pack": {
+  "version": "0.1",
+  "core_schema": "0.2",
+  "builder": {
+   "name": "Actualizer",
+   "version": "0.1.2",
+   "date": "2026-11-19"
+  },
+  "sources": {
+   "curation": {
+    "file": "source/curation/paths.yaml",
+    "decisions": "source/curation/decisions.yaml",
+    "curated": "2026-11-19"
+   }
+  }
+ },
+ "counts": {
+  "paths": 67,
+  "paths_by_tier": {
+   "B1": 33,
+   "B2": 17,
+   "B3": 17
+  },
+  "paths_by_row_status": {
+   "curated": 67
+  },
+  "paths_by_branch": {
+   "Light": 8,
+   "Temperature": 8,
+   "Redox (ROS)": 1,
+   "Osmotic and salt": 4,
+   "Wounding and herbivores": 4,
+   "Mechanical": 6,
+   "Pathogens: pattern recognition": 6,
+   "Gravity": 1,
+   "Water": 5,
+   "Nutrients": 6,
+   "Chemical cues": 2,
+   "CO2": 2,
+   "Symbionts": 2,
+   "Self/non-self": 2,
+   "Time (clock)": 3,
+   "Candidate senses (contested)": 7
+  },
+  "gaps_total": 104,
+  "paths_with_contested": 21,
+  "paths_with_a_verified_ref": 67,
+  "dual_membership": [
+   "PL02",
+   "PT05",
+   "PX05"
+  ],
+  "percepts": 0,
+  "hubs": 13,
+  "proposed_nodes": 0,
+  "proposed_edges": 0,
+  "review_items": 0,
+  "molecules": 120,
+  "molecules_by_kind": {
+   "protein": 120
+  },
+  "molecules_by_stage": {
+   "cascade": 44,
+   "receptor": 65,
+   "integration": 9,
+   "notes": 1,
+   "response": 1
+  },
+  "pdb_entries_listed": 256,
+  "structures_bundled": 116,
+  "structures_by_kind": {
+   "predicted": 66,
+   "experimental": 50
+  },
+  "structures_by_source": {
+   "AlphaFoldDB": 66,
+   "PDB": 50
+  },
+  "interactions": 0,
+  "interactions_by_kind": {},
+  "small_molecules": 41,
+  "small_molecules_hidden_by_default": 9,
+  "small_molecules_not_found": 1,
+  "anatomy_values": 51,
+  "anatomy_terms": 68
+ },
+ "references": {
+  "total": 152,
+  "by_tier": {
+   "background": 10,
+   "current": 142
+  },
+  "verified": 152,
+  "unverified": 0,
+  "with_abstract": 151,
+  "by_source": {
+   "openalex": 151,
+   "europepmc": 1
+  }
+ },
+ "todo": 9,
+ "glossary_terms": 0,
+ "concepts": 0,
+ "heuristics": [
+  {
+   "id": "n-paths",
+   "label": "number of curated paths",
+   "where": "shared hardware, molecule sheets, navigator node size"
+  },
+  {
+   "id": "computed-contacts",
+   "label": "computed by Mol* from the coordinates — a geometric heuristic, not a measured interaction",
+   "where": "structure viewer (contacts around a selection)"
+  },
+  {
+   "id": "curator-mapping",
+   "label": "curator mapping",
+   "where": "molecule-to-path mapping, small-molecule names, Plant Ontology terms"
+  },
+  {
+   "id": "featured-structure",
+   "label": "Featured: the rule step that chose it (app-methods §4.4)",
+   "where": "molecule sheets"
+  }
+ ],
+ "build": {
+  "errors": 17,
+  "warnings": 2,
+  "withheld_passages": 17
+ },
+ "safety_tests": {
+  "date": "2026-11-19",
+  "suites": {
+   "safety": {
+    "passed": 21,
+    "failed": 0,
+    "expected_failures": 0,
+    "skipped": 0,
+    "core_gaps": []
+   },
+   "smoke": {
+    "passed": 88,
+    "failed": 0,
+    "expected_failures": 0,
+    "skipped": 0,
+    "core_gaps": []
+   },
+   "walkthroughs": {
+    "passed": 15,
+    "failed": 0,
+    "expected_failures": 13,
+    "skipped": 0,
+    "core_gaps": [
+     "w1 core gap — the hypothesis is badged \"proposed\", not only \"contested\": perception-core: render a path hypothesis_group containing \"proposed ⚑\" with the proposed badge (ui-strings badges.proposed) on the path page",
+     "w1 core gap — citation status \"all\" (every key citation verified) is shown as verified: perception-core: CitationStatus treats only values starting \"yes\" as verified; this pack curates citation_verified as \"all\", so every path shows a dashed amber \"citation all\" (unverified style). Read the verified values from the pack.",
+     "w2 core gap — the \"candidate sense — not established\" badge on PZ06: perception-core: draw the contested branch as a distinct group with the badge \"candidate sense — not established\" (app-requirements §2.7)",
+     "w2 pack gap — the About framing states that the app does not answer the question: context-note.md: two passages are withheld by the contested-framing lint (\"plants are conscious\"); add allowed_phrases to safety.yaml or reword (BUILD-ERRORS.md)",
+     "w3 core gap — the sheet shows the AGI locus and the featured coverage (\"whole protein\"): perception-core: a UniProt identity block for plant records (accession, protein name, gene names, AGI locus = ordered_locus_names, organism, reviewed) and the featured `coverage` beside the experimental/predicted badge (app-requirements §2.4); 0.1.0 shows an HGNC block or \"TODO(author) no identity record\"",
+     "w4 core gap — PHOT1 shows \"domain structure (129 of 996 residues)\": perception-core: show the featured structure coverage on the sheet (app-requirements §2.4; molecules.yaml featured.coverage)",
+     "w5 core gap — ZAR1 6J5T is labelled \"whole protein\": perception-core: show the featured structure coverage on the sheet (app-requirements §2.4)",
+     "w6 core gap — the tree marks the dual leaf (dual ⚑): perception-core: the hierarchy reads a leaf `dual: true` and marks it \"dual ⚑\" (app-methods §2.5)",
+     "w7 core gap — the species filter offers \"other species\": perception-core: the evidence-table species filter by class (reference / other species / mixed), not only by exact value",
+     "w7 core gap — NFR5 carries \"UniProt record not reviewed\": perception-core: show uniprot.reviewed: false as the \"UniProt record not reviewed\" chip (app-requirements §2.5)",
+     "w9 core gap — PYR1 → SRK2E and SRK2E → SLAC1 are \"curated\" (PD01; also PCD01): perception-core: My maps resolves a molecule whose stage is not the molecule stage (SRK2E, SLAC1: cascade) to the stage node that names it, so a curated path can back the link; 0.1.0 only knows receptor-stage molecule nodes",
+     "w10 core gap — search \"abscisic\" lists Abscisic Acid from the small-molecule catalogue: perception-core: search covers small-molecule names (app-methods §10); 0.1.0 searches paths, molecules, PDB ids and interactions only",
+     "w11 core gap — the lens list is None and Shared hardware only: perception-core: offer the \"Proposed routes\" lens only when the pack has proposed routes (app-requirements §2.2)"
+    ]
+   },
+   "core-harness": {
+    "passed": 35,
+    "failed": 0,
+    "expected_failures": 0,
+    "skipped": 0,
+    "core_gaps": []
+   }
+  },
+  "lighthouse": {
+   "date": "2026-11-19",
+   "home": {
+    "performance": 97,
+    "accessibility": 100
+   },
+   "navigator": {
+    "accessibility": 100
+   },
+   "pass": true
+  }
+ },
+ "staleness": {
+  "stale": 0,
+  "as_of": "2026-11-19"
+ }
+}

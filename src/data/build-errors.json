@@ -1,0 +1,102 @@
+{
+ "generated_for": "2026-11-19",
+ "errors": [
+  {
+   "level": "error",
+   "where": "context-note.md § Is this perception? Two views",
+   "message": "withheld: it uses a phrase the contested-framing lint blocks, and no allowed_phrases entry in safety.yaml covers it (exact phrase in content-pack/BUILD-ERRORS.md)"
+  },
+  {
+   "level": "error",
+   "where": "context-note.md § Is this perception? Two views",
+   "message": "withheld: it uses a phrase the contested-framing lint blocks, and no allowed_phrases entry in safety.yaml covers it (exact phrase in content-pack/BUILD-ERRORS.md)"
+  },
+  {
+   "level": "error",
+   "where": "paths.json:[PH03].notes",
+   "message": "withheld: it uses a phrase the jargon lint blocks, and no allowed_phrases entry in safety.yaml covers it (exact phrase in content-pack/BUILD-ERRORS.md)"
+  },
+  {
+   "level": "error",
+   "where": "paths.json:[PD01].notes",
+   "message": "withheld: it uses a phrase the jargon lint blocks, and no allowed_phrases entry in safety.yaml covers it (exact phrase in content-pack/BUILD-ERRORS.md)"
+  },
+  {
+   "level": "error",
+   "where": "paths.json:[PN03].notes",
+   "message": "withheld: it uses a phrase the jargon lint blocks, and no allowed_phrases entry in safety.yaml covers it (exact phrase in content-pack/BUILD-ERRORS.md)"
+  },
+  {
+   "level": "error",
+   "where": "paths.json:[PN06].notes",
+   "message": "withheld: it uses a phrase the jargon lint blocks, and no allowed_phrases entry in safety.yaml covers it (exact phrase in content-pack/BUILD-ERRORS.md)"
+  },
+  {
+   "level": "error",
+   "where": "legend.json:legend[2].meaning",
+   "message": "withheld: it uses a phrase the jargon lint blocks, and no allowed_phrases entry in safety.yaml covers it (exact phrase in content-pack/BUILD-ERRORS.md)"
+  },
+  {
+   "level": "error",
+   "where": "legend.json:legend[3].meaning",
+   "message": "withheld: it uses a phrase the jargon lint blocks, and no allowed_phrases entry in safety.yaml covers it (exact phrase in content-pack/BUILD-ERRORS.md)"
+  },
+  {
+   "level": "error",
+   "where": "legend.json:legend[4].meaning",
+   "message": "withheld: it uses a phrase the jargon lint blocks, and no allowed_phrases entry in safety.yaml covers it (exact phrase in content-pack/BUILD-ERRORS.md)"
+  },
+  {
+   "level": "error",
+   "where": "legend.json:legend[8].meaning",
+   "message": "withheld: it uses a phrase the jargon lint blocks, and no allowed_phrases entry in safety.yaml covers it (exact phrase in content-pack/BUILD-ERRORS.md)"
+  },
+  {
+   "level": "error",
+   "where": "molecules.json:[LAZY1].mapping",
+   "message": "withheld: it uses a phrase the jargon lint blocks, and no allowed_phrases entry in safety.yaml covers it (exact phrase in content-pack/BUILD-ERRORS.md)"
+  },
+  {
+   "level": "error",
+   "where": "molecules.json:[LAZY2].mapping",
+   "message": "withheld: it uses a phrase the jargon lint blocks, and no allowed_phrases entry in safety.yaml covers it (exact phrase in content-pack/BUILD-ERRORS.md)"
+  },
+  {
+   "level": "error",
+   "where": "molecules.json:[LAZY4].mapping",
+   "message": "withheld: it uses a phrase the jargon lint blocks, and no allowed_phrases entry in safety.yaml covers it (exact phrase in content-pack/BUILD-ERRORS.md)"
+  },
+  {
+   "level": "error",
+   "where": "stage-chips.json:PG01.stages.receptor[0].mapping_text",
+   "message": "withheld: it uses a phrase the jargon lint blocks, and no allowed_phrases entry in safety.yaml covers it (exact phrase in content-pack/BUILD-ERRORS.md)"
+  },
+  {
+   "level": "error",
+   "where": "stage-chips.json:PG01.stages.receptor[1].mapping_text",
+   "message": "withheld: it uses a phrase the jargon lint blocks, and no allowed_phrases entry in safety.yaml covers it (exact phrase in content-pack/BUILD-ERRORS.md)"
+  },
+  {
+   "level": "error",
+   "where": "stage-chips.json:PG01.stages.receptor[2].mapping_text",
+   "message": "withheld: it uses a phrase the jargon lint blocks, and no allowed_phrases entry in safety.yaml covers it (exact phrase in content-pack/BUILD-ERRORS.md)"
+  },
+  {
+   "level": "error",
+   "where": "open items:[T-GAP-01].what",
+   "message": "withheld: it uses a phrase the jargon lint blocks, and no allowed_phrases entry in safety.yaml covers it (exact phrase in content-pack/BUILD-ERRORS.md)"
+  }
+ ],
+ "warnings": [
+  {
+   "level": "warning",
+   "where": "molecules/NFR5",
+   "message": "UniProt record is unreviewed (Lotus japonicus)"
+  },
+  {
+   "level": "warning",
+   "where": "small-molecules/not_found/ccd:OT5",
+   "message": "not found in PubChem; not in the catalogue"
+  }
+ ]
+}

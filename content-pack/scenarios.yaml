@@ -1,0 +1,139 @@
+# scenarios.yaml — acceptance walkthroughs (review mode: Daniel by clicking). Expected values come from pack 0.1
+# (goldens in app-methods.md). Navigator, focus, full screen, notepad and My maps behaviour is the shared core's,
+# already accepted in PPE (UI-16 … UI-31); these walkthroughs check that it works on plant data and plant rules.
+- id: w1
+  persona: p-researcher
+  title: "Before citing the wound-signalling path, check every step and flag"
+  starts_with: empty
+  steps:
+    - do: "Open #/path/PW01"
+      expect: "Six stage cards, stimulus → receptor → cascade → signal route → integration → response, with no gap; the receptor stage shows GLR3.3, GLR3.6, GLR3.2 and MSL10 as molecule nodes"
+    - do: "Read the hypothesis line and the flags"
+      expect: "'GLR as coincidence detector gated by MSL10 depolarisation: proposed ⚑' shown as proposed, not as an established step"
+    - do: "Open the references"
+      expect: "Six references, each verified, each with its abstract verbatim and the line 'Verified means checked at abstract level, not full text'"
+  must_not: ["any network request after load except clicked outbound links", "a proposed mechanism drawn or worded as established", "internal project terms (Cowork, todo, sweep)"]
+- id: w2
+  persona: p-researcher
+  title: "Look at a candidate sense and the About framing"
+  starts_with: empty
+  steps:
+    - do: "In the hierarchy open 'Candidate senses (contested)' → magnetic field (PZ06)"
+      expect: "Tier B3; the claim and the counter-evidence are both shown — the cryptochrome claim of Ahmad et al. and Harris et al.'s independent replication that found no consistent effect; the 'candidate sense — not established' badge"
+    - do: "Open the About page"
+      expect: "'Is this perception? Two views' with both positions cited ([n] links to Taiz et al. 2019 and Calvo et al. 2020) and the statement that the app does not answer the question"
+  must_not: ["a candidate sense shown in the established branches", "any sentence asserting that plants are conscious, feel pain, hear or learn"]
+- id: w3
+  persona: p-student
+  title: "Learn the UV-B pathway and look at the receptor in 3D"
+  starts_with: empty
+  steps:
+    - do: "From the hierarchy open Light → UV-B (PL07)"
+      expect: "UVR8 on the receptor stage; signal route and integration are dashed 'no verified source yet' cards; the header shows '2 gaps'"
+    - do: "Open the UVR8 sheet"
+      expect: "UniProt accession, AGI locus and FUNCTION text labelled 'UniProt, verbatim'; featured structure 4D9S with 'whole protein', 'experimental structure', and the curator reason (the rule's pick was a COP1 domain holding a UVR8 peptide)"
+    - do: "Open the featured structure"
+      expect: "A 3D view from the bundled file, with method and resolution, and no organism warning (Arabidopsis)"
+  must_not: ["a structure fetched from the network at view time", "a blank viewer box when WebGL is unavailable"]
+- id: w4
+  persona: p-student
+  title: "See the chromophore a blue-light receptor carries"
+  starts_with: empty
+  steps:
+    - do: "Open the PHOT1 sheet"
+      expect: "Featured 2Z6C with 'domain structure (129 of 996 residues)'; PHOT1 listed in 3 curated paths (PL03, PL05, PZ05)"
+    - do: "Open Flavin Mononucleotide from the small-molecule catalogue"
+      expect: "Class 'chromophore', visible by default; bound in 2Z6C (PHOT1), 5SVV (ZTL), 6QQH (PHOT2) and 7WA4 (GI); a PubChem 3D conformer labelled as computed"
+  must_not: ["a chromophore hidden by the default filter", "a computed conformer presented as an experimental pose"]
+- id: w5
+  persona: p-student
+  title: "Tell a predicted model from an experimental structure"
+  starts_with: empty
+  steps:
+    - do: "Open the RIN4 sheet"
+      expect: "Featured AlphaFold model with the 'Predicted model — not an experimental structure' badge, mean pLDDT, and the curator reason 'largely disordered; its PDB entries are short fragments bound to bacterial effectors'"
+    - do: "Open the ZAR1 sheet"
+      expect: "Featured 6J5T (the resistosome) as 'whole protein', experimental"
+  must_not: ["a predicted model without the predicted badge"]
+- id: w6
+  persona: p-educator
+  title: "Show shared receptors and a sense that sits in two branches"
+  starts_with: empty
+  steps:
+    - do: "Open #/shared"
+      expect: "13 molecules; phyB in 5 paths, CRY1 in 4; the caution that counts of paths are not centrality"
+    - do: "In the hierarchy look under Light and under Temperature"
+      expect: "PL02 (phyB sensing warmth) listed in both, marked dual ⚑, opening the same path"
+  must_not: ["a molecule labelled central, key hub, master regulator or most important"]
+- id: w7
+  persona: p-educator
+  title: "Find the rows whose evidence is not from Arabidopsis"
+  starts_with: empty
+  steps:
+    - do: "Evidence table: filter species to 'other species'"
+      expect: "PS01, PS02, PZ02, PZ03 and PZ07 each with the 🌱 'not Arabidopsis' badge; PSI01 and PZ04 shown as mixed"
+    - do: "Open PS01 (rhizobial Nod factor) and its NFR5 sheet"
+      expect: "Evidence species Lotus japonicus, Medicago truncatula, alfalfa and pea; NFR5 is a Lotus record with the 'UniProt record not reviewed' badge and the note 'Lotus japonicus structure; the Arabidopsis protein may differ'"
+  must_not: ["an other-species row drawn as Arabidopsis evidence"]
+- id: w8
+  persona: p-educator
+  title: "Filter the evidence table and export"
+  starts_with: empty
+  steps:
+    - do: "Evidence table: tier B1"
+      expect: "33 rows"
+    - do: "Filter 'contains ⚑'"
+      expect: "21 rows"
+    - do: "Export CSV"
+      expect: "A CSV of exactly the filtered rows, with the plant stage columns"
+  must_not: ["an export that includes rows the filter hides"]
+- id: w9
+  persona: p-researcher
+  title: "Sketch a drought and CO2 crossover and see which links are supported"
+  starts_with: empty
+  steps:
+    - do: "Open #/maps, create a map, add PYR1, SRK2E (OST1) and SLAC1 from the vocabulary and a free node 'my guard-cell model'"
+      expect: "Vocabulary nodes link to their molecule sheets"
+    - do: "Link PYR1 → SRK2E, SRK2E → SLAC1, SLAC1 → my guard-cell model"
+      expect: "The first two links are 'curated' (PD01; SRK2E → SLAC1 also PCD01); the third needs an override reason and is flagged 'Override: not backed by a curated path'"
+    - do: "Export the map as Markdown"
+      expect: "The report lists each link with its basis and the override reason"
+  must_not: ["an override link drawn like a curated one"]
+- id: w10
+  persona: p-student
+  title: "Find abscisic acid, alone and bound to its receptor"
+  starts_with: empty
+  steps:
+    - do: "Search 'abscisic'"
+      expect: "Abscisic Acid in the small-molecule catalogue, linked to PD01 and PD02"
+    - do: "Open it"
+      expect: "Bound in 3W9R (PYL9) and 3KDJ (ABI1); its own PubChem 3D conformer labelled computed"
+    - do: "Search 'JA-Ile'"
+      expect: "One sheet with two stereo forms ((-)-JA-L-Ile and (+)-7-iso-JA-L-Ile), linked to PW01 and PT04"
+  must_not: ["two sheets for one compound's stereo forms"]
+- id: w11
+  persona: p-educator
+  title: "It looks like Greenhouse Explorer"
+  starts_with: empty
+  steps:
+    - do: "Open the home page in light, then dark"
+      expect: "Greenhouse Explorer's palette, Fraunces / Source Sans 3 / JetBrains Mono type, the Greenhouse Explorer mark and the wordmark 'Plant Perception Pathways'; axe AA passes in both"
+    - do: "Open the navigator"
+      expect: "Six stage colours from the Greenhouse tokens; the lens list has None and Shared hardware only (the pack has no proposed routes and no atlas)"
+  must_not: ["PPE's colours or fonts", "a font or image fetched at runtime"]
+- id: w12
+  persona: p-researcher
+  title: "The shared core works on a plant path (navigator, Focus, full screen, notepad, My maps)"
+  starts_with: empty
+  steps:
+    - do: "Open the navigator, search PD01 (drought), select it and press Focus"
+      expect: "Focus reads in order stimulus → receptor (PYR1, PYL9, ABI1) → cascade → integration → response, left to right; PD01 has no signal route, so that stage is a dashed gap card; switching Layered (ELK) / Organic (fCoSE) keeps the selection (UI-24, UI-26)"
+    - do: "Click the cascade card, then the response card, in the stage inspector"
+      expect: "Cascade shows its text and molecule chips SRK2E (OST1) and SLAC1; response 'stomatal closure' shows Plant Ontology PO:0002000 stomatal complex, labelled 'curator mapping' (UI-27)"
+    - do: "Enter full screen, hide controls and the info bar, then restore them"
+      expect: "Each control does exactly what it says and the view does not jump (UI-20, UI-24)"
+    - do: "Add a note on the PD01 cascade card; reload the page"
+      expect: "The note is still there, anchored to the card; the notepad link returns to it (UI-18)"
+    - do: "Save to My maps"
+      expect: "A map with exactly the nodes and links shown in Focus, links marked curated with PD01 (UI-29)"
+  must_not: ["the view jumping on selection", "a note lost on reload", "a saved map that differs from what was shown"]

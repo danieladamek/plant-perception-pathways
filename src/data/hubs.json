@@ -1,0 +1,164 @@
+{
+ "caution": "Counts of paths per molecule are NOT centrality. Well-studied receptors (phyB, FERONIA) accrue rows by study volume. Any hub claim needs a study-intensity-controlled comparison. Matching is on the receptor stage only.",
+ "hubs": [
+  {
+   "molecule": "BCA1",
+   "path_ids": [
+    "PCD01",
+    "PCD02"
+   ],
+   "n_paths": 2,
+   "branches_spanned": [
+    "CO2"
+   ]
+  },
+  {
+   "molecule": "BCA4",
+   "path_ids": [
+    "PCD01",
+    "PCD02"
+   ],
+   "n_paths": 2,
+   "branches_spanned": [
+    "CO2"
+   ]
+  },
+  {
+   "molecule": "CRY1",
+   "path_ids": [
+    "PCL01",
+    "PL06",
+    "PZ05",
+    "PZ06"
+   ],
+   "n_paths": 4,
+   "branches_spanned": [
+    "Time (clock)",
+    "Light",
+    "Candidate senses (contested)"
+   ]
+  },
+  {
+   "molecule": "PHYB",
+   "path_ids": [
+    "PCL01",
+    "PL01",
+    "PL02",
+    "PL09",
+    "PZ05"
+   ],
+   "n_paths": 5,
+   "branches_spanned": [
+    "Time (clock)",
+    "Light",
+    "Temperature",
+    "Candidate senses (contested)"
+   ]
+  },
+  {
+   "molecule": "PHOT1",
+   "path_ids": [
+    "PL03",
+    "PL05",
+    "PZ05"
+   ],
+   "n_paths": 3,
+   "branches_spanned": [
+    "Light",
+    "Candidate senses (contested)"
+   ]
+  },
+  {
+   "molecule": "PHOT2",
+   "path_ids": [
+    "PL04",
+    "PL05",
+    "PZ05"
+   ],
+   "n_paths": 3,
+   "branches_spanned": [
+    "Light",
+    "Candidate senses (contested)"
+   ]
+  },
+  {
+   "molecule": "UVR8",
+   "path_ids": [
+    "PL07",
+    "PL08"
+   ],
+   "n_paths": 2,
+   "branches_spanned": [
+    "Light"
+   ]
+  },
+  {
+   "molecule": "NRT1.1",
+   "path_ids": [
+    "PN01",
+    "PN02"
+   ],
+   "n_paths": 2,
+   "branches_spanned": [
+    "Nutrients"
+   ]
+  },
+  {
+   "molecule": "BAK1",
+   "path_ids": [
+    "PP01",
+    "PP03"
+   ],
+   "n_paths": 2,
+   "branches_spanned": [
+    "Pathogens: pattern recognition"
+   ]
+  },
+  {
+   "molecule": "FLS2",
+   "path_ids": [
+    "PP01",
+    "PP02"
+   ],
+   "n_paths": 2,
+   "branches_spanned": [
+    "Pathogens: pattern recognition"
+   ]
+  },
+  {
+   "molecule": "FER",
+   "path_ids": [
+    "PT03",
+    "PX05"
+   ],
+   "n_paths": 2,
+   "branches_spanned": [
+    "Mechanical",
+    "Osmotic and salt"
+   ]
+  },
+  {
+   "molecule": "MSL10",
+   "path_ids": [
+    "PT05",
+    "PW01"
+   ],
+   "n_paths": 2,
+   "branches_spanned": [
+    "Osmotic and salt",
+    "Wounding and herbivores"
+   ]
+  },
+  {
+   "molecule": "CRY2",
+   "path_ids": [
+    "PZ05",
+    "PZ06"
+   ],
+   "n_paths": 2,
+   "branches_spanned": [
+    "Candidate senses (contested)"
+   ]
+  }
+ ]
+}

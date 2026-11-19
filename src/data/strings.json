@@ -1,0 +1,46 @@
+{
+ "brand": [
+  "Plant",
+  "Perception Pathways"
+ ],
+ "home": {
+  "tagline": "How plants sense their world, from the stimulus to the receptor to the response, with the evidence for each step.",
+  "start": "Open the pathway navigator",
+  "status_line": "A curated research dataset, verified at abstract level, not peer reviewed.",
+  "intro_receptors": "Receptor and transducer molecules"
+ },
+ "gaps": {
+  "card": "no verified source yet",
+  "count": "{n} gaps"
+ },
+ "badges": {
+  "contested": "contested ⚑",
+  "proposed": "proposed ⚑",
+  "other_species": "{species} evidence — not Arabidopsis 🌱",
+  "species_missing": "species not curated",
+  "unverified_ref": "unverified",
+  "experimental": "experimental structure",
+  "predicted": "Predicted model — not an experimental structure",
+  "non_reference": "{organism} structure; the Arabidopsis protein may differ",
+  "domain": "domain structure ({n} of {m} residues)",
+  "whole": "whole protein",
+  "unreviewed": "UniProt record not reviewed",
+  "curator_mapping": "curator mapping",
+  "candidate_sense": "candidate sense — not established",
+  "other species_only": "evidence — not Arabidopsis",
+  "non_Arabidopsis": "{organism} structure; the Arabidopsis protein may differ"
+ },
+ "labels": {
+  "n_paths": "number of curated paths",
+  "computed_contacts": "computed by Mol* from the coordinates — a geometric heuristic, not a measured interaction",
+  "uniprot_verbatim": "UniProt, verbatim (CC BY 4.0)",
+  "verified_meaning": "Verified means checked at abstract level, not full text.",
+  "receptor_stage": "Receptor / transducer"
+ },
+ "maps": {
+  "override_flag_legend": "Override: not backed by a curated path",
+  "header_count": "{n} links: {curated} curated · {override} override"
+ },
+ "notice": "This explorer shows curated pathways of plant perception — how plants detect light, gravity, touch, temperature, water, nutrients, microbes, herbivores and chemical cues — with the molecules involved and the evidence for each step. It is a research and teaching tool, not a reference work. \"Verified\" means a reference was checked at abstract level, not full text. \"Perception\" means signal detection by receptors; the app takes no position on plant consciousness.\n",
+ "caution": "Counts of paths per molecule are NOT centrality. Well-studied receptors (phyB, FERONIA) accrue rows by study volume. Any hub claim needs a study-intensity-controlled comparison. Matching is on the receptor stage only."
+}

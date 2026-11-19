@@ -1,0 +1,23 @@
+# legend.yaml — codes, tiers and flags, for outside readers.
+legend:
+- item: What this is
+  meaning: Curated pathways of plant perception — how plants sense their surroundings and their own state, from stimulus to
+    receptor to response — each stage tied to a verified published abstract.
+- item: Stage columns
+  meaning: stimulus → transducer → cascade → signal_route → integration → response (pack-supplied stage kinds; A5.2).
+- item: provenance codes
+  meaning: A = quoted or closely tracked from a verified abstract · K = Cowork expert knowledge, NOT verified
+- item: transducer_tier
+  meaning: B1 established · B2 partial · B3 unknown/inferred (PPE Axis B). Cowork's call, for review.
+- item: row_status
+  meaning: curated = accepted by Daniel (source/curation/decisions.yaml) · candidate = Cowork draft awaiting curation · dropped
+    and about-page rows are kept in paths.yaml but not exported as paths
+- item: ⚑
+  meaning: dual membership or a proposed (not established) mechanism, as in PPE
+- item: citation_verified
+  meaning: 'all / some / none: computed from references.json (OpenAlex title ratio ≥ 0.85, PPE app-methods §1.2)'
+- item: evidence_species
+  meaning: Arabidopsis thaliana unless stated. Rows from other species (senses Arabidopsis lacks, e.g. nodulation) say so,
+    'NOT Arabidopsis' (Daniel, 2026-11-18)
+- item: empty stage
+  meaning: 'a gap: no harvested source supports it yet (source/todo.yaml)'

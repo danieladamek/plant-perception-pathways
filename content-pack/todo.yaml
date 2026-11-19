@@ -1,0 +1,9 @@
+- { id: T-REF-01, what: "Mark landmark references seminal / classic, each with a summary (all are current or background in pack 0.1)", where: references.yaml, owner: Daniel }
+- { id: T-IX-01, what: "Interaction sweep: ligand-binding and protein-complex records with cited role statements (as PPE sweep 3)", where: interactions.yaml, owner: Cowork }
+- { id: T-MOL-01, what: "Match the papers' LZY1/2/3 to UniProt LAZY1/2/4 (PG01)", where: "source/molecule-mapping.yaml", owner: Cowork }
+- { id: T-MOL-02, what: "Lotus NFR1 has two unreviewed UniProt records; Lotus SYMRK has none (Medicago DMI2 stands in)", where: molecules.yaml, owner: Cowork }
+- { id: T-SM-01, what: "OT5 (FERONIA inhibitor bound in 9UBI) is not in PubChem", where: small-molecules.yaml, owner: Cowork }
+- { id: T-K-01, what: "Source 'Arabidopsis does not nodulate' (PS01, provenance K)", where: paths.yaml, owner: Cowork }
+- { id: T-GAP-01, what: "Gap stages: 104 null stage fields, mostly signal routes; sourcing list in source/todo.yaml", where: paths.yaml, owner: Cowork }
+- { id: T-PORT-01, what: "Port and ▶ launcher for plant-perception-pathways at U6", where: manifest.port, owner: RTE }
+- { id: T-CORE-01, what: "A5.3: the core's molecule-stage default (pack sets stage explicitly, so not blocking)", where: perception-core, owner: Claude Code }

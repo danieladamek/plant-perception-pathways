@@ -1,0 +1,40 @@
+{
+ "legend": [
+  {
+   "item": "What this is",
+   "meaning": "Curated pathways of plant perception — how plants sense their surroundings and their own state, from stimulus to receptor to response — each stage tied to a verified published abstract."
+  },
+  {
+   "item": "Stage columns",
+   "meaning": "stimulus → transducer → cascade → signal_route → integration → response (pack-supplied stage kinds; A5.2)."
+  },
+  {
+   "item": "provenance codes",
+   "meaning": "TODO(author): withheld by the jargon wording lint — listed on Methods."
+  },
+  {
+   "item": "transducer_tier",
+   "meaning": "TODO(author): withheld by the jargon wording lint — listed on Methods."
+  },
+  {
+   "item": "row_status",
+   "meaning": "TODO(author): withheld by the jargon wording lint — listed on Methods."
+  },
+  {
+   "item": "⚑",
+   "meaning": "dual membership or a proposed (not established) mechanism, as in PPE"
+  },
+  {
+   "item": "citation_verified",
+   "meaning": "all / some / none: computed from references.json (OpenAlex title ratio ≥ 0.85, PPE app-methods §1.2)"
+  },
+  {
+   "item": "evidence_species",
+   "meaning": "Arabidopsis thaliana unless stated. Rows from other species (senses Arabidopsis lacks, e.g. nodulation) say so, 'NOT Arabidopsis' (Daniel, 2026-11-18)"
+  },
+  {
+   "item": "empty stage",
+   "meaning": "TODO(author): withheld by the jargon wording lint — listed on Methods."
+  }
+ ]
+}

@@ -1,0 +1,1712 @@
+[
+ {
+  "id": "AF-P93835-F1",
+  "molecules": [
+   "CBF1"
+  ],
+  "source_db": "AlphaFoldDB",
+  "featured": true,
+  "kind": "predicted",
+  "organism": "Arabidopsis thaliana",
+  "file": "structures/AF-P93835-F1-model_v6.bcif",
+  "sha256": "bc1622b6a2c00f08d0dad4eec23fd20d658745b4452ad5d09cce7909b67dcce5",
+  "reason": "rule §4.3: no PDB entry; predicted model",
+  "plddt_mean": 72.31,
+  "version": 6,
+  "file_url": "https://alphafold.ebi.ac.uk/files/AF-P93835-F1-model_v6.bcif"
+ },
+ {
+  "id": "AF-Q9LSE2-F1",
+  "molecules": [
+   "ICE1"
+  ],
+  "source_db": "AlphaFoldDB",
+  "featured": true,
+  "kind": "predicted",
+  "organism": "Arabidopsis thaliana",
+  "file": "structures/AF-Q9LSE2-F1-model_v6.bcif",
+  "sha256": "77c3c4618304fd8bff2390d8326f355bb9e56a78d2cb1c0695ad9b5eaad4a27d",
+  "reason": "rule §4.3: no PDB entry; predicted model",
+  "plddt_mean": 57.88,
+  "version": 6,
+  "file_url": "https://alphafold.ebi.ac.uk/files/AF-Q9LSE2-F1-model_v6.bcif"
+ },
+ {
+  "id": "AF-Q9S7Q7-F1",
+  "molecules": [
+   "FLC"
+  ],
+  "source_db": "AlphaFoldDB",
+  "featured": true,
+  "kind": "predicted",
+  "organism": "Arabidopsis thaliana",
+  "file": "structures/AF-Q9S7Q7-F1-model_v6.bcif",
+  "sha256": "44de7de254539a724c6d80bf6c41b694b9696834872795dd4f5790af10d7041c",
+  "reason": "rule §4.3: no PDB entry; predicted model",
+  "plddt_mean": 79.38,
+  "version": 6,
+  "file_url": "https://alphafold.ebi.ac.uk/files/AF-Q9S7Q7-F1-model_v6.bcif"
+ },
+ {
+  "id": "7O6U",
+  "molecules": [
+   "VIN3"
+  ],
+  "source_db": "PDB",
+  "featured": true,
+  "kind": "experimental",
+  "organism": "Arabidopsis thaliana",
+  "file": "structures/7O6U.bcif",
+  "sha256": "1dceeff681c9ac11e8821a98001367a58e8e9bc4c2e8e726b87d0fdb08a25c25",
+  "reason": "rule §4.3: Arabidopsis thaliana, 1.84 Å, released 2022-11-09"
+ },
+ {
+  "id": "AF-P27140-F1",
+  "molecules": [
+   "BCA1"
+  ],
+  "source_db": "AlphaFoldDB",
+  "featured": true,
+  "kind": "predicted",
+  "organism": "Arabidopsis thaliana",
+  "file": "structures/AF-P27140-F1-model_v6.bcif",
+  "sha256": "850003ef1fb9aeb7c9ac3524aeebb7a63c5dab54e963fe68ba0e6b7e035fe1ca",
+  "reason": "rule §4.3: no PDB entry; predicted model",
+  "plddt_mean": 78.94,
+  "version": 6,
+  "file_url": "https://alphafold.ebi.ac.uk/files/AF-P27140-F1-model_v6.bcif"
+ },
+ {
+  "id": "AF-Q94CE4-F1",
+  "molecules": [
+   "BCA4"
+  ],
+  "source_db": "AlphaFoldDB",
+  "featured": true,
+  "kind": "predicted",
+  "organism": "Arabidopsis thaliana",
+  "file": "structures/AF-Q94CE4-F1-model_v6.bcif",
+  "sha256": "775d15fac503010eca18c70277aa4c1bc33a89ab15cede40d9368c5d889eecd4",
+  "reason": "rule §4.3: no PDB entry; predicted model",
+  "plddt_mean": 87.5,
+  "version": 6,
+  "file_url": "https://alphafold.ebi.ac.uk/files/AF-Q94CE4-F1-model_v6.bcif"
+ },
+ {
+  "id": "AF-C0LGQ9-F1",
+  "molecules": [
+   "GHR1"
+  ],
+  "source_db": "AlphaFoldDB",
+  "featured": true,
+  "kind": "predicted",
+  "organism": "Arabidopsis thaliana",
+  "file": "structures/AF-C0LGQ9-F1-model_v6.bcif",
+  "sha256": "fa0d2a7c5d50c75e0d464d89eef8ddf14409e291cad306cfc8345ac93cba2ff6",
+  "reason": "rule §4.3: no PDB entry; predicted model",
+  "plddt_mean": 82.31,
+  "version": 6,
+  "file_url": "https://alphafold.ebi.ac.uk/files/AF-C0LGQ9-F1-model_v6.bcif"
+ },
+ {
+  "id": "AF-Q2MHE4-F1",
+  "molecules": [
+   "HT1"
+  ],
+  "source_db": "AlphaFoldDB",
+  "featured": true,
+  "kind": "predicted",
+  "organism": "Arabidopsis thaliana",
+  "file": "structures/AF-Q2MHE4-F1-model_v6.bcif",
+  "sha256": "c55af85402004bf0357d239cd5a5ccfd4f77130a2a736c0d2690af726129b198",
+  "reason": "rule §4.3: no PDB entry; predicted model",
+  "plddt_mean": 78.25,
+  "version": 6,
+  "file_url": "https://alphafold.ebi.ac.uk/files/AF-Q2MHE4-F1-model_v6.bcif"
+ },
+ {
+  "id": "AF-Q8GYQ5-F1",
+  "molecules": [
+   "MPK12"
+  ],
+  "source_db": "AlphaFoldDB",
+  "featured": true,
+  "kind": "predicted",
+  "organism": "Arabidopsis thaliana",
+  "file": "structures/AF-Q8GYQ5-F1-model_v6.bcif",
+  "sha256": "da300cb6d12ae54c1771fbe76d6c4e42c021dd8ac86a8115d213a1210bb316c0",
+  "reason": "rule §4.3: no PDB entry; predicted model",
+  "plddt_mean": 89.06,
+  "version": 6,
+  "file_url": "https://alphafold.ebi.ac.uk/files/AF-Q8GYQ5-F1-model_v6.bcif"
+ },
+ {
+  "id": "7WNQ",
+  "molecules": [
+   "SLAC1"
+  ],
+  "source_db": "PDB",
+  "featured": true,
+  "kind": "experimental",
+  "organism": "Arabidopsis thaliana",
+  "file": "structures/7WNQ.bcif",
+  "sha256": "dab31310ead3a9cac7fc22a3253f1c57be1c397ba88b7cd0b6f6ee27819f3300",
+  "reason": "rule §4.3: Arabidopsis thaliana, 2.7 Å, released 2022-04-13"
+ },
+ {
+  "id": "3UC4",
+  "molecules": [
+   "SRK2E"
+  ],
+  "source_db": "PDB",
+  "featured": true,
+  "kind": "experimental",
+  "organism": "Arabidopsis thaliana",
+  "file": "structures/3UC4.bcif",
+  "sha256": "ffe905963b2c9ad79d2a11daf0aa47e4441d232b0806df4f82f3f102eba84cf4",
+  "reason": "rule §4.3: Arabidopsis thaliana, 2.3 Å, released 2011-12-14"
+ },
+ {
+  "id": "AF-Q9LNU1-F1",
+  "molecules": [
+   "CRSP"
+  ],
+  "source_db": "AlphaFoldDB",
+  "featured": true,
+  "kind": "predicted",
+  "organism": "Arabidopsis thaliana",
+  "file": "structures/AF-Q9LNU1-F1-model_v6.bcif",
+  "sha256": "7cbc12a4b0d57b42d15aa48a0686636e6889991fe5477fdcdf64ca5bbb910c96",
+  "reason": "rule §4.3: no PDB entry; predicted model",
+  "plddt_mean": 87.5,
+  "version": 6,
+  "file_url": "https://alphafold.ebi.ac.uk/files/AF-Q9LNU1-F1-model_v6.bcif"
+ },
+ {
+  "id": "5XKJ",
+  "molecules": [
+   "EPF2"
+  ],
+  "source_db": "PDB",
+  "featured": true,
+  "kind": "experimental",
+  "organism": "Arabidopsis thaliana",
+  "file": "structures/5XKJ.bcif",
+  "sha256": "47d9a0bc19f0be6baf21aec3abcd4645d7e3ffca64fbba769a011fcc37dcf360",
+  "reason": "rule §4.3: Arabidopsis thaliana, 3.475 Å, released 2019-01-23"
+ },
+ {
+  "id": "AF-Q9ZUZ0-F1",
+  "molecules": [
+   "HIC"
+  ],
+  "source_db": "AlphaFoldDB",
+  "featured": true,
+  "kind": "predicted",
+  "organism": "Arabidopsis thaliana",
+  "file": "structures/AF-Q9ZUZ0-F1-model_v6.bcif",
+  "sha256": "41e50b9778b04d64a662a6e2d6f35480aa2cedbde388eb21362ac8c860874586",
+  "reason": "rule §4.3: no PDB entry; predicted model",
+  "plddt_mean": 91.12,
+  "version": 6,
+  "file_url": "https://alphafold.ebi.ac.uk/files/AF-Q9ZUZ0-F1-model_v6.bcif"
+ },
+ {
+  "id": "AF-P92973-F1",
+  "molecules": [
+   "CCA1"
+  ],
+  "source_db": "AlphaFoldDB",
+  "featured": true,
+  "kind": "predicted",
+  "organism": "Arabidopsis thaliana",
+  "file": "structures/AF-P92973-F1-model_v6.bcif",
+  "sha256": "57b2f8a23ff1ab6423ec7778d38566e96c7713ae4c99a7df3306d887a9f71c69",
+  "reason": "rule §4.3: no PDB entry; predicted model",
+  "plddt_mean": 53.84,
+  "version": 6,
+  "file_url": "https://alphafold.ebi.ac.uk/files/AF-P92973-F1-model_v6.bcif"
+ },
+ {
+  "id": "1U3D",
+  "molecules": [
+   "CRY1"
+  ],
+  "source_db": "PDB",
+  "featured": true,
+  "kind": "experimental",
+  "organism": "Arabidopsis thaliana",
+  "file": "structures/1U3D.bcif",
+  "sha256": "d6c29f81a5ea03dd0c5191a4ce495169cca6cf2252f0bf416bf8e8b1b98f4c3b",
+  "reason": "rule §4.3: Arabidopsis thaliana, 2.45 Å, released 2004-08-24"
+ },
+ {
+  "id": "7WA4",
+  "molecules": [
+   "GI"
+  ],
+  "source_db": "PDB",
+  "featured": true,
+  "kind": "experimental",
+  "organism": "Arabidopsis thaliana",
+  "file": "structures/7WA4.bcif",
+  "sha256": "b24f307533d4619d983055f473dd4b43d57e1ff86efe165b51920603b8c55c79",
+  "reason": "rule §4.3: Arabidopsis thaliana, 3.5 Å, released 2022-04-27"
+ },
+ {
+  "id": "AF-Q6R0H1-F1",
+  "molecules": [
+   "LHY"
+  ],
+  "source_db": "AlphaFoldDB",
+  "featured": true,
+  "kind": "predicted",
+  "organism": "Arabidopsis thaliana",
+  "file": "structures/AF-Q6R0H1-F1-model_v6.bcif",
+  "sha256": "ed75d29b71bfa24c253de70eeb4f4324efd72a612e5c8b48b5ea0477ccc00916",
+  "reason": "rule §4.3: no PDB entry; predicted model",
+  "plddt_mean": 53.72,
+  "version": 6,
+  "file_url": "https://alphafold.ebi.ac.uk/files/AF-Q6R0H1-F1-model_v6.bcif"
+ },
+ {
+  "id": "8ISJ",
+  "molecules": [
+   "PHYA"
+  ],
+  "source_db": "PDB",
+  "featured": true,
+  "kind": "experimental",
+  "organism": "Arabidopsis thaliana",
+  "file": "structures/8ISJ.bcif",
+  "sha256": "cd0aef2eedda6424b43e010be574d4f5ec7e608aadb1ef5c49267adb357f05ce",
+  "reason": "rule §4.3: Arabidopsis thaliana, 3.0 Å, released 2023-08-09"
+ },
+ {
+  "id": "9IRK",
+  "molecules": [
+   "PHYB"
+  ],
+  "source_db": "PDB",
+  "featured": true,
+  "kind": "experimental",
+  "organism": "Arabidopsis thaliana",
+  "file": "structures/9IRK.bcif",
+  "sha256": "45cd651d5c00015baf0a306a0bcaf59a992c8093aca509ea328693327b6e898c",
+  "reason": "rule §4.3: Arabidopsis thaliana, 2.8 Å, released 2025-06-04"
+ },
+ {
+  "id": "AF-Q9LKL2-F1",
+  "molecules": [
+   "TOC1"
+  ],
+  "source_db": "AlphaFoldDB",
+  "featured": true,
+  "kind": "predicted",
+  "organism": "Arabidopsis thaliana",
+  "file": "structures/AF-Q9LKL2-F1-model_v6.bcif",
+  "sha256": "e013e8e948f77e9f4a501e7ddc60e052dfb3f276c9814ae55bddbbb85ddc7fd0",
+  "reason": "rule §4.3: no PDB entry; predicted model",
+  "plddt_mean": 52.97,
+  "version": 6,
+  "file_url": "https://alphafold.ebi.ac.uk/files/AF-Q9LKL2-F1-model_v6.bcif"
+ },
+ {
+  "id": "5SVV",
+  "molecules": [
+   "ZTL"
+  ],
+  "source_db": "PDB",
+  "featured": true,
+  "kind": "experimental",
+  "organism": "Arabidopsis thaliana",
+  "file": "structures/5SVV.bcif",
+  "sha256": "6d89227c2528683798c69d627f20e2ab462fae0cbf666d1d52b1a889ac0e5c3a",
+  "reason": "rule §4.3: Arabidopsis thaliana, 2.101 Å, released 2017-03-08"
+ },
+ {
+  "id": "AF-Q9C9W9-F1",
+  "molecules": [
+   "FKF1"
+  ],
+  "source_db": "AlphaFoldDB",
+  "featured": true,
+  "kind": "predicted",
+  "organism": "Arabidopsis thaliana",
+  "file": "structures/AF-Q9C9W9-F1-model_v6.bcif",
+  "sha256": "33adf3a8ea1e03e7e38d3bd89ce27ac798e70e27825788cca4e5adefd506fb6a",
+  "reason": "rule §4.3: no PDB entry; predicted model",
+  "plddt_mean": 80.31,
+  "version": 6,
+  "file_url": "https://alphafold.ebi.ac.uk/files/AF-Q9C9W9-F1-model_v6.bcif"
+ },
+ {
+  "id": "3KDJ",
+  "molecules": [
+   "ABI1"
+  ],
+  "source_db": "PDB",
+  "featured": true,
+  "kind": "experimental",
+  "organism": "Arabidopsis thaliana",
+  "file": "structures/3KDJ.bcif",
+  "sha256": "0caa57ad7c3e96813172440242ef37fb44bba31231f14d523cb479ed6437733a",
+  "reason": "rule §4.3: Arabidopsis thaliana, 1.878 Å, released 2009-11-10"
+ },
+ {
+  "id": "3W9R",
+  "molecules": [
+   "PYL9"
+  ],
+  "source_db": "PDB",
+  "featured": true,
+  "kind": "experimental",
+  "organism": "Arabidopsis thaliana",
+  "file": "structures/3W9R.bcif",
+  "sha256": "03caf1bc6f84eebd1629840592b5028bb4a374919077c9c2ece3880931ef652b",
+  "reason": "rule §4.3: Arabidopsis thaliana, 1.9 Å, released 2014-04-09"
+ },
+ {
+  "id": "5UR4",
+  "molecules": [
+   "PYR1"
+  ],
+  "source_db": "PDB",
+  "featured": true,
+  "kind": "experimental",
+  "organism": "Arabidopsis thaliana",
+  "file": "structures/5UR4.bcif",
+  "sha256": "68a4d8c04b055226a283665fe66dbb72f14b73b0be73b71b6c233810a1f50d39",
+  "reason": "rule §4.3: Arabidopsis thaliana, 1.52 Å, released 2018-01-24"
+ },
+ {
+  "id": "AF-Q8LFL4-F1",
+  "molecules": [
+   "CLE25"
+  ],
+  "source_db": "AlphaFoldDB",
+  "featured": true,
+  "kind": "predicted",
+  "organism": "Arabidopsis thaliana",
+  "file": "structures/AF-Q8LFL4-F1-model_v6.bcif",
+  "sha256": "85351aaf9d87918b7242d16cda9841944796f4064438009182034bee6c44275e",
+  "reason": "rule §4.3: no PDB entry; predicted model",
+  "plddt_mean": 72.25,
+  "version": 6,
+  "file_url": "https://alphafold.ebi.ac.uk/files/AF-Q8LFL4-F1-model_v6.bcif"
+ },
+ {
+  "id": "7WKW",
+  "molecules": [
+   "PIN3"
+  ],
+  "source_db": "PDB",
+  "featured": true,
+  "kind": "experimental",
+  "organism": "Arabidopsis thaliana",
+  "file": "structures/7WKW.bcif",
+  "sha256": "982d4ea9228c05dac5898d6434588dd68152ae202df9968081c3c29d9c5af2a7",
+  "reason": "rule §4.3: Arabidopsis thaliana, 2.62 Å, released 2022-08-10"
+ },
+ {
+  "id": "3BWN",
+  "molecules": [
+   "TAA1"
+  ],
+  "source_db": "PDB",
+  "featured": true,
+  "kind": "experimental",
+  "organism": "Arabidopsis thaliana",
+  "file": "structures/3BWN.bcif",
+  "sha256": "8bd9a2fd404bc636a7bb983200cf2335d0a8aa31bb16cc1b90fdef5568c1c5d6",
+  "reason": "rule §4.3: Arabidopsis thaliana, 2.25 Å, released 2008-04-29"
+ },
+ {
+  "id": "AF-O22227-F1",
+  "molecules": [
+   "MIZ1"
+  ],
+  "source_db": "AlphaFoldDB",
+  "featured": true,
+  "kind": "predicted",
+  "organism": "Arabidopsis thaliana",
+  "file": "structures/AF-O22227-F1-model_v6.bcif",
+  "sha256": "6b0534e0b27c4b3f07c556c8d2e7362f107b50c085db671dac4e89be8cd349b8",
+  "reason": "rule §4.3: no PDB entry; predicted model",
+  "plddt_mean": 67.56,
+  "version": 6,
+  "file_url": "https://alphafold.ebi.ac.uk/files/AF-O22227-F1-model_v6.bcif"
+ },
+ {
+  "id": "3P86",
+  "molecules": [
+   "CTR1"
+  ],
+  "source_db": "PDB",
+  "featured": true,
+  "kind": "experimental",
+  "organism": "Arabidopsis thaliana",
+  "file": "structures/3P86.bcif",
+  "sha256": "845448d9c18e1adecc468a05916c0606517b3c79e98868d682d964acafd81f4d",
+  "reason": "rule §4.3: Arabidopsis thaliana, 2.496 Å, released 2011-10-26"
+ },
+ {
+  "id": "AF-Q9S814-F1",
+  "molecules": [
+   "EIN2"
+  ],
+  "source_db": "AlphaFoldDB",
+  "featured": true,
+  "kind": "predicted",
+  "organism": "Arabidopsis thaliana",
+  "file": "structures/AF-Q9S814-F1-model_v6.bcif",
+  "sha256": "7a102249be40c7d72d8523d672a82db50e438cb98e014121a368386b5196dea7",
+  "reason": "rule §4.3: no PDB entry; predicted model",
+  "plddt_mean": 58.62,
+  "version": 6,
+  "file_url": "https://alphafold.ebi.ac.uk/files/AF-Q9S814-F1-model_v6.bcif"
+ },
+ {
+  "id": "4ZDS",
+  "molecules": [
+   "EIN3"
+  ],
+  "source_db": "PDB",
+  "featured": true,
+  "kind": "experimental",
+  "organism": "Arabidopsis thaliana",
+  "file": "structures/4ZDS.bcif",
+  "sha256": "033f96e6a271a96443ba5bc547f01bbcde229774b23077c299876e5f1ec92db7",
+  "reason": "rule §4.3: Arabidopsis thaliana, 1.78 Å, released 2015-09-23"
+ },
+ {
+  "id": "4PL9",
+  "molecules": [
+   "ETR1"
+  ],
+  "source_db": "PDB",
+  "featured": true,
+  "kind": "experimental",
+  "organism": "Arabidopsis thaliana",
+  "file": "structures/4PL9.bcif",
+  "sha256": "107a9871f2b244661dd28e437991526159e6aab567bf8fdde501b050fe0b3a1f",
+  "reason": "rule §4.3: Arabidopsis thaliana, 1.9 Å, released 2014-12-17"
+ },
+ {
+  "id": "AF-Q5XV40-F1",
+  "molecules": [
+   "LAZY1"
+  ],
+  "source_db": "AlphaFoldDB",
+  "featured": true,
+  "kind": "predicted",
+  "organism": "Arabidopsis thaliana",
+  "file": "structures/AF-Q5XV40-F1-model_v6.bcif",
+  "sha256": "37376eaa07d46f9f0064c3ef0b1b8881a77fe20ff13a8be6b171af354adcdc38",
+  "reason": "rule §4.3: no PDB entry; predicted model",
+  "plddt_mean": 54.16,
+  "version": 6,
+  "file_url": "https://alphafold.ebi.ac.uk/files/AF-Q5XV40-F1-model_v6.bcif"
+ },
+ {
+  "id": "AF-Q58G53-F1",
+  "molecules": [
+   "LAZY2"
+  ],
+  "source_db": "AlphaFoldDB",
+  "featured": true,
+  "kind": "predicted",
+  "organism": "Arabidopsis thaliana",
+  "file": "structures/AF-Q58G53-F1-model_v6.bcif",
+  "sha256": "bbdaff9bde5095f783b52712e4c1c4d477d5ba33016ba6a35d8d33ad77c8a65c",
+  "reason": "rule §4.3: no PDB entry; predicted model",
+  "plddt_mean": 56.72,
+  "version": 6,
+  "file_url": "https://alphafold.ebi.ac.uk/files/AF-Q58G53-F1-model_v6.bcif"
+ },
+ {
+  "id": "AF-Q5XVG3-F1",
+  "molecules": [
+   "LAZY4"
+  ],
+  "source_db": "AlphaFoldDB",
+  "featured": true,
+  "kind": "predicted",
+  "organism": "Arabidopsis thaliana",
+  "file": "structures/AF-Q5XVG3-F1-model_v6.bcif",
+  "sha256": "1fbc2c513636abf7776a34bf415e504b6e2a0449ee0ad4c150fbc7f15175d409",
+  "reason": "rule §4.3: no whole-protein PDB entry (only fragments or motif peptides); predicted model",
+  "plddt_mean": 56.81,
+  "version": 6,
+  "file_url": "https://alphafold.ebi.ac.uk/files/AF-Q5XVG3-F1-model_v6.bcif"
+ },
+ {
+  "id": "AF-Q9SCY0-F1",
+  "molecules": [
+   "PGMP"
+  ],
+  "source_db": "AlphaFoldDB",
+  "featured": true,
+  "kind": "predicted",
+  "organism": "Arabidopsis thaliana",
+  "file": "structures/AF-Q9SCY0-F1-model_v6.bcif",
+  "sha256": "61924fd7075cba4d85fc5a801a3265f84efea1f7aa98cc5d3943e945c88bd3fd",
+  "reason": "rule §4.3: no PDB entry; predicted model",
+  "plddt_mean": 90.06,
+  "version": 6,
+  "file_url": "https://alphafold.ebi.ac.uk/files/AF-Q9SCY0-F1-model_v6.bcif"
+ },
+ {
+  "id": "AF-O82804-F1",
+  "molecules": [
+   "ELF3"
+  ],
+  "source_db": "AlphaFoldDB",
+  "featured": true,
+  "kind": "predicted",
+  "organism": "Arabidopsis thaliana",
+  "file": "structures/AF-O82804-F1-model_v6.bcif",
+  "sha256": "567de9bc33445ed7a389fed6156d0476ce6df8729c919a8dc8c06df7d43729e7",
+  "reason": "rule §4.3: no PDB entry; predicted model",
+  "plddt_mean": 50.53,
+  "version": 6,
+  "file_url": "https://alphafold.ebi.ac.uk/files/AF-O82804-F1-model_v6.bcif"
+ },
+ {
+  "id": "AF-O04211-F1",
+  "molecules": [
+   "ELF4"
+  ],
+  "source_db": "AlphaFoldDB",
+  "featured": true,
+  "kind": "predicted",
+  "organism": "Arabidopsis thaliana",
+  "file": "structures/AF-O04211-F1-model_v6.bcif",
+  "sha256": "b97423480e91fc2981bb5a951ff2b8b81b6757adddb01f15c70e046b6a2e3fee",
+  "reason": "rule §4.3: no PDB entry; predicted model",
+  "plddt_mean": 79.31,
+  "version": 6,
+  "file_url": "https://alphafold.ebi.ac.uk/files/AF-O04211-F1-model_v6.bcif"
+ },
+ {
+  "id": "6QEC",
+  "molecules": [
+   "LUX"
+  ],
+  "source_db": "PDB",
+  "featured": true,
+  "kind": "experimental",
+  "organism": "Arabidopsis thaliana",
+  "file": "structures/6QEC.bcif",
+  "sha256": "9a5bd251d2cb84788ad9a995430d37f525e5c825fd9a11df166dfe43e937f8a3",
+  "reason": "rule §4.3: Arabidopsis thaliana, 1.9 Å, released 2020-02-05"
+ },
+ {
+  "id": "AF-Q8W2F3-F1",
+  "molecules": [
+   "PIF4"
+  ],
+  "source_db": "AlphaFoldDB",
+  "featured": true,
+  "kind": "predicted",
+  "organism": "Arabidopsis thaliana",
+  "file": "structures/AF-Q8W2F3-F1-model_v6.bcif",
+  "sha256": "a0e40c3dd846d5f9361cc54ca1edd5f087f9e4234e7b707d839b51e752371d0c",
+  "reason": "rule §4.3: no PDB entry; predicted model",
+  "plddt_mean": 56.09,
+  "version": 6,
+  "file_url": "https://alphafold.ebi.ac.uk/files/AF-Q8W2F3-F1-model_v6.bcif"
+ },
+ {
+  "id": "AF-Q84LH8-F1",
+  "molecules": [
+   "PIF5"
+  ],
+  "source_db": "AlphaFoldDB",
+  "featured": true,
+  "kind": "predicted",
+  "organism": "Arabidopsis thaliana",
+  "file": "structures/AF-Q84LH8-F1-model_v6.bcif",
+  "sha256": "e5789d699fa539f070b21bb2c3ad65b067c2974eb1dd589a04e819a511774653",
+  "reason": "rule §4.3: no PDB entry; predicted model",
+  "plddt_mean": 55.5,
+  "version": 6,
+  "file_url": "https://alphafold.ebi.ac.uk/files/AF-Q84LH8-F1-model_v6.bcif"
+ },
+ {
+  "id": "AF-Q570R7-F1",
+  "molecules": [
+   "PIF7"
+  ],
+  "source_db": "AlphaFoldDB",
+  "featured": true,
+  "kind": "predicted",
+  "organism": "Arabidopsis thaliana",
+  "file": "structures/AF-Q570R7-F1-model_v6.bcif",
+  "sha256": "48d431375805d42737aef814f66c297dee154b4d3a3608a85a09dd0f8d305b8f",
+  "reason": "rule §4.3: no PDB entry; predicted model",
+  "plddt_mean": 62.56,
+  "version": 6,
+  "file_url": "https://alphafold.ebi.ac.uk/files/AF-Q570R7-F1-model_v6.bcif"
+ },
+ {
+  "id": "9K45",
+  "molecules": [
+   "HTA9"
+  ],
+  "source_db": "PDB",
+  "featured": true,
+  "kind": "experimental",
+  "organism": "Arabidopsis thaliana",
+  "file": "structures/9K45.bcif",
+  "sha256": "6feca3504cdb1ca4b024964d73fa80ae74e8dba10f70c014a550a5785e1645c2",
+  "reason": "rule §4.3: Arabidopsis thaliana, 2.71 Å, released 2025-11-12"
+ },
+ {
+  "id": "AF-O65718-F1",
+  "molecules": [
+   "CNGC2"
+  ],
+  "source_db": "AlphaFoldDB",
+  "featured": true,
+  "kind": "predicted",
+  "organism": "Arabidopsis thaliana",
+  "file": "structures/AF-O65718-F1-model_v6.bcif",
+  "sha256": "7823c03b7299ede7615a7e6123ae819746ce75dec14e71347f4b01a4bdc1e42f",
+  "reason": "rule §4.3: no PDB entry; predicted model",
+  "plddt_mean": 75.31,
+  "version": 6,
+  "file_url": "https://alphafold.ebi.ac.uk/files/AF-O65718-F1-model_v6.bcif"
+ },
+ {
+  "id": "8VD3",
+  "molecules": [
+   "D14"
+  ],
+  "source_db": "PDB",
+  "featured": true,
+  "kind": "experimental",
+  "organism": "Arabidopsis thaliana",
+  "file": "structures/8VD3.bcif",
+  "sha256": "ad376dd425fe37d5f5d19ba04df88dd15e311d831bf653a37ca138d1d786ee34",
+  "reason": "rule §4.3: Arabidopsis thaliana, 2.0 Å, released 2024-07-31"
+ },
+ {
+  "id": "8ZVO",
+  "molecules": [
+   "KAI2"
+  ],
+  "source_db": "PDB",
+  "featured": true,
+  "kind": "experimental",
+  "organism": "Arabidopsis thaliana",
+  "file": "structures/8ZVO.bcif",
+  "sha256": "cc4838bf2e6c0ddd76eaccf06322eb7e351c15cea2b845c6996efdb9beb1ec93",
+  "reason": "rule §4.3: Arabidopsis thaliana, 1.49 Å, released 2025-02-19"
+ },
+ {
+  "id": "AF-Q9SIM9-F1",
+  "molecules": [
+   "MAX2"
+  ],
+  "source_db": "AlphaFoldDB",
+  "featured": true,
+  "kind": "predicted",
+  "organism": "Arabidopsis thaliana",
+  "file": "structures/AF-Q9SIM9-F1-model_v6.bcif",
+  "sha256": "bc424b6266fa5455ecabb15c22252c2f796357f4115b06f467ae2598e5e2cfba",
+  "reason": "rule §4.3: no PDB entry; predicted model",
+  "plddt_mean": 87.25,
+  "version": 6,
+  "file_url": "https://alphafold.ebi.ac.uk/files/AF-Q9SIM9-F1-model_v6.bcif"
+ },
+ {
+  "id": "2Z6C",
+  "molecules": [
+   "PHOT1"
+  ],
+  "source_db": "PDB",
+  "featured": true,
+  "kind": "experimental",
+  "organism": "Arabidopsis thaliana",
+  "file": "structures/2Z6C.bcif",
+  "sha256": "3808351cdc621fced317d421007164aa2ce916983785d75e9e54264386425bf0",
+  "reason": "rule §4.3: Arabidopsis thaliana, 2.1 Å, released 2008-07-29"
+ },
+ {
+  "id": "6QQH",
+  "molecules": [
+   "PHOT2"
+  ],
+  "source_db": "PDB",
+  "featured": true,
+  "kind": "experimental",
+  "organism": "Arabidopsis thaliana",
+  "file": "structures/6QQH.bcif",
+  "sha256": "661309bfeee991a032c2f542faefd04cad4cd3f707dee7d5d5ceb877ae4b81de",
+  "reason": "rule §4.3: Arabidopsis thaliana, 1.38 Å, released 2019-06-19"
+ },
+ {
+  "id": "6QTS",
+  "molecules": [
+   "COP1"
+  ],
+  "source_db": "PDB",
+  "featured": true,
+  "kind": "experimental",
+  "organism": "Arabidopsis thaliana",
+  "file": "structures/6QTS.bcif",
+  "sha256": "9990e949b2e635e5cb35f2c4c6fe07095773db4eef113f427e8ca9953617c1e3",
+  "reason": "rule §4.3: Arabidopsis thaliana, 1.11 Å, released 2019-07-10"
+ },
+ {
+  "id": "4D9S",
+  "molecules": [
+   "UVR8"
+  ],
+  "source_db": "PDB",
+  "featured": true,
+  "kind": "experimental",
+  "organism": "Arabidopsis thaliana",
+  "file": "structures/4D9S.bcif",
+  "sha256": "c2dd019243cf6b25a310d5a7ef1fe0c451e5daf328242c55dc506f22ff19c99d",
+  "reason": "curator: wild-type Arabidopsis UVR8 (the 2012 structure); the rule picked 6QTQ, a COP1 WD40 domain holding a UVR8 C-terminal peptide"
+ },
+ {
+  "id": "AF-Q9M9V8-F1",
+  "molecules": [
+   "CPK10"
+  ],
+  "source_db": "AlphaFoldDB",
+  "featured": true,
+  "kind": "predicted",
+  "organism": "Arabidopsis thaliana",
+  "file": "structures/AF-Q9M9V8-F1-model_v6.bcif",
+  "sha256": "3b4b0308789c0c80c63cbceb10b853d74de45ab5d88f4e4da609a7d5452e4344",
+  "reason": "rule §4.3: no PDB entry; predicted model",
+  "plddt_mean": 76.31,
+  "version": 6,
+  "file_url": "https://alphafold.ebi.ac.uk/files/AF-Q9M9V8-F1-model_v6.bcif"
+ },
+ {
+  "id": "AF-Q84TH9-F1",
+  "molecules": [
+   "NLP7"
+  ],
+  "source_db": "AlphaFoldDB",
+  "featured": true,
+  "kind": "predicted",
+  "organism": "Arabidopsis thaliana",
+  "file": "structures/AF-Q84TH9-F1-model_v6.bcif",
+  "sha256": "da90d533fa9edd6d62d28df312fc41d4ad7dca304aad6c14e840a2afad94c795",
+  "reason": "rule §4.3: no PDB entry; predicted model",
+  "plddt_mean": 63.22,
+  "version": 6,
+  "file_url": "https://alphafold.ebi.ac.uk/files/AF-Q84TH9-F1-model_v6.bcif"
+ },
+ {
+  "id": "4OH3",
+  "molecules": [
+   "NRT1.1"
+  ],
+  "source_db": "PDB",
+  "featured": true,
+  "kind": "experimental",
+  "organism": "Arabidopsis thaliana",
+  "file": "structures/4OH3.bcif",
+  "sha256": "e32f1695c0f211f2eaeb5e34d5ff84023ded018208ccee45d54b2ed1e705aa50",
+  "reason": "rule §4.3: Arabidopsis thaliana, 3.25 Å, released 2014-03-05"
+ },
+ {
+  "id": "AF-Q8L8Y3-F1",
+  "molecules": [
+   "CEP1"
+  ],
+  "source_db": "AlphaFoldDB",
+  "featured": true,
+  "kind": "predicted",
+  "organism": "Arabidopsis thaliana",
+  "file": "structures/AF-Q8L8Y3-F1-model_v6.bcif",
+  "sha256": "7dd67a3bfc0b59743a182e9aca47b20869c615c856b2eb8028569d0c09070482",
+  "reason": "rule §4.3: no PDB entry; predicted model",
+  "plddt_mean": 65.12,
+  "version": 6,
+  "file_url": "https://alphafold.ebi.ac.uk/files/AF-Q8L8Y3-F1-model_v6.bcif"
+ },
+ {
+  "id": "AF-Q9FGL5-F1",
+  "molecules": [
+   "CEPR1"
+  ],
+  "source_db": "AlphaFoldDB",
+  "featured": true,
+  "kind": "predicted",
+  "organism": "Arabidopsis thaliana",
+  "file": "structures/AF-Q9FGL5-F1-model_v6.bcif",
+  "sha256": "9a990a372bff8abda6e294c8fa9878c7f8bd5afe4b38c6c3915818403cf996f0",
+  "reason": "rule §4.3: no PDB entry; predicted model",
+  "plddt_mean": 83.44,
+  "version": 6,
+  "file_url": "https://alphafold.ebi.ac.uk/files/AF-Q9FGL5-F1-model_v6.bcif"
+ },
+ {
+  "id": "6J4K",
+  "molecules": [
+   "PHR1"
+  ],
+  "source_db": "PDB",
+  "featured": true,
+  "kind": "experimental",
+  "organism": "Arabidopsis thaliana",
+  "file": "structures/6J4K.bcif",
+  "sha256": "9663c8e309ddb5458a5774b3a9eb1d5cb8fe1ccdd2296bebead8773cb10b176a",
+  "reason": "rule §4.3: Arabidopsis thaliana, 1.58 Å, released 2019-04-24"
+ },
+ {
+  "id": "AF-Q8LBH4-F1",
+  "molecules": [
+   "SPX1"
+  ],
+  "source_db": "AlphaFoldDB",
+  "featured": true,
+  "kind": "predicted",
+  "organism": "Arabidopsis thaliana",
+  "file": "structures/AF-Q8LBH4-F1-model_v6.bcif",
+  "sha256": "94dc244f6e5c0a0eb66f652be82d82e5a92046bc09f3906b2d379031147420cc",
+  "reason": "rule §4.3: no PDB entry; predicted model",
+  "plddt_mean": 80.38,
+  "version": 6,
+  "file_url": "https://alphafold.ebi.ac.uk/files/AF-Q8LBH4-F1-model_v6.bcif"
+ },
+ {
+  "id": "AF-F4I4K5-F1",
+  "molecules": [
+   "LPR1"
+  ],
+  "source_db": "AlphaFoldDB",
+  "featured": true,
+  "kind": "predicted",
+  "organism": "Arabidopsis thaliana",
+  "file": "structures/AF-F4I4K5-F1-model_v6.bcif",
+  "sha256": "afecd623fcb2be65ba40de1c3f33da49be27455fc8f36b6c91d6ee9c5fcb37e9",
+  "reason": "rule §4.3: no PDB entry; predicted model",
+  "plddt_mean": 93.31,
+  "version": 6,
+  "file_url": "https://alphafold.ebi.ac.uk/files/AF-F4I4K5-F1-model_v6.bcif"
+ },
+ {
+  "id": "AF-Q8LPQ5-F1",
+  "molecules": [
+   "BTS"
+  ],
+  "source_db": "AlphaFoldDB",
+  "featured": true,
+  "kind": "predicted",
+  "organism": "Arabidopsis thaliana",
+  "file": "structures/AF-Q8LPQ5-F1-model_v6.bcif",
+  "sha256": "d46404caf57d661e49c614ad5af84be15b61e9c0ebdd31bfced1c933bda94e0c",
+  "reason": "rule §4.3: no PDB entry; predicted model",
+  "plddt_mean": 72.38,
+  "version": 6,
+  "file_url": "https://alphafold.ebi.ac.uk/files/AF-Q8LPQ5-F1-model_v6.bcif"
+ },
+ {
+  "id": "AF-Q0V7X4-F1",
+  "molecules": [
+   "FIT"
+  ],
+  "source_db": "AlphaFoldDB",
+  "featured": true,
+  "kind": "predicted",
+  "organism": "Arabidopsis thaliana",
+  "file": "structures/AF-Q0V7X4-F1-model_v6.bcif",
+  "sha256": "bd9225adfadf5f7a4c42bb39128ea7687b954aac96e483f3f3da892f9be550c8",
+  "reason": "rule §4.3: no PDB entry; predicted model",
+  "plddt_mean": 69.06,
+  "version": 6,
+  "file_url": "https://alphafold.ebi.ac.uk/files/AF-Q0V7X4-F1-model_v6.bcif"
+ },
+ {
+  "id": "AF-Q9LXG9-F1",
+  "molecules": [
+   "PCO1"
+  ],
+  "source_db": "AlphaFoldDB",
+  "featured": true,
+  "kind": "predicted",
+  "organism": "Arabidopsis thaliana",
+  "file": "structures/AF-Q9LXG9-F1-model_v6.bcif",
+  "sha256": "5a7a3298eaa0d784926e4f6050c83063e49fc1682fa80988d2506fe3b46dcf1a",
+  "reason": "rule §4.3: no PDB entry; predicted model",
+  "plddt_mean": 81.44,
+  "version": 6,
+  "file_url": "https://alphafold.ebi.ac.uk/files/AF-Q9LXG9-F1-model_v6.bcif"
+ },
+ {
+  "id": "7CXZ",
+  "molecules": [
+   "PCO2"
+  ],
+  "source_db": "PDB",
+  "featured": true,
+  "kind": "experimental",
+  "organism": "Arabidopsis thaliana",
+  "file": "structures/7CXZ.bcif",
+  "sha256": "8943742093d133d275e7cee42119b032af3ff4c700331939e41218b715d3b024",
+  "reason": "rule §4.3: Arabidopsis thaliana, 1.561 Å, released 2020-11-25"
+ },
+ {
+  "id": "AF-Q9SSA8-F1",
+  "molecules": [
+   "RAP2-12"
+  ],
+  "source_db": "AlphaFoldDB",
+  "featured": true,
+  "kind": "predicted",
+  "organism": "Arabidopsis thaliana",
+  "file": "structures/AF-Q9SSA8-F1-model_v6.bcif",
+  "sha256": "f4e9fc423c96485f9e4312a951af1f66fe29b4e11a64548d943d95760b817e62",
+  "reason": "rule §4.3: no PDB entry; predicted model",
+  "plddt_mean": 60.03,
+  "version": 6,
+  "file_url": "https://alphafold.ebi.ac.uk/files/AF-Q9SSA8-F1-model_v6.bcif"
+ },
+ {
+  "id": "9VH2",
+  "molecules": [
+   "BAK1"
+  ],
+  "source_db": "PDB",
+  "featured": true,
+  "kind": "experimental",
+  "organism": "Arabidopsis thaliana",
+  "file": "structures/9VH2.bcif",
+  "sha256": "8999d1c5416ccdff9668cffb8b690f141612384092e3cbbe2672091803926af0",
+  "reason": "rule §4.3: Arabidopsis thaliana, 2.65 Å, released 2026-09-23"
+ },
+ {
+  "id": "5TOS",
+  "molecules": [
+   "BIK1"
+  ],
+  "source_db": "PDB",
+  "featured": true,
+  "kind": "experimental",
+  "organism": "Arabidopsis thaliana",
+  "file": "structures/5TOS.bcif",
+  "sha256": "483c441fce12445efc7fc933e0f7d9772fb72e546b10777d3c85d65f28fba137",
+  "reason": "rule §4.3: Arabidopsis thaliana, 2.35 Å, released 2018-04-18"
+ },
+ {
+  "id": "4MN8",
+  "molecules": [
+   "FLS2"
+  ],
+  "source_db": "PDB",
+  "featured": true,
+  "kind": "experimental",
+  "organism": "Arabidopsis thaliana",
+  "file": "structures/4MN8.bcif",
+  "sha256": "a711113cde85493648eb58d56ae111ba8b01b8544979e60f94aec2dc834bac57",
+  "reason": "rule §4.3: Arabidopsis thaliana, 3.062 Å, released 2013-12-04"
+ },
+ {
+  "id": "AF-Q39023-F1",
+  "molecules": [
+   "MPK3"
+  ],
+  "source_db": "AlphaFoldDB",
+  "featured": true,
+  "kind": "predicted",
+  "organism": "Arabidopsis thaliana",
+  "file": "structures/AF-Q39023-F1-model_v6.bcif",
+  "sha256": "94c9b6b785877fbb3804b02a2cfdd8859f2fdb126fb96187846431660810d8f6",
+  "reason": "rule §4.3: no PDB entry; predicted model",
+  "plddt_mean": 91,
+  "version": 6,
+  "file_url": "https://alphafold.ebi.ac.uk/files/AF-Q39023-F1-model_v6.bcif"
+ },
+ {
+  "id": "6DTL",
+  "molecules": [
+   "MPK6"
+  ],
+  "source_db": "PDB",
+  "featured": true,
+  "kind": "experimental",
+  "organism": "Arabidopsis thaliana",
+  "file": "structures/6DTL.bcif",
+  "sha256": "724868e79679bff5df12da7c8c1260836518c032e3ad5c3967e64767399dded7",
+  "reason": "rule §4.3: Arabidopsis thaliana, 2.753 Å, released 2019-05-15"
+ },
+ {
+  "id": "AF-Q9FIJ0-F1",
+  "molecules": [
+   "RBOHD"
+  ],
+  "source_db": "AlphaFoldDB",
+  "featured": true,
+  "kind": "predicted",
+  "organism": "Arabidopsis thaliana",
+  "file": "structures/AF-Q9FIJ0-F1-model_v6.bcif",
+  "sha256": "4176d0fe1b30c1a01f8ec9085f52918ce3fcd65383950583a369bf437dd43fc3",
+  "reason": "rule §4.3: no PDB entry; predicted model",
+  "plddt_mean": 74.25,
+  "version": 6,
+  "file_url": "https://alphafold.ebi.ac.uk/files/AF-Q9FIJ0-F1-model_v6.bcif"
+ },
+ {
+  "id": "AF-C0LGT6-F1",
+  "molecules": [
+   "EFR"
+  ],
+  "source_db": "AlphaFoldDB",
+  "featured": true,
+  "kind": "predicted",
+  "organism": "Arabidopsis thaliana",
+  "file": "structures/AF-C0LGT6-F1-model_v6.bcif",
+  "sha256": "a8a5c4a06c68620d84b784730dfc60ef8c7903d0d7b3907913c9d3da6b3bc2e8",
+  "reason": "rule §4.3: no PDB entry; predicted model",
+  "plddt_mean": 86.19,
+  "version": 6,
+  "file_url": "https://alphafold.ebi.ac.uk/files/AF-C0LGT6-F1-model_v6.bcif"
+ },
+ {
+  "id": "4EBY",
+  "molecules": [
+   "CERK1"
+  ],
+  "source_db": "PDB",
+  "featured": true,
+  "kind": "experimental",
+  "organism": "Arabidopsis thaliana",
+  "file": "structures/4EBY.bcif",
+  "sha256": "8ee6a9d389807fa2c533cad2f55d996e4051a251334fddc9e1b7f531ba9d3de1",
+  "reason": "rule §4.3: Arabidopsis thaliana, 1.65 Å, released 2012-06-27"
+ },
+ {
+  "id": "6J5T",
+  "molecules": [
+   "PBL2",
+   "RKS1",
+   "ZAR1"
+  ],
+  "source_db": "PDB",
+  "featured": true,
+  "kind": "experimental",
+  "organism": "Arabidopsis thaliana",
+  "file": "structures/6J5T.bcif",
+  "sha256": "623b867928ae7884a2b974f3f66df377fb4a0f0186a42dfe45f19a29af0cc691",
+  "reason": "rule §4.3: Arabidopsis thaliana, 3.4 Å, released 2019-03-20"
+ },
+ {
+  "id": "AF-Q8GYN5-F1",
+  "molecules": [
+   "RIN4"
+  ],
+  "source_db": "AlphaFoldDB",
+  "featured": true,
+  "kind": "predicted",
+  "organism": "Arabidopsis thaliana",
+  "file": "structures/AF-Q8GYN5-F1-model_v6.bcif",
+  "sha256": "c5572c254a343681c4a280ea63942f913c01941bb29d5778622d6edca5f5c5ce",
+  "reason": "curator: largely disordered; its PDB entries are short fragments bound to bacterial effectors (AvrB)",
+  "plddt_mean": 56.25,
+  "version": 6,
+  "file_url": "https://alphafold.ebi.ac.uk/files/AF-Q8GYN5-F1-model_v6.bcif"
+ },
+ {
+  "id": "AF-Q39214-F1",
+  "molecules": [
+   "RPM1"
+  ],
+  "source_db": "AlphaFoldDB",
+  "featured": true,
+  "kind": "predicted",
+  "organism": "Arabidopsis thaliana",
+  "file": "structures/AF-Q39214-F1-model_v6.bcif",
+  "sha256": "5e3b86d5f7dd626c75d4133c623b151e77d3ebd1bcd2b265dd3b78b7bf9fdb39",
+  "reason": "rule §4.3: no PDB entry; predicted model",
+  "plddt_mean": 84.75,
+  "version": 6,
+  "file_url": "https://alphafold.ebi.ac.uk/files/AF-Q39214-F1-model_v6.bcif"
+ },
+ {
+  "id": "AF-Q42484-F1",
+  "molecules": [
+   "RPS2"
+  ],
+  "source_db": "AlphaFoldDB",
+  "featured": true,
+  "kind": "predicted",
+  "organism": "Arabidopsis thaliana",
+  "file": "structures/AF-Q42484-F1-model_v6.bcif",
+  "sha256": "becedaac99521dde78d868fd01977aa890314a619a1242995bcb0321c0e5e694",
+  "reason": "rule §4.3: no PDB entry; predicted model",
+  "plddt_mean": 84.12,
+  "version": 6,
+  "file_url": "https://alphafold.ebi.ac.uk/files/AF-Q42484-F1-model_v6.bcif"
+ },
+ {
+  "id": "AF-Q9LMA1-F1",
+  "molecules": [
+   "FMO1"
+  ],
+  "source_db": "AlphaFoldDB",
+  "featured": true,
+  "kind": "predicted",
+  "organism": "Arabidopsis thaliana",
+  "file": "structures/AF-Q9LMA1-F1-model_v6.bcif",
+  "sha256": "3ee6ce76a3766afe0c9048297ef55ace410f58859ff3db42421363d4ca279d5a",
+  "reason": "rule §4.3: no PDB entry; predicted model",
+  "plddt_mean": 91.31,
+  "version": 6,
+  "file_url": "https://alphafold.ebi.ac.uk/files/AF-Q9LMA1-F1-model_v6.bcif"
+ },
+ {
+  "id": "AF-Q9S7H8-F1",
+  "molecules": [
+   "ICS1"
+  ],
+  "source_db": "AlphaFoldDB",
+  "featured": true,
+  "kind": "predicted",
+  "organism": "Arabidopsis thaliana",
+  "file": "structures/AF-Q9S7H8-F1-model_v6.bcif",
+  "sha256": "5e117e48a97764ca218a8ee45a644ca6f5f5cb8960266aaccfe5d6593f801c31",
+  "reason": "rule §4.3: no whole-protein PDB entry (only fragments or motif peptides); predicted model",
+  "plddt_mean": 86.56,
+  "version": 6,
+  "file_url": "https://alphafold.ebi.ac.uk/files/AF-Q9S7H8-F1-model_v6.bcif"
+ },
+ {
+  "id": "7MK3",
+  "molecules": [
+   "NPR1"
+  ],
+  "source_db": "PDB",
+  "featured": true,
+  "kind": "experimental",
+  "organism": "Arabidopsis thaliana",
+  "file": "structures/7MK3.bcif",
+  "sha256": "38442f7f4196d4d65b93a4471629e785eeb3bae9c96729cbf3504b82da1fe9f8",
+  "reason": "rule §4.3: Arabidopsis thaliana, 3.06 Å, released 2022-03-16"
+ },
+ {
+  "id": "AF-Q8L746-F1",
+  "molecules": [
+   "NPR3"
+  ],
+  "source_db": "AlphaFoldDB",
+  "featured": true,
+  "kind": "predicted",
+  "organism": "Arabidopsis thaliana",
+  "file": "structures/AF-Q8L746-F1-model_v6.bcif",
+  "sha256": "83c0f59d619e470efb8e9372ec160c8bd6613e92b704c770195b164804c599f7",
+  "reason": "rule §4.3: no PDB entry; predicted model",
+  "plddt_mean": 78.69,
+  "version": 6,
+  "file_url": "https://alphafold.ebi.ac.uk/files/AF-Q8L746-F1-model_v6.bcif"
+ },
+ {
+  "id": "6WPG",
+  "molecules": [
+   "NPR4"
+  ],
+  "source_db": "PDB",
+  "featured": true,
+  "kind": "experimental",
+  "organism": "Arabidopsis thaliana",
+  "file": "structures/6WPG.bcif",
+  "sha256": "5b259d7651cfcc166f5ce28a1110c40156d1faa1df57d539b9cf0d7b5a1f532b",
+  "reason": "rule §4.3: Arabidopsis thaliana, 2.283 Å, released 2020-08-12"
+ },
+ {
+  "id": "AF-G7IBJ4-F1",
+  "molecules": [
+   "CNGC15A"
+  ],
+  "source_db": "AlphaFoldDB",
+  "featured": true,
+  "kind": "predicted",
+  "organism": "Medicago truncatula",
+  "file": "structures/AF-G7IBJ4-F1-model_v6.bcif",
+  "sha256": "132aa1a2c1a86d3b19a9e24aa435df68e820ac182bd0ae22ae86050b96d5044f",
+  "reason": "rule §4.3: no PDB entry; predicted model",
+  "plddt_mean": 78.19,
+  "version": 6,
+  "file_url": "https://alphafold.ebi.ac.uk/files/AF-G7IBJ4-F1-model_v6.bcif"
+ },
+ {
+  "id": "7VM8",
+  "molecules": [
+   "DMI1"
+  ],
+  "source_db": "PDB",
+  "featured": true,
+  "kind": "experimental",
+  "organism": "Medicago truncatula",
+  "file": "structures/7VM8.bcif",
+  "sha256": "95b9b750f97834e550175147cd8f625f06c53dff0ff027de0b03189684d24245",
+  "reason": "rule §4.3: Medicago truncatula, 3.034 Å, released 2022-08-24"
+ },
+ {
+  "id": "AF-Q6RET7-F1",
+  "molecules": [
+   "DMI3"
+  ],
+  "source_db": "AlphaFoldDB",
+  "featured": true,
+  "kind": "predicted",
+  "organism": "Medicago truncatula",
+  "file": "structures/AF-Q6RET7-F1-model_v6.bcif",
+  "sha256": "6e34e3a0f9a4a4778bd33765885c7856642c8fdd28cffddc9bd66b2b9892526d",
+  "reason": "rule §4.3: no PDB entry; predicted model",
+  "plddt_mean": 73.81,
+  "version": 6,
+  "file_url": "https://alphafold.ebi.ac.uk/files/AF-Q6RET7-F1-model_v6.bcif"
+ },
+ {
+  "id": "8S79",
+  "molecules": [
+   "NFR5"
+  ],
+  "source_db": "PDB",
+  "featured": true,
+  "kind": "experimental",
+  "organism": "Lotus japonicus",
+  "file": "structures/8S79.bcif",
+  "sha256": "0749e615d3cc84cec69bb7093d3d36b48c2c5a410ff8bb7fb7e1bf2e01d57f8f",
+  "reason": "rule §4.3: Lotus japonicus, 2.29 Å, released 2024-11-06"
+ },
+ {
+  "id": "AF-Q8L4H4-F1",
+  "molecules": [
+   "SYMRK"
+  ],
+  "source_db": "AlphaFoldDB",
+  "featured": true,
+  "kind": "predicted",
+  "organism": "Medicago truncatula",
+  "file": "structures/AF-Q8L4H4-F1-model_v6.bcif",
+  "sha256": "b75e6f9e1ffbc24ed705a61d270161bcb5ccbc5e5197032c7b45f18b8ea2edd7",
+  "reason": "rule §4.3: no PDB entry; predicted model",
+  "plddt_mean": 81.62,
+  "version": 6,
+  "file_url": "https://alphafold.ebi.ac.uk/files/AF-Q8L4H4-F1-model_v6.bcif"
+ },
+ {
+  "id": "5Y9W",
+  "molecules": [
+   "LURE1.2",
+   "PRK6"
+  ],
+  "source_db": "PDB",
+  "featured": true,
+  "kind": "experimental",
+  "organism": "Arabidopsis thaliana",
+  "file": "structures/5Y9W.bcif",
+  "sha256": "b87e1e2421faeb4552550028173342098bfb6ec538b2a9a7e1ebce36273b8c2b",
+  "reason": "rule §4.3: Arabidopsis thaliana, 1.847 Å, released 2017-12-27"
+ },
+ {
+  "id": "AF-C0LGU7-F1",
+  "molecules": [
+   "MDIS1"
+  ],
+  "source_db": "AlphaFoldDB",
+  "featured": true,
+  "kind": "predicted",
+  "organism": "Arabidopsis thaliana",
+  "file": "structures/AF-C0LGU7-F1-model_v6.bcif",
+  "sha256": "01c64e9671a5e26d0af2d012af0ff6ebc57032e94b261ebe2fbdae45b6ad628a",
+  "reason": "rule §4.3: no PDB entry; predicted model",
+  "plddt_mean": 69.56,
+  "version": 6,
+  "file_url": "https://alphafold.ebi.ac.uk/files/AF-C0LGU7-F1-model_v6.bcif"
+ },
+ {
+  "id": "AF-Q9M0G7-F1",
+  "molecules": [
+   "MIK1"
+  ],
+  "source_db": "AlphaFoldDB",
+  "featured": true,
+  "kind": "predicted",
+  "organism": "Arabidopsis thaliana",
+  "file": "structures/AF-Q9M0G7-F1-model_v6.bcif",
+  "sha256": "6c4c3f366b90e2fe1b07c3d4bd2e53d3176853aa9fa148bd06cfd055df69da22",
+  "reason": "rule §4.3: no PDB entry; predicted model",
+  "plddt_mean": 83.06,
+  "version": 6,
+  "file_url": "https://alphafold.ebi.ac.uk/files/AF-Q9M0G7-F1-model_v6.bcif"
+ },
+ {
+  "id": "AF-Q8L7E9-F1",
+  "molecules": [
+   "MCA1"
+  ],
+  "source_db": "AlphaFoldDB",
+  "featured": true,
+  "kind": "predicted",
+  "organism": "Arabidopsis thaliana",
+  "file": "structures/AF-Q8L7E9-F1-model_v6.bcif",
+  "sha256": "e222e1a6e7d8324941c25e6e97a0daadd1aacb36ba4ecd2b3848c70fcf27f94d",
+  "reason": "rule §4.3: no PDB entry; predicted model",
+  "plddt_mean": 75.69,
+  "version": 6,
+  "file_url": "https://alphafold.ebi.ac.uk/files/AF-Q8L7E9-F1-model_v6.bcif"
+ },
+ {
+  "id": "AF-Q3EBY6-F1",
+  "molecules": [
+   "MCA2"
+  ],
+  "source_db": "AlphaFoldDB",
+  "featured": true,
+  "kind": "predicted",
+  "organism": "Arabidopsis thaliana",
+  "file": "structures/AF-Q3EBY6-F1-model_v6.bcif",
+  "sha256": "7bdd2cd146b9453b3e499e5e1a1150842d93833cf35e6094783dc8d1cfd96f03",
+  "reason": "rule §4.3: no PDB entry; predicted model",
+  "plddt_mean": 75.75,
+  "version": 6,
+  "file_url": "https://alphafold.ebi.ac.uk/files/AF-Q3EBY6-F1-model_v6.bcif"
+ },
+ {
+  "id": "9UBI",
+  "molecules": [
+   "FER"
+  ],
+  "source_db": "PDB",
+  "featured": true,
+  "kind": "experimental",
+  "organism": "Arabidopsis thaliana",
+  "file": "structures/9UBI.bcif",
+  "sha256": "749d77a5b156060102602e1083b97fe237d349dbff7b631738197cdfdb11dc36",
+  "reason": "rule §4.3: Arabidopsis thaliana, 1.9 Å, released 2025-10-29"
+ },
+ {
+  "id": "AF-P25070-F1",
+  "molecules": [
+   "TCH2"
+  ],
+  "source_db": "AlphaFoldDB",
+  "featured": true,
+  "kind": "predicted",
+  "organism": "Arabidopsis thaliana",
+  "file": "structures/AF-P25070-F1-model_v6.bcif",
+  "sha256": "9fe3a1e7512ff16a7c18e6d924894465b1643a453feca297de9a293d3dbaa21f",
+  "reason": "rule §4.3: no PDB entry; predicted model",
+  "plddt_mean": 72.25,
+  "version": 6,
+  "file_url": "https://alphafold.ebi.ac.uk/files/AF-P25070-F1-model_v6.bcif"
+ },
+ {
+  "id": "AF-P25071-F1",
+  "molecules": [
+   "TCH3"
+  ],
+  "source_db": "AlphaFoldDB",
+  "featured": true,
+  "kind": "predicted",
+  "organism": "Arabidopsis thaliana",
+  "file": "structures/AF-P25071-F1-model_v6.bcif",
+  "sha256": "0da206160aa4c8646279008e8771da3cc8d5a5f333ae4e06ea372d1f3f596188",
+  "reason": "rule §4.3: no PDB entry; predicted model",
+  "plddt_mean": 62.62,
+  "version": 6,
+  "file_url": "https://alphafold.ebi.ac.uk/files/AF-P25071-F1-model_v6.bcif"
+ },
+ {
+  "id": "8JWE",
+  "molecules": [
+   "MSL10"
+  ],
+  "source_db": "PDB",
+  "featured": true,
+  "kind": "experimental",
+  "organism": "Arabidopsis thaliana",
+  "file": "structures/8JWE.bcif",
+  "sha256": "2287777451be6230af9aff65f237f5e8ac742932ca1d47c8f32dc3e0e6c7eb4a",
+  "reason": "rule §4.3: Arabidopsis thaliana, 2.74 Å, released 2024-07-03"
+ },
+ {
+  "id": "AF-F4IME2-F1",
+  "molecules": [
+   "MSL8"
+  ],
+  "source_db": "AlphaFoldDB",
+  "featured": true,
+  "kind": "predicted",
+  "organism": "Arabidopsis thaliana",
+  "file": "structures/AF-F4IME2-F1-model_v6.bcif",
+  "sha256": "34311d6bb76fe0854eeba4f4b10f84072d074cd7d0fab83ee6aa09b3e7a33377",
+  "reason": "rule §4.3: no PDB entry; predicted model",
+  "plddt_mean": 63.41,
+  "version": 6,
+  "file_url": "https://alphafold.ebi.ac.uk/files/AF-F4IME2-F1-model_v6.bcif"
+ },
+ {
+  "id": "AF-O04197-F1",
+  "molecules": [
+   "COI1"
+  ],
+  "source_db": "AlphaFoldDB",
+  "featured": true,
+  "kind": "predicted",
+  "organism": "Arabidopsis thaliana",
+  "file": "structures/AF-O04197-F1-model_v6.bcif",
+  "sha256": "5f637ad46257dc35acb6750841ff0dad58b1be346ffd982a91ead0821b33056f",
+  "reason": "rule §4.3: no whole-protein PDB entry (only fragments or motif peptides); predicted model",
+  "plddt_mean": 92.5,
+  "version": 6,
+  "file_url": "https://alphafold.ebi.ac.uk/files/AF-O04197-F1-model_v6.bcif"
+ },
+ {
+  "id": "6VEA",
+  "molecules": [
+   "GLR3.2"
+  ],
+  "source_db": "PDB",
+  "featured": true,
+  "kind": "experimental",
+  "organism": "Arabidopsis thaliana",
+  "file": "structures/6VEA.bcif",
+  "sha256": "201287c870448e50c09aeb81a8f64cb4f9fa78aa303fb7c2466fa54ac1f72e72",
+  "reason": "rule §4.3: Arabidopsis thaliana, 1.58 Å, released 2020-09-23"
+ },
+ {
+  "id": "AF-Q9C8E7-F1",
+  "molecules": [
+   "GLR3.3"
+  ],
+  "source_db": "AlphaFoldDB",
+  "featured": true,
+  "kind": "predicted",
+  "organism": "Arabidopsis thaliana",
+  "file": "structures/AF-Q9C8E7-F1-model_v6.bcif",
+  "sha256": "17fc831240111bb5bf83d012419f80e5cc456f263a7d2f1fc377f880ae1bc177",
+  "reason": "rule §4.3: no whole-protein PDB entry (only fragments or motif peptides); predicted model",
+  "plddt_mean": 82.69,
+  "version": 6,
+  "file_url": "https://alphafold.ebi.ac.uk/files/AF-Q9C8E7-F1-model_v6.bcif"
+ },
+ {
+  "id": "AF-Q84W41-F1",
+  "molecules": [
+   "GLR3.6"
+  ],
+  "source_db": "AlphaFoldDB",
+  "featured": true,
+  "kind": "predicted",
+  "organism": "Arabidopsis thaliana",
+  "file": "structures/AF-Q84W41-F1-model_v6.bcif",
+  "sha256": "74291a8a9b3513a406aa37fb96da16e8b06dd647b8f93a2a5d0bebabb6cce919",
+  "reason": "rule §4.3: no PDB entry; predicted model",
+  "plddt_mean": 84.81,
+  "version": 6,
+  "file_url": "https://alphafold.ebi.ac.uk/files/AF-Q84W41-F1-model_v6.bcif"
+ },
+ {
+  "id": "AF-Q9LMA8-F1",
+  "molecules": [
+   "JAZ1"
+  ],
+  "source_db": "AlphaFoldDB",
+  "featured": true,
+  "kind": "predicted",
+  "organism": "Arabidopsis thaliana",
+  "file": "structures/AF-Q9LMA8-F1-model_v6.bcif",
+  "sha256": "961169fb6d8444a0633f1ccd0366ba2f314d147ebd3a9906ecdb26cdb94e1bc4",
+  "reason": "curator: largely disordered; its PDB entries are Jas-motif peptides or a low-resolution negative-stain map",
+  "plddt_mean": 62.38,
+  "version": 6,
+  "file_url": "https://alphafold.ebi.ac.uk/files/AF-Q9LMA8-F1-model_v6.bcif"
+ },
+ {
+  "id": "5GNJ",
+  "molecules": [
+   "MYC2"
+  ],
+  "source_db": "PDB",
+  "featured": true,
+  "kind": "experimental",
+  "organism": "Arabidopsis thaliana",
+  "file": "structures/5GNJ.bcif",
+  "sha256": "8424245328aec113413073ea6f05d159cfdf652b12647e0e32d79edd3587a5ae",
+  "reason": "rule §4.3: Arabidopsis thaliana, 2.7 Å, released 2017-05-10"
+ },
+ {
+  "id": "5GR8",
+  "molecules": [
+   "PEPR1"
+  ],
+  "source_db": "PDB",
+  "featured": true,
+  "kind": "experimental",
+  "organism": "Arabidopsis thaliana",
+  "file": "structures/5GR8.bcif",
+  "sha256": "cfe7f170f5c2fb52067d822a4af293dc6907ad762b51fa24dc61cd014232e3e5",
+  "reason": "rule §4.3: Arabidopsis thaliana, 2.587 Å, released 2016-12-14"
+ },
+ {
+  "id": "AF-Q9FZ59-F1",
+  "molecules": [
+   "PEPR2"
+  ],
+  "source_db": "AlphaFoldDB",
+  "featured": true,
+  "kind": "predicted",
+  "organism": "Arabidopsis thaliana",
+  "file": "structures/AF-Q9FZ59-F1-model_v6.bcif",
+  "sha256": "a11539018c6b4d918b9adb3242fc07c3f9dba5ae4423ce69696f3b200392f1b8",
+  "reason": "rule §4.3: no PDB entry; predicted model",
+  "plddt_mean": 86.81,
+  "version": 6,
+  "file_url": "https://alphafold.ebi.ac.uk/files/AF-Q9FZ59-F1-model_v6.bcif"
+ },
+ {
+  "id": "AF-Q9LV87-F1",
+  "molecules": [
+   "PROPEP1"
+  ],
+  "source_db": "AlphaFoldDB",
+  "featured": true,
+  "kind": "predicted",
+  "organism": "Arabidopsis thaliana",
+  "file": "structures/AF-Q9LV87-F1-model_v6.bcif",
+  "sha256": "6a2bf8851b6b2fbcb0c740504b830f2b639a5688af2002eb6e9644dc80347847",
+  "reason": "rule §4.3: no whole-protein PDB entry (only fragments or motif peptides); predicted model",
+  "plddt_mean": 64.12,
+  "version": 6,
+  "file_url": "https://alphafold.ebi.ac.uk/files/AF-Q9LV87-F1-model_v6.bcif"
+ },
+ {
+  "id": "AF-Q9LSR9-F1",
+  "molecules": [
+   "LECRK18"
+  ],
+  "source_db": "AlphaFoldDB",
+  "featured": true,
+  "kind": "predicted",
+  "organism": "Arabidopsis thaliana",
+  "file": "structures/AF-Q9LSR9-F1-model_v6.bcif",
+  "sha256": "85685d94c9f683d37d0b2d9c0d9bdc0a0f6ed19014ca493ae2410b8d67a91af9",
+  "reason": "rule §4.3: no PDB entry; predicted model",
+  "plddt_mean": 86.06,
+  "version": 6,
+  "file_url": "https://alphafold.ebi.ac.uk/files/AF-Q9LSR9-F1-model_v6.bcif"
+ },
+ {
+  "id": "21AZ",
+  "molecules": [
+   "HPCA1"
+  ],
+  "source_db": "PDB",
+  "featured": true,
+  "kind": "experimental",
+  "organism": "Arabidopsis thaliana",
+  "file": "structures/21AZ.bcif",
+  "sha256": "c02390bc879d943fa3fdb9f102340ecf9e36d7d2dc6bd0d0af43978f2c862fdf",
+  "reason": "rule §4.3: Arabidopsis thaliana, 2.0 Å, released 2026-08-12"
+ },
+ {
+  "id": "8YMN",
+  "molecules": [
+   "OSCA1"
+  ],
+  "source_db": "PDB",
+  "featured": true,
+  "kind": "experimental",
+  "organism": "Arabidopsis thaliana",
+  "file": "structures/8YMN.bcif",
+  "sha256": "3bf72d9310be8b053eca6c4179d6b247de0a70bb57cfa77a2234123139f486bd",
+  "reason": "rule §4.3: Arabidopsis thaliana, 2.5 Å, released 2024-10-02"
+ },
+ {
+  "id": "8T56",
+  "molecules": [
+   "OSCA1.2"
+  ],
+  "source_db": "PDB",
+  "featured": true,
+  "kind": "experimental",
+  "organism": "Arabidopsis thaliana",
+  "file": "structures/8T56.bcif",
+  "sha256": "ae4587389704a64291539fe717e46b7687fc07c67fcb9d094231d882816d0af4",
+  "reason": "rule §4.3: Arabidopsis thaliana, 2.8 Å, released 2023-12-27"
+ },
+ {
+  "id": "AF-Q9LSR8-F1",
+  "molecules": [
+   "DORN1"
+  ],
+  "source_db": "AlphaFoldDB",
+  "featured": true,
+  "kind": "predicted",
+  "organism": "Arabidopsis thaliana",
+  "file": "structures/AF-Q9LSR8-F1-model_v6.bcif",
+  "sha256": "3d420c9b0d43369fb49686a10a9607ab681624da0069e87338437e9960d9404e",
+  "reason": "rule §4.3: no PDB entry; predicted model",
+  "plddt_mean": 79.19,
+  "version": 6,
+  "file_url": "https://alphafold.ebi.ac.uk/files/AF-Q9LSR8-F1-model_v6.bcif"
+ },
+ {
+  "id": "AF-Q8GWB7-F1",
+  "molecules": [
+   "MOCA1"
+  ],
+  "source_db": "AlphaFoldDB",
+  "featured": true,
+  "kind": "predicted",
+  "organism": "Arabidopsis thaliana",
+  "file": "structures/AF-Q8GWB7-F1-model_v6.bcif",
+  "sha256": "f7917a45aa277c3ab0f105c6e3eefc9ee15a96ba125b05ecb1026fc034ab5b72",
+  "reason": "rule §4.3: no PDB entry; predicted model",
+  "plddt_mean": 82.81,
+  "version": 6,
+  "file_url": "https://alphafold.ebi.ac.uk/files/AF-Q8GWB7-F1-model_v6.bcif"
+ },
+ {
+  "id": "7Y3E",
+  "molecules": [
+   "SOS1"
+  ],
+  "source_db": "PDB",
+  "featured": true,
+  "kind": "experimental",
+  "organism": "Arabidopsis thaliana",
+  "file": "structures/7Y3E.bcif",
+  "sha256": "1099bdf0dd55c72b1c36a53c29b73a7f708ee5496e7659f57d7fe6ef8a1347a3",
+  "reason": "rule §4.3: Arabidopsis thaliana, 2.8 Å, released 2023-08-09"
+ },
+ {
+  "id": "2EHB",
+  "molecules": [
+   "SOS2",
+   "SOS3"
+  ],
+  "source_db": "PDB",
+  "featured": true,
+  "kind": "experimental",
+  "organism": "Arabidopsis thaliana",
+  "file": "structures/2EHB.bcif",
+  "sha256": "b76e7b76105e7b5188a09f2c732ac837c796658c971f48226b57af457c3fd6e9",
+  "reason": "rule §4.3: Arabidopsis thaliana, 2.1 Å, released 2007-09-25"
+ },
+ {
+  "id": "6K8K",
+  "molecules": [
+   "CRY2"
+  ],
+  "source_db": "PDB",
+  "featured": true,
+  "kind": "experimental",
+  "organism": "Arabidopsis thaliana",
+  "file": "structures/6K8K.bcif",
+  "sha256": "6bfe8a5c096acc296f6bef5aa4f37df8c7b92be0bbaebbf3c6c032548ef768da",
+  "reason": "rule §4.3: Arabidopsis thaliana, 2.5 Å, released 2020-05-13"
+ }
+]

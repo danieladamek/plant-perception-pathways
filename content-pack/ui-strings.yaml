@@ -1,0 +1,32 @@
+brand: ["Plant", "Perception Pathways"]     # wordmark "Plant *Perception Pathways*", set like Greenhouse *Explorer*
+home:
+  tagline: "How plants sense their world, from the stimulus to the receptor to the response, with the evidence for each step."
+  start: "Open the pathway navigator"
+  status_line: "A curated research dataset, verified at abstract level, not peer reviewed."
+  intro_receptors: "Receptor and transducer molecules"     # replaces PPE's 'transducer' intro lines (A5.2 note)
+gaps:
+  card: "no verified source yet"
+  count: "{n} gaps"
+badges:
+  contested: "contested ⚑"
+  proposed: "proposed ⚑"
+  other_species: "{species} evidence — not Arabidopsis 🌱"
+  species_missing: "species not curated"
+  unverified_ref: "unverified"
+  experimental: "experimental structure"
+  predicted: "Predicted model — not an experimental structure"
+  non_reference: "{organism} structure; the Arabidopsis protein may differ"
+  domain: "domain structure ({n} of {m} residues)"
+  whole: "whole protein"
+  unreviewed: "UniProt record not reviewed"
+  curator_mapping: "curator mapping"
+  candidate_sense: "candidate sense — not established"
+labels:
+  n_paths: "number of curated paths"
+  computed_contacts: "computed by Mol* from the coordinates — a geometric heuristic, not a measured interaction"
+  uniprot_verbatim: "UniProt, verbatim (CC BY 4.0)"
+  verified_meaning: "Verified means checked at abstract level, not full text."
+  receptor_stage: "Receptor / transducer"
+maps:
+  override_flag_legend: "Override: not backed by a curated path"
+  header_count: "{n} links: {curated} curated · {override} override"

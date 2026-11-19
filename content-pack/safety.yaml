@@ -1,0 +1,21 @@
+profile: general
+notice: >
+  This explorer shows curated pathways of plant perception — how plants detect light, gravity, touch, temperature,
+  water, nutrients, microbes, herbivores and chemical cues — with the molecules involved and the evidence for each step.
+  It is a research and teaching tool, not a reference work. "Verified" means a reference was checked at abstract level,
+  not full text. "Perception" means signal detection by receptors; the app takes no position on plant consciousness.
+blocked_phrases: []      # general profile: no H1 lint; app-specific lints below
+app_lints:
+  - id: jargon
+    rule: "outside-reader wording (app-methods §1)"
+    phrases: ["Cowork", "todo", "ticket", "Update Log", "sweep 1", "sweep 2"]
+    scope: dist text
+  - id: centrality
+    rule: "shared hardware is not centrality (app-methods §5)"
+    phrases: ["central hub", "key hub", "most important", "centrality score", "hub molecule", "master regulator"]
+    allowed_phrases: ["Counts of paths per molecule are NOT centrality"]
+    scope: dist text
+  - id: contested-framing
+    rule: "candidate senses and the consciousness question are never presented as settled (app-methods §7)"
+    phrases: ["plants feel pain", "plants are conscious", "plants can hear", "plants learn", "plant intelligence is proven", "plants think"]
+    scope: "dist text, except quoted abstracts and quoted source text (UI-31)"

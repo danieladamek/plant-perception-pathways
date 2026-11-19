@@ -1,0 +1,9 @@
+# changes.yaml — pack change log (newest first)
+- date: 2026-11-19
+  version: "0.1"
+  by: "Cowork (Actualizer); curated by Daniel"
+  what: >
+    First pack: 67 curated paths in 16 branches; 152 references verified by title ratio with verbatim abstracts;
+    120 molecules (reviewed UniProt, AGI loci) with 116 bundled featured structures; 41 small molecules; 68 Plant
+    Ontology terms; plant stage kinds (core_schema 0.2); audience, planner, safety, scenarios (w1–w11), upkeep.
+  why: "U1–U4 of the Actualizer workflow for Plant Perception Pathways (A5.1), ahead of Daniel's pack review (U5)."

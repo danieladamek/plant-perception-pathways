@@ -1,0 +1,3770 @@
+[
+ {
+  "id": "CBF1",
+  "kind": "protein",
+  "as_written": "ICE1 (MYC-like bHLH, constitutively expressed) binds MYC sites in the CBF3 promoter → CBF transcription factors → CBF1 binds the C-repeat/DRE and activates transcription",
+  "paths": [
+   "PC01"
+  ],
+  "complex": null,
+  "stage": "cascade",
+  "symbol": "CBF1",
+  "name": "Dehydration-responsive element-binding protein 1B",
+  "alias_symbol": [
+   "DREB1B",
+   "At4g25490"
+  ],
+  "prev_symbol": [],
+  "accession": "P93835",
+  "protein_name": "Dehydration-responsive element-binding protein 1B",
+  "featured": {
+   "id": "AF-P93835-F1",
+   "source_db": "AlphaFoldDB",
+   "why": "rule §4.3: no PDB entry; predicted model"
+  },
+  "pdb_ids": [],
+  "n_pdb": 0,
+  "has_alphafold": true,
+  "n_members": 0
+ },
+ {
+  "id": "ICE1",
+  "kind": "protein",
+  "as_written": "ICE1 (MYC-like bHLH, constitutively expressed) binds MYC sites in the CBF3 promoter → CBF transcription factors → CBF1 binds the C-repeat/DRE and activates transcription",
+  "paths": [
+   "PC01"
+  ],
+  "complex": null,
+  "stage": "cascade",
+  "symbol": "ICE1",
+  "name": "Transcription factor ICE1",
+  "alias_symbol": [
+   "SCRM",
+   "At3g26744"
+  ],
+  "prev_symbol": [],
+  "accession": "Q9LSE2",
+  "protein_name": "Transcription factor ICE1",
+  "featured": {
+   "id": "AF-Q9LSE2-F1",
+   "source_db": "AlphaFoldDB",
+   "why": "rule §4.3: no PDB entry; predicted model"
+  },
+  "pdb_ids": [],
+  "n_pdb": 0,
+  "has_alphafold": true,
+  "n_members": 0
+ },
+ {
+  "id": "FLC",
+  "kind": "protein",
+  "as_written": "histone modification of FLC chromatin → mitotically stable FLC repression",
+  "paths": [
+   "PC02"
+  ],
+  "complex": null,
+  "stage": "cascade",
+  "symbol": "FLC",
+  "name": "MADS-box protein FLOWERING LOCUS C",
+  "alias_symbol": [
+   "At5g10140"
+  ],
+  "prev_symbol": [],
+  "accession": "Q9S7Q7",
+  "protein_name": "MADS-box protein FLOWERING LOCUS C",
+  "featured": {
+   "id": "AF-Q9S7Q7-F1",
+   "source_db": "AlphaFoldDB",
+   "why": "rule §4.3: no PDB entry; predicted model"
+  },
+  "pdb_ids": [],
+  "n_pdb": 0,
+  "has_alphafold": true,
+  "n_members": 0
+ },
+ {
+  "id": "VIN3",
+  "kind": "protein",
+  "as_written": "VIN3, PHD finger protein; functions in measuring the duration of cold",
+  "paths": [
+   "PC02"
+  ],
+  "complex": null,
+  "stage": "receptor",
+  "symbol": "VIN3",
+  "name": "Protein VERNALIZATION INSENSITIVE 3",
+  "alias_symbol": [
+   "At5g57380"
+  ],
+  "prev_symbol": [],
+  "accession": "Q9FIE3",
+  "protein_name": "Protein VERNALIZATION INSENSITIVE 3",
+  "featured": {
+   "id": "7O6U",
+   "source_db": "PDB",
+   "why": "rule §4.3: Arabidopsis thaliana, 1.84 Å, released 2022-11-09",
+   "coverage": "domain structure (70 of 620 residues)",
+   "chain_length": 70,
+   "uniprot_length": 620
+  },
+  "pdb_ids": [
+   "7O6T",
+   "7O6U",
+   "7OQV"
+  ],
+  "n_pdb": 3,
+  "has_alphafold": true,
+  "n_members": 0
+ },
+ {
+  "id": "BCA1",
+  "kind": "protein",
+  "as_written": "β-carbonic anhydrases βCA1 and βCA4: catalysis is needed; CO2/HCO3- carries the signal to anion-channel regulation; β-carbonic anhydrases CA1 and CA4 (inverted response in ca1 ca4)",
+  "paths": [
+   "PCD01",
+   "PCD02"
+  ],
+  "complex": null,
+  "stage": "receptor",
+  "symbol": "BCA1",
+  "name": "Beta carbonic anhydrase 1, chloroplastic",
+  "alias_symbol": [
+   "At3g01500"
+  ],
+  "prev_symbol": [],
+  "accession": "P27140",
+  "protein_name": "Beta carbonic anhydrase 1, chloroplastic",
+  "featured": {
+   "id": "AF-P27140-F1",
+   "source_db": "AlphaFoldDB",
+   "why": "rule §4.3: no PDB entry; predicted model"
+  },
+  "pdb_ids": [],
+  "n_pdb": 0,
+  "has_alphafold": true,
+  "n_members": 0
+ },
+ {
+  "id": "BCA4",
+  "kind": "protein",
+  "as_written": "β-carbonic anhydrases βCA1 and βCA4: catalysis is needed; CO2/HCO3- carries the signal to anion-channel regulation; β-carbonic anhydrases CA1 and CA4 (inverted response in ca1 ca4)",
+  "paths": [
+   "PCD01",
+   "PCD02"
+  ],
+  "complex": null,
+  "stage": "receptor",
+  "symbol": "BCA4",
+  "name": "Beta carbonic anhydrase 4",
+  "alias_symbol": [
+   "At1g70410"
+  ],
+  "prev_symbol": [],
+  "accession": "Q94CE4",
+  "protein_name": "Beta carbonic anhydrase 4",
+  "featured": {
+   "id": "AF-Q94CE4-F1",
+   "source_db": "AlphaFoldDB",
+   "why": "rule §4.3: no PDB entry; predicted model"
+  },
+  "pdb_ids": [],
+  "n_pdb": 0,
+  "has_alphafold": true,
+  "n_members": 0
+ },
+ {
+  "id": "GHR1",
+  "kind": "protein",
+  "as_written": "MPK12 (and MPK4) inhibit the kinase HT1 → HT1 no longer blocks OST1 and GHR1 → SLAC1 anion channel activated",
+  "paths": [
+   "PCD01"
+  ],
+  "complex": null,
+  "stage": "cascade",
+  "symbol": "GHR1",
+  "name": "LRR receptor-like serine/threonine-protein kinase GHR1",
+  "alias_symbol": [
+   "At4g20940"
+  ],
+  "prev_symbol": [],
+  "accession": "C0LGQ9",
+  "protein_name": "LRR receptor-like serine/threonine-protein kinase GHR1",
+  "featured": {
+   "id": "AF-C0LGQ9-F1",
+   "source_db": "AlphaFoldDB",
+   "why": "rule §4.3: no PDB entry; predicted model"
+  },
+  "pdb_ids": [],
+  "n_pdb": 0,
+  "has_alphafold": true,
+  "n_members": 0
+ },
+ {
+  "id": "HT1",
+  "kind": "protein",
+  "as_written": "MPK12 (and MPK4) inhibit the kinase HT1 → HT1 no longer blocks OST1 and GHR1 → SLAC1 anion channel activated",
+  "paths": [
+   "PCD01"
+  ],
+  "complex": null,
+  "stage": "cascade",
+  "symbol": "HT1",
+  "name": "Serine/threonine/tyrosine-protein kinase HT1",
+  "alias_symbol": [
+   "At1g62400"
+  ],
+  "prev_symbol": [],
+  "accession": "Q2MHE4",
+  "protein_name": "Serine/threonine/tyrosine-protein kinase HT1",
+  "featured": {
+   "id": "AF-Q2MHE4-F1",
+   "source_db": "AlphaFoldDB",
+   "why": "rule §4.3: no PDB entry; predicted model"
+  },
+  "pdb_ids": [],
+  "n_pdb": 0,
+  "has_alphafold": true,
+  "n_members": 0
+ },
+ {
+  "id": "MPK12",
+  "kind": "protein",
+  "as_written": "MPK12 (and MPK4) inhibit the kinase HT1 → HT1 no longer blocks OST1 and GHR1 → SLAC1 anion channel activated",
+  "paths": [
+   "PCD01"
+  ],
+  "complex": null,
+  "stage": "cascade",
+  "symbol": "MPK12",
+  "name": "Mitogen-activated protein kinase 12",
+  "alias_symbol": [
+   "At2g46070"
+  ],
+  "prev_symbol": [],
+  "accession": "Q8GYQ5",
+  "protein_name": "Mitogen-activated protein kinase 12",
+  "featured": {
+   "id": "AF-Q8GYQ5-F1",
+   "source_db": "AlphaFoldDB",
+   "why": "rule §4.3: no PDB entry; predicted model"
+  },
+  "pdb_ids": [],
+  "n_pdb": 0,
+  "has_alphafold": true,
+  "n_members": 0
+ },
+ {
+  "id": "SLAC1",
+  "kind": "protein",
+  "as_written": "MPK12 (and MPK4) inhibit the kinase HT1 → HT1 no longer blocks OST1 and GHR1 → SLAC1 anion channel activated; PP2C inhibition releases OST1 kinase → OST1 phosphorylates and activates the anion channel SLAC1 (ABI1 in the complex prevents activation)",
+  "paths": [
+   "PCD01",
+   "PD01"
+  ],
+  "complex": null,
+  "stage": "cascade",
+  "symbol": "SLAC1",
+  "name": "Guard cell S-type anion channel SLAC1",
+  "alias_symbol": [
+   "At1g12480"
+  ],
+  "prev_symbol": [],
+  "accession": "Q9LD83",
+  "protein_name": "Guard cell S-type anion channel SLAC1",
+  "featured": {
+   "id": "7WNQ",
+   "source_db": "PDB",
+   "why": "rule §4.3: Arabidopsis thaliana, 2.7 Å, released 2022-04-13",
+   "coverage": "whole protein",
+   "chain_length": 556,
+   "uniprot_length": 556
+  },
+  "pdb_ids": [
+   "8J0J",
+   "8J1E",
+   "8GW6",
+   "8GW7",
+   "7WNQ"
+  ],
+  "n_pdb": 5,
+  "has_alphafold": true,
+  "n_members": 0
+ },
+ {
+  "id": "SRK2E",
+  "kind": "protein",
+  "as_written": "MPK12 (and MPK4) inhibit the kinase HT1 → HT1 no longer blocks OST1 and GHR1 → SLAC1 anion channel activated; PP2C inhibition releases OST1 kinase → OST1 phosphorylates and activates the anion channel SLAC1 (ABI1 in the complex prevents activation); BIK1 and RbohD pathway; nitric oxide production; guard-cell-specific OST1 kinase",
+  "paths": [
+   "PCD01",
+   "PD01",
+   "PP02"
+  ],
+  "complex": null,
+  "stage": "cascade",
+  "symbol": "SRK2E",
+  "name": "Serine/threonine-protein kinase SRK2E",
+  "alias_symbol": [
+   "At4g33950"
+  ],
+  "prev_symbol": [],
+  "accession": "Q940H6",
+  "protein_name": "Serine/threonine-protein kinase SRK2E",
+  "featured": {
+   "id": "3UC4",
+   "source_db": "PDB",
+   "why": "rule §4.3: Arabidopsis thaliana, 2.3 Å, released 2011-12-14",
+   "coverage": "whole protein",
+   "chain_length": 362,
+   "uniprot_length": 362
+  },
+  "pdb_ids": [
+   "3UJG",
+   "3UC4",
+   "3UDB",
+   "3ZUT",
+   "3ZUU"
+  ],
+  "n_pdb": 5,
+  "has_alphafold": true,
+  "n_members": 0
+ },
+ {
+  "id": "CRSP",
+  "kind": "protein",
+  "as_written": "EPF2 pro-peptide induced; the CO2-induced secreted protease CRSP cleaves pro-EPF2",
+  "paths": [
+   "PCD02"
+  ],
+  "complex": null,
+  "stage": "cascade",
+  "symbol": "CRSP",
+  "name": "CO(2)-response secreted protease",
+  "alias_symbol": [
+   "At1g20160"
+  ],
+  "prev_symbol": [],
+  "accession": "Q9LNU1",
+  "protein_name": "CO(2)-response secreted protease",
+  "featured": {
+   "id": "AF-Q9LNU1-F1",
+   "source_db": "AlphaFoldDB",
+   "why": "rule §4.3: no PDB entry; predicted model"
+  },
+  "pdb_ids": [],
+  "n_pdb": 0,
+  "has_alphafold": true,
+  "n_members": 0
+ },
+ {
+  "id": "EPF2",
+  "kind": "protein",
+  "as_written": "EPF2 pro-peptide induced; the CO2-induced secreted protease CRSP cleaves pro-EPF2",
+  "paths": [
+   "PCD02"
+  ],
+  "complex": null,
+  "stage": "cascade",
+  "symbol": "EPF2",
+  "name": "Protein EPIDERMAL PATTERNING FACTOR 2",
+  "alias_symbol": [
+   "At1g34245"
+  ],
+  "prev_symbol": [],
+  "accession": "Q8LC53",
+  "protein_name": "Protein EPIDERMAL PATTERNING FACTOR 2",
+  "featured": {
+   "id": "5XKJ",
+   "source_db": "PDB",
+   "why": "rule §4.3: Arabidopsis thaliana, 3.475 Å, released 2019-01-23",
+   "coverage": "domain structure (52 of 120 residues)",
+   "chain_length": 52,
+   "uniprot_length": 120
+  },
+  "pdb_ids": [
+   "5XKJ"
+  ],
+  "n_pdb": 1,
+  "has_alphafold": true,
+  "n_members": 0
+ },
+ {
+  "id": "HIC",
+  "kind": "protein",
+  "as_written": "HIC (3-ketoacyl-CoA synthase; cell-wall wax) is a negative regulator of stomatal development responsive to CO2",
+  "paths": [
+   "PCD02"
+  ],
+  "complex": null,
+  "stage": "integration",
+  "symbol": "HIC",
+  "name": "3-ketoacyl-CoA synthase 13",
+  "alias_symbol": [
+   "At2g46720"
+  ],
+  "prev_symbol": [],
+  "accession": "Q9ZUZ0",
+  "protein_name": "3-ketoacyl-CoA synthase 13",
+  "featured": {
+   "id": "AF-Q9ZUZ0-F1",
+   "source_db": "AlphaFoldDB",
+   "why": "rule §4.3: no PDB entry; predicted model"
+  },
+  "pdb_ids": [],
+  "n_pdb": 0,
+  "has_alphafold": true,
+  "n_members": 0
+ },
+ {
+  "id": "CCA1",
+  "kind": "protein",
+  "as_written": "core loop: LHY and CCA1 repress TOC1 (binding its promoter); TOC1 promotes LHY/CCA1 expression",
+  "paths": [
+   "PCL01"
+  ],
+  "complex": null,
+  "stage": "integration",
+  "symbol": "CCA1",
+  "name": "Protein CCA1",
+  "alias_symbol": [
+   "At2g46830"
+  ],
+  "prev_symbol": [],
+  "accession": "P92973",
+  "protein_name": "Protein CCA1",
+  "featured": {
+   "id": "AF-P92973-F1",
+   "source_db": "AlphaFoldDB",
+   "why": "rule §4.3: no PDB entry; predicted model"
+  },
+  "pdb_ids": [],
+  "n_pdb": 0,
+  "has_alphafold": true,
+  "n_members": 0
+ },
+ {
+  "id": "CRY1",
+  "kind": "protein",
+  "as_written": "phyB (high-intensity red), phyA (low-intensity red and low-fluence blue), CRY1 (blue); ZTL, a LOV blue-light photoreceptor; cryptochrome 1 (HY4), photolyase-like flavoprotein; phyB, CRY1/CRY2, PHOT1/PHOT2 (all required); cryptochromes, via a proposed radical-pair mechanism",
+  "paths": [
+   "PCL01",
+   "PL06",
+   "PZ05",
+   "PZ06"
+  ],
+  "complex": null,
+  "stage": "receptor",
+  "symbol": "CRY1",
+  "name": "Cryptochrome-1",
+  "alias_symbol": [
+   "At4g08920"
+  ],
+  "prev_symbol": [],
+  "accession": "Q43125",
+  "protein_name": "Cryptochrome-1",
+  "featured": {
+   "id": "1U3D",
+   "source_db": "PDB",
+   "why": "rule §4.3: Arabidopsis thaliana, 2.45 Å, released 2004-08-24",
+   "coverage": "domain structure (509 of 681 residues)",
+   "chain_length": 509,
+   "uniprot_length": 681
+  },
+  "pdb_ids": [
+   "1U3C",
+   "1U3D"
+  ],
+  "n_pdb": 2,
+  "has_alphafold": true,
+  "n_members": 0
+ },
+ {
+  "id": "GI",
+  "kind": "protein",
+  "as_written": "FKF1 (LOV, F-box): forms a complex with GI in a blue-light-dependent manner",
+  "paths": [
+   "PCL03"
+  ],
+  "complex": null,
+  "stage": "receptor",
+  "symbol": "GI",
+  "name": "Protein GIGANTEA",
+  "alias_symbol": [
+   "At1g22770"
+  ],
+  "prev_symbol": [],
+  "accession": "Q9SQI2",
+  "protein_name": "Protein GIGANTEA",
+  "featured": {
+   "id": "7WA4",
+   "source_db": "PDB",
+   "why": "rule §4.3: Arabidopsis thaliana, 3.5 Å, released 2022-04-27",
+   "coverage": "domain structure (815 of 1173 residues)",
+   "chain_length": 815,
+   "uniprot_length": 1173
+  },
+  "pdb_ids": [
+   "7WA4"
+  ],
+  "n_pdb": 1,
+  "has_alphafold": true,
+  "n_members": 0
+ },
+ {
+  "id": "LHY",
+  "kind": "protein",
+  "as_written": "core loop: LHY and CCA1 repress TOC1 (binding its promoter); TOC1 promotes LHY/CCA1 expression",
+  "paths": [
+   "PCL01"
+  ],
+  "complex": null,
+  "stage": "integration",
+  "symbol": "LHY",
+  "name": "Protein LHY",
+  "alias_symbol": [
+   "At1g01060"
+  ],
+  "prev_symbol": [],
+  "accession": "Q6R0H1",
+  "protein_name": "Protein LHY",
+  "featured": {
+   "id": "AF-Q6R0H1-F1",
+   "source_db": "AlphaFoldDB",
+   "why": "rule §4.3: no PDB entry; predicted model"
+  },
+  "pdb_ids": [],
+  "n_pdb": 0,
+  "has_alphafold": true,
+  "n_members": 0
+ },
+ {
+  "id": "PHYA",
+  "kind": "protein",
+  "as_written": "phyB (high-intensity red), phyA (low-intensity red and low-fluence blue), CRY1 (blue); ZTL, a LOV blue-light photoreceptor",
+  "paths": [
+   "PCL01"
+  ],
+  "complex": null,
+  "stage": "receptor",
+  "symbol": "PHYA",
+  "name": "Phytochrome A",
+  "alias_symbol": [
+   "At1g09570"
+  ],
+  "prev_symbol": [],
+  "accession": "P14712",
+  "protein_name": "Phytochrome A",
+  "featured": {
+   "id": "8ISJ",
+   "source_db": "PDB",
+   "why": "rule §4.3: Arabidopsis thaliana, 3.0 Å, released 2023-08-09",
+   "coverage": "whole protein",
+   "chain_length": 1120,
+   "uniprot_length": 1122
+  },
+  "pdb_ids": [
+   "8ISI",
+   "8ISJ",
+   "8IFF",
+   "8F5Z"
+  ],
+  "n_pdb": 4,
+  "has_alphafold": true,
+  "n_members": 0
+ },
+ {
+  "id": "PHYB",
+  "kind": "protein",
+  "as_written": "phyB (high-intensity red), phyA (low-intensity red and low-fluence blue), CRY1 (blue); ZTL, a LOV blue-light photoreceptor; phytochromes (phyB); phyB: temperature-dependent Pfr→Pr reversion; phyB, whose activity falls under low R:FR; phyB, CRY1/CRY2, PHOT1/PHOT2 (all required)",
+  "paths": [
+   "PCL01",
+   "PL01",
+   "PL02",
+   "PL09",
+   "PZ05"
+  ],
+  "complex": null,
+  "stage": "receptor",
+  "symbol": "PHYB",
+  "name": "Phytochrome B",
+  "alias_symbol": [
+   "At2g18790"
+  ],
+  "prev_symbol": [],
+  "accession": "P14713",
+  "protein_name": "Phytochrome B",
+  "featured": {
+   "id": "9IRK",
+   "source_db": "PDB",
+   "why": "rule §4.3: Arabidopsis thaliana, 2.8 Å, released 2025-06-04",
+   "coverage": "domain structure (907 of 1172 residues)",
+   "chain_length": 907,
+   "uniprot_length": 1172
+  },
+  "pdb_ids": [
+   "9IRK",
+   "9ITF",
+   "9JLB",
+   "8YB4",
+   "9IUZ",
+   "7RZW",
+   "4OUR"
+  ],
+  "n_pdb": 7,
+  "has_alphafold": true,
+  "n_members": 0
+ },
+ {
+  "id": "TOC1",
+  "kind": "protein",
+  "as_written": "blue light enhances ZTL–GI binding (via the ZTL LOV domain) → GI stabilises ZTL → ZTL targets TOC1 for proteasomal degradation",
+  "paths": [
+   "PCL01"
+  ],
+  "complex": null,
+  "stage": "cascade",
+  "symbol": "TOC1",
+  "name": "Two-component response regulator-like APRR1",
+  "alias_symbol": [
+   "APRR1",
+   "At5g61380"
+  ],
+  "prev_symbol": [],
+  "accession": "Q9LKL2",
+  "protein_name": "Two-component response regulator-like APRR1",
+  "featured": {
+   "id": "AF-Q9LKL2-F1",
+   "source_db": "AlphaFoldDB",
+   "why": "rule §4.3: no PDB entry; predicted model"
+  },
+  "pdb_ids": [],
+  "n_pdb": 0,
+  "has_alphafold": true,
+  "n_members": 0
+ },
+ {
+  "id": "ZTL",
+  "kind": "protein",
+  "as_written": "phyB (high-intensity red), phyA (low-intensity red and low-fluence blue), CRY1 (blue); ZTL, a LOV blue-light photoreceptor",
+  "paths": [
+   "PCL01"
+  ],
+  "complex": null,
+  "stage": "receptor",
+  "symbol": "ZTL",
+  "name": "Adagio protein 1",
+  "alias_symbol": [
+   "ADO1",
+   "At5g57360"
+  ],
+  "prev_symbol": [],
+  "accession": "Q94BT6",
+  "protein_name": "Adagio protein 1",
+  "featured": {
+   "id": "5SVV",
+   "source_db": "PDB",
+   "why": "rule §4.3: Arabidopsis thaliana, 2.101 Å, released 2017-03-08",
+   "coverage": "domain structure (137 of 609 residues)",
+   "chain_length": 137,
+   "uniprot_length": 609
+  },
+  "pdb_ids": [
+   "6WLE",
+   "6WLP",
+   "5SVG",
+   "5SVU",
+   "5SVV",
+   "5SVW"
+  ],
+  "n_pdb": 6,
+  "has_alphafold": true,
+  "n_members": 0
+ },
+ {
+  "id": "FKF1",
+  "kind": "protein",
+  "as_written": "FKF1 (LOV, F-box): forms a complex with GI in a blue-light-dependent manner",
+  "paths": [
+   "PCL03"
+  ],
+  "complex": null,
+  "stage": "receptor",
+  "symbol": "FKF1",
+  "name": "Adagio protein 3",
+  "alias_symbol": [
+   "ADO3",
+   "At1g68050"
+  ],
+  "prev_symbol": [],
+  "accession": "Q9C9W9",
+  "protein_name": "Adagio protein 3",
+  "featured": {
+   "id": "AF-Q9C9W9-F1",
+   "source_db": "AlphaFoldDB",
+   "why": "rule §4.3: no PDB entry; predicted model"
+  },
+  "pdb_ids": [],
+  "n_pdb": 0,
+  "has_alphafold": true,
+  "n_members": 0
+ },
+ {
+  "id": "ABI1",
+  "kind": "protein",
+  "as_written": "PYR/PYL/RCAR ABA receptors (14-member family): bind ABA and inactivate PP2Cs ABI1/ABI2",
+  "paths": [
+   "PD01"
+  ],
+  "complex": null,
+  "stage": "receptor",
+  "symbol": "ABI1",
+  "name": "Protein phosphatase 2C 56",
+  "alias_symbol": [
+   "At4g26080"
+  ],
+  "prev_symbol": [],
+  "accession": "P49597",
+  "protein_name": "Protein phosphatase 2C 56",
+  "featured": {
+   "id": "3KDJ",
+   "source_db": "PDB",
+   "why": "rule §4.3: Arabidopsis thaliana, 1.878 Å, released 2009-11-10",
+   "coverage": "domain structure (316 of 434 residues)",
+   "chain_length": 316,
+   "uniprot_length": 434
+  },
+  "pdb_ids": [
+   "3NMN",
+   "3KDJ",
+   "3JRQ"
+  ],
+  "n_pdb": 3,
+  "has_alphafold": true,
+  "n_members": 0
+ },
+ {
+  "id": "PYL9",
+  "kind": "protein",
+  "as_written": "PYR/PYL/RCAR ABA receptors (14-member family): bind ABA and inactivate PP2Cs ABI1/ABI2",
+  "paths": [
+   "PD01"
+  ],
+  "complex": null,
+  "stage": "receptor",
+  "symbol": "PYL9",
+  "name": "Abscisic acid receptor PYL9",
+  "alias_symbol": [
+   "At1g01360"
+  ],
+  "prev_symbol": [],
+  "accession": "Q84MC7",
+  "protein_name": "Abscisic acid receptor PYL9",
+  "featured": {
+   "id": "3W9R",
+   "source_db": "PDB",
+   "why": "rule §4.3: Arabidopsis thaliana, 1.9 Å, released 2014-04-09",
+   "coverage": "whole protein",
+   "chain_length": 189,
+   "uniprot_length": 187
+  },
+  "pdb_ids": [
+   "3W9R",
+   "3OQU"
+  ],
+  "n_pdb": 2,
+  "has_alphafold": true,
+  "n_members": 0
+ },
+ {
+  "id": "PYR1",
+  "kind": "protein",
+  "as_written": "PYR/PYL/RCAR ABA receptors (14-member family): bind ABA and inactivate PP2Cs ABI1/ABI2",
+  "paths": [
+   "PD01"
+  ],
+  "complex": null,
+  "stage": "receptor",
+  "symbol": "PYR1",
+  "name": "Abscisic acid receptor PYR1",
+  "alias_symbol": [
+   "At4g17870"
+  ],
+  "prev_symbol": [],
+  "accession": "O49686",
+  "protein_name": "Abscisic acid receptor PYR1",
+  "featured": {
+   "id": "5UR4",
+   "source_db": "PDB",
+   "why": "rule §4.3: Arabidopsis thaliana, 1.52 Å, released 2018-01-24",
+   "coverage": "whole protein",
+   "chain_length": 181,
+   "uniprot_length": 191
+  },
+  "pdb_ids": [
+   "8EY0",
+   "5OR2",
+   "5OR6",
+   "5YGV",
+   "5UR4",
+   "5UR5",
+   "5UR6",
+   "4WVO",
+   "3WG8",
+   "3ZVU",
+   "3QN1",
+   "3NJO",
+   "3K3K",
+   "3K90"
+  ],
+  "n_pdb": 14,
+  "has_alphafold": true,
+  "n_members": 0
+ },
+ {
+  "id": "CLE25",
+  "kind": "protein",
+  "as_written": "CLE25 expression enhanced in root vascular tissue",
+  "paths": [
+   "PD02"
+  ],
+  "complex": null,
+  "stage": "cascade",
+  "symbol": "CLE25",
+  "name": "CLAVATA3/ESR (CLE)-related protein 25",
+  "alias_symbol": [
+   "At3g28455"
+  ],
+  "prev_symbol": [],
+  "accession": "Q8LFL4",
+  "protein_name": "CLAVATA3/ESR (CLE)-related protein 25",
+  "featured": {
+   "id": "AF-Q8LFL4-F1",
+   "source_db": "AlphaFoldDB",
+   "why": "rule §4.3: no PDB entry; predicted model"
+  },
+  "pdb_ids": [],
+  "n_pdb": 0,
+  "has_alphafold": true,
+  "n_members": 0
+ },
+ {
+  "id": "PIN3",
+  "kind": "protein",
+  "as_written": "local regulation of TAA1 (auxin biosynthesis) and PIN3 (auxin transport) on the wet side; polarised LZY3 → RLD1 recruited to the plasma membrane → PIN3 relocalises to the lower cell side (actin-dependent; clathrin endocytosis, GNOM-dependent)",
+  "paths": [
+   "PD03",
+   "PG01"
+  ],
+  "complex": null,
+  "stage": "cascade",
+  "symbol": "PIN3",
+  "name": "Auxin efflux carrier component 3",
+  "alias_symbol": [
+   "At1g70940"
+  ],
+  "prev_symbol": [],
+  "accession": "Q9S7Z8",
+  "protein_name": "Auxin efflux carrier component 3",
+  "featured": {
+   "id": "7WKW",
+   "source_db": "PDB",
+   "why": "rule §4.3: Arabidopsis thaliana, 2.62 Å, released 2022-08-10",
+   "coverage": "whole protein",
+   "chain_length": 680,
+   "uniprot_length": 640
+  },
+  "pdb_ids": [
+   "7WKS",
+   "7WKW",
+   "7XXB"
+  ],
+  "n_pdb": 3,
+  "has_alphafold": true,
+  "n_members": 0
+ },
+ {
+  "id": "TAA1",
+  "kind": "protein",
+  "as_written": "local regulation of TAA1 (auxin biosynthesis) and PIN3 (auxin transport) on the wet side; PIF4 and PIF5 escape phyB-triggered phosphorylation and proteasomal degradation → PIFs directly activate auxin-synthesis genes → TAA1 makes indole-3-pyruvic acid (rapid auxin synthesis); TAA1-dependent auxin synthesis",
+  "paths": [
+   "PD03",
+   "PL09",
+   "PZ05"
+  ],
+  "complex": null,
+  "stage": "cascade",
+  "symbol": "TAA1",
+  "name": "L-tryptophan--pyruvate aminotransferase 1",
+  "alias_symbol": [
+   "At1g70560"
+  ],
+  "prev_symbol": [],
+  "accession": "Q9S7N2",
+  "protein_name": "L-tryptophan--pyruvate aminotransferase 1",
+  "featured": {
+   "id": "3BWN",
+   "source_db": "PDB",
+   "why": "rule §4.3: Arabidopsis thaliana, 2.25 Å, released 2008-04-29",
+   "coverage": "whole protein",
+   "chain_length": 391,
+   "uniprot_length": 391
+  },
+  "pdb_ids": [
+   "3BWO",
+   "3BWN"
+  ],
+  "n_pdb": 2,
+  "has_alphafold": true,
+  "n_members": 0
+ },
+ {
+  "id": "MIZ1",
+  "kind": "protein",
+  "as_written": "MIZ1 and the ABA kinase SnRK2.2, acting in elongation-zone cortical cells",
+  "paths": [
+   "PD04"
+  ],
+  "complex": null,
+  "stage": "cascade",
+  "symbol": "MIZ1",
+  "name": "Protein MIZU-KUSSEI 1",
+  "alias_symbol": [
+   "At2g41660"
+  ],
+  "prev_symbol": [],
+  "accession": "O22227",
+  "protein_name": "Protein MIZU-KUSSEI 1",
+  "featured": {
+   "id": "AF-O22227-F1",
+   "source_db": "AlphaFoldDB",
+   "why": "rule §4.3: no PDB entry; predicted model"
+  },
+  "pdb_ids": [],
+  "n_pdb": 0,
+  "has_alphafold": true,
+  "n_members": 0
+ },
+ {
+  "id": "CTR1",
+  "kind": "protein",
+  "as_written": "without ethylene, CTR1 phosphorylates the EIN2 C-terminus, blocking it; ethylene inhibits CTR1 → EIN2 dephosphorylated and cleaved → EIN2-C′ moves to the nucleus → EIN3 / EIL1 transcription factors",
+  "paths": [
+   "PE01"
+  ],
+  "complex": null,
+  "stage": "cascade",
+  "symbol": "CTR1",
+  "name": "Serine/threonine-protein kinase CTR1",
+  "alias_symbol": [
+   "At5g03730"
+  ],
+  "prev_symbol": [],
+  "accession": "Q05609",
+  "protein_name": "Serine/threonine-protein kinase CTR1",
+  "featured": {
+   "id": "3P86",
+   "source_db": "PDB",
+   "why": "rule §4.3: Arabidopsis thaliana, 2.496 Å, released 2011-10-26",
+   "coverage": "domain structure (309 of 821 residues)",
+   "chain_length": 309,
+   "uniprot_length": 821
+  },
+  "pdb_ids": [
+   "3PPZ",
+   "3P86"
+  ],
+  "n_pdb": 2,
+  "has_alphafold": true,
+  "n_members": 0
+ },
+ {
+  "id": "EIN2",
+  "kind": "protein",
+  "as_written": "without ethylene, CTR1 phosphorylates the EIN2 C-terminus, blocking it; ethylene inhibits CTR1 → EIN2 dephosphorylated and cleaved → EIN2-C′ moves to the nucleus → EIN3 / EIL1 transcription factors",
+  "paths": [
+   "PE01"
+  ],
+  "complex": null,
+  "stage": "cascade",
+  "symbol": "EIN2",
+  "name": "Ethylene-insensitive protein 2",
+  "alias_symbol": [
+   "At5g03280"
+  ],
+  "prev_symbol": [],
+  "accession": "Q9S814",
+  "protein_name": "Ethylene-insensitive protein 2",
+  "featured": {
+   "id": "AF-Q9S814-F1",
+   "source_db": "AlphaFoldDB",
+   "why": "rule §4.3: no PDB entry; predicted model"
+  },
+  "pdb_ids": [],
+  "n_pdb": 0,
+  "has_alphafold": true,
+  "n_members": 0
+ },
+ {
+  "id": "EIN3",
+  "kind": "protein",
+  "as_written": "without ethylene, CTR1 phosphorylates the EIN2 C-terminus, blocking it; ethylene inhibits CTR1 → EIN2 dephosphorylated and cleaved → EIN2-C′ moves to the nucleus → EIN3 / EIL1 transcription factors",
+  "paths": [
+   "PE01"
+  ],
+  "complex": null,
+  "stage": "cascade",
+  "symbol": "EIN3",
+  "name": "Protein ETHYLENE INSENSITIVE 3",
+  "alias_symbol": [
+   "At3g20770"
+  ],
+  "prev_symbol": [],
+  "accession": "O24606",
+  "protein_name": "Protein ETHYLENE INSENSITIVE 3",
+  "featured": {
+   "id": "4ZDS",
+   "source_db": "PDB",
+   "why": "rule §4.3: Arabidopsis thaliana, 1.78 Å, released 2015-09-23",
+   "coverage": "domain structure (134 of 628 residues)",
+   "chain_length": 134,
+   "uniprot_length": 628
+  },
+  "pdb_ids": [
+   "4ZDS"
+  ],
+  "n_pdb": 1,
+  "has_alphafold": true,
+  "n_members": 0
+ },
+ {
+  "id": "ETR1",
+  "kind": "protein",
+  "as_written": "ETR1 receptor at the ER membrane: ethylene binds its N-terminal hydrophobic domain; C-terminal half resembles two-component signal transducers",
+  "paths": [
+   "PE01"
+  ],
+  "complex": null,
+  "stage": "receptor",
+  "symbol": "ETR1",
+  "name": "Ethylene receptor 1",
+  "alias_symbol": [
+   "At1g66340"
+  ],
+  "prev_symbol": [],
+  "accession": "P49333",
+  "protein_name": "Ethylene receptor 1",
+  "featured": {
+   "id": "4PL9",
+   "source_db": "PDB",
+   "why": "rule §4.3: Arabidopsis thaliana, 1.9 Å, released 2014-12-17",
+   "coverage": "domain structure (183 of 738 residues)",
+   "chain_length": 183,
+   "uniprot_length": 738
+  },
+  "pdb_ids": [
+   "4PL9",
+   "1DCF"
+  ],
+  "n_pdb": 2,
+  "has_alphafold": true,
+  "n_members": 0
+ },
+ {
+  "id": "LAZY1",
+  "kind": "protein",
+  "as_written": "statocytes (root cap columella, hypocotyl starch sheath): amyloplast sedimentation; LZY proteins act downstream of amyloplast displacement",
+  "paths": [
+   "PG01"
+  ],
+  "complex": null,
+  "stage": "receptor",
+  "symbol": "LAZY1",
+  "name": "Protein LAZY 1",
+  "alias_symbol": [
+   "At5g14090"
+  ],
+  "prev_symbol": [],
+  "accession": "Q5XV40",
+  "protein_name": "Protein LAZY 1",
+  "featured": {
+   "id": "AF-Q5XV40-F1",
+   "source_db": "AlphaFoldDB",
+   "why": "rule §4.3: no PDB entry; predicted model"
+  },
+  "pdb_ids": [],
+  "n_pdb": 0,
+  "has_alphafold": true,
+  "n_members": 0
+ },
+ {
+  "id": "LAZY2",
+  "kind": "protein",
+  "as_written": "statocytes (root cap columella, hypocotyl starch sheath): amyloplast sedimentation; LZY proteins act downstream of amyloplast displacement",
+  "paths": [
+   "PG01"
+  ],
+  "complex": null,
+  "stage": "receptor",
+  "symbol": "LAZY2",
+  "name": "Protein LAZY 2",
+  "alias_symbol": [
+   "At1g17400"
+  ],
+  "prev_symbol": [],
+  "accession": "Q58G53",
+  "protein_name": "Protein LAZY 2",
+  "featured": {
+   "id": "AF-Q58G53-F1",
+   "source_db": "AlphaFoldDB",
+   "why": "rule §4.3: no PDB entry; predicted model"
+  },
+  "pdb_ids": [],
+  "n_pdb": 0,
+  "has_alphafold": true,
+  "n_members": 0
+ },
+ {
+  "id": "LAZY4",
+  "kind": "protein",
+  "as_written": "statocytes (root cap columella, hypocotyl starch sheath): amyloplast sedimentation; LZY proteins act downstream of amyloplast displacement",
+  "paths": [
+   "PG01"
+  ],
+  "complex": null,
+  "stage": "receptor",
+  "symbol": "LAZY4",
+  "name": "Protein LAZY 4",
+  "alias_symbol": [
+   "At1g72490"
+  ],
+  "prev_symbol": [],
+  "accession": "Q5XVG3",
+  "protein_name": "Protein LAZY 4",
+  "featured": {
+   "id": "AF-Q5XVG3-F1",
+   "source_db": "AlphaFoldDB",
+   "why": "rule §4.3: no whole-protein PDB entry (only fragments or motif peptides); predicted model"
+  },
+  "pdb_ids": [
+   "6L0W"
+  ],
+  "n_pdb": 1,
+  "has_alphafold": true,
+  "n_members": 0
+ },
+ {
+  "id": "PGMP",
+  "kind": "protein",
+  "as_written": "starch–statolith model ⚑ partial: 'widely accepted'; starch is 'important but not essential' (morita2010); a starchless (pgm) mutant keeps ~70% of wild-type curvature (caspar1989)",
+  "paths": [
+   "PG01"
+  ],
+  "complex": null,
+  "stage": "notes",
+  "symbol": "PGMP",
+  "name": "Phosphoglucomutase, chloroplastic",
+  "alias_symbol": [
+   "At5g51820"
+  ],
+  "prev_symbol": [],
+  "accession": "Q9SCY0",
+  "protein_name": "Phosphoglucomutase, chloroplastic",
+  "featured": {
+   "id": "AF-Q9SCY0-F1",
+   "source_db": "AlphaFoldDB",
+   "why": "rule §4.3: no PDB entry; predicted model"
+  },
+  "pdb_ids": [],
+  "n_pdb": 0,
+  "has_alphafold": true,
+  "n_members": 0
+ },
+ {
+  "id": "ELF3",
+  "kind": "protein",
+  "as_written": "ELF3 prion-like domain: reversible phase transition (speckles within minutes); polyQ length correlates with thermal responsiveness",
+  "paths": [
+   "PH01"
+  ],
+  "complex": null,
+  "stage": "receptor",
+  "symbol": "ELF3",
+  "name": "Protein EARLY FLOWERING 3",
+  "alias_symbol": [
+   "At2g25930"
+  ],
+  "prev_symbol": [],
+  "accession": "O82804",
+  "protein_name": "Protein EARLY FLOWERING 3",
+  "featured": {
+   "id": "AF-O82804-F1",
+   "source_db": "AlphaFoldDB",
+   "why": "rule §4.3: no PDB entry; predicted model"
+  },
+  "pdb_ids": [],
+  "n_pdb": 0,
+  "has_alphafold": true,
+  "n_members": 0
+ },
+ {
+  "id": "ELF4",
+  "kind": "protein",
+  "as_written": "the evening complex (ELF3, ELF4, LUX), a temperature-responsive transcriptional repressor, shifts between active and inactive states",
+  "paths": [
+   "PH01"
+  ],
+  "complex": null,
+  "stage": "cascade",
+  "symbol": "ELF4",
+  "name": "Protein EARLY FLOWERING 4",
+  "alias_symbol": [
+   "At2g40080"
+  ],
+  "prev_symbol": [],
+  "accession": "O04211",
+  "protein_name": "Protein EARLY FLOWERING 4",
+  "featured": {
+   "id": "AF-O04211-F1",
+   "source_db": "AlphaFoldDB",
+   "why": "rule §4.3: no PDB entry; predicted model"
+  },
+  "pdb_ids": [],
+  "n_pdb": 0,
+  "has_alphafold": true,
+  "n_members": 0
+ },
+ {
+  "id": "LUX",
+  "kind": "protein",
+  "as_written": "the evening complex (ELF3, ELF4, LUX), a temperature-responsive transcriptional repressor, shifts between active and inactive states",
+  "paths": [
+   "PH01"
+  ],
+  "complex": null,
+  "stage": "cascade",
+  "symbol": "LUX",
+  "name": "Transcription factor LUX",
+  "alias_symbol": [
+   "At3g46640"
+  ],
+  "prev_symbol": [],
+  "accession": "Q9SNB4",
+  "protein_name": "Transcription factor LUX",
+  "featured": {
+   "id": "6QEC",
+   "source_db": "PDB",
+   "why": "rule §4.3: Arabidopsis thaliana, 1.9 Å, released 2020-02-05",
+   "coverage": "domain structure (65 of 323 residues)",
+   "chain_length": 65,
+   "uniprot_length": 323
+  },
+  "pdb_ids": [
+   "6QEC",
+   "5LXU"
+  ],
+  "n_pdb": 2,
+  "has_alphafold": true,
+  "n_members": 0
+ },
+ {
+  "id": "PIF4",
+  "kind": "protein",
+  "as_written": "PIF4 (bHLH) → auxin; IAA29 induction; PIF4 and PIF5 escape phyB-triggered phosphorylation and proteasomal degradation → PIFs directly activate auxin-synthesis genes → TAA1 makes indole-3-pyruvic acid (rapid auxin synthesis)",
+  "paths": [
+   "PH04",
+   "PL09"
+  ],
+  "complex": null,
+  "stage": "cascade",
+  "symbol": "PIF4",
+  "name": "Transcription factor PIF4",
+  "alias_symbol": [
+   "At2g43010"
+  ],
+  "prev_symbol": [],
+  "accession": "Q8W2F3",
+  "protein_name": "Transcription factor PIF4",
+  "featured": {
+   "id": "AF-Q8W2F3-F1",
+   "source_db": "AlphaFoldDB",
+   "why": "rule §4.3: no PDB entry; predicted model"
+  },
+  "pdb_ids": [],
+  "n_pdb": 0,
+  "has_alphafold": true,
+  "n_members": 0
+ },
+ {
+  "id": "PIF5",
+  "kind": "protein",
+  "as_written": "PIF4 and PIF5 escape phyB-triggered phosphorylation and proteasomal degradation → PIFs directly activate auxin-synthesis genes → TAA1 makes indole-3-pyruvic acid (rapid auxin synthesis)",
+  "paths": [
+   "PL09"
+  ],
+  "complex": null,
+  "stage": "cascade",
+  "symbol": "PIF5",
+  "name": "Transcription factor PIF5",
+  "alias_symbol": [
+   "At3g59060"
+  ],
+  "prev_symbol": [],
+  "accession": "Q84LH8",
+  "protein_name": "Transcription factor PIF5",
+  "featured": {
+   "id": "AF-Q84LH8-F1",
+   "source_db": "AlphaFoldDB",
+   "why": "rule §4.3: no PDB entry; predicted model"
+  },
+  "pdb_ids": [],
+  "n_pdb": 0,
+  "has_alphafold": true,
+  "n_members": 0
+ },
+ {
+  "id": "PIF7",
+  "kind": "protein",
+  "as_written": "RNA hairpin in the PIF7 mRNA 5′ UTR, which adopts an alternative conformation at higher temperature",
+  "paths": [
+   "PH02"
+  ],
+  "complex": null,
+  "stage": "receptor",
+  "symbol": "PIF7",
+  "name": "Transcription factor PIF7",
+  "alias_symbol": [
+   "BHLH72",
+   "At5g61270"
+  ],
+  "prev_symbol": [],
+  "accession": "Q570R7",
+  "protein_name": "Transcription factor PIF7",
+  "featured": {
+   "id": "AF-Q570R7-F1",
+   "source_db": "AlphaFoldDB",
+   "why": "rule §4.3: no PDB entry; predicted model"
+  },
+  "pdb_ids": [],
+  "n_pdb": 0,
+  "has_alphafold": true,
+  "n_members": 0
+ },
+ {
+  "id": "HTA9",
+  "kind": "protein",
+  "as_written": "H2A.Z-containing nucleosomes: distinct DNA-unwrapping properties",
+  "paths": [
+   "PH03"
+  ],
+  "complex": null,
+  "stage": "receptor",
+  "symbol": "HTA9",
+  "name": "Probable histone H2A variant 3",
+  "alias_symbol": [
+   "At1g52740"
+  ],
+  "prev_symbol": [],
+  "accession": "Q9C944",
+  "protein_name": "Probable histone H2A variant 3",
+  "featured": {
+   "id": "9K45",
+   "source_db": "PDB",
+   "why": "rule §4.3: Arabidopsis thaliana, 2.71 Å, released 2025-11-12",
+   "coverage": "whole protein",
+   "chain_length": 134,
+   "uniprot_length": 134
+  },
+  "pdb_ids": [
+   "9K45",
+   "9K3Z",
+   "9K43"
+  ],
+  "n_pdb": 3,
+  "has_alphafold": true,
+  "n_members": 0
+ },
+ {
+  "id": "CNGC2",
+  "kind": "protein",
+  "as_written": "CNGC2 (ortholog of moss CNGCb), a component of plasma-membrane cyclic-nucleotide-gated Ca2+ channels",
+  "paths": [
+   "PH05"
+  ],
+  "complex": null,
+  "stage": "receptor",
+  "symbol": "CNGC2",
+  "name": "Cyclic nucleotide-gated ion channel 2",
+  "alias_symbol": [
+   "At5g15410"
+  ],
+  "prev_symbol": [],
+  "accession": "O65718",
+  "protein_name": "Cyclic nucleotide-gated ion channel 2",
+  "featured": {
+   "id": "AF-O65718-F1",
+   "source_db": "AlphaFoldDB",
+   "why": "rule §4.3: no PDB entry; predicted model"
+  },
+  "pdb_ids": [],
+  "n_pdb": 0,
+  "has_alphafold": true,
+  "n_members": 0
+ },
+ {
+  "id": "D14",
+  "kind": "protein",
+  "as_written": "MAX2 is shared with strigolactone signalling, where the paralogue D14 is the receptor; plants still distinguish the two (karrikins do not inhibit shoot branching) ⚑ shared hardware",
+  "paths": [
+   "PK01"
+  ],
+  "complex": null,
+  "stage": "integration",
+  "symbol": "D14",
+  "name": "Strigolactone esterase D14",
+  "alias_symbol": [
+   "At3g03990"
+  ],
+  "prev_symbol": [],
+  "accession": "Q9SQR3",
+  "protein_name": "Strigolactone esterase D14",
+  "featured": {
+   "id": "8VD3",
+   "source_db": "PDB",
+   "why": "rule §4.3: Arabidopsis thaliana, 2.0 Å, released 2024-07-31",
+   "coverage": "whole protein",
+   "chain_length": 267,
+   "uniprot_length": 267
+  },
+  "pdb_ids": [
+   "8Z53",
+   "8VD3",
+   "5HZG",
+   "4IH4"
+  ],
+  "n_pdb": 4,
+  "has_alphafold": true,
+  "n_members": 0
+ },
+ {
+  "id": "KAI2",
+  "kind": "protein",
+  "as_written": "KAI2 α/β-hydrolase: KAR1 binds at the active-site opening and induces a conformational change (no detectable hydrolysis)",
+  "paths": [
+   "PK01"
+  ],
+  "complex": null,
+  "stage": "receptor",
+  "symbol": "KAI2",
+  "name": "Probable esterase KAI2",
+  "alias_symbol": [
+   "At4g37470"
+  ],
+  "prev_symbol": [],
+  "accession": "Q9SZU7",
+  "protein_name": "Probable esterase KAI2",
+  "featured": {
+   "id": "8ZVO",
+   "source_db": "PDB",
+   "why": "rule §4.3: Arabidopsis thaliana, 1.49 Å, released 2025-02-19",
+   "coverage": "whole protein",
+   "chain_length": 276,
+   "uniprot_length": 270
+  },
+  "pdb_ids": [
+   "8ZVN",
+   "8ZVO",
+   "8Y9O",
+   "8U2L",
+   "8U33",
+   "5Z9G",
+   "5Z9H",
+   "4JYM",
+   "4JYP",
+   "4HRX",
+   "4HRY",
+   "4HTA",
+   "4IH1",
+   "3W06"
+  ],
+  "n_pdb": 14,
+  "has_alphafold": true,
+  "n_members": 0
+ },
+ {
+  "id": "MAX2",
+  "kind": "protein",
+  "as_written": "F-box protein MAX2",
+  "paths": [
+   "PK01"
+  ],
+  "complex": null,
+  "stage": "cascade",
+  "symbol": "MAX2",
+  "name": "F-box protein MAX2",
+  "alias_symbol": [
+   "At2g42620"
+  ],
+  "prev_symbol": [],
+  "accession": "Q9SIM9",
+  "protein_name": "F-box protein MAX2",
+  "featured": {
+   "id": "AF-Q9SIM9-F1",
+   "source_db": "AlphaFoldDB",
+   "why": "rule §4.3: no PDB entry; predicted model"
+  },
+  "pdb_ids": [],
+  "n_pdb": 0,
+  "has_alphafold": true,
+  "n_members": 0
+ },
+ {
+  "id": "PHOT1",
+  "kind": "protein",
+  "as_written": "phot1 (NPH1), FMN-binding LOV flavoprotein kinase; phot1 and phot2, redundantly; phyB, CRY1/CRY2, PHOT1/PHOT2 (all required)",
+  "paths": [
+   "PL03",
+   "PL05",
+   "PZ05"
+  ],
+  "complex": null,
+  "stage": "receptor",
+  "symbol": "PHOT1",
+  "name": "Phototropin-1",
+  "alias_symbol": [
+   "At3g45780"
+  ],
+  "prev_symbol": [],
+  "accession": "O48963",
+  "protein_name": "Phototropin-1",
+  "featured": {
+   "id": "2Z6C",
+   "source_db": "PDB",
+   "why": "rule §4.3: Arabidopsis thaliana, 2.1 Å, released 2008-07-29",
+   "coverage": "domain structure (129 of 996 residues)",
+   "chain_length": 129,
+   "uniprot_length": 996
+  },
+  "pdb_ids": [
+   "4HHD",
+   "2Z6C"
+  ],
+  "n_pdb": 2,
+  "has_alphafold": true,
+  "n_members": 0
+ },
+ {
+  "id": "PHOT2",
+  "kind": "protein",
+  "as_written": "phot2 (NPL1); phot1 and phot2, redundantly; phyB, CRY1/CRY2, PHOT1/PHOT2 (all required)",
+  "paths": [
+   "PL04",
+   "PL05",
+   "PZ05"
+  ],
+  "complex": null,
+  "stage": "receptor",
+  "symbol": "PHOT2",
+  "name": "Phototropin-2",
+  "alias_symbol": [
+   "At5g58140"
+  ],
+  "prev_symbol": [],
+  "accession": "P93025",
+  "protein_name": "Phototropin-2",
+  "featured": {
+   "id": "6QQH",
+   "source_db": "PDB",
+   "why": "rule §4.3: Arabidopsis thaliana, 1.38 Å, released 2019-06-19",
+   "coverage": "domain structure (128 of 915 residues)",
+   "chain_length": 128,
+   "uniprot_length": 915
+  },
+  "pdb_ids": [
+   "8A2V",
+   "8A2W",
+   "8A4E",
+   "7ABY",
+   "6S45",
+   "6S46",
+   "6QQH",
+   "6QQI",
+   "6QQJ",
+   "6QQK",
+   "6QSA",
+   "6GPV",
+   "4NXB",
+   "4NXE",
+   "4NXF",
+   "4NXG",
+   "4EEP",
+   "4EER",
+   "4EES",
+   "4EET",
+   "4EEU",
+   "2Z6D"
+  ],
+  "n_pdb": 22,
+  "has_alphafold": true,
+  "n_members": 0
+ },
+ {
+  "id": "COP1",
+  "kind": "protein",
+  "as_written": "instant monomerisation and interaction with COP1 (E3 ubiquitin ligase repressing light signalling)",
+  "paths": [
+   "PL07"
+  ],
+  "complex": null,
+  "stage": "cascade",
+  "symbol": "COP1",
+  "name": "E3 ubiquitin-protein ligase COP1",
+  "alias_symbol": [
+   "At2g32950"
+  ],
+  "prev_symbol": [],
+  "accession": "P43254",
+  "protein_name": "E3 ubiquitin-protein ligase COP1",
+  "featured": {
+   "id": "6QTS",
+   "source_db": "PDB",
+   "why": "rule §4.3: Arabidopsis thaliana, 1.11 Å, released 2019-07-10",
+   "coverage": "domain structure (331 of 675 residues)",
+   "chain_length": 331,
+   "uniprot_length": 675
+  },
+  "pdb_ids": [
+   "7VGG",
+   "6QTO",
+   "6QTQ",
+   "6QTR",
+   "6QTS",
+   "6QTT",
+   "6QTU",
+   "6QTV",
+   "6QTW",
+   "6QTX",
+   "5KWN",
+   "5IGO"
+  ],
+  "n_pdb": 12,
+  "has_alphafold": true,
+  "n_members": 0
+ },
+ {
+  "id": "UVR8",
+  "kind": "protein",
+  "as_written": "UVR8 dimers (probably tryptophan-based); UVR8 (phototropin-independent)",
+  "paths": [
+   "PL07",
+   "PL08"
+  ],
+  "complex": null,
+  "stage": "receptor",
+  "symbol": "UVR8",
+  "name": "Ultraviolet-B receptor UVR8",
+  "alias_symbol": [
+   "At5g63860"
+  ],
+  "prev_symbol": [],
+  "accession": "Q9FN03",
+  "protein_name": "Ultraviolet-B receptor UVR8",
+  "featured": {
+   "id": "4D9S",
+   "source_db": "PDB",
+   "why": "curator: wild-type Arabidopsis UVR8 (the 2012 structure); the rule picked 6QTQ, a COP1 WD40 domain holding a UVR8 C-terminal peptide",
+   "coverage": "whole protein",
+   "chain_length": 406,
+   "uniprot_length": 440
+  },
+  "pdb_ids": [
+   "8GQE",
+   "7VGG",
+   "6XZL",
+   "6XZM",
+   "6XZN",
+   "6DD7",
+   "4NAA",
+   "4NBM",
+   "4NC4",
+   "4D9S",
+   "4DNU",
+   "4DNV",
+   "4DNW"
+  ],
+  "n_pdb": 13,
+  "has_alphafold": true,
+  "n_members": 0
+ },
+ {
+  "id": "CPK10",
+  "kind": "protein",
+  "as_written": "nitrate-specific Ca2+ signal → subgroup III Ca2+-sensor kinases CPK10/30/32 → phosphorylation of NLP transcription factors (NLP7)",
+  "paths": [
+   "PN01"
+  ],
+  "complex": null,
+  "stage": "cascade",
+  "symbol": "CPK10",
+  "name": "Calcium-dependent protein kinase 10",
+  "alias_symbol": [
+   "At1g18890"
+  ],
+  "prev_symbol": [],
+  "accession": "Q9M9V8",
+  "protein_name": "Calcium-dependent protein kinase 10",
+  "featured": {
+   "id": "AF-Q9M9V8-F1",
+   "source_db": "AlphaFoldDB",
+   "why": "rule §4.3: no PDB entry; predicted model"
+  },
+  "pdb_ids": [],
+  "n_pdb": 0,
+  "has_alphafold": true,
+  "n_members": 0
+ },
+ {
+  "id": "NLP7",
+  "kind": "protein",
+  "as_written": "nitrate-specific Ca2+ signal → subgroup III Ca2+-sensor kinases CPK10/30/32 → phosphorylation of NLP transcription factors (NLP7)",
+  "paths": [
+   "PN01"
+  ],
+  "complex": null,
+  "stage": "cascade",
+  "symbol": "NLP7",
+  "name": "Protein NLP7",
+  "alias_symbol": [
+   "At4g24020"
+  ],
+  "prev_symbol": [],
+  "accession": "Q84TH9",
+  "protein_name": "Protein NLP7",
+  "featured": {
+   "id": "AF-Q84TH9-F1",
+   "source_db": "AlphaFoldDB",
+   "why": "rule §4.3: no PDB entry; predicted model"
+  },
+  "pdb_ids": [],
+  "n_pdb": 0,
+  "has_alphafold": true,
+  "n_members": 0
+ },
+ {
+  "id": "NRT1.1",
+  "kind": "protein",
+  "as_written": "NRT1.1/CHL1 (NPF6.3) transceptor: dual-affinity binding with a T101 phosphorylation switch (CIPK23 phosphorylates at low nitrate); NRT1.1, which also facilitates auxin uptake (inhibited by nitrate)",
+  "paths": [
+   "PN01",
+   "PN02"
+  ],
+  "complex": null,
+  "stage": "receptor",
+  "symbol": "NRT1.1",
+  "name": "Protein NRT1/ PTR FAMILY 6.3",
+  "alias_symbol": [
+   "NPF6.3",
+   "At1g12110"
+  ],
+  "prev_symbol": [],
+  "accession": "Q05085",
+  "protein_name": "Protein NRT1/ PTR FAMILY 6.3",
+  "featured": {
+   "id": "4OH3",
+   "source_db": "PDB",
+   "why": "rule §4.3: Arabidopsis thaliana, 3.25 Å, released 2014-03-05",
+   "coverage": "whole protein",
+   "chain_length": 599,
+   "uniprot_length": 590
+  },
+  "pdb_ids": [
+   "5A2N",
+   "5A2O",
+   "4OH3"
+  ],
+  "n_pdb": 3,
+  "has_alphafold": true,
+  "n_members": 0
+ },
+ {
+  "id": "CEP1",
+  "kind": "protein",
+  "as_written": "N-starved rootlets secrete small CEP peptides",
+  "paths": [
+   "PN03"
+  ],
+  "complex": null,
+  "stage": "cascade",
+  "symbol": "CEP1",
+  "name": "Precursor of CEP1",
+  "alias_symbol": [
+   "At1g47485"
+  ],
+  "prev_symbol": [],
+  "accession": "Q8L8Y3",
+  "protein_name": "Precursor of CEP1",
+  "featured": {
+   "id": "AF-Q8L8Y3-F1",
+   "source_db": "AlphaFoldDB",
+   "why": "rule §4.3: no PDB entry; predicted model"
+  },
+  "pdb_ids": [],
+  "n_pdb": 0,
+  "has_alphafold": true,
+  "n_members": 0
+ },
+ {
+  "id": "CEPR1",
+  "kind": "protein",
+  "as_written": "two LRR receptor kinases (CEPRs) in the shoot receive them",
+  "paths": [
+   "PN03"
+  ],
+  "complex": null,
+  "stage": "integration",
+  "symbol": "CEPR1",
+  "name": "Receptor protein-tyrosine kinase CEPR1",
+  "alias_symbol": [
+   "At5g49660"
+  ],
+  "prev_symbol": [],
+  "accession": "Q9FGL5",
+  "protein_name": "Receptor protein-tyrosine kinase CEPR1",
+  "featured": {
+   "id": "AF-Q9FGL5-F1",
+   "source_db": "AlphaFoldDB",
+   "why": "rule §4.3: no PDB entry; predicted model"
+  },
+  "pdb_ids": [],
+  "n_pdb": 0,
+  "has_alphafold": true,
+  "n_members": 0
+ },
+ {
+  "id": "PHR1",
+  "kind": "protein",
+  "as_written": "InsP-bound SPX1 binds PHR1 (Pi-dependent) and competitively inhibits PHR1 binding to DNA",
+  "paths": [
+   "PN04"
+  ],
+  "complex": null,
+  "stage": "cascade",
+  "symbol": "PHR1",
+  "name": "Protein PHOSPHATE STARVATION RESPONSE 1",
+  "alias_symbol": [
+   "At4g28610"
+  ],
+  "prev_symbol": [],
+  "accession": "Q94CL7",
+  "protein_name": "Protein PHOSPHATE STARVATION RESPONSE 1",
+  "featured": {
+   "id": "6J4K",
+   "source_db": "PDB",
+   "why": "rule §4.3: Arabidopsis thaliana, 1.58 Å, released 2019-04-24",
+   "coverage": "domain structure (60 of 409 residues)",
+   "chain_length": 60,
+   "uniprot_length": 409
+  },
+  "pdb_ids": [
+   "6TO5",
+   "6TO9",
+   "6TOC",
+   "6J4K",
+   "6J4R",
+   "6J5B"
+  ],
+  "n_pdb": 6,
+  "has_alphafold": true,
+  "n_members": 0
+ },
+ {
+  "id": "SPX1",
+  "kind": "protein",
+  "as_written": "SPX domains binding inositol polyphosphates (InsPs), whose levels track Pi",
+  "paths": [
+   "PN04"
+  ],
+  "complex": null,
+  "stage": "receptor",
+  "symbol": "SPX1",
+  "name": "SPX domain-containing protein 1",
+  "alias_symbol": [
+   "At5g20150"
+  ],
+  "prev_symbol": [],
+  "accession": "Q8LBH4",
+  "protein_name": "SPX domain-containing protein 1",
+  "featured": {
+   "id": "AF-Q8LBH4-F1",
+   "source_db": "AlphaFoldDB",
+   "why": "rule §4.3: no PDB entry; predicted model"
+  },
+  "pdb_ids": [],
+  "n_pdb": 0,
+  "has_alphafold": true,
+  "n_members": 0
+ },
+ {
+  "id": "LPR1",
+  "kind": "protein",
+  "as_written": "root cap; LPR1 and LPR2 multicopper oxidases (sensing, responding, or both)",
+  "paths": [
+   "PN05"
+  ],
+  "complex": null,
+  "stage": "receptor",
+  "symbol": "LPR1",
+  "name": "Multicopper oxidase LPR1",
+  "alias_symbol": [
+   "At1g23010"
+  ],
+  "prev_symbol": [],
+  "accession": "F4I4K5",
+  "protein_name": "Multicopper oxidase LPR1",
+  "featured": {
+   "id": "AF-F4I4K5-F1",
+   "source_db": "AlphaFoldDB",
+   "why": "rule §4.3: no PDB entry; predicted model"
+  },
+  "pdb_ids": [],
+  "n_pdb": 0,
+  "has_alphafold": true,
+  "n_members": 0
+ },
+ {
+  "id": "BTS",
+  "kind": "protein",
+  "as_written": "BRUTUS (BTS): hemerythrin domains bind iron, and iron binding destabilises BTS",
+  "paths": [
+   "PN06"
+  ],
+  "complex": null,
+  "stage": "receptor",
+  "symbol": "BTS",
+  "name": "Zinc finger protein BRUTUS",
+  "alias_symbol": [
+   "At3g18290"
+  ],
+  "prev_symbol": [],
+  "accession": "Q8LPQ5",
+  "protein_name": "Zinc finger protein BRUTUS",
+  "featured": {
+   "id": "AF-Q8LPQ5-F1",
+   "source_db": "AlphaFoldDB",
+   "why": "rule §4.3: no PDB entry; predicted model"
+  },
+  "pdb_ids": [],
+  "n_pdb": 0,
+  "has_alphafold": true,
+  "n_members": 0
+ },
+ {
+  "id": "FIT",
+  "kind": "protein",
+  "as_written": "FIT1 regulates FRO2 (at mRNA level) and IRT1 (at protein level) in outer root cells",
+  "paths": [
+   "PN06"
+  ],
+  "complex": null,
+  "stage": "integration",
+  "symbol": "FIT",
+  "name": "Transcription factor FER-LIKE IRON DEFICIENCY-INDUCED TRANSCRIPTION FACTOR",
+  "alias_symbol": [
+   "At2g28160"
+  ],
+  "prev_symbol": [],
+  "accession": "Q0V7X4",
+  "protein_name": "Transcription factor FER-LIKE IRON DEFICIENCY-INDUCED TRANSCRIPTION FACTOR",
+  "featured": {
+   "id": "AF-Q0V7X4-F1",
+   "source_db": "AlphaFoldDB",
+   "why": "rule §4.3: no PDB entry; predicted model"
+  },
+  "pdb_ids": [],
+  "n_pdb": 0,
+  "has_alphafold": true,
+  "n_members": 0
+ },
+ {
+  "id": "PCO1",
+  "kind": "protein",
+  "as_written": "plant cysteine oxidases (PCOs) oxidise the N-terminal cysteine of ERF-VII transcription factors, using O2 as co-substrate",
+  "paths": [
+   "PO01"
+  ],
+  "complex": null,
+  "stage": "receptor",
+  "symbol": "PCO1",
+  "name": "Plant cysteine oxidase 1",
+  "alias_symbol": [
+   "At5g15120"
+  ],
+  "prev_symbol": [],
+  "accession": "Q9LXG9",
+  "protein_name": "Plant cysteine oxidase 1",
+  "featured": {
+   "id": "AF-Q9LXG9-F1",
+   "source_db": "AlphaFoldDB",
+   "why": "rule §4.3: no PDB entry; predicted model"
+  },
+  "pdb_ids": [],
+  "n_pdb": 0,
+  "has_alphafold": true,
+  "n_members": 0
+ },
+ {
+  "id": "PCO2",
+  "kind": "protein",
+  "as_written": "plant cysteine oxidases (PCOs) oxidise the N-terminal cysteine of ERF-VII transcription factors, using O2 as co-substrate",
+  "paths": [
+   "PO01"
+  ],
+  "complex": null,
+  "stage": "receptor",
+  "symbol": "PCO2",
+  "name": "Plant cysteine oxidase 2",
+  "alias_symbol": [
+   "At5g39890"
+  ],
+  "prev_symbol": [],
+  "accession": "Q8LGJ5",
+  "protein_name": "Plant cysteine oxidase 2",
+  "featured": {
+   "id": "7CXZ",
+   "source_db": "PDB",
+   "why": "rule §4.3: Arabidopsis thaliana, 1.561 Å, released 2020-11-25",
+   "coverage": "whole protein",
+   "chain_length": 249,
+   "uniprot_length": 276
+  },
+  "pdb_ids": [
+   "7CXZ"
+  ],
+  "n_pdb": 1,
+  "has_alphafold": true,
+  "n_members": 0
+ },
+ {
+  "id": "RAP2-12",
+  "kind": "protein",
+  "as_written": "in air, oxidised ERF-VII proteins are degraded by the N-end rule pathway; in hypoxia RAP2.12 is released from the plasma membrane and accumulates in the nucleus; HRE2 is stabilised",
+  "paths": [
+   "PO01"
+  ],
+  "complex": null,
+  "stage": "cascade",
+  "symbol": "RAP2-12",
+  "name": "Ethylene-responsive transcription factor RAP2-12",
+  "alias_symbol": [
+   "At1g53910"
+  ],
+  "prev_symbol": [],
+  "accession": "Q9SSA8",
+  "protein_name": "Ethylene-responsive transcription factor RAP2-12",
+  "featured": {
+   "id": "AF-Q9SSA8-F1",
+   "source_db": "AlphaFoldDB",
+   "why": "rule §4.3: no PDB entry; predicted model"
+  },
+  "pdb_ids": [],
+  "n_pdb": 0,
+  "has_alphafold": true,
+  "n_members": 0
+ },
+ {
+  "id": "BAK1",
+  "kind": "protein",
+  "as_written": "FLS2, LRR receptor kinase (flg22 bound on the inner surface of its solenoid); BAK1 co-receptor, recognising the C terminus of FLS2-bound flg22; EFR, receptor kinase (EF-Tu receptor); BAK1 needed for early responses",
+  "paths": [
+   "PP01",
+   "PP03"
+  ],
+  "complex": null,
+  "stage": "receptor",
+  "symbol": "BAK1",
+  "name": "BRASSINOSTEROID INSENSITIVE 1-associated receptor kinase 1",
+  "alias_symbol": [
+   "At4g33430"
+  ],
+  "prev_symbol": [],
+  "accession": "Q94F62",
+  "protein_name": "BRASSINOSTEROID INSENSITIVE 1-associated receptor kinase 1",
+  "featured": {
+   "id": "9VH2",
+   "source_db": "PDB",
+   "why": "rule §4.3: Arabidopsis thaliana, 2.65 Å, released 2026-09-23",
+   "coverage": "domain structure (226 of 615 residues)",
+   "chain_length": 226,
+   "uniprot_length": 615
+  },
+  "pdb_ids": [
+   "9VH2",
+   "9W1S",
+   "9WUM",
+   "8WEC",
+   "8WED",
+   "8YAA"
+  ],
+  "n_pdb": 6,
+  "has_alphafold": true,
+  "n_members": 0
+ },
+ {
+  "id": "BIK1",
+  "kind": "protein",
+  "as_written": "ligand-dependent FLS2–BAK1 complex within minutes → BIK1 phosphorylates RBOHD (Ca2+-independent) → ROS burst; Ca2+ influx; MAP kinase cascade MEKK1 → MKK4/MKK5 → MPK3/MPK6 → WRKY22/WRKY29; BIK1 and RbohD pathway; nitric oxide production; guard-cell-specific OST1 kinase; RBOHD in complex with EFR; BIK1 phosphorylates RBOHD → ROS burst",
+  "paths": [
+   "PP01",
+   "PP02",
+   "PP03"
+  ],
+  "complex": null,
+  "stage": "cascade",
+  "symbol": "BIK1",
+  "name": "Serine/threonine-protein kinase BIK1",
+  "alias_symbol": [
+   "At2g39660"
+  ],
+  "prev_symbol": [],
+  "accession": "O48814",
+  "protein_name": "Serine/threonine-protein kinase BIK1",
+  "featured": {
+   "id": "5TOS",
+   "source_db": "PDB",
+   "why": "rule §4.3: Arabidopsis thaliana, 2.35 Å, released 2018-04-18",
+   "coverage": "whole protein",
+   "chain_length": 395,
+   "uniprot_length": 395
+  },
+  "pdb_ids": [
+   "5TOS"
+  ],
+  "n_pdb": 1,
+  "has_alphafold": true,
+  "n_members": 0
+ },
+ {
+  "id": "FLS2",
+  "kind": "protein",
+  "as_written": "FLS2, LRR receptor kinase (flg22 bound on the inner surface of its solenoid); BAK1 co-receptor, recognising the C terminus of FLS2-bound flg22; FLS2 in guard cells",
+  "paths": [
+   "PP01",
+   "PP02"
+  ],
+  "complex": null,
+  "stage": "receptor",
+  "symbol": "FLS2",
+  "name": "LRR receptor-like serine/threonine-protein kinase FLS2",
+  "alias_symbol": [
+   "At5g46330"
+  ],
+  "prev_symbol": [],
+  "accession": "Q9FL28",
+  "protein_name": "LRR receptor-like serine/threonine-protein kinase FLS2",
+  "featured": {
+   "id": "4MN8",
+   "source_db": "PDB",
+   "why": "rule §4.3: Arabidopsis thaliana, 3.062 Å, released 2013-12-04",
+   "coverage": "domain structure (782 of 1173 residues)",
+   "chain_length": 782,
+   "uniprot_length": 1173
+  },
+  "pdb_ids": [
+   "4MN8",
+   "4MNA"
+  ],
+  "n_pdb": 2,
+  "has_alphafold": true,
+  "n_members": 0
+ },
+ {
+  "id": "MPK3",
+  "kind": "protein",
+  "as_written": "ligand-dependent FLS2–BAK1 complex within minutes → BIK1 phosphorylates RBOHD (Ca2+-independent) → ROS burst; Ca2+ influx; MAP kinase cascade MEKK1 → MKK4/MKK5 → MPK3/MPK6 → WRKY22/WRKY29",
+  "paths": [
+   "PP01"
+  ],
+  "complex": null,
+  "stage": "cascade",
+  "symbol": "MPK3",
+  "name": "Mitogen-activated protein kinase 3",
+  "alias_symbol": [
+   "At3g45640"
+  ],
+  "prev_symbol": [],
+  "accession": "Q39023",
+  "protein_name": "Mitogen-activated protein kinase 3",
+  "featured": {
+   "id": "AF-Q39023-F1",
+   "source_db": "AlphaFoldDB",
+   "why": "rule §4.3: no PDB entry; predicted model"
+  },
+  "pdb_ids": [],
+  "n_pdb": 0,
+  "has_alphafold": true,
+  "n_members": 0
+ },
+ {
+  "id": "MPK6",
+  "kind": "protein",
+  "as_written": "ligand-dependent FLS2–BAK1 complex within minutes → BIK1 phosphorylates RBOHD (Ca2+-independent) → ROS burst; Ca2+ influx; MAP kinase cascade MEKK1 → MKK4/MKK5 → MPK3/MPK6 → WRKY22/WRKY29",
+  "paths": [
+   "PP01"
+  ],
+  "complex": null,
+  "stage": "cascade",
+  "symbol": "MPK6",
+  "name": "Mitogen-activated protein kinase 6",
+  "alias_symbol": [
+   "At2g43790"
+  ],
+  "prev_symbol": [],
+  "accession": "Q39026",
+  "protein_name": "Mitogen-activated protein kinase 6",
+  "featured": {
+   "id": "6DTL",
+   "source_db": "PDB",
+   "why": "rule §4.3: Arabidopsis thaliana, 2.753 Å, released 2019-05-15",
+   "coverage": "whole protein",
+   "chain_length": 364,
+   "uniprot_length": 395
+  },
+  "pdb_ids": [
+   "6DTL",
+   "5CI6"
+  ],
+  "n_pdb": 2,
+  "has_alphafold": true,
+  "n_members": 0
+ },
+ {
+  "id": "RBOHD",
+  "kind": "protein",
+  "as_written": "ligand-dependent FLS2–BAK1 complex within minutes → BIK1 phosphorylates RBOHD (Ca2+-independent) → ROS burst; Ca2+ influx; MAP kinase cascade MEKK1 → MKK4/MKK5 → MPK3/MPK6 → WRKY22/WRKY29; BIK1 and RbohD pathway; nitric oxide production; guard-cell-specific OST1 kinase; RBOHD in complex with EFR; BIK1 phosphorylates RBOHD → ROS burst; early PAMP-responsive genes; oxidative burst (independent of RB",
+  "paths": [
+   "PP01",
+   "PP02",
+   "PP03",
+   "PW03"
+  ],
+  "complex": null,
+  "stage": "cascade",
+  "symbol": "RBOHD",
+  "name": "Respiratory burst oxidase homolog protein D",
+  "alias_symbol": [
+   "At5g47910"
+  ],
+  "prev_symbol": [],
+  "accession": "Q9FIJ0",
+  "protein_name": "Respiratory burst oxidase homolog protein D",
+  "featured": {
+   "id": "AF-Q9FIJ0-F1",
+   "source_db": "AlphaFoldDB",
+   "why": "rule §4.3: no PDB entry; predicted model"
+  },
+  "pdb_ids": [],
+  "n_pdb": 0,
+  "has_alphafold": true,
+  "n_members": 0
+ },
+ {
+  "id": "EFR",
+  "kind": "protein",
+  "as_written": "EFR, receptor kinase (EF-Tu receptor); BAK1 needed for early responses",
+  "paths": [
+   "PP03"
+  ],
+  "complex": null,
+  "stage": "receptor",
+  "symbol": "EFR",
+  "name": "LRR receptor-like serine/threonine-protein kinase EFR",
+  "alias_symbol": [
+   "At5g20480"
+  ],
+  "prev_symbol": [],
+  "accession": "C0LGT6",
+  "protein_name": "LRR receptor-like serine/threonine-protein kinase EFR",
+  "featured": {
+   "id": "AF-C0LGT6-F1",
+   "source_db": "AlphaFoldDB",
+   "why": "rule §4.3: no PDB entry; predicted model"
+  },
+  "pdb_ids": [],
+  "n_pdb": 0,
+  "has_alphafold": true,
+  "n_members": 0
+ },
+ {
+  "id": "CERK1",
+  "kind": "protein",
+  "as_written": "CERK1, LysM receptor kinase; a chitin octamer induces ectodomain dimerisation",
+  "paths": [
+   "PP04"
+  ],
+  "complex": null,
+  "stage": "receptor",
+  "symbol": "CERK1",
+  "name": "Chitin elicitor receptor kinase 1",
+  "alias_symbol": [
+   "At3g21630"
+  ],
+  "prev_symbol": [],
+  "accession": "A8R7E6",
+  "protein_name": "Chitin elicitor receptor kinase 1",
+  "featured": {
+   "id": "4EBY",
+   "source_db": "PDB",
+   "why": "rule §4.3: Arabidopsis thaliana, 1.65 Å, released 2012-06-27",
+   "coverage": "domain structure (212 of 617 residues)",
+   "chain_length": 212,
+   "uniprot_length": 617
+  },
+  "pdb_ids": [
+   "4EBY",
+   "4EBZ"
+  ],
+  "n_pdb": 2,
+  "has_alphafold": true,
+  "n_members": 0
+ },
+ {
+  "id": "PBL2",
+  "kind": "protein",
+  "as_written": "intracellular NLR receptors: RPM1 and RPS2 'guard' RIN4 (RPS2 perceives RIN4 elimination rather than AvrRpt2 itself); ZAR1 with the pseudokinase RKS1 and uridylated PBL2",
+  "paths": [
+   "PP05"
+  ],
+  "complex": null,
+  "stage": "receptor",
+  "symbol": "PBL2",
+  "name": "Probable serine/threonine-protein kinase PBL2",
+  "alias_symbol": [
+   "At1g14370"
+  ],
+  "prev_symbol": [],
+  "accession": "O49839",
+  "protein_name": "Probable serine/threonine-protein kinase PBL2",
+  "featured": {
+   "id": "6J5T",
+   "source_db": "PDB",
+   "why": "rule §4.3: Arabidopsis thaliana, 3.4 Å, released 2019-03-20",
+   "coverage": "whole protein",
+   "chain_length": 426,
+   "uniprot_length": 426
+  },
+  "pdb_ids": [
+   "6J5U",
+   "6J5V",
+   "6J5T",
+   "6J6I"
+  ],
+  "n_pdb": 4,
+  "has_alphafold": true,
+  "n_members": 0
+ },
+ {
+  "id": "RIN4",
+  "kind": "protein",
+  "as_written": "intracellular NLR receptors: RPM1 and RPS2 'guard' RIN4 (RPS2 perceives RIN4 elimination rather than AvrRpt2 itself); ZAR1 with the pseudokinase RKS1 and uridylated PBL2",
+  "paths": [
+   "PP05"
+  ],
+  "complex": null,
+  "stage": "receptor",
+  "symbol": "RIN4",
+  "name": "RPM1-interacting protein 4",
+  "alias_symbol": [
+   "At3g25070"
+  ],
+  "prev_symbol": [],
+  "accession": "Q8GYN5",
+  "protein_name": "RPM1-interacting protein 4",
+  "featured": {
+   "id": "AF-Q8GYN5-F1",
+   "source_db": "AlphaFoldDB",
+   "why": "curator: largely disordered; its PDB entries are short fragments bound to bacterial effectors (AvrB)"
+  },
+  "pdb_ids": [
+   "8TWO",
+   "8TWS",
+   "2NUD"
+  ],
+  "n_pdb": 3,
+  "has_alphafold": true,
+  "n_members": 0
+ },
+ {
+  "id": "RKS1",
+  "kind": "protein",
+  "as_written": "intracellular NLR receptors: RPM1 and RPS2 'guard' RIN4 (RPS2 perceives RIN4 elimination rather than AvrRpt2 itself); ZAR1 with the pseudokinase RKS1 and uridylated PBL2",
+  "paths": [
+   "PP05"
+  ],
+  "complex": null,
+  "stage": "receptor",
+  "symbol": "RKS1",
+  "name": "Serine/threonine-protein kinase ZRK1",
+  "alias_symbol": [
+   "ZRK1",
+   "At3g57710"
+  ],
+  "prev_symbol": [],
+  "accession": "Q9SVY5",
+  "protein_name": "Serine/threonine-protein kinase ZRK1",
+  "featured": {
+   "id": "6J5T",
+   "source_db": "PDB",
+   "why": "rule §4.3: Arabidopsis thaliana, 3.4 Å, released 2019-03-20",
+   "coverage": "whole protein",
+   "chain_length": 351,
+   "uniprot_length": 351
+  },
+  "pdb_ids": [
+   "6J5U",
+   "6J5V",
+   "6J5W",
+   "6J5T",
+   "6J6I"
+  ],
+  "n_pdb": 5,
+  "has_alphafold": true,
+  "n_members": 0
+ },
+ {
+  "id": "RPM1",
+  "kind": "protein",
+  "as_written": "intracellular NLR receptors: RPM1 and RPS2 'guard' RIN4 (RPS2 perceives RIN4 elimination rather than AvrRpt2 itself); ZAR1 with the pseudokinase RKS1 and uridylated PBL2",
+  "paths": [
+   "PP05"
+  ],
+  "complex": null,
+  "stage": "receptor",
+  "symbol": "RPM1",
+  "name": "Disease resistance protein RPM1",
+  "alias_symbol": [
+   "At3g07040"
+  ],
+  "prev_symbol": [],
+  "accession": "Q39214",
+  "protein_name": "Disease resistance protein RPM1",
+  "featured": {
+   "id": "AF-Q39214-F1",
+   "source_db": "AlphaFoldDB",
+   "why": "rule §4.3: no PDB entry; predicted model"
+  },
+  "pdb_ids": [],
+  "n_pdb": 0,
+  "has_alphafold": true,
+  "n_members": 0
+ },
+ {
+  "id": "RPS2",
+  "kind": "protein",
+  "as_written": "intracellular NLR receptors: RPM1 and RPS2 'guard' RIN4 (RPS2 perceives RIN4 elimination rather than AvrRpt2 itself); ZAR1 with the pseudokinase RKS1 and uridylated PBL2",
+  "paths": [
+   "PP05"
+  ],
+  "complex": null,
+  "stage": "receptor",
+  "symbol": "RPS2",
+  "name": "Disease resistance protein RPS2",
+  "alias_symbol": [
+   "At4g26090"
+  ],
+  "prev_symbol": [],
+  "accession": "Q42484",
+  "protein_name": "Disease resistance protein RPS2",
+  "featured": {
+   "id": "AF-Q42484-F1",
+   "source_db": "AlphaFoldDB",
+   "why": "rule §4.3: no PDB entry; predicted model"
+  },
+  "pdb_ids": [],
+  "n_pdb": 0,
+  "has_alphafold": true,
+  "n_members": 0
+ },
+ {
+  "id": "ZAR1",
+  "kind": "protein",
+  "as_written": "intracellular NLR receptors: RPM1 and RPS2 'guard' RIN4 (RPS2 perceives RIN4 elimination rather than AvrRpt2 itself); ZAR1 with the pseudokinase RKS1 and uridylated PBL2",
+  "paths": [
+   "PP05"
+  ],
+  "complex": null,
+  "stage": "receptor",
+  "symbol": "ZAR1",
+  "name": "Disease resistance RPP13-like protein 4",
+  "alias_symbol": [
+   "RPP13L4",
+   "At3g50950"
+  ],
+  "prev_symbol": [],
+  "accession": "Q38834",
+  "protein_name": "Disease resistance RPP13-like protein 4",
+  "featured": {
+   "id": "6J5T",
+   "source_db": "PDB",
+   "why": "rule §4.3: Arabidopsis thaliana, 3.4 Å, released 2019-03-20",
+   "coverage": "whole protein",
+   "chain_length": 852,
+   "uniprot_length": 852
+  },
+  "pdb_ids": [
+   "6J5U",
+   "6J5V",
+   "6J5W",
+   "6J5T",
+   "6J6I"
+  ],
+  "n_pdb": 5,
+  "has_alphafold": true,
+  "n_members": 0
+ },
+ {
+  "id": "FMO1",
+  "kind": "protein",
+  "as_written": "SA made from chorismate by isochorismate synthase (ICS1/SID2); pipecolic acid → FMO1 → N-hydroxypipecolic acid (NHP)",
+  "paths": [
+   "PP06"
+  ],
+  "complex": null,
+  "stage": "cascade",
+  "symbol": "FMO1",
+  "name": "Probable flavin-containing monooxygenase 1",
+  "alias_symbol": [
+   "At1g19250"
+  ],
+  "prev_symbol": [],
+  "accession": "Q9LMA1",
+  "protein_name": "Probable flavin-containing monooxygenase 1",
+  "featured": {
+   "id": "AF-Q9LMA1-F1",
+   "source_db": "AlphaFoldDB",
+   "why": "rule §4.3: no PDB entry; predicted model"
+  },
+  "pdb_ids": [],
+  "n_pdb": 0,
+  "has_alphafold": true,
+  "n_members": 0
+ },
+ {
+  "id": "ICS1",
+  "kind": "protein",
+  "as_written": "SA made from chorismate by isochorismate synthase (ICS1/SID2); pipecolic acid → FMO1 → N-hydroxypipecolic acid (NHP); early PAMP-responsive genes; oxidative burst (independent of RBOHD/RBOHF); salicylic acid accumulation (EDS1, SID2; partly NPR1)",
+  "paths": [
+   "PP06",
+   "PW03"
+  ],
+  "complex": null,
+  "stage": "cascade",
+  "symbol": "ICS1",
+  "name": "Isochorismate synthase 1, chloroplastic",
+  "alias_symbol": [
+   "At1g74710"
+  ],
+  "prev_symbol": [],
+  "accession": "Q9S7H8",
+  "protein_name": "Isochorismate synthase 1, chloroplastic",
+  "featured": {
+   "id": "AF-Q9S7H8-F1",
+   "source_db": "AlphaFoldDB",
+   "why": "rule §4.3: no whole-protein PDB entry (only fragments or motif peptides); predicted model"
+  },
+  "pdb_ids": [
+   "8W6V",
+   "8W71"
+  ],
+  "n_pdb": 2,
+  "has_alphafold": true,
+  "n_members": 0
+ },
+ {
+  "id": "NPR1",
+  "kind": "protein",
+  "as_written": "SA receptors: NPR1 (co-activator; binds SA through Cys521/529 via copper) and NPR3/NPR4 (co-repressors whose activity SA inhibits)",
+  "paths": [
+   "PP06"
+  ],
+  "complex": null,
+  "stage": "receptor",
+  "symbol": "NPR1",
+  "name": "Regulatory protein NPR1",
+  "alias_symbol": [
+   "At1g64280"
+  ],
+  "prev_symbol": [],
+  "accession": "P93002",
+  "protein_name": "Regulatory protein NPR1",
+  "featured": {
+   "id": "7MK3",
+   "source_db": "PDB",
+   "why": "rule §4.3: Arabidopsis thaliana, 3.06 Å, released 2022-03-16",
+   "coverage": "domain structure (388 of 593 residues)",
+   "chain_length": 388,
+   "uniprot_length": 593
+  },
+  "pdb_ids": [
+   "9ZJN",
+   "9ZM5",
+   "7MK2",
+   "7MK3",
+   "7TAC",
+   "7TAD"
+  ],
+  "n_pdb": 6,
+  "has_alphafold": true,
+  "n_members": 0
+ },
+ {
+  "id": "NPR3",
+  "kind": "protein",
+  "as_written": "SA receptors: NPR1 (co-activator; binds SA through Cys521/529 via copper) and NPR3/NPR4 (co-repressors whose activity SA inhibits)",
+  "paths": [
+   "PP06"
+  ],
+  "complex": null,
+  "stage": "receptor",
+  "symbol": "NPR3",
+  "name": "Regulatory protein NPR3",
+  "alias_symbol": [
+   "At5g45110"
+  ],
+  "prev_symbol": [],
+  "accession": "Q8L746",
+  "protein_name": "Regulatory protein NPR3",
+  "featured": {
+   "id": "AF-Q8L746-F1",
+   "source_db": "AlphaFoldDB",
+   "why": "rule §4.3: no PDB entry; predicted model"
+  },
+  "pdb_ids": [],
+  "n_pdb": 0,
+  "has_alphafold": true,
+  "n_members": 0
+ },
+ {
+  "id": "NPR4",
+  "kind": "protein",
+  "as_written": "SA receptors: NPR1 (co-activator; binds SA through Cys521/529 via copper) and NPR3/NPR4 (co-repressors whose activity SA inhibits)",
+  "paths": [
+   "PP06"
+  ],
+  "complex": null,
+  "stage": "receptor",
+  "symbol": "NPR4",
+  "name": "Regulatory protein NPR4",
+  "alias_symbol": [
+   "At4g19660"
+  ],
+  "prev_symbol": [],
+  "accession": "Q5ICL9",
+  "protein_name": "Regulatory protein NPR4",
+  "featured": {
+   "id": "6WPG",
+   "source_db": "PDB",
+   "why": "rule §4.3: Arabidopsis thaliana, 2.283 Å, released 2020-08-12",
+   "coverage": "domain structure (177 of 574 residues)",
+   "chain_length": 177,
+   "uniprot_length": 574
+  },
+  "pdb_ids": [
+   "6WPG"
+  ],
+  "n_pdb": 1,
+  "has_alphafold": true,
+  "n_members": 0
+ },
+ {
+  "id": "CNGC15A",
+  "kind": "protein",
+  "as_written": "SYMRK (LRR receptor kinase, common symbiosis pathway) → nuclear Ca2+ oscillations: CNGC15 channels at the nuclear envelope with the K+ channel DMI1; Ca2+ spiking in root hairs → DMI3 (CCaMK) acts immediately downstream",
+  "paths": [
+   "PS01"
+  ],
+  "complex": null,
+  "stage": "cascade",
+  "symbol": "CNGC15A",
+  "name": "Protein CNGC15a",
+  "alias_symbol": [
+   "MTR_1g064240"
+  ],
+  "prev_symbol": [],
+  "accession": "G7IBJ4",
+  "protein_name": "Protein CNGC15a",
+  "featured": {
+   "id": "AF-G7IBJ4-F1",
+   "source_db": "AlphaFoldDB",
+   "why": "rule §4.3: no PDB entry; predicted model"
+  },
+  "pdb_ids": [],
+  "n_pdb": 0,
+  "has_alphafold": true,
+  "n_members": 0
+ },
+ {
+  "id": "DMI1",
+  "kind": "protein",
+  "as_written": "SYMRK (LRR receptor kinase, common symbiosis pathway) → nuclear Ca2+ oscillations: CNGC15 channels at the nuclear envelope with the K+ channel DMI1; Ca2+ spiking in root hairs → DMI3 (CCaMK) acts immediately downstream",
+  "paths": [
+   "PS01"
+  ],
+  "complex": null,
+  "stage": "cascade",
+  "symbol": "DMI1",
+  "name": "Ion channel DMI1",
+  "alias_symbol": [],
+  "prev_symbol": [],
+  "accession": "Q6RHR6",
+  "protein_name": "Ion channel DMI1",
+  "featured": {
+   "id": "7VM8",
+   "source_db": "PDB",
+   "why": "rule §4.3: Medicago truncatula, 3.034 Å, released 2022-08-24",
+   "coverage": "domain structure (538 of 882 residues)",
+   "chain_length": 538,
+   "uniprot_length": 882
+  },
+  "pdb_ids": [
+   "7VM8"
+  ],
+  "n_pdb": 1,
+  "has_alphafold": true,
+  "n_members": 0
+ },
+ {
+  "id": "DMI3",
+  "kind": "protein",
+  "as_written": "SYMRK (LRR receptor kinase, common symbiosis pathway) → nuclear Ca2+ oscillations: CNGC15 channels at the nuclear envelope with the K+ channel DMI1; Ca2+ spiking in root hairs → DMI3 (CCaMK) acts immediately downstream",
+  "paths": [
+   "PS01"
+  ],
+  "complex": null,
+  "stage": "cascade",
+  "symbol": "DMI3",
+  "name": "Calcium and calcium/calmodulin-dependent serine/threonine-protein kinase DMI-3",
+  "alias_symbol": [
+   "CCAMK",
+   "MTR_8g043970"
+  ],
+  "prev_symbol": [],
+  "accession": "Q6RET7",
+  "protein_name": "Calcium and calcium/calmodulin-dependent serine/threonine-protein kinase DMI-3",
+  "featured": {
+   "id": "AF-Q6RET7-F1",
+   "source_db": "AlphaFoldDB",
+   "why": "rule §4.3: no PDB entry; predicted model"
+  },
+  "pdb_ids": [],
+  "n_pdb": 0,
+  "has_alphafold": true,
+  "n_members": 0
+ },
+ {
+  "id": "NFR5",
+  "kind": "protein",
+  "as_written": "NFR1 and NFR5, LysM receptor kinases, 'essential for Nod-factor perception' (direct binding suggested, not shown in these abstracts)",
+  "paths": [
+   "PS01"
+  ],
+  "complex": null,
+  "stage": "receptor",
+  "symbol": "NFR5",
+  "name": null,
+  "alias_symbol": [
+   "nfr5"
+  ],
+  "prev_symbol": [],
+  "accession": "Q70KR1",
+  "protein_name": null,
+  "featured": {
+   "id": "8S79",
+   "source_db": "PDB",
+   "why": "rule §4.3: Lotus japonicus, 2.29 Å, released 2024-11-06",
+   "coverage": "domain structure (288 of 595 residues)",
+   "chain_length": 288,
+   "uniprot_length": 595
+  },
+  "pdb_ids": [
+   "8S79"
+  ],
+  "n_pdb": 1,
+  "has_alphafold": true,
+  "n_members": 0
+ },
+ {
+  "id": "SYMRK",
+  "kind": "protein",
+  "as_written": "SYMRK (LRR receptor kinase, common symbiosis pathway) → nuclear Ca2+ oscillations: CNGC15 channels at the nuclear envelope with the K+ channel DMI1; Ca2+ spiking in root hairs → DMI3 (CCaMK) acts immediately downstream",
+  "paths": [
+   "PS01"
+  ],
+  "complex": null,
+  "stage": "cascade",
+  "symbol": "SYMRK",
+  "name": "Nodulation receptor kinase",
+  "alias_symbol": [
+   "NORK"
+  ],
+  "prev_symbol": [],
+  "accession": "Q8L4H4",
+  "protein_name": "Nodulation receptor kinase",
+  "featured": {
+   "id": "AF-Q8L4H4-F1",
+   "source_db": "AlphaFoldDB",
+   "why": "rule §4.3: no PDB entry; predicted model"
+  },
+  "pdb_ids": [],
+  "n_pdb": 0,
+  "has_alphafold": true,
+  "n_members": 0
+ },
+ {
+  "id": "LURE1.2",
+  "kind": "protein",
+  "as_written": "PRK6, tip-localised pollen receptor-like kinase (with PRK1, PRK3, PRK8); MDIS1–MIK1/MIK2 receptor heteromer (LURE1 binds their ectodomains)",
+  "paths": [
+   "PSI02"
+  ],
+  "complex": null,
+  "stage": "receptor",
+  "symbol": "LURE1.2",
+  "name": "Protein LURE 1.2",
+  "alias_symbol": [
+   "At5g43510"
+  ],
+  "prev_symbol": [],
+  "accession": "Q4VP08",
+  "protein_name": "Protein LURE 1.2",
+  "featured": {
+   "id": "5Y9W",
+   "source_db": "PDB",
+   "why": "rule §4.3: Arabidopsis thaliana, 1.847 Å, released 2017-12-27",
+   "coverage": "domain structure (71 of 90 residues)",
+   "chain_length": 71,
+   "uniprot_length": 90
+  },
+  "pdb_ids": [
+   "5YAH",
+   "5Y9W"
+  ],
+  "n_pdb": 2,
+  "has_alphafold": true,
+  "n_members": 0
+ },
+ {
+  "id": "MDIS1",
+  "kind": "protein",
+  "as_written": "PRK6, tip-localised pollen receptor-like kinase (with PRK1, PRK3, PRK8); MDIS1–MIK1/MIK2 receptor heteromer (LURE1 binds their ectodomains)",
+  "paths": [
+   "PSI02"
+  ],
+  "complex": null,
+  "stage": "receptor",
+  "symbol": "MDIS1",
+  "name": "Protein MALE DISCOVERER 1",
+  "alias_symbol": [
+   "At5g45840"
+  ],
+  "prev_symbol": [],
+  "accession": "C0LGU7",
+  "protein_name": "Protein MALE DISCOVERER 1",
+  "featured": {
+   "id": "AF-C0LGU7-F1",
+   "source_db": "AlphaFoldDB",
+   "why": "rule §4.3: no PDB entry; predicted model"
+  },
+  "pdb_ids": [],
+  "n_pdb": 0,
+  "has_alphafold": true,
+  "n_members": 0
+ },
+ {
+  "id": "MIK1",
+  "kind": "protein",
+  "as_written": "PRK6, tip-localised pollen receptor-like kinase (with PRK1, PRK3, PRK8); MDIS1–MIK1/MIK2 receptor heteromer (LURE1 binds their ectodomains)",
+  "paths": [
+   "PSI02"
+  ],
+  "complex": null,
+  "stage": "receptor",
+  "symbol": "MIK1",
+  "name": "MDIS1-interacting receptor like kinase 1",
+  "alias_symbol": [
+   "At4g28650"
+  ],
+  "prev_symbol": [],
+  "accession": "Q9M0G7",
+  "protein_name": "MDIS1-interacting receptor like kinase 1",
+  "featured": {
+   "id": "AF-Q9M0G7-F1",
+   "source_db": "AlphaFoldDB",
+   "why": "rule §4.3: no PDB entry; predicted model"
+  },
+  "pdb_ids": [],
+  "n_pdb": 0,
+  "has_alphafold": true,
+  "n_members": 0
+ },
+ {
+  "id": "PRK6",
+  "kind": "protein",
+  "as_written": "PRK6, tip-localised pollen receptor-like kinase (with PRK1, PRK3, PRK8); MDIS1–MIK1/MIK2 receptor heteromer (LURE1 binds their ectodomains)",
+  "paths": [
+   "PSI02"
+  ],
+  "complex": null,
+  "stage": "receptor",
+  "symbol": "PRK6",
+  "name": "Pollen receptor-like kinase 6",
+  "alias_symbol": [
+   "At5g20690"
+  ],
+  "prev_symbol": [],
+  "accession": "Q3E991",
+  "protein_name": "Pollen receptor-like kinase 6",
+  "featured": {
+   "id": "5Y9W",
+   "source_db": "PDB",
+   "why": "rule §4.3: Arabidopsis thaliana, 1.847 Å, released 2017-12-27",
+   "coverage": "domain structure (242 of 659 residues)",
+   "chain_length": 242,
+   "uniprot_length": 659
+  },
+  "pdb_ids": [
+   "5YAH",
+   "5Y9W"
+  ],
+  "n_pdb": 2,
+  "has_alphafold": true,
+  "n_members": 0
+ },
+ {
+  "id": "MCA1",
+  "kind": "protein",
+  "as_written": "MCA1, part of a Ca2+-permeable stretch-activated channel system (MCA2 overlaps in growth only)",
+  "paths": [
+   "PT01"
+  ],
+  "complex": null,
+  "stage": "receptor",
+  "symbol": "MCA1",
+  "name": "Protein MID1-COMPLEMENTING ACTIVITY 1",
+  "alias_symbol": [
+   "At4g35920"
+  ],
+  "prev_symbol": [],
+  "accession": "Q8L7E9",
+  "protein_name": "Protein MID1-COMPLEMENTING ACTIVITY 1",
+  "featured": {
+   "id": "AF-Q8L7E9-F1",
+   "source_db": "AlphaFoldDB",
+   "why": "rule §4.3: no PDB entry; predicted model"
+  },
+  "pdb_ids": [],
+  "n_pdb": 0,
+  "has_alphafold": true,
+  "n_members": 0
+ },
+ {
+  "id": "MCA2",
+  "kind": "protein",
+  "as_written": "MCA1, part of a Ca2+-permeable stretch-activated channel system (MCA2 overlaps in growth only)",
+  "paths": [
+   "PT01"
+  ],
+  "complex": null,
+  "stage": "receptor",
+  "symbol": "MCA2",
+  "name": "Protein MID1-COMPLEMENTING ACTIVITY 2",
+  "alias_symbol": [
+   "At2g17780"
+  ],
+  "prev_symbol": [],
+  "accession": "Q3EBY6",
+  "protein_name": "Protein MID1-COMPLEMENTING ACTIVITY 2",
+  "featured": {
+   "id": "AF-Q3EBY6-F1",
+   "source_db": "AlphaFoldDB",
+   "why": "rule §4.3: no PDB entry; predicted model"
+  },
+  "pdb_ids": [],
+  "n_pdb": 0,
+  "has_alphafold": true,
+  "n_members": 0
+ },
+ {
+  "id": "FER",
+  "kind": "protein",
+  "as_written": "FERONIA, receptor-like kinase (regulator of mechanical Ca2+ signalling); FERONIA, receptor kinase with malectin-like domains; sensing 'might be' direct interaction with pectin",
+  "paths": [
+   "PT03",
+   "PX05"
+  ],
+  "complex": null,
+  "stage": "receptor",
+  "symbol": "FER",
+  "name": "Receptor-like protein kinase FERONIA",
+  "alias_symbol": [
+   "At3g51550"
+  ],
+  "prev_symbol": [],
+  "accession": "Q9SCZ4",
+  "protein_name": "Receptor-like protein kinase FERONIA",
+  "featured": {
+   "id": "9UBI",
+   "source_db": "PDB",
+   "why": "rule §4.3: Arabidopsis thaliana, 1.9 Å, released 2025-10-29",
+   "coverage": "domain structure (327 of 895 residues)",
+   "chain_length": 327,
+   "uniprot_length": 895
+  },
+  "pdb_ids": [
+   "9UBI",
+   "7XDV",
+   "7XDW",
+   "7XDX",
+   "7XDY",
+   "6A5B",
+   "6A5E"
+  ],
+  "n_pdb": 7,
+  "has_alphafold": true,
+  "n_members": 0
+ },
+ {
+  "id": "TCH2",
+  "kind": "protein",
+  "as_written": "TCH genes (calmodulin and calmodulin-related) up to 100-fold in 10–30 min",
+  "paths": [
+   "PT04"
+  ],
+  "complex": null,
+  "stage": "cascade",
+  "symbol": "TCH2",
+  "name": "Calcium-binding protein CML24",
+  "alias_symbol": [
+   "CML24",
+   "At5g37770"
+  ],
+  "prev_symbol": [],
+  "accession": "P25070",
+  "protein_name": "Calcium-binding protein CML24",
+  "featured": {
+   "id": "AF-P25070-F1",
+   "source_db": "AlphaFoldDB",
+   "why": "rule §4.3: no PDB entry; predicted model"
+  },
+  "pdb_ids": [],
+  "n_pdb": 0,
+  "has_alphafold": true,
+  "n_members": 0
+ },
+ {
+  "id": "TCH3",
+  "kind": "protein",
+  "as_written": "TCH genes (calmodulin and calmodulin-related) up to 100-fold in 10–30 min",
+  "paths": [
+   "PT04"
+  ],
+  "complex": null,
+  "stage": "cascade",
+  "symbol": "TCH3",
+  "name": "Calmodulin-like protein 12",
+  "alias_symbol": [
+   "CML12",
+   "At2g41100"
+  ],
+  "prev_symbol": [],
+  "accession": "P25071",
+  "protein_name": "Calmodulin-like protein 12",
+  "featured": {
+   "id": "AF-P25071-F1",
+   "source_db": "AlphaFoldDB",
+   "why": "rule §4.3: no PDB entry; predicted model"
+  },
+  "pdb_ids": [],
+  "n_pdb": 0,
+  "has_alphafold": true,
+  "n_members": 0
+ },
+ {
+  "id": "MSL10",
+  "kind": "protein",
+  "as_written": "MSL10, phospho-regulated membrane-based sensor; GLR3.3 and GLR3.6 (GLR3.2 also); MSL10, stretch-activated anion channel, in the same pathway",
+  "paths": [
+   "PT05",
+   "PW01"
+  ],
+  "complex": null,
+  "stage": "receptor",
+  "symbol": "MSL10",
+  "name": "Mechanosensitive ion channel protein 10",
+  "alias_symbol": [
+   "At5g12080"
+  ],
+  "prev_symbol": [],
+  "accession": "Q9LYG9",
+  "protein_name": "Mechanosensitive ion channel protein 10",
+  "featured": {
+   "id": "8JWE",
+   "source_db": "PDB",
+   "why": "rule §4.3: Arabidopsis thaliana, 2.74 Å, released 2024-07-03",
+   "coverage": "whole protein",
+   "chain_length": 734,
+   "uniprot_length": 734
+  },
+  "pdb_ids": [
+   "8JWE",
+   "8TDJ",
+   "8TDK",
+   "8TDL",
+   "8TDM"
+  ],
+  "n_pdb": 5,
+  "has_alphafold": true,
+  "n_members": 0
+ },
+ {
+  "id": "MSL8",
+  "kind": "protein",
+  "as_written": "MSL8, pollen-specific membrane-tension-gated channel",
+  "paths": [
+   "PT06"
+  ],
+  "complex": null,
+  "stage": "receptor",
+  "symbol": "MSL8",
+  "name": "Mechanosensitive ion channel protein 8",
+  "alias_symbol": [
+   "At2g17010"
+  ],
+  "prev_symbol": [],
+  "accession": "F4IME2",
+  "protein_name": "Mechanosensitive ion channel protein 8",
+  "featured": {
+   "id": "AF-F4IME2-F1",
+   "source_db": "AlphaFoldDB",
+   "why": "rule §4.3: no PDB entry; predicted model"
+  },
+  "pdb_ids": [],
+  "n_pdb": 0,
+  "has_alphafold": true,
+  "n_members": 0
+ },
+ {
+  "id": "COI1",
+  "kind": "protein",
+  "as_written": "distal jasmonate: JA-Ile promotes COI1–JAZ1 binding; JAZ degraded via SCF(COI1); MYC2 released",
+  "paths": [
+   "PW01"
+  ],
+  "complex": null,
+  "stage": "integration",
+  "symbol": "COI1",
+  "name": "Coronatine-insensitive protein 1",
+  "alias_symbol": [
+   "At2g39940"
+  ],
+  "prev_symbol": [],
+  "accession": "O04197",
+  "protein_name": "Coronatine-insensitive protein 1",
+  "featured": {
+   "id": "AF-O04197-F1",
+   "source_db": "AlphaFoldDB",
+   "why": "rule §4.3: no whole-protein PDB entry (only fragments or motif peptides); predicted model"
+  },
+  "pdb_ids": [
+   "3OGK",
+   "3OGL",
+   "3OGM"
+  ],
+  "n_pdb": 3,
+  "has_alphafold": true,
+  "n_members": 0
+ },
+ {
+  "id": "GLR3.2",
+  "kind": "protein",
+  "as_written": "GLR3.3 and GLR3.6 (GLR3.2 also); MSL10, stretch-activated anion channel, in the same pathway",
+  "paths": [
+   "PW01"
+  ],
+  "complex": null,
+  "stage": "receptor",
+  "symbol": "GLR3.2",
+  "name": "Glutamate receptor 3.2",
+  "alias_symbol": [
+   "At4g35290"
+  ],
+  "prev_symbol": [],
+  "accession": "Q93YT1",
+  "protein_name": "Glutamate receptor 3.2",
+  "featured": {
+   "id": "6VEA",
+   "source_db": "PDB",
+   "why": "rule §4.3: Arabidopsis thaliana, 1.58 Å, released 2020-09-23",
+   "coverage": "domain structure (308 of 912 residues)",
+   "chain_length": 308,
+   "uniprot_length": 912
+  },
+  "pdb_ids": [
+   "6VE8",
+   "6VEA"
+  ],
+  "n_pdb": 2,
+  "has_alphafold": true,
+  "n_members": 0
+ },
+ {
+  "id": "GLR3.3",
+  "kind": "protein",
+  "as_written": "GLR3.3 and GLR3.6 (GLR3.2 also); MSL10, stretch-activated anion channel, in the same pathway",
+  "paths": [
+   "PW01"
+  ],
+  "complex": null,
+  "stage": "receptor",
+  "symbol": "GLR3.3",
+  "name": "Glutamate receptor 3.3",
+  "alias_symbol": [
+   "At1g42540"
+  ],
+  "prev_symbol": [],
+  "accession": "Q9C8E7",
+  "protein_name": "Glutamate receptor 3.3",
+  "featured": {
+   "id": "AF-Q9C8E7-F1",
+   "source_db": "AlphaFoldDB",
+   "why": "rule §4.3: no whole-protein PDB entry (only fragments or motif peptides); predicted model"
+  },
+  "pdb_ids": [
+   "6R85",
+   "6R88",
+   "6R89",
+   "6R8A"
+  ],
+  "n_pdb": 4,
+  "has_alphafold": true,
+  "n_members": 0
+ },
+ {
+  "id": "GLR3.6",
+  "kind": "protein",
+  "as_written": "GLR3.3 and GLR3.6 (GLR3.2 also); MSL10, stretch-activated anion channel, in the same pathway",
+  "paths": [
+   "PW01"
+  ],
+  "complex": null,
+  "stage": "receptor",
+  "symbol": "GLR3.6",
+  "name": "Glutamate receptor 3.6",
+  "alias_symbol": [
+   "At3g51480"
+  ],
+  "prev_symbol": [],
+  "accession": "Q84W41",
+  "protein_name": "Glutamate receptor 3.6",
+  "featured": {
+   "id": "AF-Q84W41-F1",
+   "source_db": "AlphaFoldDB",
+   "why": "rule §4.3: no PDB entry; predicted model"
+  },
+  "pdb_ids": [],
+  "n_pdb": 0,
+  "has_alphafold": true,
+  "n_members": 0
+ },
+ {
+  "id": "JAZ1",
+  "kind": "protein",
+  "as_written": "distal jasmonate: JA-Ile promotes COI1–JAZ1 binding; JAZ degraded via SCF(COI1); MYC2 released",
+  "paths": [
+   "PW01"
+  ],
+  "complex": null,
+  "stage": "integration",
+  "symbol": "JAZ1",
+  "name": "Protein TIFY 10A",
+  "alias_symbol": [
+   "TIFY10A",
+   "At1g19180"
+  ],
+  "prev_symbol": [],
+  "accession": "Q9LMA8",
+  "protein_name": "Protein TIFY 10A",
+  "featured": {
+   "id": "AF-Q9LMA8-F1",
+   "source_db": "AlphaFoldDB",
+   "why": "curator: largely disordered; its PDB entries are Jas-motif peptides or a low-resolution negative-stain map"
+  },
+  "pdb_ids": [
+   "8T2I",
+   "3OGK",
+   "3OGL",
+   "3OGM"
+  ],
+  "n_pdb": 4,
+  "has_alphafold": true,
+  "n_members": 0
+ },
+ {
+  "id": "MYC2",
+  "kind": "protein",
+  "as_written": "distal jasmonate: JA-Ile promotes COI1–JAZ1 binding; JAZ degraded via SCF(COI1); MYC2 released",
+  "paths": [
+   "PW01"
+  ],
+  "complex": null,
+  "stage": "integration",
+  "symbol": "MYC2",
+  "name": "Transcription factor MYC2",
+  "alias_symbol": [
+   "At1g32640"
+  ],
+  "prev_symbol": [],
+  "accession": "Q39204",
+  "protein_name": "Transcription factor MYC2",
+  "featured": {
+   "id": "5GNJ",
+   "source_db": "PDB",
+   "why": "rule §4.3: Arabidopsis thaliana, 2.7 Å, released 2017-05-10",
+   "coverage": "domain structure (89 of 623 residues)",
+   "chain_length": 89,
+   "uniprot_length": 623
+  },
+  "pdb_ids": [
+   "5GNJ"
+  ],
+  "n_pdb": 1,
+  "has_alphafold": true,
+  "n_members": 0
+ },
+ {
+  "id": "PEPR1",
+  "kind": "protein",
+  "as_written": "PEPR1 (At1g73080, LRR receptor kinase; Kd 0.25 nM) and PEPR2, redundantly",
+  "paths": [
+   "PW02"
+  ],
+  "complex": null,
+  "stage": "receptor",
+  "symbol": "PEPR1",
+  "name": "Leucine-rich repeat receptor-like protein kinase PEPR1",
+  "alias_symbol": [
+   "At1g73080"
+  ],
+  "prev_symbol": [],
+  "accession": "Q9SSL9",
+  "protein_name": "Leucine-rich repeat receptor-like protein kinase PEPR1",
+  "featured": {
+   "id": "5GR8",
+   "source_db": "PDB",
+   "why": "rule §4.3: Arabidopsis thaliana, 2.587 Å, released 2016-12-14",
+   "coverage": "domain structure (710 of 1123 residues)",
+   "chain_length": 710,
+   "uniprot_length": 1123
+  },
+  "pdb_ids": [
+   "5GR8"
+  ],
+  "n_pdb": 1,
+  "has_alphafold": true,
+  "n_members": 0
+ },
+ {
+  "id": "PEPR2",
+  "kind": "protein",
+  "as_written": "PEPR1 (At1g73080, LRR receptor kinase; Kd 0.25 nM) and PEPR2, redundantly",
+  "paths": [
+   "PW02"
+  ],
+  "complex": null,
+  "stage": "receptor",
+  "symbol": "PEPR2",
+  "name": "Leucine-rich repeat receptor-like protein kinase PEPR2",
+  "alias_symbol": [
+   "At1g17750"
+  ],
+  "prev_symbol": [],
+  "accession": "Q9FZ59",
+  "protein_name": "Leucine-rich repeat receptor-like protein kinase PEPR2",
+  "featured": {
+   "id": "AF-Q9FZ59-F1",
+   "source_db": "AlphaFoldDB",
+   "why": "rule §4.3: no PDB entry; predicted model"
+  },
+  "pdb_ids": [],
+  "n_pdb": 0,
+  "has_alphafold": true,
+  "n_members": 0
+ },
+ {
+  "id": "PROPEP1",
+  "kind": "protein",
+  "as_written": "defence-gene expression; enhanced resistance to Pythium irregulare (PROPEP1 overexpression); seedling growth inhibition",
+  "paths": [
+   "PW02"
+  ],
+  "complex": null,
+  "stage": "response",
+  "symbol": "PROPEP1",
+  "name": "Precursor of elicitor peptide 1",
+  "alias_symbol": [
+   "At5g64900"
+  ],
+  "prev_symbol": [],
+  "accession": "Q9LV87",
+  "protein_name": "Precursor of elicitor peptide 1",
+  "featured": {
+   "id": "AF-Q9LV87-F1",
+   "source_db": "AlphaFoldDB",
+   "why": "rule §4.3: no whole-protein PDB entry (only fragments or motif peptides); predicted model"
+  },
+  "pdb_ids": [
+   "5GR8"
+  ],
+  "n_pdb": 1,
+  "has_alphafold": true,
+  "n_members": 0
+ },
+ {
+  "id": "LECRK18",
+  "kind": "protein",
+  "as_written": "LecRK-I.8, L-type lectin receptor kinase, 'an early component of egg perception' (ligand binding not shown)",
+  "paths": [
+   "PW03"
+  ],
+  "complex": null,
+  "stage": "receptor",
+  "symbol": "LECRK18",
+  "name": "L-type lectin-domain containing receptor kinase I.8",
+  "alias_symbol": [
+   "At5g60280"
+  ],
+  "prev_symbol": [],
+  "accession": "Q9LSR9",
+  "protein_name": "L-type lectin-domain containing receptor kinase I.8",
+  "featured": {
+   "id": "AF-Q9LSR9-F1",
+   "source_db": "AlphaFoldDB",
+   "why": "rule §4.3: no PDB entry; predicted model"
+  },
+  "pdb_ids": [],
+  "n_pdb": 0,
+  "has_alphafold": true,
+  "n_members": 0
+ },
+ {
+  "id": "HPCA1",
+  "kind": "protein",
+  "as_written": "HPCA1, LRR receptor kinase; covalent modification of extracellular cysteines",
+  "paths": [
+   "PX01"
+  ],
+  "complex": null,
+  "stage": "receptor",
+  "symbol": "HPCA1",
+  "name": "Leucine-rich repeat receptor protein kinase HPCA1",
+  "alias_symbol": [
+   "At5g49760"
+  ],
+  "prev_symbol": [],
+  "accession": "Q8GZ99",
+  "protein_name": "Leucine-rich repeat receptor protein kinase HPCA1",
+  "featured": {
+   "id": "21AZ",
+   "source_db": "PDB",
+   "why": "rule §4.3: Arabidopsis thaliana, 2.0 Å, released 2026-08-12",
+   "coverage": "domain structure (552 of 953 residues)",
+   "chain_length": 552,
+   "uniprot_length": 953
+  },
+  "pdb_ids": [
+   "21AZ",
+   "9VBD",
+   "9VBV"
+  ],
+  "n_pdb": 3,
+  "has_alphafold": true,
+  "n_members": 0
+ },
+ {
+  "id": "OSCA1",
+  "kind": "protein",
+  "as_written": "OSCA1, hyperosmolality-gated Ca2+-permeable channel ('may be an osmosensor')",
+  "paths": [
+   "PX02"
+  ],
+  "complex": null,
+  "stage": "receptor",
+  "symbol": "OSCA1",
+  "name": "Hyperosmolality-gated Ca2+ permeable channel 1.1",
+  "alias_symbol": [
+   "At4g04340"
+  ],
+  "prev_symbol": [],
+  "accession": "Q9XEA1",
+  "protein_name": "Hyperosmolality-gated Ca2+ permeable channel 1.1",
+  "featured": {
+   "id": "8YMN",
+   "source_db": "PDB",
+   "why": "rule §4.3: Arabidopsis thaliana, 2.5 Å, released 2024-10-02",
+   "coverage": "whole protein",
+   "chain_length": 772,
+   "uniprot_length": 772
+  },
+  "pdb_ids": [
+   "8YMM",
+   "8YMN",
+   "8YMO",
+   "8YMP",
+   "8YMQ",
+   "8GRN",
+   "6JPF"
+  ],
+  "n_pdb": 7,
+  "has_alphafold": true,
+  "n_members": 0
+ },
+ {
+  "id": "OSCA1.2",
+  "kind": "protein",
+  "as_written": "OSCA1, hyperosmolality-gated Ca2+-permeable channel ('may be an osmosensor')",
+  "paths": [
+   "PX02"
+  ],
+  "complex": null,
+  "stage": "receptor",
+  "symbol": "OSCA1.2",
+  "name": "Hyperosmolality-gated Ca2+ permeable channel 1.2",
+  "alias_symbol": [
+   "At4g22120"
+  ],
+  "prev_symbol": [],
+  "accession": "Q5XEZ5",
+  "protein_name": "Hyperosmolality-gated Ca2+ permeable channel 1.2",
+  "featured": {
+   "id": "8T56",
+   "source_db": "PDB",
+   "why": "rule §4.3: Arabidopsis thaliana, 2.8 Å, released 2023-12-27",
+   "coverage": "whole protein",
+   "chain_length": 781,
+   "uniprot_length": 771
+  },
+  "pdb_ids": [
+   "8XAJ",
+   "8XNG",
+   "8XS4",
+   "8XS5",
+   "8XVX",
+   "8XW1",
+   "8XW2",
+   "8XW3",
+   "8T56",
+   "6IJZ",
+   "6MGV",
+   "6MGW"
+  ],
+  "n_pdb": 12,
+  "has_alphafold": true,
+  "n_members": 0
+ },
+ {
+  "id": "DORN1",
+  "kind": "protein",
+  "as_written": "DORN1 (LecRK-I.9, At5g60300); binds ATP, Kd 45.7 nM",
+  "paths": [
+   "PX03"
+  ],
+  "complex": null,
+  "stage": "receptor",
+  "symbol": "DORN1",
+  "name": "L-type lectin-domain containing receptor kinase I.9",
+  "alias_symbol": [
+   "LECRK19",
+   "At5g60300"
+  ],
+  "prev_symbol": [],
+  "accession": "Q9LSR8",
+  "protein_name": "L-type lectin-domain containing receptor kinase I.9",
+  "featured": {
+   "id": "AF-Q9LSR8-F1",
+   "source_db": "AlphaFoldDB",
+   "why": "rule §4.3: no PDB entry; predicted model"
+  },
+  "pdb_ids": [],
+  "n_pdb": 0,
+  "has_alphafold": true,
+  "n_members": 0
+ },
+ {
+  "id": "MOCA1",
+  "kind": "protein",
+  "as_written": "GIPC sphingolipids in the plasma membrane: Na+ binds GIPCs to gate Ca2+ influx channels (MOCA1, a GIPC glucuronosyltransferase, is required)",
+  "paths": [
+   "PX04"
+  ],
+  "complex": null,
+  "stage": "receptor",
+  "symbol": "MOCA1",
+  "name": "Inositol phosphorylceramide glucuronosyltransferase 1",
+  "alias_symbol": [
+   "IPUT1",
+   "At5g18480"
+  ],
+  "prev_symbol": [],
+  "accession": "Q8GWB7",
+  "protein_name": "Inositol phosphorylceramide glucuronosyltransferase 1",
+  "featured": {
+   "id": "AF-Q8GWB7-F1",
+   "source_db": "AlphaFoldDB",
+   "why": "rule §4.3: no PDB entry; predicted model"
+  },
+  "pdb_ids": [],
+  "n_pdb": 0,
+  "has_alphafold": true,
+  "n_members": 0
+ },
+ {
+  "id": "SOS1",
+  "kind": "protein",
+  "as_written": "depolarisation of the cell-surface potential, Ca2+ spikes and waves → SOS3 and the kinase SOS2 activate SOS1",
+  "paths": [
+   "PX04"
+  ],
+  "complex": null,
+  "stage": "cascade",
+  "symbol": "SOS1",
+  "name": "Sodium/hydrogen exchanger 7",
+  "alias_symbol": [
+   "NHX7",
+   "At2g01980"
+  ],
+  "prev_symbol": [],
+  "accession": "Q9LKW9",
+  "protein_name": "Sodium/hydrogen exchanger 7",
+  "featured": {
+   "id": "7Y3E",
+   "source_db": "PDB",
+   "why": "rule §4.3: Arabidopsis thaliana, 2.8 Å, released 2023-08-09",
+   "coverage": "whole protein",
+   "chain_length": 1146,
+   "uniprot_length": 1146
+  },
+  "pdb_ids": [
+   "8JD9",
+   "8JDA",
+   "7Y3E",
+   "8HYA"
+  ],
+  "n_pdb": 4,
+  "has_alphafold": true,
+  "n_members": 0
+ },
+ {
+  "id": "SOS2",
+  "kind": "protein",
+  "as_written": "depolarisation of the cell-surface potential, Ca2+ spikes and waves → SOS3 and the kinase SOS2 activate SOS1",
+  "paths": [
+   "PX04"
+  ],
+  "complex": null,
+  "stage": "cascade",
+  "symbol": "SOS2",
+  "name": "CBL-interacting serine/threonine-protein kinase 24",
+  "alias_symbol": [
+   "CIPK24",
+   "At5g35410"
+  ],
+  "prev_symbol": [],
+  "accession": "Q9LDI3",
+  "protein_name": "CBL-interacting serine/threonine-protein kinase 24",
+  "featured": {
+   "id": "2EHB",
+   "source_db": "PDB",
+   "why": "rule §4.3: Arabidopsis thaliana, 2.1 Å, released 2007-09-25",
+   "coverage": "domain structure (143 of 446 residues)",
+   "chain_length": 143,
+   "uniprot_length": 446
+  },
+  "pdb_ids": [
+   "4D28",
+   "2EHB"
+  ],
+  "n_pdb": 2,
+  "has_alphafold": true,
+  "n_members": 0
+ },
+ {
+  "id": "SOS3",
+  "kind": "protein",
+  "as_written": "depolarisation of the cell-surface potential, Ca2+ spikes and waves → SOS3 and the kinase SOS2 activate SOS1",
+  "paths": [
+   "PX04"
+  ],
+  "complex": null,
+  "stage": "cascade",
+  "symbol": "SOS3",
+  "name": "Calcineurin B-like protein 4",
+  "alias_symbol": [
+   "CBL4",
+   "At5g24270"
+  ],
+  "prev_symbol": [],
+  "accession": "O81223",
+  "protein_name": "Calcineurin B-like protein 4",
+  "featured": {
+   "id": "2EHB",
+   "source_db": "PDB",
+   "why": "rule §4.3: Arabidopsis thaliana, 2.1 Å, released 2007-09-25",
+   "coverage": "whole protein",
+   "chain_length": 207,
+   "uniprot_length": 222
+  },
+  "pdb_ids": [
+   "2EHB",
+   "1V1F",
+   "1V1G"
+  ],
+  "n_pdb": 3,
+  "has_alphafold": true,
+  "n_members": 0
+ },
+ {
+  "id": "CRY2",
+  "kind": "protein",
+  "as_written": "phyB, CRY1/CRY2, PHOT1/PHOT2 (all required); cryptochromes, via a proposed radical-pair mechanism",
+  "paths": [
+   "PZ05",
+   "PZ06"
+  ],
+  "complex": null,
+  "stage": "receptor",
+  "symbol": "CRY2",
+  "name": "Cryptochrome-2",
+  "alias_symbol": [
+   "At1g04400"
+  ],
+  "prev_symbol": [],
+  "accession": "Q96524",
+  "protein_name": "Cryptochrome-2",
+  "featured": {
+   "id": "6K8K",
+   "source_db": "PDB",
+   "why": "rule §4.3: Arabidopsis thaliana, 2.5 Å, released 2020-05-13",
+   "coverage": "whole protein",
+   "chain_length": 612,
+   "uniprot_length": 612
+  },
+  "pdb_ids": [
+   "7X0X",
+   "7X0Y",
+   "6X24",
+   "6M79",
+   "6K8I",
+   "6K8K"
+  ],
+  "n_pdb": 6,
+  "has_alphafold": true,
+  "n_members": 0
+ }
+]

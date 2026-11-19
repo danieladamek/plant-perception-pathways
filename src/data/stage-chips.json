@@ -1,0 +1,2152 @@
+{
+ "PC01": {
+  "stages": {
+   "cascade": [
+    {
+     "kind": "molecule",
+     "id": "CBF1",
+     "name": "Dehydration-responsive element-binding protein 1B",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "ICE1 (MYC-like bHLH, constitutively expressed) binds MYC sites in the CBF3 promoter → CBF transcription factors → CBF1 binds the C-repeat/DRE and activates transcription",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the cascade text as CBF1, CBF"
+    },
+    {
+     "kind": "molecule",
+     "id": "ICE1",
+     "name": "Transcription factor ICE1",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "ICE1 (MYC-like bHLH, constitutively expressed) binds MYC sites in the CBF3 promoter → CBF transcription factors → CBF1 binds the C-repeat/DRE and activates transcription",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the cascade text as ICE1"
+    }
+   ]
+  },
+  "unplaced": []
+ },
+ "PC02": {
+  "stages": {
+   "cascade": [
+    {
+     "kind": "molecule",
+     "id": "FLC",
+     "name": "MADS-box protein FLOWERING LOCUS C",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "histone modification of FLC chromatin → mitotically stable FLC repression",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the cascade text as FLC"
+    }
+   ],
+   "receptor": [
+    {
+     "kind": "molecule",
+     "id": "VIN3",
+     "name": "Protein VERNALIZATION INSENSITIVE 3",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "VIN3, PHD finger protein; functions in measuring the duration of cold",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the receptor text as VIN3"
+    }
+   ]
+  },
+  "unplaced": []
+ },
+ "PCD01": {
+  "stages": {
+   "receptor": [
+    {
+     "kind": "molecule",
+     "id": "BCA1",
+     "name": "Beta carbonic anhydrase 1, chloroplastic",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "β-carbonic anhydrases βCA1 and βCA4: catalysis is needed; CO2/HCO3- carries the signal to anion-channel regulation; β-carbonic anhydrases CA1 and CA4 (inverted response in ca1 ca4)",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the receptor text as βCA1, CA1"
+    },
+    {
+     "kind": "molecule",
+     "id": "BCA4",
+     "name": "Beta carbonic anhydrase 4",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "β-carbonic anhydrases βCA1 and βCA4: catalysis is needed; CO2/HCO3- carries the signal to anion-channel regulation; β-carbonic anhydrases CA1 and CA4 (inverted response in ca1 ca4)",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the receptor text as βCA4, CA4"
+    },
+    {
+     "kind": "small",
+     "id": "CID769",
+     "name": "Bicarbonate Ion",
+     "how": "HCO3- in PCD01 (curator mapping to PubChem 'bicarbonate')",
+     "mapping": true
+    }
+   ],
+   "cascade": [
+    {
+     "kind": "molecule",
+     "id": "GHR1",
+     "name": "LRR receptor-like serine/threonine-protein kinase GHR1",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "MPK12 (and MPK4) inhibit the kinase HT1 → HT1 no longer blocks OST1 and GHR1 → SLAC1 anion channel activated",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the cascade text as GHR1"
+    },
+    {
+     "kind": "molecule",
+     "id": "HT1",
+     "name": "Serine/threonine/tyrosine-protein kinase HT1",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "MPK12 (and MPK4) inhibit the kinase HT1 → HT1 no longer blocks OST1 and GHR1 → SLAC1 anion channel activated",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the cascade text as HT1"
+    },
+    {
+     "kind": "molecule",
+     "id": "MPK12",
+     "name": "Mitogen-activated protein kinase 12",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "MPK12 (and MPK4) inhibit the kinase HT1 → HT1 no longer blocks OST1 and GHR1 → SLAC1 anion channel activated",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the cascade text as MPK12"
+    },
+    {
+     "kind": "molecule",
+     "id": "SLAC1",
+     "name": "Guard cell S-type anion channel SLAC1",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "MPK12 (and MPK4) inhibit the kinase HT1 → HT1 no longer blocks OST1 and GHR1 → SLAC1 anion channel activated; PP2C inhibition releases OST1 kinase → OST1 phosphorylates and activates the anion channel SLAC1 (ABI1 in the complex prevents activation)",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the cascade text as SLAC1"
+    },
+    {
+     "kind": "molecule",
+     "id": "SRK2E",
+     "name": "Serine/threonine-protein kinase SRK2E",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "MPK12 (and MPK4) inhibit the kinase HT1 → HT1 no longer blocks OST1 and GHR1 → SLAC1 anion channel activated; PP2C inhibition releases OST1 kinase → OST1 phosphorylates and activates the anion channel SLAC1 (ABI1 in the complex prevents activation); BIK1 and RbohD pathway; nitric oxide production; guard-cell-specific OST1 kinase",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the cascade text as OST1"
+    }
+   ],
+   "stimulus": [
+    {
+     "kind": "small",
+     "id": "CID280",
+     "name": "Carbon Dioxide",
+     "how": "CO2 in PCD01, PCD02 (curator mapping to PubChem 'carbon dioxide')",
+     "mapping": true
+    }
+   ]
+  },
+  "unplaced": []
+ },
+ "PCD02": {
+  "stages": {
+   "receptor": [
+    {
+     "kind": "molecule",
+     "id": "BCA1",
+     "name": "Beta carbonic anhydrase 1, chloroplastic",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "β-carbonic anhydrases βCA1 and βCA4: catalysis is needed; CO2/HCO3- carries the signal to anion-channel regulation; β-carbonic anhydrases CA1 and CA4 (inverted response in ca1 ca4)",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the receptor text as βCA1, CA1"
+    },
+    {
+     "kind": "molecule",
+     "id": "BCA4",
+     "name": "Beta carbonic anhydrase 4",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "β-carbonic anhydrases βCA1 and βCA4: catalysis is needed; CO2/HCO3- carries the signal to anion-channel regulation; β-carbonic anhydrases CA1 and CA4 (inverted response in ca1 ca4)",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the receptor text as βCA4, CA4"
+    }
+   ],
+   "cascade": [
+    {
+     "kind": "molecule",
+     "id": "CRSP",
+     "name": "CO(2)-response secreted protease",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "EPF2 pro-peptide induced; the CO2-induced secreted protease CRSP cleaves pro-EPF2",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the cascade text as CRSP"
+    },
+    {
+     "kind": "molecule",
+     "id": "EPF2",
+     "name": "Protein EPIDERMAL PATTERNING FACTOR 2",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "EPF2 pro-peptide induced; the CO2-induced secreted protease CRSP cleaves pro-EPF2",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the cascade text as EPF2"
+    }
+   ],
+   "integration": [
+    {
+     "kind": "molecule",
+     "id": "HIC",
+     "name": "3-ketoacyl-CoA synthase 13",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "HIC (3-ketoacyl-CoA synthase; cell-wall wax) is a negative regulator of stomatal development responsive to CO2",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the integration text as HIC"
+    }
+   ],
+   "stimulus": [
+    {
+     "kind": "small",
+     "id": "CID280",
+     "name": "Carbon Dioxide",
+     "how": "CO2 in PCD01, PCD02 (curator mapping to PubChem 'carbon dioxide')",
+     "mapping": true
+    }
+   ]
+  },
+  "unplaced": []
+ },
+ "PD01": {
+  "stages": {
+   "cascade": [
+    {
+     "kind": "molecule",
+     "id": "SLAC1",
+     "name": "Guard cell S-type anion channel SLAC1",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "MPK12 (and MPK4) inhibit the kinase HT1 → HT1 no longer blocks OST1 and GHR1 → SLAC1 anion channel activated; PP2C inhibition releases OST1 kinase → OST1 phosphorylates and activates the anion channel SLAC1 (ABI1 in the complex prevents activation)",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the cascade text as SLAC1"
+    },
+    {
+     "kind": "molecule",
+     "id": "SRK2E",
+     "name": "Serine/threonine-protein kinase SRK2E",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "MPK12 (and MPK4) inhibit the kinase HT1 → HT1 no longer blocks OST1 and GHR1 → SLAC1 anion channel activated; PP2C inhibition releases OST1 kinase → OST1 phosphorylates and activates the anion channel SLAC1 (ABI1 in the complex prevents activation); BIK1 and RbohD pathway; nitric oxide production; guard-cell-specific OST1 kinase",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the cascade text as OST1"
+    }
+   ],
+   "receptor": [
+    {
+     "kind": "molecule",
+     "id": "ABI1",
+     "name": "Protein phosphatase 2C 56",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "PYR/PYL/RCAR ABA receptors (14-member family): bind ABA and inactivate PP2Cs ABI1/ABI2",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the receptor text as ABI1"
+    },
+    {
+     "kind": "molecule",
+     "id": "PYL9",
+     "name": "Abscisic acid receptor PYL9",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "PYR/PYL/RCAR ABA receptors (14-member family): bind ABA and inactivate PP2Cs ABI1/ABI2",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the receptor text as PYR/PYL"
+    },
+    {
+     "kind": "molecule",
+     "id": "PYR1",
+     "name": "Abscisic acid receptor PYR1",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "PYR/PYL/RCAR ABA receptors (14-member family): bind ABA and inactivate PP2Cs ABI1/ABI2",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the receptor text as PYR/PYL"
+    }
+   ],
+   "stimulus": [
+    {
+     "kind": "small",
+     "id": "CID5280896",
+     "name": "Abscisic Acid",
+     "how": "ABA in PD01 (receptor PYR/PYL) and PD02 (curator mapping to PubChem 'abscisic acid')",
+     "mapping": true
+    }
+   ]
+  },
+  "unplaced": []
+ },
+ "PP02": {
+  "stages": {
+   "cascade": [
+    {
+     "kind": "molecule",
+     "id": "SRK2E",
+     "name": "Serine/threonine-protein kinase SRK2E",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "MPK12 (and MPK4) inhibit the kinase HT1 → HT1 no longer blocks OST1 and GHR1 → SLAC1 anion channel activated; PP2C inhibition releases OST1 kinase → OST1 phosphorylates and activates the anion channel SLAC1 (ABI1 in the complex prevents activation); BIK1 and RbohD pathway; nitric oxide production; guard-cell-specific OST1 kinase",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the cascade text as OST1"
+    },
+    {
+     "kind": "molecule",
+     "id": "BIK1",
+     "name": "Serine/threonine-protein kinase BIK1",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "ligand-dependent FLS2–BAK1 complex within minutes → BIK1 phosphorylates RBOHD (Ca2+-independent) → ROS burst; Ca2+ influx; MAP kinase cascade MEKK1 → MKK4/MKK5 → MPK3/MPK6 → WRKY22/WRKY29; BIK1 and RbohD pathway; nitric oxide production; guard-cell-specific OST1 kinase; RBOHD in complex with EFR; BIK1 phosphorylates RBOHD → ROS burst",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the cascade text as BIK1"
+    },
+    {
+     "kind": "molecule",
+     "id": "RBOHD",
+     "name": "Respiratory burst oxidase homolog protein D",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "ligand-dependent FLS2–BAK1 complex within minutes → BIK1 phosphorylates RBOHD (Ca2+-independent) → ROS burst; Ca2+ influx; MAP kinase cascade MEKK1 → MKK4/MKK5 → MPK3/MPK6 → WRKY22/WRKY29; BIK1 and RbohD pathway; nitric oxide production; guard-cell-specific OST1 kinase; RBOHD in complex with EFR; BIK1 phosphorylates RBOHD → ROS burst; early PAMP-responsive genes; oxidative burst (independent of RB",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the cascade text as RBOHD, RbohD"
+    }
+   ],
+   "receptor": [
+    {
+     "kind": "molecule",
+     "id": "FLS2",
+     "name": "LRR receptor-like serine/threonine-protein kinase FLS2",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "FLS2, LRR receptor kinase (flg22 bound on the inner surface of its solenoid); BAK1 co-receptor, recognising the C terminus of FLS2-bound flg22; FLS2 in guard cells",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the receptor text as FLS2"
+    }
+   ]
+  },
+  "unplaced": [
+   {
+    "kind": "small",
+    "id": "CID145068",
+    "name": "Nitric Oxide",
+    "how": "NO in PO01, PP02 (curator mapping to PubChem 'nitric oxide')",
+    "mapping": true
+   }
+  ]
+ },
+ "PCL01": {
+  "stages": {
+   "integration": [
+    {
+     "kind": "molecule",
+     "id": "CCA1",
+     "name": "Protein CCA1",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "core loop: LHY and CCA1 repress TOC1 (binding its promoter); TOC1 promotes LHY/CCA1 expression",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the integration text as CCA1"
+    },
+    {
+     "kind": "molecule",
+     "id": "LHY",
+     "name": "Protein LHY",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "core loop: LHY and CCA1 repress TOC1 (binding its promoter); TOC1 promotes LHY/CCA1 expression",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the integration text as LHY"
+    }
+   ],
+   "receptor": [
+    {
+     "kind": "molecule",
+     "id": "CRY1",
+     "name": "Cryptochrome-1",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "phyB (high-intensity red), phyA (low-intensity red and low-fluence blue), CRY1 (blue); ZTL, a LOV blue-light photoreceptor; cryptochrome 1 (HY4), photolyase-like flavoprotein; phyB, CRY1/CRY2, PHOT1/PHOT2 (all required); cryptochromes, via a proposed radical-pair mechanism",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the receptor text as cryptochrome 1, HY4, CRY1/CRY2, CRY1/2, cryptochromes"
+    },
+    {
+     "kind": "molecule",
+     "id": "PHYA",
+     "name": "Phytochrome A",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "phyB (high-intensity red), phyA (low-intensity red and low-fluence blue), CRY1 (blue); ZTL, a LOV blue-light photoreceptor",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the receptor text as phyA"
+    },
+    {
+     "kind": "molecule",
+     "id": "PHYB",
+     "name": "Phytochrome B",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "phyB (high-intensity red), phyA (low-intensity red and low-fluence blue), CRY1 (blue); ZTL, a LOV blue-light photoreceptor; phytochromes (phyB); phyB: temperature-dependent Pfr→Pr reversion; phyB, whose activity falls under low R:FR; phyB, CRY1/CRY2, PHOT1/PHOT2 (all required)",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the receptor text as phyB, phytochrome B, phytochromes"
+    },
+    {
+     "kind": "molecule",
+     "id": "ZTL",
+     "name": "Adagio protein 1",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "phyB (high-intensity red), phyA (low-intensity red and low-fluence blue), CRY1 (blue); ZTL, a LOV blue-light photoreceptor",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the receptor text as ZTL"
+    }
+   ],
+   "cascade": [
+    {
+     "kind": "molecule",
+     "id": "TOC1",
+     "name": "Two-component response regulator-like APRR1",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "blue light enhances ZTL–GI binding (via the ZTL LOV domain) → GI stabilises ZTL → ZTL targets TOC1 for proteasomal degradation",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the cascade text as TOC1"
+    }
+   ]
+  },
+  "unplaced": []
+ },
+ "PL06": {
+  "stages": {
+   "receptor": [
+    {
+     "kind": "molecule",
+     "id": "CRY1",
+     "name": "Cryptochrome-1",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "phyB (high-intensity red), phyA (low-intensity red and low-fluence blue), CRY1 (blue); ZTL, a LOV blue-light photoreceptor; cryptochrome 1 (HY4), photolyase-like flavoprotein; phyB, CRY1/CRY2, PHOT1/PHOT2 (all required); cryptochromes, via a proposed radical-pair mechanism",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the receptor text as cryptochrome 1, HY4, CRY1/CRY2, CRY1/2, cryptochromes"
+    }
+   ]
+  },
+  "unplaced": []
+ },
+ "PZ05": {
+  "stages": {
+   "receptor": [
+    {
+     "kind": "molecule",
+     "id": "CRY1",
+     "name": "Cryptochrome-1",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "phyB (high-intensity red), phyA (low-intensity red and low-fluence blue), CRY1 (blue); ZTL, a LOV blue-light photoreceptor; cryptochrome 1 (HY4), photolyase-like flavoprotein; phyB, CRY1/CRY2, PHOT1/PHOT2 (all required); cryptochromes, via a proposed radical-pair mechanism",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the receptor text as cryptochrome 1, HY4, CRY1/CRY2, CRY1/2, cryptochromes"
+    },
+    {
+     "kind": "molecule",
+     "id": "PHYB",
+     "name": "Phytochrome B",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "phyB (high-intensity red), phyA (low-intensity red and low-fluence blue), CRY1 (blue); ZTL, a LOV blue-light photoreceptor; phytochromes (phyB); phyB: temperature-dependent Pfr→Pr reversion; phyB, whose activity falls under low R:FR; phyB, CRY1/CRY2, PHOT1/PHOT2 (all required)",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the receptor text as phyB, phytochrome B, phytochromes"
+    },
+    {
+     "kind": "molecule",
+     "id": "PHOT1",
+     "name": "Phototropin-1",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "phot1 (NPH1), FMN-binding LOV flavoprotein kinase; phot1 and phot2, redundantly; phyB, CRY1/CRY2, PHOT1/PHOT2 (all required)",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the receptor text as phot1, NPH1, PHOT1/PHOT2"
+    },
+    {
+     "kind": "molecule",
+     "id": "PHOT2",
+     "name": "Phototropin-2",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "phot2 (NPL1); phot1 and phot2, redundantly; phyB, CRY1/CRY2, PHOT1/PHOT2 (all required)",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the receptor text as phot2, NPL1, PHOT1/PHOT2"
+    },
+    {
+     "kind": "molecule",
+     "id": "CRY2",
+     "name": "Cryptochrome-2",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "phyB, CRY1/CRY2, PHOT1/PHOT2 (all required); cryptochromes, via a proposed radical-pair mechanism",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the receptor text as CRY1/CRY2, CRY1/2, cryptochromes"
+    }
+   ],
+   "cascade": [
+    {
+     "kind": "molecule",
+     "id": "TAA1",
+     "name": "L-tryptophan--pyruvate aminotransferase 1",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "local regulation of TAA1 (auxin biosynthesis) and PIN3 (auxin transport) on the wet side; PIF4 and PIF5 escape phyB-triggered phosphorylation and proteasomal degradation → PIFs directly activate auxin-synthesis genes → TAA1 makes indole-3-pyruvic acid (rapid auxin synthesis); TAA1-dependent auxin synthesis",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the cascade text as TAA1"
+    },
+    {
+     "kind": "small",
+     "id": "CID802",
+     "name": "Indole-3-Acetic Acid",
+     "how": "auxin in PG01, PL08, PL09, PH02, PH04, PN02, PD03, PZ05 (curator mapping: 'auxin' → IAA) (curator mapping to PubChem 'indole-3-acetic acid')",
+     "mapping": true
+    }
+   ]
+  },
+  "unplaced": []
+ },
+ "PZ06": {
+  "stages": {
+   "receptor": [
+    {
+     "kind": "molecule",
+     "id": "CRY1",
+     "name": "Cryptochrome-1",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "phyB (high-intensity red), phyA (low-intensity red and low-fluence blue), CRY1 (blue); ZTL, a LOV blue-light photoreceptor; cryptochrome 1 (HY4), photolyase-like flavoprotein; phyB, CRY1/CRY2, PHOT1/PHOT2 (all required); cryptochromes, via a proposed radical-pair mechanism",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the receptor text as cryptochrome 1, HY4, CRY1/CRY2, CRY1/2, cryptochromes"
+    },
+    {
+     "kind": "molecule",
+     "id": "CRY2",
+     "name": "Cryptochrome-2",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "phyB, CRY1/CRY2, PHOT1/PHOT2 (all required); cryptochromes, via a proposed radical-pair mechanism",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the receptor text as CRY1/CRY2, CRY1/2, cryptochromes"
+    }
+   ]
+  },
+  "unplaced": []
+ },
+ "PCL03": {
+  "stages": {
+   "receptor": [
+    {
+     "kind": "molecule",
+     "id": "GI",
+     "name": "Protein GIGANTEA",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "FKF1 (LOV, F-box): forms a complex with GI in a blue-light-dependent manner",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the receptor text as GI, GIGANTEA"
+    },
+    {
+     "kind": "molecule",
+     "id": "FKF1",
+     "name": "Adagio protein 3",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "FKF1 (LOV, F-box): forms a complex with GI in a blue-light-dependent manner",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the receptor text as FKF1"
+    }
+   ]
+  },
+  "unplaced": []
+ },
+ "PL01": {
+  "stages": {
+   "receptor": [
+    {
+     "kind": "molecule",
+     "id": "PHYB",
+     "name": "Phytochrome B",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "phyB (high-intensity red), phyA (low-intensity red and low-fluence blue), CRY1 (blue); ZTL, a LOV blue-light photoreceptor; phytochromes (phyB); phyB: temperature-dependent Pfr→Pr reversion; phyB, whose activity falls under low R:FR; phyB, CRY1/CRY2, PHOT1/PHOT2 (all required)",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the receptor text as phyB, phytochrome B, phytochromes"
+    }
+   ]
+  },
+  "unplaced": []
+ },
+ "PL02": {
+  "stages": {
+   "receptor": [
+    {
+     "kind": "molecule",
+     "id": "PHYB",
+     "name": "Phytochrome B",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "phyB (high-intensity red), phyA (low-intensity red and low-fluence blue), CRY1 (blue); ZTL, a LOV blue-light photoreceptor; phytochromes (phyB); phyB: temperature-dependent Pfr→Pr reversion; phyB, whose activity falls under low R:FR; phyB, CRY1/CRY2, PHOT1/PHOT2 (all required)",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the receptor text as phyB, phytochrome B, phytochromes"
+    }
+   ]
+  },
+  "unplaced": []
+ },
+ "PL09": {
+  "stages": {
+   "receptor": [
+    {
+     "kind": "molecule",
+     "id": "PHYB",
+     "name": "Phytochrome B",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "phyB (high-intensity red), phyA (low-intensity red and low-fluence blue), CRY1 (blue); ZTL, a LOV blue-light photoreceptor; phytochromes (phyB); phyB: temperature-dependent Pfr→Pr reversion; phyB, whose activity falls under low R:FR; phyB, CRY1/CRY2, PHOT1/PHOT2 (all required)",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the receptor text as phyB, phytochrome B, phytochromes"
+    }
+   ],
+   "cascade": [
+    {
+     "kind": "molecule",
+     "id": "TAA1",
+     "name": "L-tryptophan--pyruvate aminotransferase 1",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "local regulation of TAA1 (auxin biosynthesis) and PIN3 (auxin transport) on the wet side; PIF4 and PIF5 escape phyB-triggered phosphorylation and proteasomal degradation → PIFs directly activate auxin-synthesis genes → TAA1 makes indole-3-pyruvic acid (rapid auxin synthesis); TAA1-dependent auxin synthesis",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the cascade text as TAA1"
+    },
+    {
+     "kind": "molecule",
+     "id": "PIF4",
+     "name": "Transcription factor PIF4",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "PIF4 (bHLH) → auxin; IAA29 induction; PIF4 and PIF5 escape phyB-triggered phosphorylation and proteasomal degradation → PIFs directly activate auxin-synthesis genes → TAA1 makes indole-3-pyruvic acid (rapid auxin synthesis)",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the cascade text as PIF4"
+    },
+    {
+     "kind": "molecule",
+     "id": "PIF5",
+     "name": "Transcription factor PIF5",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "PIF4 and PIF5 escape phyB-triggered phosphorylation and proteasomal degradation → PIFs directly activate auxin-synthesis genes → TAA1 makes indole-3-pyruvic acid (rapid auxin synthesis)",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the cascade text as PIF5"
+    },
+    {
+     "kind": "small",
+     "id": "CID802",
+     "name": "Indole-3-Acetic Acid",
+     "how": "auxin in PG01, PL08, PL09, PH02, PH04, PN02, PD03, PZ05 (curator mapping: 'auxin' → IAA) (curator mapping to PubChem 'indole-3-acetic acid')",
+     "mapping": true
+    },
+    {
+     "kind": "small",
+     "id": "CID803",
+     "name": "Indole-3-pyruvic acid",
+     "how": "indole-3-pyruvic acid in PL09 (TAA1 product) (curator mapping to PubChem 'indole-3-pyruvic acid')",
+     "mapping": true
+    }
+   ],
+   "integration": [
+    {
+     "kind": "small",
+     "id": "CID6466",
+     "name": "(+)-Gibberellic Acid",
+     "how": "gibberellin in PL09 (PIF–DELLA link; curator mapping: 'gibberellin' → GA3) (curator mapping to PubChem 'gibberellic acid')",
+     "mapping": true
+    }
+   ]
+  },
+  "unplaced": []
+ },
+ "PD02": {
+  "stages": {
+   "cascade": [
+    {
+     "kind": "molecule",
+     "id": "CLE25",
+     "name": "CLAVATA3/ESR (CLE)-related protein 25",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "CLE25 expression enhanced in root vascular tissue",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the cascade text as CLE25"
+    }
+   ],
+   "integration": [
+    {
+     "kind": "small",
+     "id": "CID5280896",
+     "name": "Abscisic Acid",
+     "how": "ABA in PD01 (receptor PYR/PYL) and PD02 (curator mapping to PubChem 'abscisic acid')",
+     "mapping": true
+    }
+   ]
+  },
+  "unplaced": []
+ },
+ "PD03": {
+  "stages": {
+   "cascade": [
+    {
+     "kind": "molecule",
+     "id": "PIN3",
+     "name": "Auxin efflux carrier component 3",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "local regulation of TAA1 (auxin biosynthesis) and PIN3 (auxin transport) on the wet side; polarised LZY3 → RLD1 recruited to the plasma membrane → PIN3 relocalises to the lower cell side (actin-dependent; clathrin endocytosis, GNOM-dependent)",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the cascade text"
+    },
+    {
+     "kind": "molecule",
+     "id": "TAA1",
+     "name": "L-tryptophan--pyruvate aminotransferase 1",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "local regulation of TAA1 (auxin biosynthesis) and PIN3 (auxin transport) on the wet side; PIF4 and PIF5 escape phyB-triggered phosphorylation and proteasomal degradation → PIFs directly activate auxin-synthesis genes → TAA1 makes indole-3-pyruvic acid (rapid auxin synthesis); TAA1-dependent auxin synthesis",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the cascade text as TAA1"
+    },
+    {
+     "kind": "small",
+     "id": "CID802",
+     "name": "Indole-3-Acetic Acid",
+     "how": "auxin in PG01, PL08, PL09, PH02, PH04, PN02, PD03, PZ05 (curator mapping: 'auxin' → IAA) (curator mapping to PubChem 'indole-3-acetic acid')",
+     "mapping": true
+    }
+   ]
+  },
+  "unplaced": []
+ },
+ "PG01": {
+  "stages": {
+   "cascade": [
+    {
+     "kind": "molecule",
+     "id": "PIN3",
+     "name": "Auxin efflux carrier component 3",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "local regulation of TAA1 (auxin biosynthesis) and PIN3 (auxin transport) on the wet side; polarised LZY3 → RLD1 recruited to the plasma membrane → PIN3 relocalises to the lower cell side (actin-dependent; clathrin endocytosis, GNOM-dependent)",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the cascade text"
+    }
+   ],
+   "receptor": [
+    {
+     "kind": "molecule",
+     "id": "LAZY1",
+     "name": "Protein LAZY 1",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "statocytes (root cap columella, hypocotyl starch sheath): amyloplast sedimentation; LZY proteins act downstream of amyloplast displacement",
+     "mapping": true,
+     "mapping_text": "curator mapping: TODO(author): withheld by the jargon wording lint — listed on Methods."
+    },
+    {
+     "kind": "molecule",
+     "id": "LAZY2",
+     "name": "Protein LAZY 2",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "statocytes (root cap columella, hypocotyl starch sheath): amyloplast sedimentation; LZY proteins act downstream of amyloplast displacement",
+     "mapping": true,
+     "mapping_text": "curator mapping: TODO(author): withheld by the jargon wording lint — listed on Methods."
+    },
+    {
+     "kind": "molecule",
+     "id": "LAZY4",
+     "name": "Protein LAZY 4",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "statocytes (root cap columella, hypocotyl starch sheath): amyloplast sedimentation; LZY proteins act downstream of amyloplast displacement",
+     "mapping": true,
+     "mapping_text": "curator mapping: TODO(author): withheld by the jargon wording lint — listed on Methods."
+    }
+   ],
+   "signal_route": [
+    {
+     "kind": "small",
+     "id": "CID802",
+     "name": "Indole-3-Acetic Acid",
+     "how": "auxin in PG01, PL08, PL09, PH02, PH04, PN02, PD03, PZ05 (curator mapping: 'auxin' → IAA) (curator mapping to PubChem 'indole-3-acetic acid')",
+     "mapping": true
+    }
+   ]
+  },
+  "unplaced": []
+ },
+ "PD04": {
+  "stages": {
+   "cascade": [
+    {
+     "kind": "molecule",
+     "id": "MIZ1",
+     "name": "Protein MIZU-KUSSEI 1",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "MIZ1 and the ABA kinase SnRK2.2, acting in elongation-zone cortical cells",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the cascade text as MIZ1"
+    }
+   ]
+  },
+  "unplaced": []
+ },
+ "PE01": {
+  "stages": {
+   "cascade": [
+    {
+     "kind": "molecule",
+     "id": "CTR1",
+     "name": "Serine/threonine-protein kinase CTR1",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "without ethylene, CTR1 phosphorylates the EIN2 C-terminus, blocking it; ethylene inhibits CTR1 → EIN2 dephosphorylated and cleaved → EIN2-C′ moves to the nucleus → EIN3 / EIL1 transcription factors",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the cascade text as CTR1"
+    },
+    {
+     "kind": "molecule",
+     "id": "EIN2",
+     "name": "Ethylene-insensitive protein 2",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "without ethylene, CTR1 phosphorylates the EIN2 C-terminus, blocking it; ethylene inhibits CTR1 → EIN2 dephosphorylated and cleaved → EIN2-C′ moves to the nucleus → EIN3 / EIL1 transcription factors",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the cascade text as EIN2"
+    },
+    {
+     "kind": "molecule",
+     "id": "EIN3",
+     "name": "Protein ETHYLENE INSENSITIVE 3",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "without ethylene, CTR1 phosphorylates the EIN2 C-terminus, blocking it; ethylene inhibits CTR1 → EIN2 dephosphorylated and cleaved → EIN2-C′ moves to the nucleus → EIN3 / EIL1 transcription factors",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the cascade text as EIN3"
+    }
+   ],
+   "receptor": [
+    {
+     "kind": "molecule",
+     "id": "ETR1",
+     "name": "Ethylene receptor 1",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "ETR1 receptor at the ER membrane: ethylene binds its N-terminal hydrophobic domain; C-terminal half resembles two-component signal transducers",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the receptor text as ETR1"
+    }
+   ],
+   "stimulus": [
+    {
+     "kind": "small",
+     "id": "CID6325",
+     "name": "Ethylene",
+     "how": "ethylene gas in PE01, PO01, PT04, PW02 (curator mapping to PubChem 'ethylene')",
+     "mapping": true
+    }
+   ]
+  },
+  "unplaced": []
+ },
+ "PH01": {
+  "stages": {
+   "receptor": [
+    {
+     "kind": "molecule",
+     "id": "ELF3",
+     "name": "Protein EARLY FLOWERING 3",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "ELF3 prion-like domain: reversible phase transition (speckles within minutes); polyQ length correlates with thermal responsiveness",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the receptor text as ELF3"
+    }
+   ],
+   "cascade": [
+    {
+     "kind": "molecule",
+     "id": "ELF4",
+     "name": "Protein EARLY FLOWERING 4",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "the evening complex (ELF3, ELF4, LUX), a temperature-responsive transcriptional repressor, shifts between active and inactive states",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the cascade text as ELF4"
+    },
+    {
+     "kind": "molecule",
+     "id": "LUX",
+     "name": "Transcription factor LUX",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "the evening complex (ELF3, ELF4, LUX), a temperature-responsive transcriptional repressor, shifts between active and inactive states",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the cascade text as LUX"
+    }
+   ]
+  },
+  "unplaced": []
+ },
+ "PH04": {
+  "stages": {
+   "cascade": [
+    {
+     "kind": "molecule",
+     "id": "PIF4",
+     "name": "Transcription factor PIF4",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "PIF4 (bHLH) → auxin; IAA29 induction; PIF4 and PIF5 escape phyB-triggered phosphorylation and proteasomal degradation → PIFs directly activate auxin-synthesis genes → TAA1 makes indole-3-pyruvic acid (rapid auxin synthesis)",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the cascade text as PIF4"
+    },
+    {
+     "kind": "small",
+     "id": "CID802",
+     "name": "Indole-3-Acetic Acid",
+     "how": "auxin in PG01, PL08, PL09, PH02, PH04, PN02, PD03, PZ05 (curator mapping: 'auxin' → IAA) (curator mapping to PubChem 'indole-3-acetic acid')",
+     "mapping": true
+    }
+   ]
+  },
+  "unplaced": []
+ },
+ "PH02": {
+  "stages": {
+   "receptor": [
+    {
+     "kind": "molecule",
+     "id": "PIF7",
+     "name": "Transcription factor PIF7",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "RNA hairpin in the PIF7 mRNA 5′ UTR, which adopts an alternative conformation at higher temperature",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the receptor text as PIF7"
+    }
+   ],
+   "cascade": [
+    {
+     "kind": "small",
+     "id": "CID802",
+     "name": "Indole-3-Acetic Acid",
+     "how": "auxin in PG01, PL08, PL09, PH02, PH04, PN02, PD03, PZ05 (curator mapping: 'auxin' → IAA) (curator mapping to PubChem 'indole-3-acetic acid')",
+     "mapping": true
+    }
+   ]
+  },
+  "unplaced": []
+ },
+ "PH03": {
+  "stages": {
+   "receptor": [
+    {
+     "kind": "molecule",
+     "id": "HTA9",
+     "name": "Probable histone H2A variant 3",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "H2A.Z-containing nucleosomes: distinct DNA-unwrapping properties",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the receptor text as H2A.Z"
+    }
+   ]
+  },
+  "unplaced": []
+ },
+ "PH05": {
+  "stages": {
+   "receptor": [
+    {
+     "kind": "molecule",
+     "id": "CNGC2",
+     "name": "Cyclic nucleotide-gated ion channel 2",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "CNGC2 (ortholog of moss CNGCb), a component of plasma-membrane cyclic-nucleotide-gated Ca2+ channels",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the receptor text as CNGC2"
+    }
+   ]
+  },
+  "unplaced": []
+ },
+ "PK01": {
+  "stages": {
+   "integration": [
+    {
+     "kind": "molecule",
+     "id": "D14",
+     "name": "Strigolactone esterase D14",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "MAX2 is shared with strigolactone signalling, where the paralogue D14 is the receptor; plants still distinguish the two (karrikins do not inhibit shoot branching) ⚑ shared hardware",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the integration text as D14"
+    }
+   ],
+   "receptor": [
+    {
+     "kind": "molecule",
+     "id": "KAI2",
+     "name": "Probable esterase KAI2",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "KAI2 α/β-hydrolase: KAR1 binds at the active-site opening and induces a conformational change (no detectable hydrolysis)",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the receptor text as KAI2"
+    }
+   ],
+   "cascade": [
+    {
+     "kind": "molecule",
+     "id": "MAX2",
+     "name": "F-box protein MAX2",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "F-box protein MAX2",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the cascade text as MAX2"
+    }
+   ]
+  },
+  "unplaced": [
+   {
+    "kind": "small",
+    "id": "CID11469158",
+    "name": "3-methyl-2H-furo(2,3-c)pyran-2-one",
+    "how": "karrikin KAR1 in PK01 (curator mapping to PubChem 'karrikinolide')",
+    "mapping": true
+   }
+  ]
+ },
+ "PL03": {
+  "stages": {
+   "receptor": [
+    {
+     "kind": "molecule",
+     "id": "PHOT1",
+     "name": "Phototropin-1",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "phot1 (NPH1), FMN-binding LOV flavoprotein kinase; phot1 and phot2, redundantly; phyB, CRY1/CRY2, PHOT1/PHOT2 (all required)",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the receptor text as phot1, NPH1, PHOT1/PHOT2"
+    }
+   ]
+  },
+  "unplaced": []
+ },
+ "PL05": {
+  "stages": {
+   "receptor": [
+    {
+     "kind": "molecule",
+     "id": "PHOT1",
+     "name": "Phototropin-1",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "phot1 (NPH1), FMN-binding LOV flavoprotein kinase; phot1 and phot2, redundantly; phyB, CRY1/CRY2, PHOT1/PHOT2 (all required)",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the receptor text as phot1, NPH1, PHOT1/PHOT2"
+    },
+    {
+     "kind": "molecule",
+     "id": "PHOT2",
+     "name": "Phototropin-2",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "phot2 (NPL1); phot1 and phot2, redundantly; phyB, CRY1/CRY2, PHOT1/PHOT2 (all required)",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the receptor text as phot2, NPL1, PHOT1/PHOT2"
+    }
+   ]
+  },
+  "unplaced": []
+ },
+ "PL04": {
+  "stages": {
+   "receptor": [
+    {
+     "kind": "molecule",
+     "id": "PHOT2",
+     "name": "Phototropin-2",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "phot2 (NPL1); phot1 and phot2, redundantly; phyB, CRY1/CRY2, PHOT1/PHOT2 (all required)",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the receptor text as phot2, NPL1, PHOT1/PHOT2"
+    }
+   ]
+  },
+  "unplaced": []
+ },
+ "PL07": {
+  "stages": {
+   "cascade": [
+    {
+     "kind": "molecule",
+     "id": "COP1",
+     "name": "E3 ubiquitin-protein ligase COP1",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "instant monomerisation and interaction with COP1 (E3 ubiquitin ligase repressing light signalling)",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the cascade text as COP1"
+    }
+   ],
+   "receptor": [
+    {
+     "kind": "molecule",
+     "id": "UVR8",
+     "name": "Ultraviolet-B receptor UVR8",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "UVR8 dimers (probably tryptophan-based); UVR8 (phototropin-independent)",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the receptor text as UVR8"
+    }
+   ]
+  },
+  "unplaced": []
+ },
+ "PL08": {
+  "stages": {
+   "receptor": [
+    {
+     "kind": "molecule",
+     "id": "UVR8",
+     "name": "Ultraviolet-B receptor UVR8",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "UVR8 dimers (probably tryptophan-based); UVR8 (phototropin-independent)",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the receptor text as UVR8"
+    }
+   ],
+   "cascade": [
+    {
+     "kind": "small",
+     "id": "CID802",
+     "name": "Indole-3-Acetic Acid",
+     "how": "auxin in PG01, PL08, PL09, PH02, PH04, PN02, PD03, PZ05 (curator mapping: 'auxin' → IAA) (curator mapping to PubChem 'indole-3-acetic acid')",
+     "mapping": true
+    }
+   ]
+  },
+  "unplaced": []
+ },
+ "PN01": {
+  "stages": {
+   "cascade": [
+    {
+     "kind": "molecule",
+     "id": "CPK10",
+     "name": "Calcium-dependent protein kinase 10",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "nitrate-specific Ca2+ signal → subgroup III Ca2+-sensor kinases CPK10/30/32 → phosphorylation of NLP transcription factors (NLP7)",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the cascade text as CPK10"
+    },
+    {
+     "kind": "molecule",
+     "id": "NLP7",
+     "name": "Protein NLP7",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "nitrate-specific Ca2+ signal → subgroup III Ca2+-sensor kinases CPK10/30/32 → phosphorylation of NLP transcription factors (NLP7)",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the cascade text"
+    }
+   ],
+   "receptor": [
+    {
+     "kind": "molecule",
+     "id": "NRT1.1",
+     "name": "Protein NRT1/ PTR FAMILY 6.3",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "NRT1.1/CHL1 (NPF6.3) transceptor: dual-affinity binding with a T101 phosphorylation switch (CIPK23 phosphorylates at low nitrate); NRT1.1, which also facilitates auxin uptake (inhibited by nitrate)",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the receptor text as NRT1.1, CHL1, NPF6.3"
+    }
+   ],
+   "stimulus": [
+    {
+     "kind": "small",
+     "id": "CID943",
+     "name": "Nitrate",
+     "how": "nitrate in PN01, PN02 (curator mapping to PubChem 'nitrate')",
+     "mapping": true
+    }
+   ]
+  },
+  "unplaced": []
+ },
+ "PN02": {
+  "stages": {
+   "receptor": [
+    {
+     "kind": "molecule",
+     "id": "NRT1.1",
+     "name": "Protein NRT1/ PTR FAMILY 6.3",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "NRT1.1/CHL1 (NPF6.3) transceptor: dual-affinity binding with a T101 phosphorylation switch (CIPK23 phosphorylates at low nitrate); NRT1.1, which also facilitates auxin uptake (inhibited by nitrate)",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the receptor text as NRT1.1, CHL1, NPF6.3"
+    },
+    {
+     "kind": "small",
+     "id": "CID802",
+     "name": "Indole-3-Acetic Acid",
+     "how": "auxin in PG01, PL08, PL09, PH02, PH04, PN02, PD03, PZ05 (curator mapping: 'auxin' → IAA) (curator mapping to PubChem 'indole-3-acetic acid')",
+     "mapping": true
+    }
+   ],
+   "stimulus": [
+    {
+     "kind": "small",
+     "id": "CID943",
+     "name": "Nitrate",
+     "how": "nitrate in PN01, PN02 (curator mapping to PubChem 'nitrate')",
+     "mapping": true
+    }
+   ]
+  },
+  "unplaced": []
+ },
+ "PN03": {
+  "stages": {
+   "cascade": [
+    {
+     "kind": "molecule",
+     "id": "CEP1",
+     "name": "Precursor of CEP1",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "N-starved rootlets secrete small CEP peptides",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the cascade text as CEP peptides"
+    }
+   ],
+   "integration": [
+    {
+     "kind": "molecule",
+     "id": "CEPR1",
+     "name": "Receptor protein-tyrosine kinase CEPR1",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "two LRR receptor kinases (CEPRs) in the shoot receive them",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the integration text as CEPRs"
+    }
+   ]
+  },
+  "unplaced": []
+ },
+ "PN04": {
+  "stages": {
+   "cascade": [
+    {
+     "kind": "molecule",
+     "id": "PHR1",
+     "name": "Protein PHOSPHATE STARVATION RESPONSE 1",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "InsP-bound SPX1 binds PHR1 (Pi-dependent) and competitively inhibits PHR1 binding to DNA",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the cascade text as PHR1"
+    }
+   ],
+   "receptor": [
+    {
+     "kind": "molecule",
+     "id": "SPX1",
+     "name": "SPX domain-containing protein 1",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "SPX domains binding inositol polyphosphates (InsPs), whose levels track Pi",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the receptor text as SPX1, SPX domains"
+    }
+   ]
+  },
+  "unplaced": []
+ },
+ "PN05": {
+  "stages": {
+   "receptor": [
+    {
+     "kind": "molecule",
+     "id": "LPR1",
+     "name": "Multicopper oxidase LPR1",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "root cap; LPR1 and LPR2 multicopper oxidases (sensing, responding, or both)",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the receptor text as LPR1"
+    }
+   ]
+  },
+  "unplaced": []
+ },
+ "PN06": {
+  "stages": {
+   "receptor": [
+    {
+     "kind": "molecule",
+     "id": "BTS",
+     "name": "Zinc finger protein BRUTUS",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "BRUTUS (BTS): hemerythrin domains bind iron, and iron binding destabilises BTS",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the receptor text as BTS, BRUTUS"
+    }
+   ],
+   "integration": [
+    {
+     "kind": "molecule",
+     "id": "FIT",
+     "name": "Transcription factor FER-LIKE IRON DEFICIENCY-INDUCED TRANSCRIPTION FACTOR",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "FIT1 regulates FRO2 (at mRNA level) and IRT1 (at protein level) in outer root cells",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the integration text as FIT1, FIT"
+    }
+   ]
+  },
+  "unplaced": []
+ },
+ "PO01": {
+  "stages": {
+   "receptor": [
+    {
+     "kind": "molecule",
+     "id": "PCO1",
+     "name": "Plant cysteine oxidase 1",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "plant cysteine oxidases (PCOs) oxidise the N-terminal cysteine of ERF-VII transcription factors, using O2 as co-substrate",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the receptor text as PCOs"
+    },
+    {
+     "kind": "molecule",
+     "id": "PCO2",
+     "name": "Plant cysteine oxidase 2",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "plant cysteine oxidases (PCOs) oxidise the N-terminal cysteine of ERF-VII transcription factors, using O2 as co-substrate",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the receptor text as PCOs, plant cysteine oxidases"
+    }
+   ],
+   "cascade": [
+    {
+     "kind": "molecule",
+     "id": "RAP2-12",
+     "name": "Ethylene-responsive transcription factor RAP2-12",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "in air, oxidised ERF-VII proteins are degraded by the N-end rule pathway; in hypoxia RAP2.12 is released from the plasma membrane and accumulates in the nucleus; HRE2 is stabilised",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the cascade text as RAP2.12"
+    }
+   ],
+   "integration": [
+    {
+     "kind": "small",
+     "id": "CID145068",
+     "name": "Nitric Oxide",
+     "how": "NO in PO01, PP02 (curator mapping to PubChem 'nitric oxide')",
+     "mapping": true
+    }
+   ]
+  },
+  "unplaced": [
+   {
+    "kind": "small",
+    "id": "CID6325",
+    "name": "Ethylene",
+    "how": "ethylene gas in PE01, PO01, PT04, PW02 (curator mapping to PubChem 'ethylene')",
+    "mapping": true
+   }
+  ]
+ },
+ "PP01": {
+  "stages": {
+   "receptor": [
+    {
+     "kind": "molecule",
+     "id": "BAK1",
+     "name": "BRASSINOSTEROID INSENSITIVE 1-associated receptor kinase 1",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "FLS2, LRR receptor kinase (flg22 bound on the inner surface of its solenoid); BAK1 co-receptor, recognising the C terminus of FLS2-bound flg22; EFR, receptor kinase (EF-Tu receptor); BAK1 needed for early responses",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the receptor text as BAK1"
+    },
+    {
+     "kind": "molecule",
+     "id": "FLS2",
+     "name": "LRR receptor-like serine/threonine-protein kinase FLS2",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "FLS2, LRR receptor kinase (flg22 bound on the inner surface of its solenoid); BAK1 co-receptor, recognising the C terminus of FLS2-bound flg22; FLS2 in guard cells",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the receptor text as FLS2"
+    }
+   ],
+   "cascade": [
+    {
+     "kind": "molecule",
+     "id": "BIK1",
+     "name": "Serine/threonine-protein kinase BIK1",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "ligand-dependent FLS2–BAK1 complex within minutes → BIK1 phosphorylates RBOHD (Ca2+-independent) → ROS burst; Ca2+ influx; MAP kinase cascade MEKK1 → MKK4/MKK5 → MPK3/MPK6 → WRKY22/WRKY29; BIK1 and RbohD pathway; nitric oxide production; guard-cell-specific OST1 kinase; RBOHD in complex with EFR; BIK1 phosphorylates RBOHD → ROS burst",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the cascade text as BIK1"
+    },
+    {
+     "kind": "molecule",
+     "id": "MPK3",
+     "name": "Mitogen-activated protein kinase 3",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "ligand-dependent FLS2–BAK1 complex within minutes → BIK1 phosphorylates RBOHD (Ca2+-independent) → ROS burst; Ca2+ influx; MAP kinase cascade MEKK1 → MKK4/MKK5 → MPK3/MPK6 → WRKY22/WRKY29",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the cascade text as MPK3"
+    },
+    {
+     "kind": "molecule",
+     "id": "MPK6",
+     "name": "Mitogen-activated protein kinase 6",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "ligand-dependent FLS2–BAK1 complex within minutes → BIK1 phosphorylates RBOHD (Ca2+-independent) → ROS burst; Ca2+ influx; MAP kinase cascade MEKK1 → MKK4/MKK5 → MPK3/MPK6 → WRKY22/WRKY29",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the cascade text as MPK6"
+    },
+    {
+     "kind": "molecule",
+     "id": "RBOHD",
+     "name": "Respiratory burst oxidase homolog protein D",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "ligand-dependent FLS2–BAK1 complex within minutes → BIK1 phosphorylates RBOHD (Ca2+-independent) → ROS burst; Ca2+ influx; MAP kinase cascade MEKK1 → MKK4/MKK5 → MPK3/MPK6 → WRKY22/WRKY29; BIK1 and RbohD pathway; nitric oxide production; guard-cell-specific OST1 kinase; RBOHD in complex with EFR; BIK1 phosphorylates RBOHD → ROS burst; early PAMP-responsive genes; oxidative burst (independent of RB",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the cascade text as RBOHD, RbohD"
+    }
+   ]
+  },
+  "unplaced": []
+ },
+ "PP03": {
+  "stages": {
+   "receptor": [
+    {
+     "kind": "molecule",
+     "id": "BAK1",
+     "name": "BRASSINOSTEROID INSENSITIVE 1-associated receptor kinase 1",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "FLS2, LRR receptor kinase (flg22 bound on the inner surface of its solenoid); BAK1 co-receptor, recognising the C terminus of FLS2-bound flg22; EFR, receptor kinase (EF-Tu receptor); BAK1 needed for early responses",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the receptor text as BAK1"
+    },
+    {
+     "kind": "molecule",
+     "id": "EFR",
+     "name": "LRR receptor-like serine/threonine-protein kinase EFR",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "EFR, receptor kinase (EF-Tu receptor); BAK1 needed for early responses",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the receptor text as EFR"
+    }
+   ],
+   "cascade": [
+    {
+     "kind": "molecule",
+     "id": "BIK1",
+     "name": "Serine/threonine-protein kinase BIK1",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "ligand-dependent FLS2–BAK1 complex within minutes → BIK1 phosphorylates RBOHD (Ca2+-independent) → ROS burst; Ca2+ influx; MAP kinase cascade MEKK1 → MKK4/MKK5 → MPK3/MPK6 → WRKY22/WRKY29; BIK1 and RbohD pathway; nitric oxide production; guard-cell-specific OST1 kinase; RBOHD in complex with EFR; BIK1 phosphorylates RBOHD → ROS burst",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the cascade text as BIK1"
+    },
+    {
+     "kind": "molecule",
+     "id": "RBOHD",
+     "name": "Respiratory burst oxidase homolog protein D",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "ligand-dependent FLS2–BAK1 complex within minutes → BIK1 phosphorylates RBOHD (Ca2+-independent) → ROS burst; Ca2+ influx; MAP kinase cascade MEKK1 → MKK4/MKK5 → MPK3/MPK6 → WRKY22/WRKY29; BIK1 and RbohD pathway; nitric oxide production; guard-cell-specific OST1 kinase; RBOHD in complex with EFR; BIK1 phosphorylates RBOHD → ROS burst; early PAMP-responsive genes; oxidative burst (independent of RB",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the cascade text as RBOHD, RbohD"
+    }
+   ]
+  },
+  "unplaced": []
+ },
+ "PW03": {
+  "stages": {
+   "cascade": [
+    {
+     "kind": "molecule",
+     "id": "RBOHD",
+     "name": "Respiratory burst oxidase homolog protein D",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "ligand-dependent FLS2–BAK1 complex within minutes → BIK1 phosphorylates RBOHD (Ca2+-independent) → ROS burst; Ca2+ influx; MAP kinase cascade MEKK1 → MKK4/MKK5 → MPK3/MPK6 → WRKY22/WRKY29; BIK1 and RbohD pathway; nitric oxide production; guard-cell-specific OST1 kinase; RBOHD in complex with EFR; BIK1 phosphorylates RBOHD → ROS burst; early PAMP-responsive genes; oxidative burst (independent of RB",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the cascade text as RBOHD, RbohD"
+    },
+    {
+     "kind": "molecule",
+     "id": "ICS1",
+     "name": "Isochorismate synthase 1, chloroplastic",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "SA made from chorismate by isochorismate synthase (ICS1/SID2); pipecolic acid → FMO1 → N-hydroxypipecolic acid (NHP); early PAMP-responsive genes; oxidative burst (independent of RBOHD/RBOHF); salicylic acid accumulation (EDS1, SID2; partly NPR1)",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the cascade text as isochorismate synthase, ICS1, SID2"
+    },
+    {
+     "kind": "small",
+     "id": "CID338",
+     "name": "Salicylic Acid",
+     "how": "SA in PP06 (NPR receptors) and PW03 (curator mapping to PubChem 'salicylic acid')",
+     "mapping": true
+    }
+   ],
+   "receptor": [
+    {
+     "kind": "molecule",
+     "id": "LECRK18",
+     "name": "L-type lectin-domain containing receptor kinase I.8",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "LecRK-I.8, L-type lectin receptor kinase, 'an early component of egg perception' (ligand binding not shown)",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the receptor text as LecRK-I.8"
+    }
+   ]
+  },
+  "unplaced": [
+   {
+    "kind": "small",
+    "id": "CID784",
+    "name": "Hydrogen Peroxide",
+    "how": "H2O2 in PX01, PW03 (curator mapping to PubChem 'hydrogen peroxide')",
+    "mapping": true
+   }
+  ]
+ },
+ "PP04": {
+  "stages": {
+   "receptor": [
+    {
+     "kind": "molecule",
+     "id": "CERK1",
+     "name": "Chitin elicitor receptor kinase 1",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "CERK1, LysM receptor kinase; a chitin octamer induces ectodomain dimerisation",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the receptor text as CERK1"
+    },
+    {
+     "kind": "small",
+     "id": "CID154725940",
+     "name": "Chitooctaose",
+     "how": "chitin octamer in PP04 (curator mapping to PubChem 'chitooctaose')",
+     "mapping": true
+    }
+   ]
+  },
+  "unplaced": []
+ },
+ "PP05": {
+  "stages": {
+   "receptor": [
+    {
+     "kind": "molecule",
+     "id": "PBL2",
+     "name": "Probable serine/threonine-protein kinase PBL2",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "intracellular NLR receptors: RPM1 and RPS2 'guard' RIN4 (RPS2 perceives RIN4 elimination rather than AvrRpt2 itself); ZAR1 with the pseudokinase RKS1 and uridylated PBL2",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the receptor text as PBL2"
+    },
+    {
+     "kind": "molecule",
+     "id": "RIN4",
+     "name": "RPM1-interacting protein 4",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "intracellular NLR receptors: RPM1 and RPS2 'guard' RIN4 (RPS2 perceives RIN4 elimination rather than AvrRpt2 itself); ZAR1 with the pseudokinase RKS1 and uridylated PBL2",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the receptor text as RIN4"
+    },
+    {
+     "kind": "molecule",
+     "id": "RKS1",
+     "name": "Serine/threonine-protein kinase ZRK1",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "intracellular NLR receptors: RPM1 and RPS2 'guard' RIN4 (RPS2 perceives RIN4 elimination rather than AvrRpt2 itself); ZAR1 with the pseudokinase RKS1 and uridylated PBL2",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the receptor text as RKS1"
+    },
+    {
+     "kind": "molecule",
+     "id": "RPM1",
+     "name": "Disease resistance protein RPM1",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "intracellular NLR receptors: RPM1 and RPS2 'guard' RIN4 (RPS2 perceives RIN4 elimination rather than AvrRpt2 itself); ZAR1 with the pseudokinase RKS1 and uridylated PBL2",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the receptor text as RPM1"
+    },
+    {
+     "kind": "molecule",
+     "id": "RPS2",
+     "name": "Disease resistance protein RPS2",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "intracellular NLR receptors: RPM1 and RPS2 'guard' RIN4 (RPS2 perceives RIN4 elimination rather than AvrRpt2 itself); ZAR1 with the pseudokinase RKS1 and uridylated PBL2",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the receptor text as RPS2"
+    },
+    {
+     "kind": "molecule",
+     "id": "ZAR1",
+     "name": "Disease resistance RPP13-like protein 4",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "intracellular NLR receptors: RPM1 and RPS2 'guard' RIN4 (RPS2 perceives RIN4 elimination rather than AvrRpt2 itself); ZAR1 with the pseudokinase RKS1 and uridylated PBL2",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the receptor text as ZAR1"
+    }
+   ],
+   "cascade": [
+    {
+     "kind": "small",
+     "id": "CID15993",
+     "name": "Datp",
+     "how": "dATP in PP05 (ZAR1 resistosome) (curator mapping to PubChem '2'-deoxyadenosine 5'-triphosphate')",
+     "mapping": true
+    }
+   ]
+  },
+  "unplaced": []
+ },
+ "PP06": {
+  "stages": {
+   "cascade": [
+    {
+     "kind": "molecule",
+     "id": "FMO1",
+     "name": "Probable flavin-containing monooxygenase 1",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "SA made from chorismate by isochorismate synthase (ICS1/SID2); pipecolic acid → FMO1 → N-hydroxypipecolic acid (NHP)",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the cascade text as FMO1"
+    },
+    {
+     "kind": "molecule",
+     "id": "ICS1",
+     "name": "Isochorismate synthase 1, chloroplastic",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "SA made from chorismate by isochorismate synthase (ICS1/SID2); pipecolic acid → FMO1 → N-hydroxypipecolic acid (NHP); early PAMP-responsive genes; oxidative burst (independent of RBOHD/RBOHF); salicylic acid accumulation (EDS1, SID2; partly NPR1)",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the cascade text as isochorismate synthase, ICS1, SID2"
+    },
+    {
+     "kind": "small",
+     "id": "CID269025",
+     "name": "N-hydroxypipecolic acid",
+     "how": "NHP in PP06 (systemic signal) (curator mapping to PubChem 'N-hydroxypipecolic acid')",
+     "mapping": true
+    },
+    {
+     "kind": "small",
+     "id": "CID849",
+     "name": "Pipecolic Acid",
+     "how": "pipecolic acid in PP06 (curator mapping to PubChem 'pipecolic acid')",
+     "mapping": true
+    },
+    {
+     "kind": "small",
+     "id": "CID12039",
+     "name": "Chorismic Acid",
+     "how": "chorismate in PP06 (SA biosynthesis) (curator mapping to PubChem 'chorismic acid')",
+     "mapping": true
+    }
+   ],
+   "receptor": [
+    {
+     "kind": "molecule",
+     "id": "NPR1",
+     "name": "Regulatory protein NPR1",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "SA receptors: NPR1 (co-activator; binds SA through Cys521/529 via copper) and NPR3/NPR4 (co-repressors whose activity SA inhibits)",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the receptor text as NPR1"
+    },
+    {
+     "kind": "molecule",
+     "id": "NPR3",
+     "name": "Regulatory protein NPR3",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "SA receptors: NPR1 (co-activator; binds SA through Cys521/529 via copper) and NPR3/NPR4 (co-repressors whose activity SA inhibits)",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the receptor text as NPR3"
+    },
+    {
+     "kind": "molecule",
+     "id": "NPR4",
+     "name": "Regulatory protein NPR4",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "SA receptors: NPR1 (co-activator; binds SA through Cys521/529 via copper) and NPR3/NPR4 (co-repressors whose activity SA inhibits)",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the receptor text as NPR4"
+    }
+   ],
+   "stimulus": [
+    {
+     "kind": "small",
+     "id": "CID338",
+     "name": "Salicylic Acid",
+     "how": "SA in PP06 (NPR receptors) and PW03 (curator mapping to PubChem 'salicylic acid')",
+     "mapping": true
+    }
+   ]
+  },
+  "unplaced": []
+ },
+ "PS01": {
+  "stages": {
+   "cascade": [
+    {
+     "kind": "molecule",
+     "id": "CNGC15A",
+     "name": "Protein CNGC15a",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "SYMRK (LRR receptor kinase, common symbiosis pathway) → nuclear Ca2+ oscillations: CNGC15 channels at the nuclear envelope with the K+ channel DMI1; Ca2+ spiking in root hairs → DMI3 (CCaMK) acts immediately downstream",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the cascade text as CNGC15"
+    },
+    {
+     "kind": "molecule",
+     "id": "DMI1",
+     "name": "Ion channel DMI1",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "SYMRK (LRR receptor kinase, common symbiosis pathway) → nuclear Ca2+ oscillations: CNGC15 channels at the nuclear envelope with the K+ channel DMI1; Ca2+ spiking in root hairs → DMI3 (CCaMK) acts immediately downstream",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the cascade text as DMI1"
+    },
+    {
+     "kind": "molecule",
+     "id": "DMI3",
+     "name": "Calcium and calcium/calmodulin-dependent serine/threonine-protein kinase DMI-3",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "SYMRK (LRR receptor kinase, common symbiosis pathway) → nuclear Ca2+ oscillations: CNGC15 channels at the nuclear envelope with the K+ channel DMI1; Ca2+ spiking in root hairs → DMI3 (CCaMK) acts immediately downstream",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the cascade text as DMI3, CCaMK"
+    },
+    {
+     "kind": "molecule",
+     "id": "SYMRK",
+     "name": "Nodulation receptor kinase",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "SYMRK (LRR receptor kinase, common symbiosis pathway) → nuclear Ca2+ oscillations: CNGC15 channels at the nuclear envelope with the K+ channel DMI1; Ca2+ spiking in root hairs → DMI3 (CCaMK) acts immediately downstream",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the cascade text as SYMRK"
+    }
+   ],
+   "receptor": [
+    {
+     "kind": "molecule",
+     "id": "NFR5",
+     "name": null,
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "NFR1 and NFR5, LysM receptor kinases, 'essential for Nod-factor perception' (direct binding suggested, not shown in these abstracts)",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the receptor text as NFR5"
+    }
+   ]
+  },
+  "unplaced": []
+ },
+ "PSI02": {
+  "stages": {
+   "receptor": [
+    {
+     "kind": "molecule",
+     "id": "LURE1.2",
+     "name": "Protein LURE 1.2",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "PRK6, tip-localised pollen receptor-like kinase (with PRK1, PRK3, PRK8); MDIS1–MIK1/MIK2 receptor heteromer (LURE1 binds their ectodomains)",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the receptor text as LURE1"
+    },
+    {
+     "kind": "molecule",
+     "id": "MDIS1",
+     "name": "Protein MALE DISCOVERER 1",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "PRK6, tip-localised pollen receptor-like kinase (with PRK1, PRK3, PRK8); MDIS1–MIK1/MIK2 receptor heteromer (LURE1 binds their ectodomains)",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the receptor text as MDIS1"
+    },
+    {
+     "kind": "molecule",
+     "id": "MIK1",
+     "name": "MDIS1-interacting receptor like kinase 1",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "PRK6, tip-localised pollen receptor-like kinase (with PRK1, PRK3, PRK8); MDIS1–MIK1/MIK2 receptor heteromer (LURE1 binds their ectodomains)",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the receptor text as MIK1"
+    },
+    {
+     "kind": "molecule",
+     "id": "PRK6",
+     "name": "Pollen receptor-like kinase 6",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "PRK6, tip-localised pollen receptor-like kinase (with PRK1, PRK3, PRK8); MDIS1–MIK1/MIK2 receptor heteromer (LURE1 binds their ectodomains)",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the receptor text as PRK6"
+    }
+   ]
+  },
+  "unplaced": []
+ },
+ "PT01": {
+  "stages": {
+   "receptor": [
+    {
+     "kind": "molecule",
+     "id": "MCA1",
+     "name": "Protein MID1-COMPLEMENTING ACTIVITY 1",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "MCA1, part of a Ca2+-permeable stretch-activated channel system (MCA2 overlaps in growth only)",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the receptor text as MCA1"
+    },
+    {
+     "kind": "molecule",
+     "id": "MCA2",
+     "name": "Protein MID1-COMPLEMENTING ACTIVITY 2",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "MCA1, part of a Ca2+-permeable stretch-activated channel system (MCA2 overlaps in growth only)",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the receptor text as MCA2"
+    }
+   ]
+  },
+  "unplaced": []
+ },
+ "PT03": {
+  "stages": {
+   "receptor": [
+    {
+     "kind": "molecule",
+     "id": "FER",
+     "name": "Receptor-like protein kinase FERONIA",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "FERONIA, receptor-like kinase (regulator of mechanical Ca2+ signalling); FERONIA, receptor kinase with malectin-like domains; sensing 'might be' direct interaction with pectin",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the receptor text as FERONIA"
+    }
+   ]
+  },
+  "unplaced": []
+ },
+ "PX05": {
+  "stages": {
+   "receptor": [
+    {
+     "kind": "molecule",
+     "id": "FER",
+     "name": "Receptor-like protein kinase FERONIA",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "FERONIA, receptor-like kinase (regulator of mechanical Ca2+ signalling); FERONIA, receptor kinase with malectin-like domains; sensing 'might be' direct interaction with pectin",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the receptor text as FERONIA"
+    }
+   ]
+  },
+  "unplaced": []
+ },
+ "PT04": {
+  "stages": {
+   "cascade": [
+    {
+     "kind": "molecule",
+     "id": "TCH2",
+     "name": "Calcium-binding protein CML24",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "TCH genes (calmodulin and calmodulin-related) up to 100-fold in 10–30 min",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the cascade text as TCH genes"
+    },
+    {
+     "kind": "molecule",
+     "id": "TCH3",
+     "name": "Calmodulin-like protein 12",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "TCH genes (calmodulin and calmodulin-related) up to 100-fold in 10–30 min",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the cascade text as TCH genes"
+    }
+   ]
+  },
+  "unplaced": [
+   {
+    "kind": "small",
+    "id": "CID5497150",
+    "name": "(-)-JA-L-Ile",
+    "how": "JA-Ile in PW01 (COI1–JAZ) and PT04 (jasmonate) (curator mapping to PubChem 'jasmonic acid-isoleucine')",
+    "mapping": true
+   },
+   {
+    "kind": "small",
+    "id": "CID6325",
+    "name": "Ethylene",
+    "how": "ethylene gas in PE01, PO01, PT04, PW02 (curator mapping to PubChem 'ethylene')",
+    "mapping": true
+   }
+  ]
+ },
+ "PT05": {
+  "stages": {
+   "receptor": [
+    {
+     "kind": "molecule",
+     "id": "MSL10",
+     "name": "Mechanosensitive ion channel protein 10",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "MSL10, phospho-regulated membrane-based sensor; GLR3.3 and GLR3.6 (GLR3.2 also); MSL10, stretch-activated anion channel, in the same pathway",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the receptor text as MSL10"
+    }
+   ]
+  },
+  "unplaced": []
+ },
+ "PW01": {
+  "stages": {
+   "receptor": [
+    {
+     "kind": "molecule",
+     "id": "MSL10",
+     "name": "Mechanosensitive ion channel protein 10",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "MSL10, phospho-regulated membrane-based sensor; GLR3.3 and GLR3.6 (GLR3.2 also); MSL10, stretch-activated anion channel, in the same pathway",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the receptor text as MSL10"
+    },
+    {
+     "kind": "molecule",
+     "id": "GLR3.2",
+     "name": "Glutamate receptor 3.2",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "GLR3.3 and GLR3.6 (GLR3.2 also); MSL10, stretch-activated anion channel, in the same pathway",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the receptor text as GLR3.2"
+    },
+    {
+     "kind": "molecule",
+     "id": "GLR3.3",
+     "name": "Glutamate receptor 3.3",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "GLR3.3 and GLR3.6 (GLR3.2 also); MSL10, stretch-activated anion channel, in the same pathway",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the receptor text as GLR3.3"
+    },
+    {
+     "kind": "molecule",
+     "id": "GLR3.6",
+     "name": "Glutamate receptor 3.6",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "GLR3.3 and GLR3.6 (GLR3.2 also); MSL10, stretch-activated anion channel, in the same pathway",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the receptor text as GLR3.6"
+    }
+   ],
+   "integration": [
+    {
+     "kind": "molecule",
+     "id": "COI1",
+     "name": "Coronatine-insensitive protein 1",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "distal jasmonate: JA-Ile promotes COI1–JAZ1 binding; JAZ degraded via SCF(COI1); MYC2 released",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the integration text as COI1"
+    },
+    {
+     "kind": "molecule",
+     "id": "JAZ1",
+     "name": "Protein TIFY 10A",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "distal jasmonate: JA-Ile promotes COI1–JAZ1 binding; JAZ degraded via SCF(COI1); MYC2 released",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the integration text as JAZ1, JAZ"
+    },
+    {
+     "kind": "molecule",
+     "id": "MYC2",
+     "name": "Transcription factor MYC2",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "distal jasmonate: JA-Ile promotes COI1–JAZ1 binding; JAZ degraded via SCF(COI1); MYC2 released",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the integration text as MYC2"
+    },
+    {
+     "kind": "small",
+     "id": "CID5497150",
+     "name": "(-)-JA-L-Ile",
+     "how": "JA-Ile in PW01 (COI1–JAZ) and PT04 (jasmonate) (curator mapping to PubChem 'jasmonic acid-isoleucine')",
+     "mapping": true
+    }
+   ],
+   "stimulus": [
+    {
+     "kind": "small",
+     "id": "CID33032",
+     "name": "L-Glutamic Acid",
+     "how": "glutamate in PW01 (wound signal) (curator mapping to PubChem 'L-glutamic acid')",
+     "mapping": true
+    }
+   ]
+  },
+  "unplaced": []
+ },
+ "PT06": {
+  "stages": {
+   "receptor": [
+    {
+     "kind": "molecule",
+     "id": "MSL8",
+     "name": "Mechanosensitive ion channel protein 8",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "MSL8, pollen-specific membrane-tension-gated channel",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the receptor text as MSL8"
+    }
+   ]
+  },
+  "unplaced": []
+ },
+ "PW02": {
+  "stages": {
+   "receptor": [
+    {
+     "kind": "molecule",
+     "id": "PEPR1",
+     "name": "Leucine-rich repeat receptor-like protein kinase PEPR1",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "PEPR1 (At1g73080, LRR receptor kinase; Kd 0.25 nM) and PEPR2, redundantly",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the receptor text as PEPR1"
+    },
+    {
+     "kind": "molecule",
+     "id": "PEPR2",
+     "name": "Leucine-rich repeat receptor-like protein kinase PEPR2",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "PEPR1 (At1g73080, LRR receptor kinase; Kd 0.25 nM) and PEPR2, redundantly",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the receptor text as PEPR2"
+    }
+   ],
+   "response": [
+    {
+     "kind": "molecule",
+     "id": "PROPEP1",
+     "name": "Precursor of elicitor peptide 1",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "defence-gene expression; enhanced resistance to Pythium irregulare (PROPEP1 overexpression); seedling growth inhibition",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the response text as PROPEP1"
+    }
+   ]
+  },
+  "unplaced": [
+   {
+    "kind": "small",
+    "id": "CID6325",
+    "name": "Ethylene",
+    "how": "ethylene gas in PE01, PO01, PT04, PW02 (curator mapping to PubChem 'ethylene')",
+    "mapping": true
+   }
+  ]
+ },
+ "PX01": {
+  "stages": {
+   "receptor": [
+    {
+     "kind": "molecule",
+     "id": "HPCA1",
+     "name": "Leucine-rich repeat receptor protein kinase HPCA1",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "HPCA1, LRR receptor kinase; covalent modification of extracellular cysteines",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the receptor text as HPCA1"
+    }
+   ],
+   "stimulus": [
+    {
+     "kind": "small",
+     "id": "CID784",
+     "name": "Hydrogen Peroxide",
+     "how": "H2O2 in PX01, PW03 (curator mapping to PubChem 'hydrogen peroxide')",
+     "mapping": true
+    }
+   ]
+  },
+  "unplaced": []
+ },
+ "PX02": {
+  "stages": {
+   "receptor": [
+    {
+     "kind": "molecule",
+     "id": "OSCA1",
+     "name": "Hyperosmolality-gated Ca2+ permeable channel 1.1",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "OSCA1, hyperosmolality-gated Ca2+-permeable channel ('may be an osmosensor')",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the receptor text as OSCA1"
+    },
+    {
+     "kind": "molecule",
+     "id": "OSCA1.2",
+     "name": "Hyperosmolality-gated Ca2+ permeable channel 1.2",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "OSCA1, hyperosmolality-gated Ca2+-permeable channel ('may be an osmosensor')",
+     "mapping": true,
+     "mapping_text": "curator mapping: family member of OSCA1; kept as a molecule sheet linked from PX02 (Daniel, 2026-11-18, PT07)"
+    }
+   ]
+  },
+  "unplaced": []
+ },
+ "PX03": {
+  "stages": {
+   "receptor": [
+    {
+     "kind": "molecule",
+     "id": "DORN1",
+     "name": "L-type lectin-domain containing receptor kinase I.9",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "DORN1 (LecRK-I.9, At5g60300); binds ATP, Kd 45.7 nM",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the receptor text as DORN1"
+    }
+   ],
+   "stimulus": [
+    {
+     "kind": "small",
+     "id": "CID5957",
+     "name": "5'-Atp",
+     "how": "extracellular ATP in PX03 (curator mapping to PubChem 'adenosine triphosphate')",
+     "mapping": true
+    }
+   ]
+  },
+  "unplaced": []
+ },
+ "PX04": {
+  "stages": {
+   "receptor": [
+    {
+     "kind": "molecule",
+     "id": "MOCA1",
+     "name": "Inositol phosphorylceramide glucuronosyltransferase 1",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "GIPC sphingolipids in the plasma membrane: Na+ binds GIPCs to gate Ca2+ influx channels (MOCA1, a GIPC glucuronosyltransferase, is required)",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the receptor text as MOCA1"
+    }
+   ],
+   "cascade": [
+    {
+     "kind": "molecule",
+     "id": "SOS1",
+     "name": "Sodium/hydrogen exchanger 7",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "depolarisation of the cell-surface potential, Ca2+ spikes and waves → SOS3 and the kinase SOS2 activate SOS1",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the cascade text as SOS1"
+    },
+    {
+     "kind": "molecule",
+     "id": "SOS2",
+     "name": "CBL-interacting serine/threonine-protein kinase 24",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "depolarisation of the cell-surface potential, Ca2+ spikes and waves → SOS3 and the kinase SOS2 activate SOS1",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the cascade text as SOS2"
+    },
+    {
+     "kind": "molecule",
+     "id": "SOS3",
+     "name": "Calcineurin B-like protein 4",
+     "how": "molecules.yaml lists this path at this stage",
+     "as_written": "depolarisation of the cell-surface potential, Ca2+ spikes and waves → SOS3 and the kinase SOS2 activate SOS1",
+     "mapping": true,
+     "mapping_text": "curator mapping: named in the cascade text as SOS3"
+    }
+   ]
+  },
+  "unplaced": []
+ },
+ "PS02": {
+  "stages": {},
+  "unplaced": [
+   {
+    "kind": "small",
+    "id": "CID15102684",
+    "name": "5-Deoxystrigol",
+    "how": "strigolactone 5-deoxy-strigol in PS02 (curator mapping to PubChem '5-deoxystrigol')",
+    "mapping": true
+   }
+  ]
+ },
+ "PCL02": {
+  "stages": {
+   "stimulus": [
+    {
+     "kind": "small",
+     "id": "CID5988",
+     "name": "Sucrose",
+     "how": "sugars in PCL02 (prr7 mutants insensitive to sucrose) (curator mapping to PubChem 'sucrose')",
+     "mapping": true
+    }
+   ]
+  },
+  "unplaced": []
+ }
+}
