@@ -4,6 +4,9 @@
   "version": "0.1.0",
   "type": "module",
   "description": "Plant Perception Pathways — how plants sense, from stimulus to receptor to response, with structures and evidence. Static, on-device. A host of @actualizer/perception-core.",
+  "engines": {
+    "node": ">=22"
+  },
   "scripts": {
     "dev": "vite",
     "build:content": "tsx scripts/build-content.ts",

@@ -13,6 +13,9 @@ not full text; not peer reviewed. The app adds no facts: gaps render as `TODO(au
 
 ## Quick start (local)
 
+Needs **Node 22 or newer** (`.nvmrc`, `engines`): Mol\* 5.13 requires it. On a Mac with Homebrew,
+`brew install node@22` installs it beside another Node; put `/opt/homebrew/opt/node@22/bin` first on `PATH` for this app.
+
 ```bash
 npm ci
 npm run build
