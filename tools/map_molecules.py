@@ -44,7 +44,7 @@ for sym in inv:
     else: unmatched.append(sym)
 out.setdefault("OSCA1.2", {"paths": {"PX02": ["receptor"]}, "aliases_used": [], "mapping": "family member of OSCA1; kept as a molecule sheet linked from PX02 (Daniel, 2026-11-18, PT07)"}); unmatched = [u for u in unmatched if u != "OSCA1.2"]
 for k in ("LAZY1", "LAZY2", "LAZY4"):
-    if k in out: out[k]["mapping"] = "LZY family named in PG01; the papers' LZY1/2/3 numbering is not yet matched to UniProt LAZY1/2/4 (todo)"
+    if k in out: out[k]["mapping"] = "LZY family named in PG01; the papers' LZY1/2/3 numbering is not yet matched to UniProt LAZY1/2/4 (open item)"
 yaml.safe_dump({"mapping": out, "unmatched": unmatched}, open("source/molecule-mapping.yaml", "w"), allow_unicode=True, sort_keys=False, width=140)
 for s, v in out.items(): print(f"{s:8s}", " ".join(f"{p}:{'/'.join(x[:3] for x in st)}" for p, st in v["paths"].items()))
 print("UNMATCHED", unmatched)

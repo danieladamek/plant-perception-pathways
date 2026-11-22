@@ -9,6 +9,7 @@ app_lints:
   - id: jargon
     rule: "outside-reader wording (app-methods §1)"
     phrases: ["Cowork", "todo", "ticket", "Update Log", "sweep 1", "sweep 2"]
+    allowed_phrases: ["TODO(author)", "Open items (TODO)"]   # the spec's gap marker and the core's Methods heading (2026-11-21)
     scope: dist text
   - id: centrality
     rule: "shared hardware is not centrality (app-methods §5)"
@@ -18,4 +19,5 @@ app_lints:
   - id: contested-framing
     rule: "candidate senses and the consciousness question are never presented as settled (app-methods §7)"
     phrases: ["plants feel pain", "plants are conscious", "plants can hear", "plants learn", "plant intelligence is proven", "plants think"]
+    allowed_phrases: ["Whether plants are conscious", "the likelihood that plants are conscious"]   # the About framing states the question, never an answer (2026-11-21)
     scope: "dist text, except quoted abstracts and quoted source text (UI-31)"

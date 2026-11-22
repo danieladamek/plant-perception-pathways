@@ -21,7 +21,7 @@
     - do: "In the hierarchy open 'Candidate senses (contested)' → magnetic field (PZ06)"
       expect: "Tier B3; the claim and the counter-evidence are both shown — the cryptochrome claim of Ahmad et al. and Harris et al.'s independent replication that found no consistent effect; the 'candidate sense — not established' badge"
     - do: "Open the About page"
-      expect: "'Is this perception? Two views' with both positions cited ([n] links to Taiz et al. 2019 and Calvo et al. 2020) and the statement that the app does not answer the question"
+      expect: "'Is this perception? Two views' with both positions cited ([n] links to Taiz et al. 2019 and Calvo et al. 2019) and the statement that the app does not answer the question"
   must_not: ["a candidate sense shown in the established branches", "any sentence asserting that plants are conscious, feel pain, hear or learn"]
 - id: w3
   persona: p-student

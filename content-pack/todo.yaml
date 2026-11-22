@@ -4,6 +4,6 @@
 - { id: T-MOL-02, what: "Lotus NFR1 has two unreviewed UniProt records; Lotus SYMRK has none (Medicago DMI2 stands in)", where: molecules.yaml, owner: Cowork }
 - { id: T-SM-01, what: "OT5 (FERONIA inhibitor bound in 9UBI) is not in PubChem", where: small-molecules.yaml, owner: Cowork }
 - { id: T-K-01, what: "Source 'Arabidopsis does not nodulate' (PS01, provenance K)", where: paths.yaml, owner: Cowork }
-- { id: T-GAP-01, what: "Gap stages: 104 null stage fields, mostly signal routes; sourcing list in source/todo.yaml", where: paths.yaml, owner: Cowork }
+- { id: T-GAP-01, what: "Gap stages: 104 null stage fields, mostly signal routes, each awaiting a verified source", where: paths.yaml, owner: Cowork }
 - { id: T-PORT-01, what: "Port and ▶ launcher for plant-perception-pathways at U6", where: manifest.port, owner: RTE }
 - { id: T-CORE-01, what: "A5.3: the core's molecule-stage default (pack sets stage explicitly, so not blocking)", where: perception-core, owner: Claude Code }

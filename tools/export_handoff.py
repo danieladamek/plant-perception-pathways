@@ -45,13 +45,13 @@ json.dump(tree, open("source/data/tree.json", "w", encoding="utf-8"), indent=1, 
 key = [
  {"item": "What this is", "meaning": "Curation for Plant Perception Pathways, in the shape of PPE's Sheet export. Rows drafted by Cowork from verified abstracts and curated by Daniel (2026-11-18)."},
  {"item": "Stage columns", "meaning": "stimulus → transducer → cascade → signal_route → integration → response (pack-supplied stage kinds; A5.2)."},
- {"item": "provenance codes", "meaning": "A = quoted or closely tracked from a verified abstract · K = Cowork expert knowledge, NOT verified"},
- {"item": "transducer_tier", "meaning": "B1 established · B2 partial · B3 unknown/inferred (PPE Axis B). Cowork's call, for review."},
- {"item": "row_status", "meaning": "curated = accepted by Daniel (source/curation/decisions.yaml) · candidate = Cowork draft awaiting curation · dropped and about-page rows are kept in paths.yaml but not exported as paths"},
+ {"item": "provenance codes", "meaning": "A = quoted or closely tracked from a verified abstract · K = curator knowledge, not verified against an abstract"},
+ {"item": "transducer_tier", "meaning": "B1 established · B2 partial · B3 unknown or inferred; set in curation"},
+ {"item": "row_status", "meaning": "curated = accepted in curation; only curated rows are shown as paths"},
  {"item": "⚑", "meaning": "dual membership or a proposed (not established) mechanism, as in PPE"},
  {"item": "citation_verified", "meaning": "all / some / none: computed from references.json (OpenAlex title ratio ≥ 0.85, PPE app-methods §1.2)"},
  {"item": "evidence_species", "meaning": "Arabidopsis thaliana unless stated. Rows from other species (senses Arabidopsis lacks, e.g. nodulation) say so, 'NOT Arabidopsis' (Daniel, 2026-11-18)"},
- {"item": "empty stage", "meaning": "a gap: no harvested source supports it yet (source/todo.yaml)"},
+ {"item": "empty stage", "meaning": "a gap: no verified source supports this stage yet"},
 ]
 json.dump(key, open("source/data/key.json", "w", encoding="utf-8"), indent=1, ensure_ascii=False)
 print(f"{len(out)} paths · {len(tree['children'])} branches · verified all: {sum(r['citation_verified']=='all' for r in out)}")
