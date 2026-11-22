@@ -31,7 +31,7 @@
  },
  {
   "id": "T-GAP-01",
-  "what": "TODO(author): withheld by the jargon wording lint — listed on Methods.",
+  "what": "Gap stages: 104 null stage fields, mostly signal routes, each awaiting a verified source",
   "where": "paths.yaml"
  },
  {

@@ -12,8 +12,8 @@ test('w2 — look at a candidate sense and the About framing', async ({ page }) 
   await expect(page).toHaveURL(/#\/path\/PZ06/);
   await expect(page.getByTestId('tier').first()).toContainText('B3');
   // the claim and the counter-evidence: Ahmad et al. and Harris et al.
-  expect(pz06.hypothesis_group).toMatch(/CLAIM ahmad2007/);
-  expect(pz06.hypothesis_group).toMatch(/COUNTER harris2009/);
+  expect(pz06.hypothesis_group).toMatch(/CLAIM Ahmad et al\. /);
+  expect(pz06.hypothesis_group).toMatch(/COUNTER Harris et al\. /);
   await expect(page.locator('main')).toContainText(pz06.hypothesis_group);
   await expect(page.getByTestId('path-panel')).toContainText('Ahmad et al.');
   await expect(page.getByTestId('path-panel')).toContainText('Harris et al.');
@@ -50,11 +50,11 @@ test('w2 core gap — the "candidate sense — not established" badge on PZ06', 
   await expect(page.locator('main')).toContainText(strings.badges.candidate_sense, { timeout: 3000 });
 });
 
-test('w2 pack gap — the About framing states that the app does not answer the question', async ({ page }) => {
-  test.info().annotations.push({ type: 'pack-gap', description: 'context-note.md: two passages are withheld by the contested-framing lint ("plants are conscious"); add allowed_phrases to safety.yaml or reword (BUILD-ERRORS.md)' });
-  test.fail();
+test('w2 — the About framing cites both positions and states that the app does not answer the question', async ({ page }) => {
   await seen(page);
   await go(page, '/about');
-  await expect(page.getByTestId('context-note').getByRole('link', { name: /\[149\] Taiz et al\. 2019/ })).toHaveAttribute('href', '#/references', { timeout: 3000 });
-  await expect(page.getByTestId('context-note')).toContainText('this app does not answer it', { timeout: 3000 });
+  const note = page.getByTestId('context-note');
+  await expect(note.getByRole('link', { name: /\[149\] Taiz et al\. 2019/ })).toHaveAttribute('href', '#/references');
+  await expect(note.getByRole('link', { name: /\[150\] Calvo et al\. 2019/ })).toHaveAttribute('href', '#/references');
+  await expect(note).toContainText('this app does not answer it');
 });

@@ -22,7 +22,7 @@ test.describe('G1 nothing invented: gaps render as gap cards and TODO(author)', 
     await seen(page);
     await go(page, '/methods');
     const n = PACK('todo.yaml').length;
-    await expect(page.getByTestId('todo-list').locator('[data-todo]')).toHaveCount(n + 2); // + the two withheld context-note passages
+    await expect(page.getByTestId('todo-list').locator('[data-todo]')).toHaveCount(n); // pack 0.1.1: no withheld passages
   });
 });
 

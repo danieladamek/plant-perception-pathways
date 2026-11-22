@@ -5779,7 +5779,7 @@
    "PG01"
   ],
   "as_written": "statocytes (root cap columella, hypocotyl starch sheath): amyloplast sedimentation; LZY proteins act downstream of amyloplast displacement",
-  "mapping": "curator mapping: TODO(author): withheld by the jargon wording lint — listed on Methods.",
+  "mapping": "curator mapping: LZY family named in PG01; the papers' LZY1/2/3 numbering is not yet matched to UniProt LAZY1/2/4 (open item)",
   "uniprot": {
    "accession": "Q5XV40",
    "entry_name": "LAZY1_ARATH",
@@ -5851,7 +5851,7 @@
    "PG01"
   ],
   "as_written": "statocytes (root cap columella, hypocotyl starch sheath): amyloplast sedimentation; LZY proteins act downstream of amyloplast displacement",
-  "mapping": "curator mapping: TODO(author): withheld by the jargon wording lint — listed on Methods.",
+  "mapping": "curator mapping: LZY family named in PG01; the papers' LZY1/2/3 numbering is not yet matched to UniProt LAZY1/2/4 (open item)",
   "uniprot": {
    "accession": "Q58G53",
    "entry_name": "LAZY2_ARATH",
@@ -5915,7 +5915,7 @@
    "PG01"
   ],
   "as_written": "statocytes (root cap columella, hypocotyl starch sheath): amyloplast sedimentation; LZY proteins act downstream of amyloplast displacement",
-  "mapping": "curator mapping: TODO(author): withheld by the jargon wording lint — listed on Methods.",
+  "mapping": "curator mapping: LZY family named in PG01; the papers' LZY1/2/3 numbering is not yet matched to UniProt LAZY1/2/4 (open item)",
   "uniprot": {
    "accession": "Q5XVG3",
    "entry_name": "LAZY4_ARATH",

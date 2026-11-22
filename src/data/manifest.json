@@ -9,8 +9,8 @@
  "safety_profile": "general",
  "question": "For every kind of plant perception, what is the pathway from stimulus to receptor, cascade, signal route, integration and response; which molecules do the senses share and what do they look like; and how strong is the evidence at each step? (Daniel, 2026-11-18: a plant counterpart of the Perception Pathways Explorer, with identical functionality through the shared perception core, in Greenhouse Explorer's design scheme.)\n",
  "purpose": "tool",
- "as_of": "2026-11-19",
- "pack_version": "0.1",
+ "as_of": "2026-11-21",
+ "pack_version": "0.1.1",
  "authors": [
   "Actualizer (commissioned research: pathways drafted from verified abstracts, molecules, structures)",
   "Curated by Daniel Adamek"

@@ -10,15 +10,15 @@
   },
   {
    "item": "provenance codes",
-   "meaning": "TODO(author): withheld by the jargon wording lint — listed on Methods."
+   "meaning": "A = quoted or closely tracked from a verified abstract · K = curator knowledge, not verified against an abstract"
   },
   {
    "item": "transducer_tier",
-   "meaning": "TODO(author): withheld by the jargon wording lint — listed on Methods."
+   "meaning": "B1 established · B2 partial · B3 unknown or inferred; set in curation"
   },
   {
    "item": "row_status",
-   "meaning": "TODO(author): withheld by the jargon wording lint — listed on Methods."
+   "meaning": "curated = accepted in curation; only curated rows are shown as paths"
   },
   {
    "item": "⚑",
@@ -34,7 +34,7 @@
   },
   {
    "item": "empty stage",
-   "meaning": "TODO(author): withheld by the jargon wording lint — listed on Methods."
+   "meaning": "a gap: no verified source supports this stage yet"
   }
  ]
 }

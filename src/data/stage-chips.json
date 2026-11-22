@@ -708,7 +708,7 @@
      "how": "molecules.yaml lists this path at this stage",
      "as_written": "statocytes (root cap columella, hypocotyl starch sheath): amyloplast sedimentation; LZY proteins act downstream of amyloplast displacement",
      "mapping": true,
-     "mapping_text": "curator mapping: TODO(author): withheld by the jargon wording lint — listed on Methods."
+     "mapping_text": "curator mapping: LZY family named in PG01; the papers' LZY1/2/3 numbering is not yet matched to UniProt LAZY1/2/4 (open item)"
     },
     {
      "kind": "molecule",
@@ -717,7 +717,7 @@
      "how": "molecules.yaml lists this path at this stage",
      "as_written": "statocytes (root cap columella, hypocotyl starch sheath): amyloplast sedimentation; LZY proteins act downstream of amyloplast displacement",
      "mapping": true,
-     "mapping_text": "curator mapping: TODO(author): withheld by the jargon wording lint — listed on Methods."
+     "mapping_text": "curator mapping: LZY family named in PG01; the papers' LZY1/2/3 numbering is not yet matched to UniProt LAZY1/2/4 (open item)"
     },
     {
      "kind": "molecule",
@@ -726,7 +726,7 @@
      "how": "molecules.yaml lists this path at this stage",
      "as_written": "statocytes (root cap columella, hypocotyl starch sheath): amyloplast sedimentation; LZY proteins act downstream of amyloplast displacement",
      "mapping": true,
-     "mapping_text": "curator mapping: TODO(author): withheld by the jargon wording lint — listed on Methods."
+     "mapping_text": "curator mapping: LZY family named in PG01; the papers' LZY1/2/3 numbering is not yet matched to UniProt LAZY1/2/4 (open item)"
     }
    ],
    "signal_route": [

@@ -1,5 +1,11 @@
 [
  {
+  "date": "2026-11-21",
+  "version": "0.1.1",
+  "what": "Cleared the 17 lint withholdings from the K-item build: reworded four path notes, four legend lines, the LZY mapping (three molecules) and T-GAP-01 so no internal terms reach the app; allowed_phrases for the two About framing lines (contested-framing) and for TODO(author) and \"Open items (TODO)\" (jargon). Contested-sense hypothesis lines cite by author and year instead of reference keys (PZ06, PZ07). Scenario w2: Calvo et al. 2019.\n",
+  "records": []
+ },
+ {
   "date": "2026-11-19",
   "version": "0.1",
   "what": "First pack: 67 curated paths in 16 branches; 152 references verified by title ratio with verbatim abstracts; 120 molecules (reviewed UniProt, AGI loci) with 116 bundled featured structures; 41 small molecules; 68 Plant Ontology terms; plant stage kinds (core_schema 0.2); audience, planner, safety, scenarios (w1–w11), upkeep.\n",
