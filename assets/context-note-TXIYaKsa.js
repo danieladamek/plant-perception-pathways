@@ -1,0 +1,20 @@
+const e=`# About these pathways
+
+**What "perception" means here.** In plant biology, *perception* means the detection of a signal by a receptor and
+its transduction into a response. Every pathway here is read that way: stimulus → receptor → cascade → signal route →
+integration → response. Blank stages are gaps — no verified source supports them yet — not claims that nothing is there.
+
+**Organism.** *Arabidopsis thaliana* first. Senses that Arabidopsis lacks, such as root-nodule symbiosis, are included
+with their evidence species named on the row.
+
+**Candidate senses.** A separate group holds claims that are disputed or rest on a single study (sound, vibration,
+kin recognition, magnetic fields, learning). Each shows the claim and, where one exists, the evidence against it.
+
+## Is this perception? Two views
+
+Whether plants are conscious or intelligent is a separate question from whether they perceive in the sense above,
+and this app does not answer it. Two published positions:
+
+- **Against:** [\\[149\\] Taiz et al. 2019](#/references) — the likelihood that plants are conscious is 'effectively nil'.
+- **For:** [\\[150\\] Calvo et al. 2019](#/references) — plants should be regarded as intelligent (adaptive, goal-directed behaviour).
+`,t=[],n={markdown:e,withheld:t};export{n as default,e as markdown,t as withheld};

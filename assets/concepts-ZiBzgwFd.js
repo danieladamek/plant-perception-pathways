@@ -1,0 +1,1 @@
+import{p as s,c as a}from"./pack-DVlvUD22.js";const n=await s("concepts"),o=Array.isArray(n)?n:[],e=new Map(o.map(c=>[c.id,c])),r=o.length>0;function i(c){const t=a().conceptLinks?.[c];return t&&e.get(t)||null}export{e as a,o as b,i as c,r as h};

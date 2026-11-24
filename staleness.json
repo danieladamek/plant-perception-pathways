@@ -1,0 +1,66 @@
+{
+ "as_of": "2026-11-24",
+ "classes": [
+  {
+   "id": "curation",
+   "what": "Curated rows, tree, shared hardware, legend (source/curation)",
+   "recheck_days": 180,
+   "how": "edit source/curation/paths.yaml; tools/export_handoff.py; tools/assemble_pack.py; diff",
+   "as_of": "2026-11-24",
+   "files": [
+    "paths.yaml",
+    "hierarchy.yaml",
+    "hubs.yaml",
+    "legend.yaml"
+   ]
+  },
+  {
+   "id": "reference",
+   "what": "DOI metadata and abstracts",
+   "recheck_days": 365,
+   "how": "harvest_openalex.py (OPENALEX_API_KEY) then tools/verify_refs.py",
+   "files": [
+    "references.yaml"
+   ]
+  },
+  {
+   "id": "molecule",
+   "what": "UniProt identity and function text (taxon 3702)",
+   "recheck_days": 180,
+   "how": "harvest_structures.py inventory --taxon 3702; tools/build_molecules.py",
+   "files": [
+    "molecules.yaml"
+   ]
+  },
+  {
+   "id": "structure",
+   "what": "PDB entries, AlphaFold DB models, bundled files",
+   "recheck_days": 180,
+   "how": "harvest_structures.py inventory + download; review new featured picks for peptides and namesakes (app-methods §4.4)",
+   "as_of": "2026-11-19",
+   "files": [
+    "structures.yaml"
+   ]
+  },
+  {
+   "id": "small-molecule",
+   "what": "PubChem identity and 3D conformers",
+   "recheck_days": 180,
+   "how": "harvest_structures.py smallmolecules with a fresh output file; tools/build_small_molecules.py",
+   "files": [
+    "small-molecules.yaml"
+   ]
+  },
+  {
+   "id": "ontology",
+   "what": "Plant Ontology, Gene Ontology and ChEBI records quoted in anatomy.yaml and glossary.yaml",
+   "recheck_days": 365,
+   "how": "harvest_uberon.py fetch (anatomy) and tools/harvest_glossary.py (glossary) with fresh output files; tools/build_anatomy.py, tools/build_glossary.py; obsolete terms are refused",
+   "files": [
+    "anatomy.yaml",
+    "glossary.yaml"
+   ]
+  }
+ ],
+ "stale": []
+}

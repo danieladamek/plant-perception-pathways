@@ -1,0 +1,1 @@
+const e="2026-11-24",n=[],r=[{level:"warning",where:"molecules/NFR5",message:"UniProt record is unreviewed (Lotus japonicus)"},{level:"warning",where:"small-molecules/not_found/ccd:OT5",message:"not found in PubChem; not in the catalogue"}],o={generated_for:e,errors:n,warnings:r};export{o as default,n as errors,e as generated_for,r as warnings};

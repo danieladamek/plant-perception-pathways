@@ -1,0 +1,189 @@
+{
+ "slug": "plant-perception-pathways",
+ "as_of": "2026-11-24",
+ "built_for": "2026-11-24",
+ "pack": {
+  "version": "0.2.1",
+  "core_schema": "0.2",
+  "builder": {
+   "name": "Actualizer",
+   "version": "0.1.2",
+   "date": "2026-11-19"
+  },
+  "sources": {
+   "curation": {
+    "file": "source/curation/paths.yaml",
+    "decisions": "source/curation/decisions.yaml",
+    "curated": "2026-11-19"
+   }
+  }
+ },
+ "counts": {
+  "paths": 67,
+  "paths_by_tier": {
+   "B1": 33,
+   "B2": 17,
+   "B3": 17
+  },
+  "paths_by_row_status": {
+   "curated": 67
+  },
+  "paths_by_branch": {
+   "Light": 8,
+   "Temperature": 8,
+   "Redox (ROS)": 1,
+   "Osmotic and salt": 4,
+   "Wounding and herbivores": 4,
+   "Mechanical": 6,
+   "Pathogens: pattern recognition": 6,
+   "Gravity": 1,
+   "Water": 5,
+   "Nutrients": 6,
+   "Chemical cues": 2,
+   "CO2": 2,
+   "Symbionts": 2,
+   "Self/non-self": 2,
+   "Time (clock)": 3,
+   "Candidate senses (contested)": 7
+  },
+  "gaps_total": 104,
+  "paths_with_contested": 21,
+  "paths_with_a_verified_ref": 67,
+  "dual_membership": [
+   "PL02",
+   "PT05",
+   "PX05"
+  ],
+  "percepts": 0,
+  "hubs": 13,
+  "proposed_nodes": 0,
+  "proposed_edges": 0,
+  "review_items": 0,
+  "molecules": 120,
+  "molecules_by_kind": {
+   "protein": 120
+  },
+  "molecules_by_stage": {
+   "cascade": 44,
+   "receptor": 65,
+   "integration": 9,
+   "notes": 1,
+   "response": 1
+  },
+  "pdb_entries_listed": 256,
+  "structures_bundled": 116,
+  "structures_by_kind": {
+   "predicted": 66,
+   "experimental": 50
+  },
+  "structures_by_source": {
+   "AlphaFoldDB": 66,
+   "PDB": 50
+  },
+  "interactions": 0,
+  "interactions_by_kind": {},
+  "small_molecules": 41,
+  "small_molecules_hidden_by_default": 9,
+  "small_molecules_not_found": 1,
+  "anatomy_values": 51,
+  "anatomy_terms": 68
+ },
+ "references": {
+  "total": 152,
+  "by_tier": {
+   "background": 10,
+   "current": 142
+  },
+  "verified": 152,
+  "unverified": 0,
+  "with_abstract": 151,
+  "by_source": {
+   "openalex": 151,
+   "europepmc": 1
+  }
+ },
+ "todo": 9,
+ "glossary_terms": 102,
+ "glossary_by_basis": {
+  "app convention": 25,
+  "ontology, verbatim": 77
+ },
+ "concepts": 4,
+ "heuristics": [
+  {
+   "id": "n-paths",
+   "label": "number of curated paths",
+   "where": "shared hardware, molecule sheets, navigator node size"
+  },
+  {
+   "id": "computed-contacts",
+   "label": "computed by Mol* from the coordinates — a geometric heuristic, not a measured interaction",
+   "where": "structure viewer (contacts around a selection)"
+  },
+  {
+   "id": "curator-mapping",
+   "label": "curator mapping",
+   "where": "molecule-to-path mapping, small-molecule names, Plant Ontology terms"
+  },
+  {
+   "id": "featured-structure",
+   "label": "Featured: the rule step that chose it (app-methods §4.4)",
+   "where": "molecule sheets"
+  }
+ ],
+ "build": {
+  "errors": 0,
+  "warnings": 2,
+  "withheld_passages": 0
+ },
+ "safety_tests": {
+  "date": "2026-11-24",
+  "suites": {
+   "safety": {
+    "passed": 21,
+    "failed": 0,
+    "expected_failures": 0,
+    "skipped": 0,
+    "core_gaps": []
+   },
+   "smoke": {
+    "passed": 94,
+    "failed": 0,
+    "expected_failures": 0,
+    "skipped": 0,
+    "core_gaps": []
+   },
+   "walkthroughs": {
+    "passed": 32,
+    "failed": 0,
+    "expected_failures": 1,
+    "skipped": 0,
+    "core_gaps": [
+     "w13 core gap — the term popover itself shows the source link and retrieval date: perception-core: the UI-32 term popover for an `ontology, verbatim` entry shows its definition_source link and retrieved_on (w13 step 1); 0.3.0 shows the id and label in the popover, and the link and date one click away in the glossary entry"
+    ]
+   },
+   "core-harness": {
+    "passed": 35,
+    "failed": 0,
+    "expected_failures": 0,
+    "skipped": 0,
+    "core_gaps": []
+   }
+  },
+  "lighthouse": {
+   "date": "2026-11-24",
+   "home": {
+    "performance": 96,
+    "accessibility": 100
+   },
+   "navigator": {
+    "accessibility": 100
+   },
+   "pass": true
+  }
+ },
+ "staleness": {
+  "stale": 0,
+  "as_of": "2026-11-24"
+ }
+}

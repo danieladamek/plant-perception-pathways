@@ -1,0 +1,1 @@
+import{p as e}from"./pack-DVlvUD22.js";const o=await e("provenance"),s=p=>typeof p=="number"?p>0:!0,t={percepts:s(o?.counts?.percepts),glossary:s(o?.glossary_terms),proposed:s(o?.counts?.proposed_nodes)};export{t as H};

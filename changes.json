@@ -1,0 +1,37 @@
+[
+ {
+  "date": "2026-11-19",
+  "version": "0.1",
+  "what": "First pack: 67 curated paths in 16 branches; 152 references verified by title ratio with verbatim abstracts; 120 molecules (reviewed UniProt, AGI loci) with 116 bundled featured structures; 41 small molecules; 68 Plant Ontology terms; plant stage kinds (core_schema 0.2); audience, planner, safety, scenarios (w1–w11), upkeep.\n",
+  "why": "U1–U4 of the Actualizer workflow for Plant Perception Pathways (A5.1), ahead of Daniel's pack review (U5).",
+  "records": []
+ },
+ {
+  "date": "2026-11-21",
+  "version": "0.1.1",
+  "what": "Cleared the 17 lint withholdings from the K-item build: reworded four path notes, four legend lines, the LZY mapping (three molecules) and T-GAP-01 so no internal terms reach the app; allowed_phrases for the two About framing lines (contested-framing) and for TODO(author) and \"Open items (TODO)\" (jargon). Contested-sense hypothesis lines cite by author and year instead of reference keys (PZ06, PZ07). Scenario w2: Calvo et al. 2019.\n",
+  "why": "First-build report (scrum 261119, plant-perception-pathways): pack-side items under Next.",
+  "records": []
+ },
+ {
+  "date": "2026-11-24",
+  "version": "0.1.2",
+  "what": "citation_verified uses PPE's curated vocabulary: \"yes (abstracts)\" when every key citation of a row is verified at abstract level (all 67 rows), \"partly (abstracts)\" or \"no\" otherwise. Pack 0.1 wrote \"all\", which the shared core renders in the unverified style.\n",
+  "why": "First-build report (scrum 261119), core item 5: every path showed a dashed amber 'citation all'. Fixed in the pack ahead of a demo; the core item stays open.",
+  "records": []
+ },
+ {
+  "date": "2026-11-24",
+  "version": "0.2.0",
+  "what": "Glossary of 102 terms (tools/build_glossary.py). 21 app conventions; 11 method terms carried over from PPE; 45 Gene Ontology and ChEBI records quoted verbatim via OLS4; 25 Plant Ontology records already quoted in anatomy.yaml. Four 101s: how a path is curated, from stimulus to response in a plant (cited), reading a structure, experimental and predicted structures. Upkeep classes name their files; the candidate-senses branch is marked contested; three legend lines reworded; scenario w13.\n",
+  "why": "Daniel, 2026-11-24: build the app out to its full feature set (glossary, primers, freshness) on perception-core 0.3.0.",
+  "records": []
+ },
+ {
+  "date": "2026-11-24",
+  "version": "0.2.1",
+  "what": "Delivery changes from local to GitHub Pages: a public repo, danieladamek/plant-perception-pathways, built locally and published to gh-pages. Abstracts are published as they are, each with its DOI link.",
+  "why": "Share the app outside this machine.",
+  "records": []
+ }
+]
