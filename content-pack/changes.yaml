@@ -1,5 +1,10 @@
 # changes.yaml — pack change log (newest first)
 - date: 2026-11-24
+  version: "0.2.1"
+  by: "Daniel"
+  what: "Delivery changes from local to GitHub Pages: a public repo, danieladamek/plant-perception-pathways, built locally and published to gh-pages. Abstracts are published as they are, each with its DOI link."
+  why: "Share the app outside this machine."
+- date: 2026-11-24
   version: "0.2.0"
   by: "Cowork (Actualizer); asked for by Daniel"
   what: >
