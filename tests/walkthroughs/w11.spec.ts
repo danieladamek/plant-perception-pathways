@@ -25,7 +25,7 @@ for (const t of ['light', 'dark'] as const)
     expect(s).toMatchObject(t === 'light' ? { bg: '#efe3c6', accent: '#2d6848', muted: '#5f5442' } : { bg: '#1a1712', accent: '#8fd0a0', muted: '#b8ab94' });
     expect(s.display).toMatch(/Fraunces/);
     expect(s.body).toMatch(/Source Sans 3/);
-    expect(s.mark).toBe(t === 'light' ? '/brand/web/mark-64.png' : '/brand/web/mark-dark-64.png');
+    expect(s.mark).toBe(`${new URL(ORIGIN).pathname.replace(/\/$/, '')}/brand/web/${t === 'light' ? 'mark-64.png' : 'mark-dark-64.png'}`);
     expect(s.wordmark).toBe('Plant Perception Pathways');
     const axe = await new AxeBuilder({ page }).withTags(['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa']).analyze();
     expect(axe.violations.map((v) => v.id)).toEqual([]);

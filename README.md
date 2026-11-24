@@ -5,13 +5,17 @@ cues — mapped as pathways from stimulus to receptor, cascade, signal route, in
 molecules involved, their 3D structures and the evidence for each step. *Arabidopsis thaliana* first; senses
 Arabidopsis lacks are included with their evidence species labelled (🌱), and contested senses are labelled contested.
 
-A static, on-device web app (Actualizer `workbench`, safety profile `general`, delivery `local`). Everything ships in
-`dist/`: no runtime fetches, no telemetry, no account. My maps and the notepad stay in this browser.
+A static, on-device web app (Actualizer `workbench`, safety profile `general`, delivery `pages`). Live at
+<https://danieladamek.github.io/plant-perception-pathways/>. Everything ships in `dist/`: no runtime fetches, no telemetry, no account. My maps and the notepad stay in this browser.
 
-**Data:** content pack 0.1 (`content-pack/`, as of 2026-11-19), curated by Daniel Adamek. Verified at abstract level,
+**Data:** content pack 0.2.1 (`content-pack/`, as of 2026-11-24), curated by Daniel Adamek. Verified at abstract level,
 not full text; not peer reviewed. The app adds no facts: gaps render as `TODO(author)` and are listed on Methods.
 
 ## Quick start (local)
+
+**The shared core is a local dependency.** `package.json` installs `@actualizer/perception-core` from
+`../perception-pathways-explorer/packages/perception-core` at tag `perception-core-v0.3.0`, so a fresh clone needs that
+folder beside it (Perception Pathways Explorer checked out at that tag, as a sibling of this folder) before `npm ci`.
 
 Needs **Node 22 or newer** (`.nvmrc`, `engines`): Mol\* 5.13 requires it. On a Mac with Homebrew,
 `brew install node@22` installs it beside another Node; put `/opt/homebrew/opt/node@22/bin` first on `PATH` for this app.
@@ -91,14 +95,41 @@ Expectations perception-core 0.3.0 cannot yet meet are written as `test.fail` wi
 proposed core item; they turn red the day the core meets them. With 0.3.0 one remains (w13: the term popover shows
 the source link and retrieval date only in the glossary entry, not in the popover itself).
 
-## Publishing this later
+## Publishing (GitHub Pages)
 
-Delivery is `local`. If Daniel decides to publish:
+Delivery is `pages` (Daniel, 2026-11-24; pack 0.2.1). The public repo is
+[danieladamek/plant-perception-pathways](https://github.com/danieladamek/plant-perception-pathways), and the site is
+<https://danieladamek.github.io/plant-perception-pathways/>, served from the `gh-pages` branch at `/`. It is **built on
+this Mac**. There is no Actions workflow, because CI cannot install the core's local `file:` dependency.
 
-1. Check the identity: `gh auth status` shows `danieladamek`.
-2. Replace the core's local-path dependency with a URL or registry install (above), so CI can install it.
-3. Build for a project site: `BASE_PATH=/plant-perception-pathways/ npm run build` (the `404.html` fallback is written
-   by `scripts/postbuild.ts`; routes are hash routes).
-4. Create the repo (`gh repo create danieladamek/plant-perception-pathways --public --source . --push`, or `--private`
-   with no Pages) and add a `deploy.yml` that runs `npm ci → npm test → npm run build:content → build → deploy-pages`.
-5. Re-run the safety suite against the live URL (`PPP_PORT` / `baseURL`).
+To republish after a change, starting from a committed tree:
+
+```bash
+gh auth status
+```
+
+```bash
+npm run check
+```
+
+```bash
+npm run deploy:pages
+```
+
+`npm run deploy:pages` (`scripts/deploy-pages.ts`) runs these steps:
+1. Builds with `BASE_PATH=/plant-perception-pathways/`. That build keeps notepad notes on the device only, because
+   Pages has no loopback `/__local/notes` endpoint.
+2. Writes `404.html` and `.nojekyll`.
+3. Checks that every URL the HTML, CSS and JS name resolves under the base, including every structure file and font.
+4. Commits `dist/` to `gh-pages` through a temporary worktree and pushes it.
+5. Rebuilds at base `/`, so `npm run preview -- --port 4201 --strictPort` keeps serving the local app.
+
+`npm run deploy:pages -- --no-push` stops after the checks. Run `npm run build` afterwards to restore the local build.
+
+To check the live site, run the browser suite against it (smoke, safety, walkthroughs; the core harness is skipped):
+
+```bash
+PPP_BASE_URL=https://danieladamek.github.io/plant-perception-pathways/ npx playwright test --reporter=line
+```
+
+Rollback points: tag `pre-pages` (the last local-only build) and tag `demo-0.1.2`.

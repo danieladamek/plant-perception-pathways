@@ -170,7 +170,7 @@ for (const lint of safety.app_lints as { id: string }[]) {
       const routes = [...ROUTES, ...PACK('paths.yaml').paths.map((p: any) => `/path/${p.path_id}`), ...PACK('molecules.yaml').molecules.map((m: any) => `/molecules/${encodeURIComponent(m.id)}`)];
       const hits: string[] = [];
       for (const r of routes) {
-        await page.goto(`/#${r}`);
+        await page.goto(`./#${r}`);
         await page.locator('h1').first().waitFor();
         for (const h of await lintPage(page)) if (h.startsWith(`${lint.id}:`)) hits.push(`${r} → ${h}`);
       }
@@ -200,7 +200,7 @@ test.describe('§8.6 things that must not happen', () => {
     await expect(page.locator('[data-lens="vagus"]')).toHaveCount(0);
     await expect(page.locator('[data-lens="atlas"]')).toHaveCount(0);
     for (const r of ['/atlas', '/vagus', '/grow-log', '/plants']) {
-      await page.goto(`/#${r}`);
+      await page.goto(`./#${r}`);
       await expect(page.locator('h1').first()).toContainText(/not found/i);
     }
   });

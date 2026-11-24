@@ -543,6 +543,9 @@ const files: Record<string, unknown> = {
         // perception-core 0.3.0 matches evidence_species patterns case-insensitively and About reads sources.curation;
         // branch colours come from the theme's --cat-1…16 (src/index.css), so no palette is emitted from the pack
         palette: { branches: {} },
+        // K41: a published build (BASE_PATH under a project site) has no loopback /__local/notes endpoint, so the notepad
+        // keeps notes on the device only; local dev and preview keep the core's default file autosave
+        ...(process.env.BASE_PATH && process.env.BASE_PATH !== '/' ? { notes_storage: 'device' } : {}),
       }
     : null,
   'audience.json': audience ?? null,

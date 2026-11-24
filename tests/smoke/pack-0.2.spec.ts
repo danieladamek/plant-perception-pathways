@@ -112,8 +112,8 @@ test('Methods: Freshness lists all six upkeep classes; Recent changes newest fir
   const shown = page.getByTestId('recent-changes').locator('[data-change]');
   await expect(shown).toHaveCount(Math.min(10, ledger.length));
   expect(await shown.evaluateAll((li) => li.map((l) => l.getAttribute('data-change')))).toEqual(ledger.slice(0, 10).map((c) => c.version));
-  for (const f of ['/changes.json', '/freshness.json']) expect((await page.request.get(f)).ok(), f).toBe(true);
-  expect((await (await page.request.get('/changes.json')).json()).length).toBe(ledger.length);
+  for (const f of ['./changes.json', './freshness.json']) expect((await page.request.get(f)).ok(), f).toBe(true);
+  expect((await (await page.request.get('./changes.json')).json()).length).toBe(ledger.length);
 });
 
 test('no route shows the pack-0.1 "no glossary or primers" warning', async ({ page }) => {

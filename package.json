@@ -18,7 +18,8 @@
     "lint:dist": "tsx scripts/lint-dist.ts dist",
     "lighthouse": "tsx scripts/lighthouse.ts",
     "record:tests": "tsx scripts/record-tests.ts",
-    "check": "npm run validate:pack && npm run test && npm run build && npm run lint:dist && npm run test:e2e && npm run record:tests && npm run build"
+    "check": "npm run validate:pack && npm run test && npm run build && npm run lint:dist && npm run test:e2e && npm run record:tests && npm run build",
+    "deploy:pages": "tsx scripts/deploy-pages.ts"
   },
   "dependencies": {
     "@actualizer/perception-core": "file:../perception-pathways-explorer/packages/perception-core",

@@ -6,7 +6,10 @@ import { lintHits, type Lint } from '../scripts/lint';
 
 export const NS = 'plant-perception-pathways';
 export const PORT = Number(process.env.PPP_PORT ?? 4221);
-export const ORIGIN = `http://localhost:${PORT}`;
+/** K41: PPP_BASE_URL runs the suite against a deployed copy (e.g. https://danieladamek.github.io/plant-perception-pathways/) */
+export const BASE_URL = process.env.PPP_BASE_URL ?? `http://localhost:${PORT}/`;
+/** the app's own root (origin plus base path, no trailing slash): every request must start with it */
+export const ORIGIN = BASE_URL.replace(/\/$/, '');
 export const PACK = (f: string) => yaml.load(fs.readFileSync(`content-pack/${f}`, 'utf8'), { schema: PACK_SCHEMA }) as any;
 export const LINTS = PACK('safety.yaml').app_lints as Lint[];
 
@@ -34,7 +37,7 @@ export async function seen(page: Page) {
 }
 
 export async function go(page: Page, hash: string) {
-  await page.goto(`/#${hash}`);
+  await page.goto(`./#${hash}`); // relative, so a base path (Pages) is kept
   await expect(page.locator('h1').first()).toBeVisible();
 }
 
