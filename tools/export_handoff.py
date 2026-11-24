@@ -20,7 +20,7 @@ for r in rows:
     missing = [c for c in cites if c not in refs]
     if missing: raise SystemExit(f"{r['path_id']}: unknown reference {missing}")
     r = {c: r.get(c) for c in COLS} | {"row_status": r.get("row_status") or "candidate", "evidence_species": r.get("evidence_species") or "Arabidopsis thaliana"}
-    r["citation_verified"] = "all" if cites and all(refs[c]["verified"] for c in cites) else ("some" if any(refs[c]["verified"] for c in cites) else "none")
+    r["citation_verified"] = "yes (abstracts)" if cites and all(refs[c]["verified"] for c in cites) else ("partly (abstracts)" if any(refs[c]["verified"] for c in cites) else "no")
     r["key_citation"] = cites
     out.append(r)
 with open("source/data/paths.csv", "w", newline="", encoding="utf-8") as f:
@@ -49,9 +49,9 @@ key = [
  {"item": "transducer_tier", "meaning": "B1 established · B2 partial · B3 unknown or inferred; set in curation"},
  {"item": "row_status", "meaning": "curated = accepted in curation; only curated rows are shown as paths"},
  {"item": "⚑", "meaning": "dual membership or a proposed (not established) mechanism, as in PPE"},
- {"item": "citation_verified", "meaning": "all / some / none: computed from references.json (OpenAlex title ratio ≥ 0.85, PPE app-methods §1.2)"},
+ {"item": "citation_verified", "meaning": "yes (abstracts) / partly (abstracts) / no: every, some or none of the row's key citations verified at abstract level"},
  {"item": "evidence_species", "meaning": "Arabidopsis thaliana unless stated. Rows from other species (senses Arabidopsis lacks, e.g. nodulation) say so, 'NOT Arabidopsis' (Daniel, 2026-11-18)"},
  {"item": "empty stage", "meaning": "a gap: no verified source supports this stage yet"},
 ]
 json.dump(key, open("source/data/key.json", "w", encoding="utf-8"), indent=1, ensure_ascii=False)
-print(f"{len(out)} paths · {len(tree['children'])} branches · verified all: {sum(r['citation_verified']=='all' for r in out)}")
+print(f"{len(out)} paths · {len(tree['children'])} branches · verified all: {sum(r['citation_verified']=='yes (abstracts)' for r in out)}")

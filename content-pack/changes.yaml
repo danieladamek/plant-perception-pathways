@@ -1,4 +1,12 @@
 # changes.yaml — pack change log (newest first)
+- date: 2026-11-24
+  version: "0.1.2"
+  by: "Cowork (Actualizer); approved by Daniel"
+  what: >
+    citation_verified uses PPE's curated vocabulary: "yes (abstracts)" when every key citation of a row is verified
+    at abstract level (all 67 rows), "partly (abstracts)" or "no" otherwise. Pack 0.1 wrote "all", which the shared
+    core renders in the unverified style.
+  why: "First-build report (scrum 261119), core item 5: every path showed a dashed amber 'citation all'. Fixed in the pack ahead of a demo; the core item stays open."
 - date: 2026-11-21
   version: "0.1.1"
   by: "Cowork (Actualizer); approved by Daniel"

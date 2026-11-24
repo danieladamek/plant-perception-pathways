@@ -20,7 +20,7 @@ paths:
   notes: null
   evidence_species: Arabidopsis thaliana
   key_citation: chen2011_phy_review; jeong2013_pifs
-  citation_verified: all
+  citation_verified: yes (abstracts)
   also_in: []
   provenance_words:
   - quoted or closely tracked from a verified abstract
@@ -46,7 +46,7 @@ paths:
   notes: null
   evidence_species: Arabidopsis thaliana
   key_citation: jung2016_phy_thermo; legris2016_phyb_temp
-  citation_verified: all
+  citation_verified: yes (abstracts)
   also_in:
   - Light
   provenance_words:
@@ -74,7 +74,7 @@ paths:
   notes: null
   evidence_species: Arabidopsis thaliana
   key_citation: christie1998_nph1; huala1997_nph1; hart2021_phot_review
-  citation_verified: all
+  citation_verified: yes (abstracts)
   also_in: []
   provenance_words:
   - quoted or closely tracked from a verified abstract
@@ -101,7 +101,7 @@ paths:
   notes: null
   evidence_species: Arabidopsis thaliana
   key_citation: kagawa2001_npl1
-  citation_verified: all
+  citation_verified: yes (abstracts)
   also_in: []
   provenance_words:
   - quoted or closely tracked from a verified abstract
@@ -127,7 +127,7 @@ paths:
   notes: local to guard cells
   evidence_species: Arabidopsis thaliana
   key_citation: kinoshita2001_phot_stomata
-  citation_verified: all
+  citation_verified: yes (abstracts)
   also_in: []
   provenance_words:
   - quoted or closely tracked from a verified abstract
@@ -152,7 +152,7 @@ paths:
   notes: null
   evidence_species: Arabidopsis thaliana
   key_citation: ahmad1993_hy4; chaves2011_cry_review
-  citation_verified: all
+  citation_verified: yes (abstracts)
   also_in: []
   provenance_words:
   - quoted or closely tracked from a verified abstract
@@ -178,7 +178,7 @@ paths:
   notes: null
   evidence_species: Arabidopsis thaliana
   key_citation: rizzini2011_uvr8; yi2005_cop1
-  citation_verified: all
+  citation_verified: yes (abstracts)
   also_in: []
   provenance_words:
   - quoted or closely tracked from a verified abstract
@@ -204,7 +204,7 @@ paths:
   notes: null
   evidence_species: Arabidopsis thaliana
   key_citation: vandenbussche2014_uvb_bending
-  citation_verified: all
+  citation_verified: yes (abstracts)
   also_in: []
   provenance_words:
   - quoted or closely tracked from a verified abstract
@@ -229,7 +229,7 @@ paths:
   notes: new branch Redox (ROS), Daniel 2026-11-18
   evidence_species: Arabidopsis thaliana
   key_citation: wu2020_hpca1
-  citation_verified: all
+  citation_verified: yes (abstracts)
   also_in: []
   provenance_words:
   - quoted or closely tracked from a verified abstract
@@ -254,7 +254,7 @@ paths:
   notes: null
   evidence_species: Arabidopsis thaliana
   key_citation: yuan2014_osca1
-  citation_verified: all
+  citation_verified: yes (abstracts)
   also_in: []
   provenance_words:
   - quoted or closely tracked from a verified abstract
@@ -279,7 +279,7 @@ paths:
   notes: null
   evidence_species: Arabidopsis thaliana
   key_citation: choi2014_dorn1
-  citation_verified: all
+  citation_verified: yes (abstracts)
   also_in: []
   provenance_words:
   - quoted or closely tracked from a verified abstract
@@ -304,7 +304,7 @@ paths:
   notes: null
   evidence_species: Arabidopsis thaliana
   key_citation: nakagawa2007_mca1; yamanaka2010_mca12
-  citation_verified: all
+  citation_verified: yes (abstracts)
   also_in: []
   provenance_words:
   - quoted or closely tracked from a verified abstract
@@ -330,7 +330,7 @@ paths:
   notes: null
   evidence_species: Arabidopsis thaliana
   key_citation: monshausen2009_ca_ros
-  citation_verified: all
+  citation_verified: yes (abstracts)
   also_in: []
   provenance_words:
   - quoted or closely tracked from a verified abstract
@@ -355,7 +355,7 @@ paths:
   notes: null
   evidence_species: Arabidopsis thaliana
   key_citation: shih2014_feronia
-  citation_verified: all
+  citation_verified: yes (abstracts)
   also_in: []
   provenance_words:
   - quoted or closely tracked from a verified abstract
@@ -380,7 +380,7 @@ paths:
   notes: null
   evidence_species: Arabidopsis thaliana
   key_citation: braam1990_tch; chehab2012_touch_ja
-  citation_verified: all
+  citation_verified: yes (abstracts)
   also_in: []
   provenance_words:
   - quoted or closely tracked from a verified abstract
@@ -406,7 +406,7 @@ paths:
   notes: null
   evidence_species: Arabidopsis thaliana
   key_citation: basu2020_msl10; haswell2008_msl910
-  citation_verified: all
+  citation_verified: yes (abstracts)
   also_in:
   - Mechanical
   provenance_words:
@@ -434,7 +434,7 @@ paths:
   notes: null
   evidence_species: Arabidopsis thaliana
   key_citation: hamilton2015_msl8
-  citation_verified: all
+  citation_verified: yes (abstracts)
   also_in: []
   provenance_words:
   - quoted or closely tracked from a verified abstract
@@ -459,7 +459,7 @@ paths:
   notes: null
   evidence_species: Arabidopsis thaliana
   key_citation: hamant2008_mech_patterning
-  citation_verified: all
+  citation_verified: yes (abstracts)
   also_in: []
   provenance_words:
   - quoted or closely tracked from a verified abstract
@@ -484,7 +484,7 @@ paths:
   notes: null
   evidence_species: Arabidopsis thaliana
   key_citation: toyota2018_glr; mousavi2013_glr; nguyen2018_cells_electric; moelange2021_msl10_glr; thines2007_jaz_coi1; chini2007_jaz
-  citation_verified: all
+  citation_verified: yes (abstracts)
   also_in: []
   provenance_words:
   - quoted or closely tracked from a verified abstract
@@ -519,7 +519,7 @@ paths:
   evidence_species: Arabidopsis thaliana
   key_citation: gomezgomez2000_fls2; chinchilla2007_fls2_bak1; heese2007_bak1; sun2013_fls2_structure; li2014_bik1_rbohd;
     kadota2014_bik1_rbohd; asai2002_mapk
-  citation_verified: all
+  citation_verified: yes (abstracts)
   also_in: []
   provenance_words:
   - quoted or closely tracked from a verified abstract
@@ -551,7 +551,7 @@ paths:
   notes: pathogens have evolved virulence factors that reopen stomata (melotto2006)
   evidence_species: Arabidopsis thaliana
   key_citation: melotto2006_stomata; li2014_bik1_rbohd
-  citation_verified: all
+  citation_verified: yes (abstracts)
   also_in: []
   provenance_words:
   - quoted or closely tracked from a verified abstract
@@ -577,7 +577,7 @@ paths:
   notes: null
   evidence_species: Arabidopsis thaliana
   key_citation: zipfel2006_efr; chinchilla2007_fls2_bak1; kadota2014_bik1_rbohd
-  citation_verified: all
+  citation_verified: yes (abstracts)
   also_in: []
   provenance_words:
   - quoted or closely tracked from a verified abstract
@@ -604,7 +604,7 @@ paths:
   notes: null
   evidence_species: Arabidopsis thaliana
   key_citation: miya2007_cerk1; liu2012_cerk1_dimer
-  citation_verified: all
+  citation_verified: yes (abstracts)
   also_in: []
   provenance_words:
   - quoted or closely tracked from a verified abstract
@@ -631,7 +631,7 @@ paths:
   notes: null
   evidence_species: Arabidopsis thaliana
   key_citation: huffaker2006_pep1; yamaguchi2006_pepr1; krol2010_pepr12
-  citation_verified: all
+  citation_verified: yes (abstracts)
   also_in: []
   provenance_words:
   - quoted or closely tracked from a verified abstract
@@ -663,7 +663,7 @@ paths:
   evidence_species: Arabidopsis thaliana
   key_citation: morita2010_gravity_review; caspar1989_starchless; taniguchi2017_lazy; furutani2020_lazy_rld; friml2002_pin3;
     kleinevehn2010_pin3; band2012_tipping
-  citation_verified: all
+  citation_verified: yes (abstracts)
   also_in: []
   provenance_words:
   - quoted or closely tracked from a verified abstract
@@ -696,7 +696,7 @@ paths:
   notes: null
   evidence_species: Arabidopsis thaliana
   key_citation: chinnusamy2003_ice1; stockinger1997_cbf1
-  citation_verified: all
+  citation_verified: yes (abstracts)
   also_in: []
   provenance_words:
   - quoted or closely tracked from a verified abstract
@@ -722,7 +722,7 @@ paths:
   notes: null
   evidence_species: Arabidopsis thaliana
   key_citation: sung2004_vin3; michaels1999_flc
-  citation_verified: all
+  citation_verified: yes (abstracts)
   also_in: []
   provenance_words:
   - quoted or closely tracked from a verified abstract
@@ -751,7 +751,7 @@ paths:
   notes: null
   evidence_species: Arabidopsis thaliana
   key_citation: jung2020_elf3; nusinow2011_ec
-  citation_verified: all
+  citation_verified: yes (abstracts)
   also_in: []
   provenance_words:
   - quoted or closely tracked from a verified abstract
@@ -777,7 +777,7 @@ paths:
   notes: 'B2: single study (Daniel, 2026-11-18). Transducer is an RNA, not a protein; similar hairpins in WRKY22 and HSFA2'
   evidence_species: Arabidopsis thaliana
   key_citation: chung2020_pif7_rna
-  citation_verified: all
+  citation_verified: yes (abstracts)
   also_in: []
   provenance_words:
   - quoted or closely tracked from a verified abstract
@@ -802,7 +802,7 @@ paths:
   notes: 'open question for later literature: whether H2A.Z is the sensor or acts downstream'
   evidence_species: Arabidopsis thaliana
   key_citation: kumar2010_h2az
-  citation_verified: all
+  citation_verified: yes (abstracts)
   also_in: []
   provenance_words:
   - quoted or closely tracked from a verified abstract
@@ -827,7 +827,7 @@ paths:
   notes: 'sensors upstream of PIF4 in this sweep: PL02 (phyB), PH01 (ELF3), PH02 (PIF7 RNA)'
   evidence_species: Arabidopsis thaliana
   key_citation: koini2009_pif4
-  citation_verified: all
+  citation_verified: yes (abstracts)
   also_in: []
   provenance_words:
   - quoted or closely tracked from a verified abstract
@@ -852,7 +852,7 @@ paths:
   notes: patch-clamp evidence in moss (Physcomitrella); Arabidopsis cngc2 is hyper-thermosensitive
   evidence_species: Arabidopsis thaliana
   key_citation: finka2012_cngc
-  citation_verified: all
+  citation_verified: yes (abstracts)
   also_in: []
   provenance_words:
   - quoted or closely tracked from a verified abstract
@@ -878,7 +878,7 @@ paths:
   notes: the transducer perceives ABA, not water itself; the primary water-deficit sensor is a gap (no verified source yet)
   evidence_species: Arabidopsis thaliana
   key_citation: ma2009_pyl; park2009_pyr; geiger2009_slac1
-  citation_verified: all
+  citation_verified: yes (abstracts)
   also_in: []
   provenance_words:
   - quoted or closely tracked from a verified abstract
@@ -905,7 +905,7 @@ paths:
   notes: 'authors: the CLE25–BAM module ''probably functions'' as one long-distance signal'
   evidence_species: Arabidopsis thaliana
   key_citation: takahashi2018_cle25
-  citation_verified: all
+  citation_verified: yes (abstracts)
   also_in: []
   provenance_words:
   - quoted or closely tracked from a verified abstract
@@ -930,7 +930,7 @@ paths:
   notes: null
   evidence_species: Arabidopsis thaliana
   key_citation: bao2014_hydropatterning
-  citation_verified: all
+  citation_verified: yes (abstracts)
   also_in: []
   provenance_words:
   - quoted or closely tracked from a verified abstract
@@ -956,7 +956,7 @@ paths:
   notes: null
   evidence_species: Arabidopsis thaliana
   key_citation: kobayashi2007_miz1; dietrich2017_hydrotropism
-  citation_verified: all
+  citation_verified: yes (abstracts)
   also_in: []
   provenance_words:
   - quoted or closely tracked from a verified abstract
@@ -985,7 +985,7 @@ paths:
   notes: null
   evidence_species: Arabidopsis thaliana
   key_citation: gibbs2011_nend; licausi2011_nend; weits2014_pco; hartman2019_ethylene_no
-  citation_verified: all
+  citation_verified: yes (abstracts)
   also_in: []
   provenance_words:
   - quoted or closely tracked from a verified abstract
@@ -1015,7 +1015,7 @@ paths:
   notes: null
   evidence_species: Arabidopsis thaliana
   key_citation: ho2009_chl1; liu2017_cpk_nlp
-  citation_verified: all
+  citation_verified: yes (abstracts)
   also_in: []
   provenance_words:
   - quoted or closely tracked from a verified abstract
@@ -1041,7 +1041,7 @@ paths:
   notes: null
   evidence_species: Arabidopsis thaliana
   key_citation: krouk2010_nrt11_auxin
-  citation_verified: all
+  citation_verified: yes (abstracts)
   also_in: []
   provenance_words:
   - quoted or closely tracked from a verified abstract
@@ -1066,7 +1066,7 @@ paths:
   notes: the shoot-to-root return signal is not in the abstract (open item)
   evidence_species: Arabidopsis thaliana
   key_citation: tabata2014_cep
-  citation_verified: all
+  citation_verified: yes (abstracts)
   also_in: []
   provenance_words:
   - quoted or closely tracked from a verified abstract
@@ -1091,7 +1091,7 @@ paths:
   notes: null
   evidence_species: Arabidopsis thaliana
   key_citation: wild2016_spx; puga2014_spx1
-  citation_verified: all
+  citation_verified: yes (abstracts)
   also_in: []
   provenance_words:
   - quoted or closely tracked from a verified abstract
@@ -1117,7 +1117,7 @@ paths:
   notes: null
   evidence_species: Arabidopsis thaliana
   key_citation: svistoonoff2007_lpr1
-  citation_verified: all
+  citation_verified: yes (abstracts)
   also_in: []
   provenance_words:
   - quoted or closely tracked from a verified abstract
@@ -1142,7 +1142,7 @@ paths:
   notes: these abstracts do not link BTS/PYEL to FIT directly; shown as separate stages (open item)
   evidence_species: Arabidopsis thaliana
   key_citation: selote2015_bts; colangelo2004_fit
-  citation_verified: all
+  citation_verified: yes (abstracts)
   also_in: []
   provenance_words:
   - quoted or closely tracked from a verified abstract
@@ -1170,7 +1170,7 @@ paths:
   notes: null
   evidence_species: Arabidopsis thaliana
   key_citation: chang1993_etr1; schaller1995_etr1_binding; ju2012_ctr1_ein2; qiao2012_ein2; chao1997_ein3
-  citation_verified: all
+  citation_verified: yes (abstracts)
   also_in: []
   provenance_words:
   - quoted or closely tracked from a verified abstract
@@ -1202,7 +1202,7 @@ paths:
   notes: null
   evidence_species: Arabidopsis thaliana
   key_citation: flematti2004_karrikin; nelson2011_max2; waters2012_kai2_d14; guo2013_kai2
-  citation_verified: all
+  citation_verified: yes (abstracts)
   also_in: []
   provenance_words:
   - quoted or closely tracked from a verified abstract
@@ -1233,7 +1233,7 @@ paths:
     but are not shown to be the sensor'
   evidence_species: Arabidopsis thaliana
   key_citation: hu2010_ca_co2; hashimoto2006_ht1; horak2016_ht1_mpk
-  citation_verified: all
+  citation_verified: yes (abstracts)
   also_in: []
   provenance_words:
   - quoted or closely tracked from a verified abstract
@@ -1262,7 +1262,7 @@ paths:
   notes: null
   evidence_species: Arabidopsis thaliana
   key_citation: engineer2014_epf2; gray2000_hic
-  citation_verified: all
+  citation_verified: yes (abstracts)
   also_in: []
   provenance_words:
   - quoted or closely tracked from a verified abstract
@@ -1291,7 +1291,7 @@ paths:
     does not nodulate (K, unverified here). Structures: Medicago SYMRK/DMI1/CNGC15a/DMI3; Lotus NFR5 (unreviewed UniProt record)'
   evidence_species: Lotus japonicus; Medicago truncatula; Medicago sativa (alfalfa); pea — NOT Arabidopsis
   key_citation: madsen2003_nfr5; radutoiu2003_nfr; stracke2002_symrk; ehrhardt1996_ca_spiking; charpentier2016_cngc15; levy2004_ccamk
-  citation_verified: all
+  citation_verified: yes (abstracts)
   also_in: []
   provenance_words:
   - quoted or closely tracked from a verified abstract
@@ -1325,7 +1325,7 @@ paths:
   evidence_species: Medicago truncatula; Lotus japonicus (strigolactone); fungi Glomus intraradices, Gigaspora margarita —
     NOT Arabidopsis
   key_citation: maillet2011_myc_lco; akiyama2005_strigolactone; stracke2002_symrk; levy2004_ccamk; delaux2014_phylogenomics
-  citation_verified: all
+  citation_verified: yes (abstracts)
   also_in: []
   provenance_words:
   - quoted or closely tracked from a verified abstract
@@ -1357,7 +1357,7 @@ paths:
     (nasrallah2002, A)
   evidence_species: Brassica rapa; Brassica; Arabidopsis lyrata genes in A. thaliana
   key_citation: takasaki2000_srk; schopfer1999_scr; kachroo2001_srk_scr; nasrallah2002_si_arabidopsis
-  citation_verified: all
+  citation_verified: yes (abstracts)
   also_in: []
   provenance_words:
   - quoted or closely tracked from a verified abstract
@@ -1386,7 +1386,7 @@ paths:
   notes: null
   evidence_species: Arabidopsis thaliana
   key_citation: takeuchi2016_prk6; wang2016_mdis1
-  citation_verified: all
+  citation_verified: yes (abstracts)
   also_in: []
   provenance_words:
   - quoted or closely tracked from a verified abstract
@@ -1413,7 +1413,7 @@ paths:
   notes: null
   evidence_species: Arabidopsis thaliana
   key_citation: somers1998_clock_photoreceptors; kim2007_ztl_gi; alabadi2001_toc1
-  citation_verified: all
+  citation_verified: yes (abstracts)
   also_in: []
   provenance_words:
   - quoted or closely tracked from a verified abstract
@@ -1440,7 +1440,7 @@ paths:
   notes: null
   evidence_species: Arabidopsis thaliana
   key_citation: haydon2013_sugar_clock
-  citation_verified: all
+  citation_verified: yes (abstracts)
   also_in: []
   provenance_words:
   - quoted or closely tracked from a verified abstract
@@ -1465,7 +1465,7 @@ paths:
   notes: null
   evidence_species: Arabidopsis thaliana
   key_citation: sawa2007_fkf1_gi
-  citation_verified: all
+  citation_verified: yes (abstracts)
   also_in: []
   provenance_words:
   - quoted or closely tracked from a verified abstract
@@ -1490,7 +1490,7 @@ paths:
   notes: null
   evidence_species: Arabidopsis thaliana
   key_citation: appel2014_vibration
-  citation_verified: all
+  citation_verified: yes (abstracts)
   also_in: []
   provenance_words:
   - quoted or closely tracked from a verified abstract
@@ -1516,7 +1516,7 @@ paths:
   notes: null
   evidence_species: Oenothera drummondii — NOT Arabidopsis
   key_citation: veits2019_pollinator_sound
-  citation_verified: all
+  citation_verified: yes (abstracts)
   also_in: []
   provenance_words:
   - quoted or closely tracked from a verified abstract
@@ -1542,7 +1542,7 @@ paths:
   notes: null
   evidence_species: Pisum sativum (pea) — NOT Arabidopsis
   key_citation: gagliano2017_roots_sound
-  citation_verified: all
+  citation_verified: yes (abstracts)
   also_in: []
   provenance_words:
   - quoted or closely tracked from a verified abstract
@@ -1568,7 +1568,7 @@ paths:
   notes: null
   evidence_species: Arabidopsis thaliana; Cakile edentula
   key_citation: biedrzycki2010_kin_exudates; dudley2007_kin
-  citation_verified: all
+  citation_verified: yes (abstracts)
   also_in: []
   provenance_words:
   - quoted or closely tracked from a verified abstract
@@ -1595,7 +1595,7 @@ paths:
   notes: null
   evidence_species: Arabidopsis thaliana
   key_citation: crepy2015_kin_photoreceptors
-  citation_verified: all
+  citation_verified: yes (abstracts)
   also_in: []
   provenance_words:
   - quoted or closely tracked from a verified abstract
@@ -1623,7 +1623,7 @@ paths:
   notes: null
   evidence_species: Arabidopsis thaliana
   key_citation: ahmad2007_magnetic_cry; harris2009_magnetic_cry
-  citation_verified: all
+  citation_verified: yes (abstracts)
   also_in: []
   provenance_words:
   - quoted or closely tracked from a verified abstract
@@ -1651,7 +1651,7 @@ paths:
   notes: null
   evidence_species: Pisum sativum (pea) — NOT Arabidopsis
   key_citation: gagliano2016_learning; markel2020_learning_replication
-  citation_verified: all
+  citation_verified: yes (abstracts)
   also_in: []
   provenance_words:
   - quoted or closely tracked from a verified abstract
@@ -1680,7 +1680,7 @@ paths:
   notes: null
   evidence_species: Arabidopsis thaliana
   key_citation: lorrain2008_shade_pif; tao2008_taa1_shade; casal2013_shade_review
-  citation_verified: all
+  citation_verified: yes (abstracts)
   also_in: []
   provenance_words:
   - quoted or closely tracked from a verified abstract
@@ -1710,7 +1710,7 @@ paths:
   notes: null
   evidence_species: Arabidopsis thaliana
   key_citation: mackey2002_rin4; axtell2003_rps2; wang2019_resistosome; bi2021_zar1_channel; jones2006_immune
-  citation_verified: all
+  citation_verified: yes (abstracts)
   also_in: []
   provenance_words:
   - quoted or closely tracked from a verified abstract
@@ -1743,7 +1743,7 @@ paths:
   notes: null
   evidence_species: Arabidopsis thaliana
   key_citation: wildermuth2001_ics1; wu2012_npr1; fu2012_npr34; ding2018_npr; hartmann2018_nhp
-  citation_verified: all
+  citation_verified: yes (abstracts)
   also_in: []
   provenance_words:
   - quoted or closely tracked from a verified abstract
@@ -1774,7 +1774,7 @@ paths:
     the SA pathway — different read-outs, shown as reported
   evidence_species: Arabidopsis thaliana
   key_citation: little2007_eggs; gouhier2013_eggs_pti; stahl2020_egg_pc; gouhier2019_lecrk18
-  citation_verified: all
+  citation_verified: yes (abstracts)
   also_in: []
   provenance_words:
   - quoted or closely tracked from a verified abstract
@@ -1803,7 +1803,7 @@ paths:
   notes: 'B2: single study for the GIPC sensor (as PH02)'
   evidence_species: Arabidopsis thaliana
   key_citation: jiang2019_gipc_salt; qiu2002_sos
-  citation_verified: all
+  citation_verified: yes (abstracts)
   also_in: []
   provenance_words:
   - quoted or closely tracked from a verified abstract
@@ -1829,7 +1829,7 @@ paths:
   notes: null
   evidence_species: Arabidopsis thaliana
   key_citation: feng2018_fer_salt
-  citation_verified: all
+  citation_verified: yes (abstracts)
   also_in:
   - Mechanical
   provenance_words:

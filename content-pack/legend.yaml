@@ -14,7 +14,8 @@ legend:
 - item: ⚑
   meaning: dual membership or a proposed (not established) mechanism, as in PPE
 - item: citation_verified
-  meaning: 'all / some / none: computed from references.json (OpenAlex title ratio ≥ 0.85, PPE app-methods §1.2)'
+  meaning: 'yes (abstracts) / partly (abstracts) / no: every, some or none of the row''s key citations verified at abstract
+    level'
 - item: evidence_species
   meaning: Arabidopsis thaliana unless stated. Rows from other species (senses Arabidopsis lacks, e.g. nodulation) say so,
     'NOT Arabidopsis' (Daniel, 2026-11-18)
