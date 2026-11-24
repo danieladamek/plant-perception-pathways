@@ -12,6 +12,7 @@ function run(mutate: (dir: string) => void) {
   const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'ppp-pack-'));
   for (const f of fs.readdirSync(PACK)) {
     if (f === 'structures') fs.symlinkSync(path.join(PACK, f), path.join(dir, f));
+    else if (f === 'concepts') fs.cpSync(path.join(PACK, f), path.join(dir, f), { recursive: true }); // pack 0.2: the 101s
     else if (fs.statSync(path.join(PACK, f)).isFile()) fs.copyFileSync(path.join(PACK, f), path.join(dir, f));
   }
   mutate(dir);
@@ -48,6 +49,13 @@ const CASES: [string, (d: string) => void, RegExp][] = [
   ['a stage colour that is not a CSS variable', (d) => edit(d, 'manifest.yaml', 'colour: --stage-stimulus', 'colour: red'), /colour must name a CSS variable/],
   ['a chromophore hidden by default', (d) => edit(d, 'small-molecules.yaml', /(classes:\n  - chromophore\n[\s\S]*?hidden_by_default: )false/, '$1true'), /chromophore is hidden by default/],
   ['an unverified reference cited by a path', (d) => edit(d, 'references.yaml', 'verified: true', 'verified: false'), /is not verified \(it backs nothing/],
+  // pack 0.2 (K40): glossary and 101 rules
+  ['a verbatim glossary definition with no source record', (d) => edit(d, 'glossary.yaml', /(- id: abscisic-acid[\s\S]*?basis: ontology, verbatim\n)  definition_source:\n(    .*\n)+/, '$1'), /glossary\/abscisic-acid — basis is ontology, verbatim but definition_source is missing/],
+  ['a glossary entry naming a 101 the pack lacks', (d) => edit(d, 'glossary.yaml', 'concept: stimulus-to-response', 'concept: no-such-101'), /concept no-such-101 is not a 101 in concepts\//],
+  ['a 101 prerequisite the pack lacks', (d) => edit(d, 'concepts/stimulus-to-response.md', 'prerequisites: [how-a-path-is-curated]', 'prerequisites: [no-such-101]'), /prerequisite no-such-101 is not a 101 in concepts\//],
+  ['an uncited science paragraph in a 101', (d) => edit(d, 'concepts/stimulus-to-response.md', /\s\[6[67]\]/g, ''), /concepts\/stimulus-to-response — "[^"]*": a science paragraph with no \[n\] and no framing marker/],
+  ['a 101 citing a reference that does not exist', (d) => edit(d, 'concepts/stimulus-to-response.md', '[66]', '[9999]'), /reference \[9999\] not in references\.yaml/],
+  ['an upkeep class naming a file that is not in the pack', (d) => edit(d, 'upkeep.yaml', 'files: [references.yaml]', 'files: [nope.yaml]'), /upkeep\/reference — file nope\.yaml not found/],
   ['a safety profile that differs from the manifest', (d) => edit(d, 'safety.yaml', 'profile: general', 'profile: health'), /profile health differs from manifest general/],
 ];
 describe('one error per rule, with the right message', () => {

@@ -1,4 +1,4 @@
-import { test, expect, coreGap, treeOpen, viewerReady } from './_shared';
+import { test, expect, treeOpen, viewerReady } from './_shared';
 import { go, ORIGIN, PACK, recordRequests, seen } from '../helpers';
 const strings = PACK('ui-strings.yaml');
 
@@ -45,10 +45,9 @@ test('w3 must_not — no blank viewer box when WebGL is unavailable', async ({ p
   await expect(page.getByTestId('structure-record')).toContainText('4D9S');
 });
 
-test('w3 core gap — the sheet shows the AGI locus and the featured coverage ("whole protein")', async ({ page }) => {
-  coreGap('perception-core: a UniProt identity block for plant records (accession, protein name, gene names, AGI locus = ordered_locus_names, organism, reviewed) and the featured `coverage` beside the experimental/predicted badge (app-requirements §2.4); 0.1.0 shows an HGNC block or "TODO(author) no identity record"');
+test('w3 — the sheet shows the AGI locus and the featured coverage ("whole protein")', async ({ page }) => {
   await seen(page);
   await go(page, '/molecules/UVR8');
-  await expect(page.locator('main')).toContainText('At5g63860', { timeout: 3000 });
-  await expect(page.locator('main')).toContainText(strings.badges.whole, { timeout: 3000 });
+  await expect(page.locator('main')).toContainText('At5g63860');
+  await expect(page.locator('main')).toContainText(strings.badges.whole);
 });

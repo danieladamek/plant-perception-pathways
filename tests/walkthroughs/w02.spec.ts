@@ -1,4 +1,4 @@
-import { test, expect, coreGap, lintClean, treeOpen } from './_shared';
+import { test, expect, lintClean, treeOpen } from './_shared';
 import { go, PACK, seen } from '../helpers';
 const strings = PACK('ui-strings.yaml');
 const pz06 = PACK('paths.yaml').paths.find((p: any) => p.path_id === 'PZ06');
@@ -43,11 +43,10 @@ test('w2 — look at a candidate sense and the About framing', async ({ page }) 
   await lintClean(page, 'contested-framing');
 });
 
-test('w2 core gap — the "candidate sense — not established" badge on PZ06', async ({ page }) => {
-  coreGap(`perception-core: draw the contested branch as a distinct group with the badge "${strings.badges.candidate_sense}" (app-requirements §2.7)`);
+test('w2 — the "candidate sense — not established" badge on PZ06', async ({ page }) => {
   await seen(page);
   await go(page, '/path/PZ06');
-  await expect(page.locator('main')).toContainText(strings.badges.candidate_sense, { timeout: 3000 });
+  await expect(page.locator('main')).toContainText(strings.badges.candidate_sense);
 });
 
 test('w2 — the About framing cites both positions and states that the app does not answer the question', async ({ page }) => {

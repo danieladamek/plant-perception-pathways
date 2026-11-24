@@ -48,14 +48,35 @@ describe('stage tokens: AA against the node label (--bx-ink) in light and dark',
   it('the six dark tokens are distinct', () => expect(new Set(tokens.map((t) => dark.match(new RegExp(`${t}: (#[0-9a-f]{6})`))![1])).size).toBe(6));
 });
 
+describe('branch tokens (core 0.3.0): --cat-1…16 and --br-fallback pass AA on both papers in light and dark (K40)', () => {
+  const css = fs.readFileSync(path.join(ROOT, 'src/index.css'), 'utf8');
+  const light = css.match(/\n:root \{\n  --bx-claim([\s\S]*?)\n\}/)![1];
+  const dark = css.match(/\n\.dark \{\n  --bx-claim([\s\S]*?)\n\}/)![1];
+  const paper = (mode: 'light' | 'dark', k: string) => css.match(new RegExp(`${mode === 'light' ? ':root' : '\\.dark'} \\{[\\s\\S]*?--bx-${k}: (#[0-9a-f]{6})`))![1];
+  const tokens = [...Array.from({ length: 16 }, (_, i) => `--cat-${i + 1}`), '--br-fallback'];
+  for (const [mode, b] of [['light', light], ['dark', dark]] as const) {
+    for (const t of tokens)
+      it(`${t} (${mode})`, () => {
+        const v = b.match(new RegExp(`${t}: (#[0-9a-f]{6})`))?.[1];
+        expect(v, `${t} defined in ${mode}`).toBeTruthy();
+        for (const bg of ['bg', 'bg-2']) expect(ratio(v!, paper(mode, bg)), `${t} on --bx-${bg}`).toBeGreaterThanOrEqual(4.5);
+      });
+    it(`the 16 categorical tokens are distinct (${mode})`, () => expect(new Set(tokens.slice(0, 16).map((t) => b.match(new RegExp(`${t}: (#[0-9a-f]{6})`))![1])).size).toBe(16));
+  }
+  it('the pack has 16 branches, one token each', () => {
+    const h = fs.readFileSync(path.join(ROOT, 'content-pack/hierarchy.yaml'), 'utf8');
+    expect(h.match(/^  - name: /gm)!.length).toBe(16);
+  });
+});
+
 describe('perception-core', () => {
-  it('is 0.2.0, the tagged version (local path, KICKOFF §8.1; K38)', () => {
-    expect(JSON.parse(fs.readFileSync(path.join(ROOT, 'node_modules/@actualizer/perception-core/package.json'), 'utf8')).version).toBe('0.2.0');
+  it('is 0.3.0, the tagged version (local path, KICKOFF §8.1; K40)', () => {
+    expect(JSON.parse(fs.readFileSync(path.join(ROOT, 'node_modules/@actualizer/perception-core/package.json'), 'utf8')).version).toBe('0.3.0');
     expect(JSON.parse(fs.readFileSync(path.join(ROOT, 'package.json'), 'utf8')).dependencies['@actualizer/perception-core']).toBe('file:../perception-pathways-explorer/packages/perception-core');
   });
-  it('the installed src/ is byte-identical to the tag perception-core-v0.2.0', () => {
+  it('the installed src/ is byte-identical to the tag perception-core-v0.3.0', () => {
     const PPE = path.resolve(ROOT, '../perception-pathways-explorer');
-    const TAG = 'perception-core-v0.2.0';
+    const TAG = 'perception-core-v0.3.0';
     const tree = execFileSync('git', ['-C', PPE, 'ls-tree', '-r', TAG, 'packages/perception-core/src'], { encoding: 'utf8' }).trim().split('\n');
     const installed = path.join(ROOT, 'node_modules/@actualizer/perception-core/src');
     const files = (fs.readdirSync(installed, { recursive: true }) as string[]).filter((f) => fs.statSync(path.join(installed, f)).isFile());

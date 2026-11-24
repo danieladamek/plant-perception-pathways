@@ -1,7 +1,7 @@
 /**
  * build-content.ts — validate the content pack, resolve every cross-reference, run the safety lints, and emit
- * src/data/*.json (the files @actualizer/perception-core reads), public/provenance.json, public/staleness.json and
- * public/structures/* (sha256-checked copies of the bundled coordinate files).
+ * src/data/*.json (the files @actualizer/perception-core reads), public/provenance.json, public/staleness.json,
+ * public/freshness.json, public/changes.json and public/structures/* (sha256-checked copies of the bundled coordinate files).
  *
  * Fails loudly (KICKOFF §1, §3): every problem is written to content-pack/BUILD-ERRORS.md and src/data/build-errors.json
  * (surfaced on #/methods); the rest is built. A pack string that trips a safety lint is withheld (rendered as an amber
@@ -20,6 +20,10 @@ import type { ZodTypeAny } from 'zod';
 import { PACK_SCHEMA } from './yaml-schema';
 import * as S from './pack-schemas';
 import { lintHits, type Lint } from './lint';
+import { glossaryUsedIn, type GlossEntry } from '@actualizer/perception-core/glossary-match';
+import { nextOf, orderConcepts, parseConceptBody, type Concept } from '@actualizer/perception-core/concepts-build';
+// not in the core's exports map; PPE's build imports it from the package source the same way
+import { collectFreshness, type UpkeepClass } from '../node_modules/@actualizer/perception-core/src/lib/freshness';
 
 const argv = process.argv.slice(2);
 const argOf = (k: string) => (argv.includes(k) ? argv[argv.indexOf(k) + 1] : undefined);
@@ -99,7 +103,7 @@ const smallF = parse('small-molecules.yaml', S.SmallMolecules, loadYaml('small-m
 const anatomyF = parse('anatomy.yaml', S.Anatomy, loadYaml('anatomy.yaml'));
 const contextNoteRaw = has('context-note.md') ? fs.readFileSync(path.join(PACK, 'context-note.md'), 'utf8') : (E('context-note.md', 'missing'), '');
 for (const f of ['app-requirements.md', 'app-methods.md']) if (!has(f)) E(f, 'a workbench needs app-requirements.md and app-methods.md');
-for (const f of ['glossary.yaml', 'concepts']) if (has(f)) W(f, 'present, but pack 0.1 has no glossary or primers and this app does not render them');
+const glossaryRaw = loadYaml('glossary.yaml', false);
 
 const paths = pathsF?.paths ?? [];
 const molecules = moleculesF?.molecules ?? [];
@@ -200,8 +204,8 @@ const hubsOut = (hubsF?.hubs ?? []).map((h) => {
   const m = molecules.find((x) => x.id === h.molecule);
   if (m && MOL_STAGE[0] && m.stage !== MOL_STAGE[0]) E(`hubs/${h.molecule}`, `shared hardware is on the ${MOL_STAGE[0]} stage; this molecule's stage is ${m.stage}`);
   if (m) for (const i of h.path_ids) if (!m.paths.includes(i)) E(`hubs/${h.molecule}`, `${i} is not in the molecule's paths`);
-  // the core reads n_paths and branches_spanned: both are restatements of the pack (a count of path_ids, their branches)
-  return { molecule: h.molecule, path_ids: h.path_ids, n_paths: h.path_ids.length, branches_spanned: [...new Set(h.path_ids.map((i) => pathById.get(i)?.perception_branch).filter(Boolean) as string[])] };
+  // perception-core 0.3.0 derives n_paths and branches_spanned from path_ids (lib/data/hubs.ts): the pack's record as is
+  return h;
 });
 
 // ───────────────────────── molecules, structures (sha256), interactions
@@ -338,7 +342,123 @@ for (const m of molecules) {
   for (const a of m.alphafold) ageCheck('structure', `${m.id} · ${a.entryId}`, day(a.retrieved_on));
 }
 for (const g of small) ageCheck('small-molecule', `${g.id} (PubChem)`, day(g.retrieved_on));
-for (const v of anatomyF?.values ?? []) for (const t of v.terms) if (t.id) ageCheck('anatomy', `${t.id} (${t.label})`, day(t.retrieved_on));
+// pack 0.2 folds Plant Ontology into the `ontology` class with the glossary's GO and ChEBI records
+for (const v of anatomyF?.values ?? []) for (const t of v.terms) if (t.id) ageCheck('ontology', `${t.id} (${t.label})`, day(t.retrieved_on));
+
+// ───────────────────────── upkeep → freshness (SUSTAIN 0.2.1, UI-34; pattern from PPE's build)
+// The build records dates only; age and staleness are computed in the reader's browser (perception-core freshness.ts).
+const upkeepClasses: UpkeepClass[] = (upkeep?.classes ?? []).map((c) => ({ ...c, as_of: day(c.as_of) }));
+for (const c of upkeepClasses) {
+  if (!c.files?.length) W(`upkeep/${c.id}`, 'names no files: Methods → Freshness cannot list its records');
+  for (const f of c.files ?? []) if (!has(f)) E(`upkeep/${c.id}`, `file ${f} not found`);
+}
+const WHOLE_FILE_ROUTE: Record<string, string> = { 'paths.yaml': '/evidence', 'hierarchy.yaml': '/tree', 'hubs.yaml': '/shared', 'legend.yaml': '/methods', 'structures.yaml': '/molecules' };
+const PART_LABEL: Record<string, string> = { uniprot: 'UniProt', pdb_entries: 'PDB entries', alphafold: 'AlphaFold DB' };
+const freshness = collectFreshness(upkeepClasses, (f) => (has(f) ? loadYaml(f, false) : undefined), (file, r, id, part) => {
+  if (!r) return { label: `${file} (whole file, as of)`, route: WHOLE_FILE_ROUTE[file] ?? null };
+  switch (file) {
+    case 'molecules.yaml': return { label: `${id} · ${PART_LABEL[part] ?? part}`, route: `/molecules/${encodeURIComponent(id!)}` };
+    case 'structures.yaml': return { label: `structure ${id}`, route: `/structures/${encodeURIComponent(id!)}` };
+    case 'small-molecules.yaml': return { label: `${r.pubchem?.Title ?? id} (PubChem)`, route: `/molecules/sm/${encodeURIComponent(id!)}` };
+    case 'references.yaml': return { label: `reference [${id}]`, route: `/references#ref-${id}` };
+    case 'glossary.yaml': return { label: `glossary: ${r.term ?? id}`, route: `/glossary#${id}` };
+    case 'anatomy.yaml': return { label: `anatomy: ${r.value} (${r.stage})`, route: r.paths?.[0] ? `/path/${r.paths[0]}` : null };
+  }
+  return undefined;
+});
+for (const e of freshness.records) if (!/^\d{4}-\d{2}-\d{2}$/.test(e.checked)) W(`upkeep/${e.class}`, `${e.label}: date '${e.checked}' is not YYYY-MM-DD`);
+
+// ───────────────────────── glossary (UI-32, app-methods §11): checks; "Used in" is computed with the core's own matcher
+const glossaryIn: GlossEntry[] = parse('glossary.yaml', S.Glossary, glossaryRaw === undefined ? [] : Array.isArray(glossaryRaw) ? glossaryRaw : glossaryRaw?.terms ?? []) ?? [];
+{
+  const seen = new Set<string>();
+  for (const g of glossaryIn) {
+    if (seen.has(g.id)) E(`glossary/${g.id}`, 'duplicate id');
+    seen.add(g.id);
+    if (g.basis === 'ontology, verbatim' && !g.definition_source) E(`glossary/${g.id}`, 'basis is ontology, verbatim but definition_source is missing');
+    if (g.basis === 'cited abstracts') {
+      const ns = [...cites(g.definition)];
+      if (!ns.length) E(`glossary/${g.id}`, 'cited abstracts definition has no [n] citation');
+      for (const n of ns) if (!REF.has(n)) E(`glossary/${g.id}`, `reference [${n}] not in references.yaml`);
+      else if (!isVerified(n)) E(`glossary/${g.id}`, `reference [${n}] is not verified: it cannot back a definition`);
+    }
+  }
+}
+
+// ───────────────────────── concepts (UI-33, app-methods §12): the 101s in concepts/*.md
+const conceptFiles = has('concepts') ? fs.readdirSync(path.join(PACK, 'concepts')).filter((f) => f.endsWith('.md')).sort() : [];
+const conceptsIn: Concept[] = [];
+for (const f of conceptFiles) {
+  const where = `concepts/${f}`;
+  const { frontmatter, sections } = parseConceptBody(fs.readFileSync(path.join(PACK, 'concepts', f), 'utf8'));
+  if (frontmatter == null) {
+    E(where, 'no frontmatter');
+    continue;
+  }
+  let fmRaw: unknown;
+  try {
+    fmRaw = yaml.load(frontmatter, { schema: PACK_SCHEMA });
+  } catch (e: any) {
+    E(where, `YAML error — ${e.message}`);
+    continue;
+  }
+  const fm = parse(where, S.ConceptFrontmatter, fmRaw ?? {});
+  if (!fm) continue;
+  if (fm.id !== f.replace(/\.md$/, '')) E(where, `id ${fm.id} must match the file name`);
+  if ((fm as any).self_check && !(manifest as any)?.concept_self_checks) W(where, 'self_check present but manifest.concept_self_checks is not true: not shown');
+  if (!sections.some((s) => s.blocks.length)) E(where, 'no body');
+  conceptsIn.push({ id: fm.id, title: fm.title, one_liner: fm.one_liner, why_here: fm.why_here, prerequisites: fm.prerequisites, terms: fm.terms, sections, next: [] });
+}
+const conceptIds = new Set(conceptsIn.map((c) => c.id));
+const glossIds = new Set(glossaryIn.map((g) => g.id));
+for (const c of conceptsIn) {
+  const where = `concepts/${c.id}`;
+  for (const p of c.prerequisites) if (!conceptIds.has(p)) E(where, `prerequisite ${p} is not a 101 in concepts/`);
+  for (const t of c.terms) if (!glossIds.has(t)) E(where, `term ${t} is not a glossary id`);
+  for (const s of c.sections)
+    for (const b of s.blocks) {
+      for (const n of b.cites) {
+        if (!REF.has(n)) E(where, `reference [${n}] not in references.yaml`);
+        else if (!isVerified(n)) E(where, `reference [${n}] is not verified: it cannot back a 101`);
+      }
+      // science prose: every paragraph is cited (app-methods §12.1); framing paragraphs restate the app's own rules
+      if (!b.framing && !b.cites.length) E(where, `"${s.heading ?? ''}": a science paragraph with no [n] and no framing marker`);
+    }
+}
+for (const g of glossaryIn) if (g.concept && !conceptIds.has(g.concept)) E(`glossary/${g.id}`, `concept ${g.concept} is not a 101 in concepts/`);
+const conceptsOut: Concept[] = orderConcepts(conceptsIn).map((c, _i, all) => ({ ...c, next: nextOf(c.id, all) }));
+
+// "Used in": this pack's stage kinds and path fields; molecules by their UniProt names and function text
+const PATH_TEXTS = ['sense_leaf', 'perception_branch', 'stimulus_origin', 'transducer_tier', 'row_status', 'evidence_species', 'notes'];
+const strOf = (v: unknown) => (typeof v === 'string' ? v : Array.isArray(v) ? v.filter((x) => typeof x === 'string').join('; ') : '');
+const usedIn = glossaryUsedIn(glossaryIn, {
+  paths: paths.map((p: any) => ({
+    id: p.path_id,
+    stages: STAGE_FIELDS.map((k) => [k, strOf(p[k])] as [string, string]).filter(([, v]) => v),
+    texts: PATH_TEXTS.map((k) => strOf(p[k])).filter(Boolean),
+  })),
+  molecules: molecules.map((m: any) => ({
+    id: m.id,
+    texts: [m.as_written, m.uniprot?.protein_name, ...((m.uniprot?.function ?? []) as { text: string }[]).map((f) => f.text)].map(strOf).filter(Boolean),
+  })),
+  pages: [
+    ...interactions.map((x: any) => ({ label: `Interaction: ${x.title}`, href: `/interactions/${x.id}`, texts: [strOf(x.role)] })),
+    ...(contextNoteRaw.trim() ? [{ label: 'About: context note', href: '/about#context-note', texts: [contextNoteRaw.replace(/^---\n[\s\S]*?\n---\n/, '').replace(/<!--[\s\S]*?-->/g, '')] }] : []),
+  ],
+});
+// A path with a value in a field uses the glossary term named after that field (signal_route → "Signal route"), as in PPE
+{
+  const byTerm = new Map(glossaryIn.map((g) => [g.term.toLowerCase(), g.id]));
+  const order = new Map(paths.map((p, i) => [p.path_id, i]));
+  for (const k of new Set([...STAGE_FIELDS, ...PATH_TEXTS])) {
+    const id = byTerm.get(k.replace(/_/g, ' '));
+    if (!id) continue;
+    const u = usedIn[id];
+    for (const p of paths as any[]) if (strOf(p[k]) && !u.paths.includes(p.path_id)) u.paths.push(p.path_id);
+    u.paths.sort((a, b) => order.get(a)! - order.get(b)!);
+  }
+}
+const glossaryOut = glossaryIn.map((g) => ({ ...g, definition_source: g.definition_source ? { ...g.definition_source, retrieved_on: day(g.definition_source.retrieved_on) } : undefined, used_in: usedIn[g.id] }));
 
 // ───────────────────────── safety lints over every rendered pack string (SAFETY H1 mechanism, app_lints)
 const lints: Lint[] = safety?.app_lints ?? [];
@@ -394,12 +514,12 @@ let contextNote = contextNoteRaw.replace(/^---\n[\s\S]*?\n---\n/, '').replace(/<
 }
 
 // ───────────────────────── strings: pack ui-strings, plus the core's key names where they differ (labels only)
+// KEPT (K40): perception-core 0.3.0 still reads badges["<model label>_only"] (the 🌱 badge's title and screen-reader text,
+// components/ui/badges.tsx) and badges["non_<reference label>"] (the viewer's organism chip, Viewer.tsx); this pack names
+// them other_species and non_reference. Without these two keys w7 turns red ("not Arabidopsis" is lost from the badge).
 const badges = { ...(uiStrings?.badges ?? {}) } as Record<string, string>;
-if (manifest && badges.other_species) {
-  // perception-core 0.1.0 reads badges["<model label>_only"] (title and screen-reader text of the 🌱 badge)
-  badges[`${manifest.evidence_species.model.label}_only`] = badges.other_species.replace(/^\{species\}\s*/, '').replace(/\s*🌱\s*$/, '');
-}
-if (manifest && badges.non_reference) badges[`non_${manifest.reference_organism.label}`] = badges.non_reference; // core: badges["non_<reference label>"]
+if (manifest && badges.other_species) badges[`${manifest.evidence_species.model.label}_only`] = badges.other_species.replace(/^\{species\}\s*/, '').replace(/\s*🌱\s*$/, '');
+if (manifest && badges.non_reference) badges[`non_${manifest.reference_organism.label}`] = badges.non_reference;
 const strings = {
   ...uiStrings,
   badges,
@@ -408,8 +528,6 @@ const strings = {
 };
 
 // ───────────────────────── emit
-/** lowercase a pattern's literal letters, never an escape (\\b, \\B, \\S … keep their meaning) */
-export const lowerPattern = (re: string) => re.replace(/(\\.)|([A-Z])/g, (_, esc, ch) => esc ?? ch.toLowerCase());
 const refsOut = references.map((r) => ({
   n: r.n, key: r.key, citation: r.citation, year: r.year, tier: r.tier, doi: r.doi ?? null, url: r.url ?? null, isbn: r.isbn ?? null, pmid: r.pmid ?? null,
   verified: r.verified, verified_how: r.verified_how ?? null, verified_via: r.verified_via ?? null, abstract: r.abstract ?? null, abstract_source: r.abstract_source ?? null,
@@ -422,16 +540,9 @@ const files: Record<string, unknown> = {
   'manifest.json': manifest
     ? {
         ...manifest,
-        // perception-core 0.1.0's speciesClass lowercases the evidence_species value but not the pack's pattern, so a
-        // capitalised pattern ("\\bArabidopsis thaliana\\b") never matches. The emitted pattern is the pack's with its
-        // literal letters lowercased (escapes such as \\b untouched): the same case-insensitive match the core intends.
-        evidence_species: {
-          reference: { ...manifest.evidence_species.reference, match: lowerPattern(manifest.evidence_species.reference.match) },
-          model: { ...manifest.evidence_species.model, match: lowerPattern(manifest.evidence_species.model.match) },
-        },
+        // perception-core 0.3.0 matches evidence_species patterns case-insensitively and About reads sources.curation;
+        // branch colours come from the theme's --cat-1…16 (src/index.css), so no palette is emitted from the pack
         palette: { branches: {} },
-        // perception-core 0.1.0's About reads sources.curation_sheet (PPE's Google Sheet); this pack is curated in files
-        sources: { ...manifest.sources, curation_sheet: { revision: `none — rows curated in ${manifest.sources.curation.file} (${manifest.sources.curation.decisions})`, exported: manifest.sources.curation.curated } },
       }
     : null,
   'audience.json': audience ?? null,
@@ -463,8 +574,9 @@ const files: Record<string, unknown> = {
   // perception-core 0.2.0 reads the ledger oldest first (Methods → Recent changes shows its last ten, newest first);
   // the pack writes it newest first, so it is reversed here. `by` and `source` are not rendered.
   'changes.json': [...changes].reverse().map((c) => ({ date: day(c.date), version: c.version, what: c.what, ...(c.why ? { why: c.why } : {}), records: c.records })),
-  'glossary.json': [],
-  'concepts.json': [],
+  'glossary.json': glossaryOut,
+  'concepts.json': conceptsOut,
+  'freshness.json': freshness,
   'todo.json': todo.map((t) => ({ id: t.id, what: t.what, where: t.where ?? '' })), // owner is not rendered
   'upkeep.json': upkeep ?? null,
   'scope.json': scope,
@@ -482,8 +594,13 @@ const VERBATIM: [string, RegExp][] = [
   ['small-molecules.json', /\.(pubchem\.\w+|forms\[\d+\]\.title)$/],
   ['anatomy.json', /\.terms\[\d+\]\.(label|definition|synonyms\[\d+\]|parents\[\d+\]\.label)$/],
 ];
-const NOT_RENDERED = new Set(['scenarios.json', 'scope.json', 'planner.json', 'audience.json', 'thumbs.json', 'concepts.json', 'glossary.json']);
-const isVerbatim = (f: string, p: string) => VERBATIM.some(([vf, re]) => vf === f && re.test(p));
+// freshness.json holds dates and labels built from record ids (no pack prose); upkeep.json's `how` is shown on Methods
+const NOT_RENDERED = new Set(['scenarios.json', 'scope.json', 'planner.json', 'audience.json', 'thumbs.json', 'freshness.json']);
+// a glossary definition with basis 'ontology, verbatim' is quoted from its record (UI-31, app-methods §11.1), as is its label
+const GLOSS_VERBATIM = new Set(glossaryIn.filter((g) => g.basis === 'ontology, verbatim').map((g) => g.id));
+const isVerbatim = (f: string, p: string) =>
+  VERBATIM.some(([vf, re]) => vf === f && re.test(p)) ||
+  (f === 'glossary.json' && (() => { const m = p.match(/^\[([a-z0-9-]+)\]\.(definition|definition_source\.label)$/); return !!m && GLOSS_VERBATIM.has(m[1]); })());
 function screenAll(o: unknown, f: string, p: string): unknown {
   if (typeof o === 'string') return isVerbatim(f, p) ? o : screen(`${f}:${p}`, o);
   // top-level records are named by their id (paths.json:PD01.notes), not their index
@@ -561,8 +678,9 @@ const provenance = {
     by_source: count(references, (r) => r.verified_via ?? 'unknown'),
   },
   todo: todo.length,
-  glossary_terms: 0,
-  concepts: 0,
+  glossary_terms: glossaryOut.length,
+  glossary_by_basis: count(glossaryOut, (g) => g.basis),
+  concepts: conceptsOut.length,
   heuristics: [
     { id: 'n-paths', label: uiStrings?.labels?.n_paths ?? null, where: 'shared hardware, molecule sheets, navigator node size' },
     { id: 'computed-contacts', label: uiStrings?.labels?.computed_contacts ?? null, where: 'structure viewer (contacts around a selection)' },
@@ -590,6 +708,7 @@ if (!DRY) {
   writeIf(path.join(PUB, 'staleness.json'), JSON.stringify(staleness, null, 1) + '\n');
   // the full ledger, linked from Methods → Recent changes (screened like every rendered file)
   writeIf(path.join(PUB, 'changes.json'), JSON.stringify(files['changes.json'], null, 1) + '\n');
+  writeIf(path.join(PUB, 'freshness.json'), JSON.stringify(freshness, null, 1) + '\n');
   for (const c of copyPlan) {
     if (fs.existsSync(c.dest) && sha(c.dest) === sha(c.src)) continue;
     fs.mkdirSync(path.dirname(c.dest), { recursive: true });
@@ -625,6 +744,8 @@ if (!DRY) {
     ['shared hardware', hubsOut.length],
     ['small molecules (hidden / not found)', `${small.length} (${provenance.counts.small_molecules_hidden_by_default} / ${provenance.counts.small_molecules_not_found})`],
     ['anatomy values / PO terms', `${provenance.counts.anatomy_values} / ${provenance.counts.anatomy_terms}`],
+    ['glossary terms / 101s', `${glossaryOut.length} / ${conceptsOut.length}`],
+    ['freshness records (classes)', `${freshness.records.length} (${freshness.classes.length})`],
     ['gaps', provenance.counts.gaps_total], ['todo', todo.length], ['stale facts', stale.length], ['withheld strings', withheld.length],
     ['errors / warnings', `${errorsN} / ${warnsN}`], ['files rewritten', written],
   ];

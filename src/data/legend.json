@@ -6,7 +6,7 @@
   },
   {
    "item": "Stage columns",
-   "meaning": "stimulus → transducer → cascade → signal_route → integration → response (pack-supplied stage kinds; A5.2)."
+   "meaning": "stimulus → receptor / transducer → cascade → signal route → integration → response."
   },
   {
    "item": "provenance codes",
@@ -22,7 +22,7 @@
   },
   {
    "item": "⚑",
-   "meaning": "dual membership or a proposed (not established) mechanism, as in PPE"
+   "meaning": "a contested or partly supported mechanism, or dual membership (a path listed under two branches)"
   },
   {
    "item": "citation_verified",
@@ -30,7 +30,7 @@
   },
   {
    "item": "evidence_species",
-   "meaning": "Arabidopsis thaliana unless stated. Rows from other species (senses Arabidopsis lacks, e.g. nodulation) say so, 'NOT Arabidopsis' (Daniel, 2026-11-18)"
+   "meaning": "Arabidopsis thaliana unless stated. Senses Arabidopsis lacks, such as nodulation, come from other species and carry the 🌱 other-species badge."
   },
   {
    "item": "empty stage",

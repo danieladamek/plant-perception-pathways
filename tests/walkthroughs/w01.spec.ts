@@ -1,4 +1,4 @@
-import { test, expect, coreGap, lintClean } from './_shared';
+import { test, expect, lintClean } from './_shared';
 import { go, PACK, recordRequests, seen } from '../helpers';
 const strings = PACK('ui-strings.yaml');
 const pw01 = PACK('paths.yaml').paths.find((p: any) => p.path_id === 'PW01');
@@ -32,11 +32,10 @@ test('w1 — before citing the wound-signalling path, check every step and flag'
   await lintClean(page, 'jargon', 'centrality');
 });
 
-test('w1 core gap — the hypothesis is badged "proposed", not only "contested"', async ({ page }) => {
-  coreGap('perception-core: render a path hypothesis_group containing "proposed ⚑" with the proposed badge (ui-strings badges.proposed) on the path page');
+test('w1 — the hypothesis is badged "proposed", not only "contested"', async ({ page }) => {
   await seen(page);
   await go(page, '/path/PW01');
-  await expect(page.locator('main .pp-proposed').first()).toBeVisible({ timeout: 3000 });
+  await expect(page.locator('main .pp-proposed').first()).toBeVisible();
 });
 
 test('w1 — citation status "yes (abstracts)" (every key citation verified) is shown as verified', async ({ page }) => {

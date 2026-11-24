@@ -9,29 +9,19 @@
    "core_gaps": []
   },
   "smoke": {
-   "passed": 92,
+   "passed": 94,
    "failed": 0,
    "expected_failures": 0,
    "skipped": 0,
    "core_gaps": []
   },
   "walkthroughs": {
-   "passed": 20,
+   "passed": 32,
    "failed": 0,
-   "expected_failures": 11,
+   "expected_failures": 1,
    "skipped": 0,
    "core_gaps": [
-    "w1 core gap — the hypothesis is badged \"proposed\", not only \"contested\": perception-core: render a path hypothesis_group containing \"proposed ⚑\" with the proposed badge (ui-strings badges.proposed) on the path page",
-    "w2 core gap — the \"candidate sense — not established\" badge on PZ06: perception-core: draw the contested branch as a distinct group with the badge \"candidate sense — not established\" (app-requirements §2.7)",
-    "w3 core gap — the sheet shows the AGI locus and the featured coverage (\"whole protein\"): perception-core: a UniProt identity block for plant records (accession, protein name, gene names, AGI locus = ordered_locus_names, organism, reviewed) and the featured `coverage` beside the experimental/predicted badge (app-requirements §2.4); 0.1.0 shows an HGNC block or \"TODO(author) no identity record\"",
-    "w4 core gap — PHOT1 shows \"domain structure (129 of 996 residues)\": perception-core: show the featured structure coverage on the sheet (app-requirements §2.4; molecules.yaml featured.coverage)",
-    "w5 core gap — ZAR1 6J5T is labelled \"whole protein\": perception-core: show the featured structure coverage on the sheet (app-requirements §2.4)",
-    "w6 core gap — the tree marks the dual leaf (dual ⚑): perception-core: the hierarchy reads a leaf `dual: true` and marks it \"dual ⚑\" (app-methods §2.5)",
-    "w7 core gap — the species filter offers \"other species\": perception-core: the evidence-table species filter by class (reference / other species / mixed), not only by exact value",
-    "w7 core gap — NFR5 carries \"UniProt record not reviewed\": perception-core: show uniprot.reviewed: false as the \"UniProt record not reviewed\" chip (app-requirements §2.5)",
-    "w9 core gap — PYR1 → SRK2E and SRK2E → SLAC1 are \"curated\" (PD01; also PCD01): perception-core: My maps resolves a molecule whose stage is not the molecule stage (SRK2E, SLAC1: cascade) to the stage node that names it, so a curated path can back the link; 0.1.0 only knows receptor-stage molecule nodes",
-    "w10 core gap — search \"abscisic\" lists Abscisic Acid from the small-molecule catalogue: perception-core: search covers small-molecule names (app-methods §10); 0.1.0 searches paths, molecules, PDB ids and interactions only",
-    "w11 core gap — the lens list is None and Shared hardware only: perception-core: offer the \"Proposed routes\" lens only when the pack has proposed routes (app-requirements §2.2)"
+    "w13 core gap — the term popover itself shows the source link and retrieval date: perception-core: the UI-32 term popover for an `ontology, verbatim` entry shows its definition_source link and retrieved_on (w13 step 1); 0.3.0 shows the id and label in the popover, and the link and date one click away in the glossary entry"
    ]
   },
   "core-harness": {
@@ -43,9 +33,9 @@
   }
  },
  "lighthouse": {
-  "date": "2026-11-19",
+  "date": "2026-11-24",
   "home": {
-   "performance": 97,
+   "performance": 96,
    "accessibility": 100
   },
   "navigator": {

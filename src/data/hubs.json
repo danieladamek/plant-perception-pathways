@@ -6,10 +6,6 @@
    "path_ids": [
     "PCD01",
     "PCD02"
-   ],
-   "n_paths": 2,
-   "branches_spanned": [
-    "CO2"
    ]
   },
   {
@@ -17,10 +13,6 @@
    "path_ids": [
     "PCD01",
     "PCD02"
-   ],
-   "n_paths": 2,
-   "branches_spanned": [
-    "CO2"
    ]
   },
   {
@@ -30,12 +22,6 @@
     "PL06",
     "PZ05",
     "PZ06"
-   ],
-   "n_paths": 4,
-   "branches_spanned": [
-    "Time (clock)",
-    "Light",
-    "Candidate senses (contested)"
    ]
   },
   {
@@ -46,13 +32,6 @@
     "PL02",
     "PL09",
     "PZ05"
-   ],
-   "n_paths": 5,
-   "branches_spanned": [
-    "Time (clock)",
-    "Light",
-    "Temperature",
-    "Candidate senses (contested)"
    ]
   },
   {
@@ -61,11 +40,6 @@
     "PL03",
     "PL05",
     "PZ05"
-   ],
-   "n_paths": 3,
-   "branches_spanned": [
-    "Light",
-    "Candidate senses (contested)"
    ]
   },
   {
@@ -74,11 +48,6 @@
     "PL04",
     "PL05",
     "PZ05"
-   ],
-   "n_paths": 3,
-   "branches_spanned": [
-    "Light",
-    "Candidate senses (contested)"
    ]
   },
   {
@@ -86,10 +55,6 @@
    "path_ids": [
     "PL07",
     "PL08"
-   ],
-   "n_paths": 2,
-   "branches_spanned": [
-    "Light"
    ]
   },
   {
@@ -97,10 +62,6 @@
    "path_ids": [
     "PN01",
     "PN02"
-   ],
-   "n_paths": 2,
-   "branches_spanned": [
-    "Nutrients"
    ]
   },
   {
@@ -108,10 +69,6 @@
    "path_ids": [
     "PP01",
     "PP03"
-   ],
-   "n_paths": 2,
-   "branches_spanned": [
-    "Pathogens: pattern recognition"
    ]
   },
   {
@@ -119,10 +76,6 @@
    "path_ids": [
     "PP01",
     "PP02"
-   ],
-   "n_paths": 2,
-   "branches_spanned": [
-    "Pathogens: pattern recognition"
    ]
   },
   {
@@ -130,11 +83,6 @@
    "path_ids": [
     "PT03",
     "PX05"
-   ],
-   "n_paths": 2,
-   "branches_spanned": [
-    "Mechanical",
-    "Osmotic and salt"
    ]
   },
   {
@@ -142,11 +90,6 @@
    "path_ids": [
     "PT05",
     "PW01"
-   ],
-   "n_paths": 2,
-   "branches_spanned": [
-    "Osmotic and salt",
-    "Wounding and herbivores"
    ]
   },
   {
@@ -154,10 +97,6 @@
    "path_ids": [
     "PZ05",
     "PZ06"
-   ],
-   "n_paths": 2,
-   "branches_spanned": [
-    "Candidate senses (contested)"
    ]
   }
  ]

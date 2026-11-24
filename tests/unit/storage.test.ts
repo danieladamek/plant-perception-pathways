@@ -23,20 +23,13 @@ function w9Map() {
 }
 
 describe('evidence check on plant data (w9)', () => {
-  // CORE DEFECT (proposed core item, scrum ▶️ Next): perception-core 0.1.0 resolves a molecule map node only to a
-  // receptor-stage graph node (mol::ID); SRK2E and SLAC1 are cascade-stage records, so no curated path can back a link
-  // to them and both links come out as overrides. Expected to fail until the core resolves cascade-stage molecules.
-  it.fails('PYR1 → SRK2E and SRK2E → SLAC1 are curated; the free node link is an override', () => {
+  // perception-core 0.3.0 (K39 D16) resolves a cascade-stage molecule (SRK2E, SLAC1) to the stage node naming it on
+  // each of its paths, and two molecules named on one stage of a path are backed by that path
+  it('PYR1 → SRK2E and SRK2E → SLAC1 are curated; the free node link is an override', () => {
     const m = w9Map();
     expect(maps.counts(m)).toMatchObject({ n: 3, curated: 2, override: 1 });
     expect(m.edges[0].paths).toContain('PD01');
     expect(m.edges[1].paths).toEqual(expect.arrayContaining(['PD01', 'PCD01']));
-  });
-});
-
-describe('evidence check on plant data (w9), what the core does today', () => {
-  it('the link to a free node is an override', () => {
-    const m = w9Map();
     expect(m.edges[2].basis).toBe('override');
   });
 });

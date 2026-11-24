@@ -1,4 +1,4 @@
-import { test, expect, coreGap, lintClean, treeOpen } from './_shared';
+import { test, expect, lintClean, treeOpen } from './_shared';
 import { go, seen } from '../helpers';
 
 test('w6 — show shared receptors and a sense that sits in two branches', async ({ page }) => {
@@ -17,9 +17,8 @@ test('w6 — show shared receptors and a sense that sits in two branches', async
   await expect(page.locator('main [data-contested]').first()).toBeVisible(); // dual membership ⚑ on the path
 });
 
-test('w6 core gap — the tree marks the dual leaf (dual ⚑)', async ({ page }) => {
-  coreGap('perception-core: the hierarchy reads a leaf `dual: true` and marks it "dual ⚑" (app-methods §2.5)');
+test('w6 — the tree marks the dual leaf (dual ⚑)', async ({ page }) => {
   await seen(page);
   await go(page, '/tree');
-  await expect(page.getByTestId('tree-list').locator('li:has(a[href="#/path/PL02"])').first()).toContainText(/dual/i, { timeout: 3000 });
+  await expect(page.getByTestId('tree-list').locator('li:has(a[href="#/path/PL02"])').first()).toContainText(/dual/i);
 });

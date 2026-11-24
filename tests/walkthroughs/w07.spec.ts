@@ -1,4 +1,4 @@
-import { test, expect, coreGap, viewerReady } from './_shared';
+import { test, expect, viewerReady } from './_shared';
 import { go, PACK, seen } from '../helpers';
 const strings = PACK('ui-strings.yaml');
 
@@ -24,16 +24,14 @@ test('w7 — find the rows whose evidence is not from Arabidopsis', async ({ pag
   await expect(page.locator('[data-species="Arabidopsis"]:has-text("NOT Arabidopsis")')).toHaveCount(0);
 });
 
-test('w7 core gap — the species filter offers "other species"', async ({ page }) => {
-  coreGap('perception-core: the evidence-table species filter by class (reference / other species / mixed), not only by exact value');
+test('w7 — the species filter offers "other species"', async ({ page }) => {
   await seen(page);
   await go(page, '/evidence');
-  await page.locator('[data-filter="species"]').selectOption({ label: 'other species' }, { timeout: 3000 });
+  await page.locator('[data-filter="species"]').selectOption({ label: 'other species' });
 });
 
-test('w7 core gap — NFR5 carries "UniProt record not reviewed"', async ({ page }) => {
-  coreGap('perception-core: show uniprot.reviewed: false as the "UniProt record not reviewed" chip (app-requirements §2.5)');
+test('w7 — NFR5 carries "UniProt record not reviewed"', async ({ page }) => {
   await seen(page);
   await go(page, '/molecules/NFR5');
-  await expect(page.locator('main')).toContainText(strings.badges.unreviewed, { timeout: 3000 });
+  await expect(page.locator('main')).toContainText(strings.badges.unreviewed);
 });

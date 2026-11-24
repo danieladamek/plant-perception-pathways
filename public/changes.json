@@ -19,5 +19,12 @@
   "what": "citation_verified uses PPE's curated vocabulary: \"yes (abstracts)\" when every key citation of a row is verified at abstract level (all 67 rows), \"partly (abstracts)\" or \"no\" otherwise. Pack 0.1 wrote \"all\", which the shared core renders in the unverified style.\n",
   "why": "First-build report (scrum 261119), core item 5: every path showed a dashed amber 'citation all'. Fixed in the pack ahead of a demo; the core item stays open.",
   "records": []
+ },
+ {
+  "date": "2026-11-24",
+  "version": "0.2.0",
+  "what": "Glossary of 102 terms (tools/build_glossary.py). 21 app conventions; 11 method terms carried over from PPE; 45 Gene Ontology and ChEBI records quoted verbatim via OLS4; 25 Plant Ontology records already quoted in anatomy.yaml. Four 101s: how a path is curated, from stimulus to response in a plant (cited), reading a structure, experimental and predicted structures. Upkeep classes name their files; the candidate-senses branch is marked contested; three legend lines reworded; scenario w13.\n",
+  "why": "Daniel, 2026-11-24: build the app out to its full feature set (glossary, primers, freshness) on perception-core 0.3.0.",
+  "records": []
  }
 ]

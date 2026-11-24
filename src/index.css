@@ -162,6 +162,13 @@
 :root {
   --bx-claim: #e6d7b3;
   --br-A1: #2a5aa6; --br-A2: #7b2c5e; --br-A3: #1f7a63; --br-A4: #4a4a8a; --br-B: #1f7a63; --br-C: #5f5442;
+  /* K40 (core 0.3.0 theme contract): this pack's 16 named branches take --cat-1…16 in pack order. The hues are the
+     harness's Greenhouse set (cat.a–f, --bx-accent, --bx-amber, then Greenhouse-toned fills); seven are darkened in
+     lightness only, hue kept, so each clears AA (4.5:1) on paper-2 (tests/unit/brand-theme.test.ts) */
+  --cat-1: #2a5aa6; --cat-2: #7b2c5e; --cat-3: #1a6854; --cat-4: #8e4c1a; --cat-5: #4a4a8a; --cat-6: #715919;
+  --cat-7: #2d6848; --cat-8: #924817; --cat-9: #31617a; --cat-10: #9c3b3b; --cat-11: #4e6517; --cat-12: #7a4a8a;
+  --cat-13: #1f5f7a; --cat-14: #825317; --cat-15: #496253; --cat-16: #5f5442;
+  --br-fallback: #5f5442;
   --st-fill: rgb(247 239 220); --species-model: #7b2c5e; --species-reference: #2d6848;
   --stage-stimulus: #eadcb6; --stage-receptor: #d6e4d2; --stage-cascade: #e4d9e6; --stage-signal_route: #d3e2e3;
   --stage-integration: #ead8c3; --stage-response: #dfe6c4;
@@ -171,6 +178,10 @@
 .dark {
   --bx-claim: #252019;
   --br-A1: #9dbbe8; --br-A2: #e7a6c9; --br-A3: #8fd0b8; --br-A4: #b9b9e8; --br-B: #8fd0b8; --br-C: #b8ab94;
+  --cat-1: #9dbbe8; --cat-2: #e7a6c9; --cat-3: #8fd0b8; --cat-4: #e8b98f; --cat-5: #b9b9e8; --cat-6: #e0cc8a;
+  --cat-7: #8fd0a0; --cat-8: #f0a37a; --cat-9: #9fd0e8; --cat-10: #e89f9f; --cat-11: #c3dc8f; --cat-12: #d2b0e0;
+  --cat-13: #8fc0d8; --cat-14: #f0c48a; --cat-15: #b0cdb8; --cat-16: #b8ab94;
+  --br-fallback: #b8ab94;
   --st-fill: #252019; --species-model: #e7a6c9; --species-reference: #8fd0a0;
   /* six distinct dark stage fills, Greenhouse hues (cat.*, --gx-leaf) taken down to night tone; each ≥ 4.5:1 against
      the node label (--bx-ink #efe6d3), asserted in tests/unit/theme.test.ts */
@@ -231,12 +242,14 @@
 .pp-note-target { outline: 3px solid var(--bx-accent); outline-offset: 3px; border-radius: 6px; }
 
 /* ═══ Brand (app-requirements §3.3–3.4): the Greenhouse Explorer mark beside the wordmark "Plant *Perception Pathways*",
-   set as Greenhouse *Explorer* is (gx-wordmark: Fraunces at opsz 144, second word muted and regular). perception-core
-   0.1.0's header has no logo slot, so the mark is drawn by the theme on the home link (no fork of the core). The files
-   are greenhouse-explorer public/brand/web/mark-64.png and mark-dark-64.png at 32a18ad, byte for byte. */
+   set as Greenhouse *Explorer* is (gx-wordmark: Fraunces at opsz 144, second word muted and regular). The mark is
+   passed to perception-core 0.3.0's header logo slot (src/main.tsx); the files are greenhouse-explorer
+   public/brand/web/mark-64.png and mark-dark-64.png at 32a18ad, byte for byte. */
 header a[href="#/"] { @apply gx-wordmark inline-flex items-center gap-2 tracking-tight; }
-header a[href="#/"]::before { content: ''; flex: none; width: 30px; height: 30px; background: url('/brand/web/mark-64.png') center / contain no-repeat; }
-.dark header a[href="#/"]::before { background-image: url('/brand/web/mark-dark-64.png'); }
+header a[href="#/"] [data-testid="header-logo"] { display: inline-flex; margin: 0; }
+.gx-mark { flex: none; width: 30px; height: 30px; }
+.gx-mark-dark, .dark .gx-mark-light { display: none; }
+.dark .gx-mark-dark { display: inline-block; }
 /* phone width (< 640 px): the three-word wordmark may wrap and the mark shrinks, so the header fits 375 px */
 @media (max-width: 639px) {
   header a[href="#/"] { white-space: normal; min-width: 0; flex-shrink: 1; font-size: 0.95rem; line-height: 1.1; gap: 0.375rem; }

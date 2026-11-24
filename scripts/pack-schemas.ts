@@ -115,9 +115,37 @@ export const UiStrings = z
     maps: z.record(str),
   })
   .passthrough();
+/** glossary.yaml (pack 0.2; app-methods §11; ACTION-PACK glossary, UI-32). Mirrors PPE's schema. */
+export const Glossary = z.array(
+  z
+    .object({
+      id: str.regex(/^[a-z0-9-]+$/, 'glossary id: lower-case letters, digits and hyphens'),
+      term: str.min(1),
+      kind: z.enum(['science', 'methods', 'notation']),
+      variants: z.array(z.union([z.string(), z.number()]).transform(String)).nullable().optional().transform((v) => v ?? []),
+      short: str.min(1).max(200, 'short > 200 characters'),
+      definition: str.min(1),
+      basis: z.enum(['ontology, verbatim', 'cited abstracts', 'app convention']),
+      definition_source: z.object({ id: str, label: str, source: str, retrieved_on: day, mapping: str.optional() }).optional(),
+      concept: str.optional(),
+    })
+    .passthrough(),
+);
+/** concepts/<id>.md frontmatter (pack 0.2; app-methods §12; UI-33) */
+export const ConceptFrontmatter = z
+  .object({
+    id: str.regex(/^[a-z0-9-]+$/, 'concept id: lower-case letters, digits and hyphens'),
+    title: str.min(1),
+    one_liner: str.min(1),
+    why_here: str.min(1),
+    prerequisites: z.array(str).nullable().optional().transform((v) => v ?? []),
+    terms: z.array(str).nullable().optional().transform((v) => v ?? []),
+  })
+  .passthrough();
 export const Todo = z.array(z.object({ id: str, what: str, where: str.optional(), owner: str.optional() }).strict());
 export const Upkeep = z.object({
-  classes: z.array(z.object({ id: str, what: str, recheck_days: z.number().int('integer recheck_days required'), how: str })).min(1, 'classes required'),
+  // SUSTAIN 0.2.1 (pack 0.2): a class names its `files` (Methods → Freshness) and an `as_of` for records without dates
+  classes: z.array(z.object({ id: str, what: str, recheck_days: z.number().int('integer recheck_days required'), how: str, as_of: day.optional(), files: z.array(str).optional() }).strict()).min(1, 'classes required'),
   harvests: z.array(z.any()).optional(),
   sweeps: z.array(z.any()).optional(),
 });
@@ -181,9 +209,10 @@ export function pathSchema(stageFields: string[]) {
     .strict();
 }
 
-export type TreeNode = { name: string; children?: TreeNode[]; path_ids?: string[]; dual?: boolean };
+// pack 0.2: a group may be `contested` with a `badge` (perception-core 0.3.0 C10; app-requirements §2.7)
+export type TreeNode = { name: string; children?: TreeNode[]; path_ids?: string[]; dual?: boolean; contested?: boolean; badge?: string };
 export const TreeNodeS: z.ZodType<TreeNode> = z.lazy(() =>
-  z.object({ name: str, children: z.array(TreeNodeS).optional(), path_ids: z.array(str).optional(), dual: z.boolean().optional() }).strict(),
+  z.object({ name: str, children: z.array(TreeNodeS).optional(), path_ids: z.array(str).optional(), dual: z.boolean().optional(), contested: z.boolean().optional(), badge: str.optional() }).strict(),
 );
 export const Hierarchy = z.object({ tree: TreeNodeS });
 

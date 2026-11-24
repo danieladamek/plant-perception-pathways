@@ -1,4 +1,4 @@
-import { test, expect, coreGap } from './_shared';
+import { test, expect } from './_shared';
 import { go, PACK, seen } from '../helpers';
 const strings = PACK('ui-strings.yaml');
 
@@ -25,10 +25,9 @@ test('w4 — see the chromophore a blue-light receptor carries', async ({ page }
   await expect(page.locator('section[data-testid="sm-binds"]')).toContainText('experimental structure');
 });
 
-test('w4 core gap — PHOT1 shows "domain structure (129 of 996 residues)"', async ({ page }) => {
-  coreGap('perception-core: show the featured structure coverage on the sheet (app-requirements §2.4; molecules.yaml featured.coverage)');
+test('w4 — PHOT1 shows "domain structure (129 of 996 residues)"', async ({ page }) => {
   await seen(page);
   await go(page, '/molecules/PHOT1');
-  await expect(page.locator('main')).toContainText('domain structure (129 of 996 residues)', { timeout: 3000 });
+  await expect(page.locator('main')).toContainText('domain structure (129 of 996 residues)');
   void strings;
 });

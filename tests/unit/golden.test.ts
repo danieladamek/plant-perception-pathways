@@ -4,7 +4,7 @@ import { describe, expect, it } from 'vitest';
 import { pack, graph, rules, type Molecule, type PathRow } from './core';
 const P = (await pack.packData('paths')) as PathRow[];
 const M = (await pack.packData('molecules')) as (Molecule & { stage: string; also_named_in?: Record<string, string[]> })[];
-const hubs = (await pack.packData('hubs')) as { caution: string; hubs: { molecule: string; n_paths: number }[] };
+const hubs = (await pack.packData('hubs')) as { caution: string; hubs: { molecule: string; path_ids: string[] }[] };
 const structures = (await pack.packData('structures')) as { id: string; source_db: string; kind: string; molecules: string[] }[];
 const small = (await pack.packData('small-molecules')) as { molecules: { id: string; hidden_by_default: boolean; classes: string[] }[]; not_found: unknown[] };
 const anatomy = (await pack.packData('anatomy')) as { terms: { id: string | null }[] }[];
@@ -96,7 +96,8 @@ describe('the navigator graph over the pack (§2)', () => {
 });
 
 describe('shared hardware (§5): 13 — PHYB 5, CRY1 4, PHOT1 3, PHOT2 3, the rest 2', () => {
-  const n = Object.fromEntries(hubs.hubs.map((h) => [h.molecule, h.n_paths]));
+  // the count is the hub's path_ids (perception-core 0.3.0 derives n_paths from them; the build no longer restates it)
+  const n = Object.fromEntries(hubs.hubs.map((h) => [h.molecule, h.path_ids.length]));
   it('counts', () => {
     expect(hubs.hubs.length).toBe(13);
     expect(n).toEqual({ PHYB: 5, CRY1: 4, PHOT1: 3, PHOT2: 3, BCA1: 2, BCA4: 2, UVR8: 2, 'NRT1.1': 2, BAK1: 2, FLS2: 2, FER: 2, MSL10: 2, CRY2: 2 });

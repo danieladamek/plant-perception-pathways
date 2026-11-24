@@ -1,4 +1,4 @@
-import { test, expect, coreGap } from './_shared';
+import { test, expect } from './_shared';
 import { go, seen } from '../helpers';
 
 test('w10 — find abscisic acid, alone and bound to its receptor', async ({ page }) => {
@@ -30,11 +30,10 @@ test('w10 — find abscisic acid, alone and bound to its receptor', async ({ pag
   for (const p of ['PW01', 'PT04']) await expect(page.getByTestId('small-sheet').getByRole('link', { name: p }).first()).toBeVisible();
 });
 
-test('w10 core gap — search "abscisic" lists Abscisic Acid from the small-molecule catalogue', async ({ page }) => {
-  coreGap('perception-core: search covers small-molecule names (app-methods §10); 0.1.0 searches paths, molecules, PDB ids and interactions only');
+test('w10 — search "abscisic" lists Abscisic Acid from the small-molecule catalogue', async ({ page }) => {
   await seen(page);
   await go(page, '/');
   await page.keyboard.press('/');
   await page.locator('#search-q').fill('abscisic');
-  await expect(page.locator('[data-hit][data-id="CID5280896"]')).toBeVisible({ timeout: 3000 });
+  await expect(page.locator('[data-hit][data-id="CID5280896"]')).toBeVisible();
 });

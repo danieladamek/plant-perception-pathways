@@ -29,25 +29,32 @@ Open <http://localhost:4201/>. `npm run build` runs the content build (`npm run 
 
 ## How it is built
 
-- **A host of `@actualizer/perception-core` 0.2.0** (the UI shared with Perception Pathways Explorer). This app supplies
+- **A host of `@actualizer/perception-core` 0.3.0** (the UI shared with Perception Pathways Explorer). This app supplies
   only the pack (its content build's JSON), its theme, its storage namespace (`plant-perception-pathways`) and its
-  interface copy (`src/host-strings.ts`). Modules: none (no atlas, no vagus lens). No core component is copied or forked.
+  interface copy (`src/host-strings.ts`), and, in `src/main.tsx`, the Greenhouse mark for the core's header `logo` slot
+  and the four 101 placements (`conceptLinks`, app-methods §12.2). Modules: none (no atlas, no vagus lens). No core
+  component is copied or forked.
 - **Core install: local path, for now** (Daniel, 2026-11-19):
   `"@actualizer/perception-core": "file:../perception-pathways-explorer/packages/perception-core"`, installed as a copy
-  (`.npmrc`: `install-links=true`), so nothing is written to the PPE folder. The tag `perception-core-v0.2.0`
-  (`b68ae21`) is local only; a unit test checks that the installed `src/` is byte-identical to it. **A URL or registry install replaces this one line later**, e.g.
-  `"github:danieladamek/perception-pathways-explorer#perception-core-v0.2.0"` with a workspace path or an `overrides`
+  (`.npmrc`: `install-links=true`), so nothing is written to the PPE folder. The tag `perception-core-v0.3.0`
+  (`c0d20b0`) is local only; a unit test checks that the installed `src/` is byte-identical to it. **A URL or registry install replaces this one line later**, e.g.
+  `"github:danieladamek/perception-pathways-explorer#perception-core-v0.3.0"` with a workspace path or an `overrides`
   entry pointing at `packages/perception-core` (see the core's README), or a GitHub Packages version.
 - **Theme:** Greenhouse Explorer's (`src/index.css`, `tailwind.config.js`) at greenhouse-explorer `32a18ad`, with the
   AA-corrected values (muted `#5f5442`, accent `#2d6848`, amber `#924817`) and six stage tokens, each ≥ 4.5:1 against
-  its node label in light and dark. Fraunces, Source Sans 3 and JetBrains Mono are bundled with fontsource and loaded
+  its node label in light and dark. The 16 branches take the core's categorical tokens `--cat-1`…`--cat-16` (then
+  `--br-fallback`), each ≥ 4.5:1 on both papers in light and dark. Fraunces, Source Sans 3 and JetBrains Mono are bundled with fontsource and loaded
   with Greenhouse's deferred-font pattern (`src/lib/fonts.ts`). The Greenhouse Explorer mark and brand files in
   `public/brand/` are byte-for-byte copies (a unit test compares sha256 with the source).
 - **Canvas library:** Cytoscape.js with ELK (Layered) and fCoSE (Organic) layouts, and Mol* for 3D structures — both
   inside perception-core. Structures load only from the bundled files in `public/structures/` (sha256-checked).
 - **Content build** (`scripts/build-content.ts`): zod schemas mirroring `tools/validate_pack.py` and
   `tools/validate_extension.py`, every cross-reference resolved, the safety lints (`safety.yaml → app_lints`) over every
-  rendered pack string, `src/data/*.json`, `public/provenance.json`, `public/staleness.json`. Problems go to
+  rendered pack string, `src/data/*.json`, `public/provenance.json`, `public/staleness.json`, `public/freshness.json`
+  and `public/changes.json`. Pack 0.2's glossary and 101s are built with the core's own `glossary-match` ("Used in")
+  and `concepts-build`; ontology definitions are quoted verbatim and never linted or reworded. One adapter remains:
+  the pack's `other_species` / `non_reference` badge strings are also emitted under the keys the core reads
+  (`<model label>_only`, `non_<reference label>`). Problems go to
   `content-pack/BUILD-ERRORS.md` and the Methods page; a string that trips a lint is withheld, never reworded.
 
 ## Checks
@@ -74,14 +81,15 @@ npm run lighthouse
 
 - `npm test` (Vitest): schemas (one broken fixture per rule), the goldens from `app-methods.md`, a hand-written
   plant fixture for the navigator derivation (`tests/fixtures/plant-tiny.ts`), storage and export/import, brand
-  sha256, stage-token contrast.
+  sha256, stage- and branch-token contrast, the installed core against its tag.
 - `npm run test:e2e` (Playwright, its own preview on :4221): the safety suite (`tests/safety/`), one walkthrough per
   scenario (`tests/walkthroughs/`), smoke (every route, dark mode, 375 px, keyboard paths, axe AA, parity screenshots)
   and perception-core's own harness at the consumed version (`tests/core/`, :4231, built into `test-results/`).
 - `npm run lighthouse` needs `npm run preview` on :4201.
 
-Expectations perception-core 0.2.0 cannot yet meet are written as `test.fail` with a `core-gap` annotation naming the
-proposed core item; they turn red the day the core meets them.
+Expectations perception-core 0.3.0 cannot yet meet are written as `test.fail` with a `core-gap` annotation naming the
+proposed core item; they turn red the day the core meets them. With 0.3.0 one remains (w13: the term popover shows
+the source link and retrieval date only in the glossary entry, not in the popover itself).
 
 ## Publishing this later
 

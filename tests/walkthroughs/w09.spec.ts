@@ -1,5 +1,5 @@
 import fs from 'node:fs';
-import { test, expect, coreGap } from './_shared';
+import { test, expect } from './_shared';
 import { go, PACK, recordRequests, seen } from '../helpers';
 const strings = PACK('ui-strings.yaml');
 
@@ -48,12 +48,11 @@ test('w9 — sketch a drought and CO2 crossover and see which links are supporte
   expect(rec.containing('guard-cell')).toHaveLength(0);
 });
 
-test('w9 core gap — PYR1 → SRK2E and SRK2E → SLAC1 are "curated" (PD01; also PCD01)', async ({ page }) => {
-  coreGap('perception-core: My maps resolves a molecule whose stage is not the molecule stage (SRK2E, SLAC1: cascade) to the stage node that names it, so a curated path can back the link; 0.1.0 only knows receptor-stage molecule nodes');
+test('w9 — PYR1 → SRK2E and SRK2E → SLAC1 are "curated" (PD01; also PCD01)', async ({ page }) => {
   await seen(page);
   const link = await sketch(page);
   await link('PYR1', 'SRK2E');
-  await expect(page.getByTestId('override-dialog')).toHaveCount(0, { timeout: 3000 });
+  await expect(page.getByTestId('override-dialog')).toHaveCount(0);
   await link('SRK2E', 'SLAC1');
-  await expect(page.getByTestId('map-header-count')).toHaveText('2 links: 2 curated · 0 override', { timeout: 3000 });
+  await expect(page.getByTestId('map-header-count')).toHaveText('2 links: 2 curated · 0 override');
 });
