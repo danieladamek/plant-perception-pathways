@@ -39,9 +39,13 @@ test('w1 core gap — the hypothesis is badged "proposed", not only "contested"'
   await expect(page.locator('main .pp-proposed').first()).toBeVisible({ timeout: 3000 });
 });
 
-test('w1 core gap — citation status "all" (every key citation verified) is shown as verified', async ({ page }) => {
-  coreGap('perception-core: CitationStatus treats only values starting "yes" as verified; this pack curates citation_verified as "all", so every path shows a dashed amber "citation all" (unverified style). Read the verified values from the pack.');
+test('w1 — citation status "yes (abstracts)" (every key citation verified) is shown as verified', async ({ page }) => {
+  // pack 0.1.2 (K36): citation_verified uses PPE's vocabulary, so the core renders the verified style
+  const pd01 = PACK('paths.yaml').paths.find((p: any) => p.path_id === 'PD01');
+  expect(pd01.citation_verified).toBe('yes (abstracts)');
   await seen(page);
-  await go(page, '/path/PW01');
-  await expect(page.locator('[data-citation="verified"]').first()).toBeVisible({ timeout: 3000 });
+  await go(page, '/path/PD01');
+  const main = page.locator('main');
+  await expect(main.locator('[data-citation="verified"]').first()).toBeVisible();
+  await expect(main.locator('[data-citation="unverified"]')).toHaveCount(0);
 });

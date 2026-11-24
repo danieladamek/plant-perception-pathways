@@ -26,7 +26,7 @@
   },
   {
    "item": "citation_verified",
-   "meaning": "all / some / none: computed from references.json (OpenAlex title ratio ≥ 0.85, PPE app-methods §1.2)"
+   "meaning": "yes (abstracts) / partly (abstracts) / no: every, some or none of the row's key citations verified at abstract level"
   },
   {
    "item": "evidence_species",

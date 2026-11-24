@@ -1,6 +1,6 @@
 # BUILD-ERRORS — written by scripts/build-content.ts
 
-Build for 2026-11-22: 0 error(s), 2 warning(s). Surfaced on #/methods. The build never edits the pack; fix the source and re-run.
+Build for 2026-11-24: 0 error(s), 2 warning(s). Surfaced on #/methods. The build never edits the pack; fix the source and re-run.
 
 ## Errors
 

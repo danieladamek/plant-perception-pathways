@@ -1,5 +1,11 @@
 [
  {
+  "date": "2026-11-24",
+  "version": "0.1.2",
+  "what": "citation_verified uses PPE's curated vocabulary: \"yes (abstracts)\" when every key citation of a row is verified at abstract level (all 67 rows), \"partly (abstracts)\" or \"no\" otherwise. Pack 0.1 wrote \"all\", which the shared core renders in the unverified style.\n",
+  "records": []
+ },
+ {
   "date": "2026-11-21",
   "version": "0.1.1",
   "what": "Cleared the 17 lint withholdings from the K-item build: reworded four path notes, four legend lines, the LZY mapping (three molecules) and T-GAP-01 so no internal terms reach the app; allowed_phrases for the two About framing lines (contested-framing) and for TODO(author) and \"Open items (TODO)\" (jargon). Contested-sense hypothesis lines cite by author and year instead of reference keys (PZ06, PZ07). Scenario w2: Calvo et al. 2019.\n",
