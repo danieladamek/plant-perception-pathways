@@ -11,7 +11,7 @@ question: >
   functionality through the shared perception core, in Greenhouse Explorer's design scheme.)
 purpose: tool
 as_of: 2026-11-24
-pack_version: "0.1.2"
+pack_version: "0.2.0"
 authors: ["Actualizer (commissioned research: pathways drafted from verified abstracts, molecules, structures)", "Curated by Daniel Adamek"]
 venue: "Curated dataset from commissioned research — verified at abstract level, not full text; not peer reviewed"
 evidence:

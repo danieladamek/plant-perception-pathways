@@ -92,6 +92,8 @@ dump("paths.yaml", {"paths": paths},
 
 # ── hierarchy
 tree = J("tree.json")
+for b in tree["children"]:   # the candidate-senses branch is marked for the core (K39 item 10)
+    if b["name"].startswith("Candidate senses"): b["contested"] = True; b["badge"] = "candidate sense — not established"
 dump("hierarchy.yaml", {"tree": tree},
      "# hierarchy.yaml — the plant perception tree, one of several valid divisions. A leaf marked dual: true lists a\n"
      "# path that also belongs to another branch (⚑ dual membership).")

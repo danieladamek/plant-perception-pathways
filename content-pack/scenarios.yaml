@@ -137,3 +137,17 @@
     - do: "Save to My maps"
       expect: "A map with exactly the nodes and links shown in Focus, links marked curated with PD01 (UI-29)"
   must_not: ["the view jumping on selection", "a note lost on reload", "a saved map that differs from what was shown"]
+- id: w13
+  persona: p-student
+  title: "Look up a term and learn the concept behind a path"
+  starts_with: empty
+  steps:
+    - do: "Open the PD01 (drought) path page and open the term popover on 'abscisic acid'"
+      expect: "The popover quotes the ChEBI definition verbatim with its id, source link and retrieval date, and offers 'Learn the concept' (UI-32, UI-31)"
+    - do: "Press 'Learn the concept'"
+      expect: "'From stimulus to response in a plant' opens with its prerequisite 'How a path is curated' linked; its ABA paragraph cites [66] and [67], and each citation opens the reference with its abstract (UI-33)"
+    - do: "Open the Glossary and search 'self-incompatibility'"
+      expect: "The entry quotes GO:0048544 'recognition of pollen' verbatim and is labelled \"curator mapping from 'Self-incompatibility'\"; 'Used in' lists the self/non-self paths"
+    - do: "Open a structure badge marked predicted"
+      expect: "The badge links to 'Experimental and predicted structures' (UI-33 computed_badge)"
+  must_not: ["a definition reworded from its source record", "a glossary or concept page with a link that goes nowhere", "an uncited sentence in a primer that is not framing"]

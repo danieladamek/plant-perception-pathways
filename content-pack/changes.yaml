@@ -1,5 +1,15 @@
 # changes.yaml — pack change log (newest first)
 - date: 2026-11-24
+  version: "0.2.0"
+  by: "Cowork (Actualizer); asked for by Daniel"
+  what: >
+    Glossary of 102 terms (tools/build_glossary.py). 21 app conventions; 11 method terms carried over from PPE;
+    45 Gene Ontology and ChEBI records quoted verbatim via OLS4; 25 Plant Ontology records already quoted in anatomy.yaml.
+    Four 101s: how a path is curated, from stimulus to response in a plant (cited), reading a structure, experimental
+    and predicted structures. Upkeep classes name their files; the candidate-senses branch is marked contested;
+    three legend lines reworded; scenario w13.
+  why: "Daniel, 2026-11-24: build the app out to its full feature set (glossary, primers, freshness) on perception-core 0.3.0."
+- date: 2026-11-24
   version: "0.1.2"
   by: "Cowork (Actualizer); approved by Daniel"
   what: >

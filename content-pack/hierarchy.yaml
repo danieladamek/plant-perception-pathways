@@ -248,3 +248,5 @@ tree:
     - name: associative learning
       path_ids:
       - PZ07
+    contested: true
+    badge: candidate sense — not established

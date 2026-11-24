@@ -133,3 +133,21 @@ term. Label, definition, synonyms and parents are verbatim from OLS; every term 
 
 As PPE §9, over sense names, stage values, notes, molecule symbols, protein names, gene names, AGI loci, UniProt
 accessions, PDB ids and small-molecule names.
+
+## 11. Glossary (pack 0.2)
+
+11.1 `glossary.yaml` is built by `tools/build_glossary.py` from `source/glossary/`, never by hand. Each term has one **basis**:
+- `app convention`: the app's own notation (stages, tiers, flags), written from this file and `legend.yaml`. Shown unmarked.
+- `ontology, verbatim`: the definition is quoted from a Gene Ontology, ChEBI or Plant Ontology record, or from an NCIT record carried over from PPE. It is shown with its id, label, source link and retrieval date (UI-31). A term whose record label differs from the term carries "curator mapping from '‹term›'", e.g. Self-incompatibility → GO:0048544 *recognition of pollen*.
+
+11.2 Term popovers, "Used in" and the glossary page work as in PPE (UI-32), reading this pack's stage kinds. Variants are whole-word matches. Short or ambiguous ones (NO, SA, JA, GA) are left out, and the build drops any variant that collides with another term.
+
+11.3 **Golden:** 102 terms. 21 are app conventions (notation). 11 are methods: 7 ontology verbatim, 4 app conventions. 70 are science, ontology verbatim: 45 GO and ChEBI, 25 Plant Ontology. Four picks have no definition in their ChEBI record and are left out: ethylene, jasmonic acid, gibberellin and brassinosteroid. Every concept's `terms` resolve.
+
+## 12. Concept primers (pack 0.2)
+
+12.1 There are four 101s in `concepts/`: *How a path is curated* and *Reading a molecular structure* have no prerequisites; *From stimulus to response in a plant* follows the first, and *Experimental and predicted structures* follows the second.
+- Paragraphs marked `<!-- framing -->` restate this app's own rules and data.
+- Every other paragraph cites verified references [n], at abstract level.
+
+12.2 The contextual links (UI-33) are placed by the pack's concepts: `stage_row` → how-a-path-is-curated, `hierarchy` → how-a-path-is-curated, `viewer` → reading-a-structure, `computed_badge` → experimental-vs-predicted.

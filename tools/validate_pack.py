@@ -8,13 +8,13 @@ here, and the action layer, safety, scenarios and upkeep rules are new.
 
 Usage:
   python3 validate_pack.py <content-pack-dir>                     # validate; exit 1 on any error
-  python3 validate_pack.py <content-pack-dir> --staleness [--as-of YYYY-MM-DD]   # SUSTAIN §4 report
+  python3 validate_pack.py <content-pack-dir> --staleness [--as-of YYYY-MM-DD] [--detail]   # SUSTAIN §4 report
 Needs PyYAML.
 """
 import sys, os, re, glob, datetime
 import yaml
 
-VERSION = "0.1.2"
+VERSION = "0.2.1"   # ACTION-PACK 0.2: glossary basis, verbatim definitions, ordinary-word variants
 args = [a for a in sys.argv[1:]]
 root = args[0] if args and not args[0].startswith("--") else "."
 STALENESS = "--staleness" in args
@@ -139,6 +139,7 @@ for f in glob.glob(P("concepts", "*.md")):
         if "<!-- framing -->" in b: framing_next = True; continue
         if framing_next: framing_next = False; check_cites(f"concepts/{cid}", b, block_rule=False); continue
         check_cites(f"concepts/{cid}", b)
+ORDINARY = {"or", "and", "a", "an", "the", "in", "on", "it", "is", "as", "at", "by", "to", "of", "channel", "channels", "proposed", "verified", "access", "candidate", "absent", "excluded", "son", "arc", "met", "can"}
 gids, variants = set(), {}
 for g in gl:
     gid = g.get("id")
@@ -148,7 +149,15 @@ for g in gl:
         if not g.get(k): E(f"glossary/{gid}: missing {k}")
     if len(str(g.get("short", ""))) > 200: E(f"glossary/{gid}: short > 200 chars")
     if g.get("concept") and g["concept"] not in concept_ids: E(f"glossary/{gid}: concept {g['concept']} not found")
-    check_cites(f"glossary/{gid}.definition", g.get("definition"))
+    if g.get("definition_source"):   # UI-31 (Actualizer, 2026-11-19): verbatim, attributed source text is not builder prose
+        ds = g["definition_source"]
+        for k in ("id", "label", "source", "retrieved_on"):
+            if not ds.get(k): E(f"glossary/{gid}: definition_source missing {k}")
+    else:
+        check_cites(f"glossary/{gid}.definition", g.get("definition"))
+    if "basis" not in g: W(f"glossary/{gid}: no basis (ACTION-PACK 0.2 §4.2)")
+    for v in g.get("variants") or []:
+        if not str(v).isupper() and str(v).lower() in ORDINARY: E(f"glossary/{gid}: variant {v!r} is an ordinary word (ACTION-PACK §4.2)")
     for v in [g.get("term", "")] + list(g.get("variants") or []):
         key = str(v).lower()
         if key in variants and variants[key] != gid: E(f"glossary: variant {v!r} collides ({variants[key]} vs {gid})")
@@ -320,14 +329,23 @@ for cid, c in classes.items():
     if not isinstance(c.get("recheck_days"), int): E(f"upkeep/{cid}: integer recheck_days required")
 FILE_CLASS = {"situations.yaml": "scheme", "references.yaml": "reference", "links.yaml": "link",
               "resources.yaml": "resource", "safety.yaml": "help", "pathway.yaml": "link"}
+# SUSTAIN 0.2.1: a class may name its own `files` (extension packs) and an `as_of` for records without dates
+for cid, c in classes.items():
+    for fn in c.get("files") or []:
+        FILE_CLASS[fn] = cid
+        if not os.path.exists(P(fn)): E(f"upkeep/{cid}: file {fn} not found")
 stale = []
+DATE_KEYS = ("verified_on", "harvested_on", "retrieved_on")
 for fn, cls in FILE_CLASS.items():
     data = load(fn, required=False)
     if data is None or cls not in classes: continue
     days = classes[cls]["recheck_days"]
+    cls_as_of = to_date(classes[cls].get("as_of"))
+    if cls_as_of and (AS_OF - cls_as_of).days > days:
+        stale.append((cls, f"{fn} (whole file, as of)", cls_as_of.isoformat(), (AS_OF - cls_as_of).days))
     def visit(o, path):
         if isinstance(o, dict):
-            d = to_date(o.get("verified_on") or o.get("harvested_on"))
+            d = to_date(next((o.get(k) for k in DATE_KEYS if o.get(k)), None))
             if d:
                 age = (AS_OF - d).days
                 if age > (o.get("recheck_days") or days): stale.append((cls, f"{fn}:{path}", d.isoformat(), age))
@@ -348,8 +366,17 @@ if isinstance(td, dict): td = td.get("items", [])
 if STALENESS:
     print(f"Staleness report — {m.get('slug')} — as of {AS_OF}")
     if not stale: print("  nothing stale")
-    for cls, where, d, age in sorted(stale):
-        print(f"  [{cls}] {where} — checked {d} ({age} days)")
+    # one line per record (a record's nested dates collapse to its oldest), then a per-class summary
+    recs = {}
+    for cls, where, d, age in stale:
+        key = (cls, re.sub(r"^(.*?\[\d+\]).*$", r"\1", where))
+        if key not in recs or age > recs[key][1]: recs[key] = (d, age)
+    by = {}
+    for (cls, where), (d, age) in sorted(recs.items()):
+        if "--detail" in args: print(f"  [{cls}] {where} — checked {d} ({age} days)")
+        n, oldest = by.get(cls, (0, 0)); by[cls] = (n + 1, max(oldest, age))
+    for cls, (n, oldest) in sorted(by.items()):
+        print(f"  {cls}: {n} stale record(s), oldest {oldest} days (re-check every {classes[cls]['recheck_days']}) — {classes[cls].get('how', '')}")
 print(f"validate_pack {VERSION} · {m.get('slug')} · kind={kind} · profile={profile} · modules={sorted(mods)}")
 print(f"  references: {len(REF)} ({len(VERIFIED)} verified, {sum(1 for r in REF.values() if r.get('abstract'))} with abstracts)")
 print(f"  situations: {len(item_codes)} codes in {len(groups)} groups · personas: {len(personas)} · scenarios: {len(sc)} · todo: {len(td)} · stale: {len(stale)}")

@@ -44,13 +44,13 @@ json.dump(about, open("source/data/about-framing.json", "w", encoding="utf-8"), 
 json.dump(tree, open("source/data/tree.json", "w", encoding="utf-8"), indent=1, ensure_ascii=False)
 key = [
  {"item": "What this is", "meaning": "Curation for Plant Perception Pathways, in the shape of PPE's Sheet export. Rows drafted by Cowork from verified abstracts and curated by Daniel (2026-11-18)."},
- {"item": "Stage columns", "meaning": "stimulus → transducer → cascade → signal_route → integration → response (pack-supplied stage kinds; A5.2)."},
+ {"item": "Stage columns", "meaning": "stimulus → receptor / transducer → cascade → signal route → integration → response."},
  {"item": "provenance codes", "meaning": "A = quoted or closely tracked from a verified abstract · K = curator knowledge, not verified against an abstract"},
  {"item": "transducer_tier", "meaning": "B1 established · B2 partial · B3 unknown or inferred; set in curation"},
  {"item": "row_status", "meaning": "curated = accepted in curation; only curated rows are shown as paths"},
- {"item": "⚑", "meaning": "dual membership or a proposed (not established) mechanism, as in PPE"},
+ {"item": "⚑", "meaning": "a contested or partly supported mechanism, or dual membership (a path listed under two branches)"},
  {"item": "citation_verified", "meaning": "yes (abstracts) / partly (abstracts) / no: every, some or none of the row's key citations verified at abstract level"},
- {"item": "evidence_species", "meaning": "Arabidopsis thaliana unless stated. Rows from other species (senses Arabidopsis lacks, e.g. nodulation) say so, 'NOT Arabidopsis' (Daniel, 2026-11-18)"},
+ {"item": "evidence_species", "meaning": "Arabidopsis thaliana unless stated. Senses Arabidopsis lacks, such as nodulation, come from other species and carry the 🌱 other-species badge."},
  {"item": "empty stage", "meaning": "a gap: no verified source supports this stage yet"},
 ]
 json.dump(key, open("source/data/key.json", "w", encoding="utf-8"), indent=1, ensure_ascii=False)
