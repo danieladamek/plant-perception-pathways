@@ -49,9 +49,22 @@ describe('stage tokens: AA against the node label (--bx-ink) in light and dark',
 });
 
 describe('perception-core', () => {
-  it('is 0.1.0, the tagged version (local path, KICKOFF §8.1)', () => {
-    expect(JSON.parse(fs.readFileSync(path.join(ROOT, 'node_modules/@actualizer/perception-core/package.json'), 'utf8')).version).toBe('0.1.0');
+  it('is 0.2.0, the tagged version (local path, KICKOFF §8.1; K38)', () => {
+    expect(JSON.parse(fs.readFileSync(path.join(ROOT, 'node_modules/@actualizer/perception-core/package.json'), 'utf8')).version).toBe('0.2.0');
     expect(JSON.parse(fs.readFileSync(path.join(ROOT, 'package.json'), 'utf8')).dependencies['@actualizer/perception-core']).toBe('file:../perception-pathways-explorer/packages/perception-core');
+  });
+  it('the installed src/ is byte-identical to the tag perception-core-v0.2.0', () => {
+    const PPE = path.resolve(ROOT, '../perception-pathways-explorer');
+    const TAG = 'perception-core-v0.2.0';
+    const tree = execFileSync('git', ['-C', PPE, 'ls-tree', '-r', TAG, 'packages/perception-core/src'], { encoding: 'utf8' }).trim().split('\n');
+    const installed = path.join(ROOT, 'node_modules/@actualizer/perception-core/src');
+    const files = (fs.readdirSync(installed, { recursive: true }) as string[]).filter((f) => fs.statSync(path.join(installed, f)).isFile());
+    expect(files.length).toBe(tree.length);
+    const blob = (b: Buffer) => crypto.createHash('sha1').update(Buffer.concat([Buffer.from(`blob ${b.length}\0`), b])).digest('hex');
+    for (const line of tree) {
+      const [meta, f] = line.split('\t');
+      expect(blob(fs.readFileSync(path.join(installed, f.replace('packages/perception-core/src/', '')))), f).toBe(meta.split(' ')[2]);
+    }
   });
   it('no local copy or fork of a core component in src/', () => {
     const src = fs.readdirSync(path.join(ROOT, 'src'), { recursive: true }) as string[];

@@ -1,6 +1,6 @@
 /**
  * Walkthrough helpers. One spec file per content-pack/scenarios.yaml entry (ACTION-SPEC §8): each `do` is performed,
- * each `expect` asserted, each `must_not` asserted. An expectation that perception-core 0.1.0 cannot meet is written as
+ * each `expect` asserted, each `must_not` asserted. An expectation that perception-core 0.2.0 cannot meet is written as
  * its own `test.fail` with a `core-gap` annotation naming the proposed core item (scrum ▶️ Next): it is reported as an
  * expected failure today and turns red the day the core meets it, so the spec is then moved back into the main test.
  */

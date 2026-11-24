@@ -460,7 +460,9 @@ const files: Record<string, unknown> = {
   'interactions.json': interactions,
   'curation.json': curation ? { ...curation, animal_taxa: [] } : null,
   'references.json': refsOut,
-  'changes.json': changes.map((c) => ({ date: day(c.date), version: c.version, what: c.what, records: c.records })),
+  // perception-core 0.2.0 reads the ledger oldest first (Methods → Recent changes shows its last ten, newest first);
+  // the pack writes it newest first, so it is reversed here. `by` and `source` are not rendered.
+  'changes.json': [...changes].reverse().map((c) => ({ date: day(c.date), version: c.version, what: c.what, ...(c.why ? { why: c.why } : {}), records: c.records })),
   'glossary.json': [],
   'concepts.json': [],
   'todo.json': todo.map((t) => ({ id: t.id, what: t.what, where: t.where ?? '' })), // owner is not rendered
@@ -586,6 +588,8 @@ if (!DRY) {
   for (const [f, data] of Object.entries(files)) writeIf(path.join(OUT, f), JSON.stringify(data, null, 1) + '\n');
   writeIf(path.join(PUB, 'provenance.json'), JSON.stringify(provenance, null, 1) + '\n');
   writeIf(path.join(PUB, 'staleness.json'), JSON.stringify(staleness, null, 1) + '\n');
+  // the full ledger, linked from Methods → Recent changes (screened like every rendered file)
+  writeIf(path.join(PUB, 'changes.json'), JSON.stringify(files['changes.json'], null, 1) + '\n');
   for (const c of copyPlan) {
     if (fs.existsSync(c.dest) && sha(c.dest) === sha(c.src)) continue;
     fs.mkdirSync(path.dirname(c.dest), { recursive: true });

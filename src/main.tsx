@@ -1,5 +1,5 @@
 /**
- * Plant Perception Pathways: a host of @actualizer/perception-core 0.1.0 (KICKOFF §8.1). This app supplies the pack
+ * Plant Perception Pathways: a host of @actualizer/perception-core 0.2.0 (KICKOFF §8.1; K38). This app supplies the pack
  * (its content build's JSON), its theme (Greenhouse Explorer's: index.css + tailwind.config.js), its device-storage
  * namespace and its interface copy. Modules: none (no atlas, no vagus lens; app-requirements §2.2).
  */

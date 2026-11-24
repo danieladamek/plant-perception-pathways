@@ -1,6 +1,6 @@
 /**
  * KICKOFF §8.1 parity: perception-core's harness (plant-min fixture, Greenhouse theme) passes at the version this app
- * consumes (0.1.0). The same checks as the core's own `core-harness` project in PPE: every route renders, no console
+ * consumes (0.2.0). The same checks as the core's own `core-harness` project in PPE: every route renders, no console
  * errors, axe WCAG 2 AA in light and dark, stages from the pack.
  */
 import { test, expect, type Page } from '@playwright/test';

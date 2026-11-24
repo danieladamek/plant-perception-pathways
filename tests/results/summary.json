@@ -9,14 +9,14 @@
    "core_gaps": []
   },
   "smoke": {
-   "passed": 88,
+   "passed": 92,
    "failed": 0,
    "expected_failures": 0,
    "skipped": 0,
    "core_gaps": []
   },
   "walkthroughs": {
-   "passed": 17,
+   "passed": 20,
    "failed": 0,
    "expected_failures": 11,
    "skipped": 0,

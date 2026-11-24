@@ -1,7 +1,7 @@
 /**
  * perception-core's own test harness (packages/perception-core/harness: the plant-min fixture under the Greenhouse
  * theme), built from the core this app consumes, read-only: the source tree is PPE's (identical to the tag
- * perception-core-v0.1.0, 6f5f73d), while the build output and Vite's cache stay in this app's test-results/
+ * perception-core-v0.2.0, b68ae21), while the build output and Vite's cache stay in this app's test-results/
  * (KICKOFF §8.1 parity; nothing is written to ../perception-pathways-explorer/).
  */
 import { defineConfig } from 'vite';

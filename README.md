@@ -29,14 +29,14 @@ Open <http://localhost:4201/>. `npm run build` runs the content build (`npm run 
 
 ## How it is built
 
-- **A host of `@actualizer/perception-core` 0.1.0** (the UI shared with Perception Pathways Explorer). This app supplies
+- **A host of `@actualizer/perception-core` 0.2.0** (the UI shared with Perception Pathways Explorer). This app supplies
   only the pack (its content build's JSON), its theme, its storage namespace (`plant-perception-pathways`) and its
   interface copy (`src/host-strings.ts`). Modules: none (no atlas, no vagus lens). No core component is copied or forked.
 - **Core install: local path, for now** (Daniel, 2026-11-19):
   `"@actualizer/perception-core": "file:../perception-pathways-explorer/packages/perception-core"`, installed as a copy
-  (`.npmrc`: `install-links=true`), so nothing is written to the PPE folder. The tag `perception-core-v0.1.0`
-  (`6f5f73d`) is local only. **A URL or registry install replaces this one line later**, e.g.
-  `"github:danieladamek/perception-pathways-explorer#perception-core-v0.1.0"` with a workspace path or an `overrides`
+  (`.npmrc`: `install-links=true`), so nothing is written to the PPE folder. The tag `perception-core-v0.2.0`
+  (`b68ae21`) is local only; a unit test checks that the installed `src/` is byte-identical to it. **A URL or registry install replaces this one line later**, e.g.
+  `"github:danieladamek/perception-pathways-explorer#perception-core-v0.2.0"` with a workspace path or an `overrides`
   entry pointing at `packages/perception-core` (see the core's README), or a GitHub Packages version.
 - **Theme:** Greenhouse Explorer's (`src/index.css`, `tailwind.config.js`) at greenhouse-explorer `32a18ad`, with the
   AA-corrected values (muted `#5f5442`, accent `#2d6848`, amber `#924817`) and six stage tokens, each ≥ 4.5:1 against
@@ -80,7 +80,7 @@ npm run lighthouse
   and perception-core's own harness at the consumed version (`tests/core/`, :4231, built into `test-results/`).
 - `npm run lighthouse` needs `npm run preview` on :4201.
 
-Expectations perception-core 0.1.0 cannot yet meet are written as `test.fail` with a `core-gap` annotation naming the
+Expectations perception-core 0.2.0 cannot yet meet are written as `test.fail` with a `core-gap` annotation naming the
 proposed core item; they turn red the day the core meets them.
 
 ## Publishing this later
